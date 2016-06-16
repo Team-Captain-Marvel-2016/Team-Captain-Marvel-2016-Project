@@ -44,7 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FootballPlayer\FootballPlayerAssembly.csproj">
+    <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
       <Name>FootballPlayerAssembly</Name>
     </ProjectReference>

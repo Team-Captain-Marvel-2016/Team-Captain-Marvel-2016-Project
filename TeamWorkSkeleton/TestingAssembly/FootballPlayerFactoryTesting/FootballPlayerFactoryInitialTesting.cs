@@ -1,14 +1,6 @@
-﻿
-using FootballPlayerAssembly.FootballPlayerFactoryClasses;
-using FootballPlayerAssembly.RolesClasses;
-
-namespace TestingAssembly.FootballPlayerFactoryTesting
+﻿namespace TestingAssembly.FootballPlayerFactoryTesting
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    using FootballPlayerAssembly.FootballPlayerFactoryClasses;
 
     public static class FootballPlayerFactoryInitialTesting
     {

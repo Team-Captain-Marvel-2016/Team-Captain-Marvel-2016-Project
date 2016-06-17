@@ -1,7 +1,7 @@
-﻿using FootballPlayerAssembly.FootballPlayerAbstractClass;
-
-namespace FootballPlayerAssembly.FootballPlayerFactoryClasses.GenericFootballPlayerClasses
+﻿namespace FootballPlayerAssembly.FootballPlayerFactoryClasses.GenericFootballPlayerClasses
 {
+    using FootballPlayerAbstractClass;
+
     public static partial class FootballPlayerFactory
     {
         /// <summary>
@@ -11,8 +11,11 @@ namespace FootballPlayerAssembly.FootballPlayerFactoryClasses.GenericFootballPla
         /// </summary>
         internal class GenericFootballPlayer : FootballPlayer
         {
-            public GenericFootballPlayer()
-                : base()
+            internal GenericFootballPlayer(string name) : base(name)
+            {
+            }
+
+            internal GenericFootballPlayer(string name, int pass, int shoot, int dribble, int save, int tackle, int interception, int awareness, int actionPoints) : base(name, pass, shoot, dribble, save, tackle, interception, awareness, actionPoints)
             {
             }
         }

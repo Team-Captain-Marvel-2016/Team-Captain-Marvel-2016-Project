@@ -11,10 +11,12 @@
     {
         internal class HumanAttacker : Human
         {
-            // Private Constructor for Factory purposes
-            internal HumanAttacker()
+            internal HumanAttacker(string name) : base(name)
             {
-                
+            }
+
+            internal HumanAttacker(string name, int pass, int shoot, int dribble, int save, int tackle, int interception, int awareness, int actionPoints) : base(name, pass, shoot, dribble, save, tackle, interception, awareness, actionPoints)
+            {
             }
         }
     }    

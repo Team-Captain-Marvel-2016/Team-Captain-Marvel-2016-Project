@@ -24,7 +24,7 @@
         #region Public methods
         public static FootballPlayer CreatePlayer(bool isAttacker, bool isMidfielder, bool isDefender, bool isGoalkeeper)
         {
-            return new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory.NeptunianAttacker();
+            return new GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer(string.Empty);
         }
 
         /// <summary>

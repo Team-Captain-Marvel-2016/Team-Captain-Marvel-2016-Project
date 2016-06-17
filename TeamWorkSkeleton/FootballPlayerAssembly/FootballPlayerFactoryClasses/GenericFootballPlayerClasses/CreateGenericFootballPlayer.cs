@@ -12,25 +12,25 @@
         internal static FootballPlayer CreateGenericAttacker()
         {
             // TODO: 
-            return new FootballPlayerFactory.GenericFootballPlayer();
+            return new FootballPlayerFactory.GenericFootballPlayer(string.Empty);
         }
 
         internal static FootballPlayer CreateGenericDefender()
         {
             // TODO: 
-            return new FootballPlayerFactory.GenericFootballPlayer();
+            return new FootballPlayerFactory.GenericFootballPlayer(string.Empty);
         }
 
         internal static FootballPlayer CreateGenericMidfielder()
         {
             // TODO: 
-            return new FootballPlayerFactory.GenericFootballPlayer();
+            return new FootballPlayerFactory.GenericFootballPlayer(string.Empty);
         }
 
         internal static FootballPlayer CreateGenericGoalkeeper()
         {
             // TODO: 
-            return new FootballPlayerFactory.GenericFootballPlayer();
+            return new FootballPlayerFactory.GenericFootballPlayer(string.Empty);
         }
     }
 }

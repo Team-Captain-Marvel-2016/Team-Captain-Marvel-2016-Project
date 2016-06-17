@@ -6,6 +6,16 @@ namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
 
     public static partial class FootballPlayerFactory
     {
+        /// <summary>
+        /// Creates a new Neptunian player object 
+        /// applying previously generated set of base 
+        /// FootballPlayer base abstract stats
+        /// wrapped in a GenericFootballPlayer object
+        /// </summary>
+        /// <param name="baseStats"> 
+        /// set of stats wrapped in a GenericFootballPlayer object 
+        /// </param>
+        /// <returns>new Neptunian(Position) object</returns>
         private static FootballPlayer CreateNeptunianAttacker(FootballPlayer baseStats)
         {
             var newPlayerName = NeptuneNameGenerator.GenerateName();

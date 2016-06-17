@@ -1,4 +1,6 @@
-﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
+﻿using FootballPlayerAssembly.FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
+
+namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
     using System;
     using System.Collections.Generic;
@@ -20,7 +22,13 @@
             Name = name;
         }
 
-        protected FootballPlayer( string name,
+        internal FootballPlayer(FootballPlayerFactory.GenericFootballPlayer player)
+            : this(player.Name, player.StatPass, player.StatShoot, player.StatDribble, 
+                  player.StatSave, player.StatTackle, player.StatInterception, player.AwarenessRange, player.ActionPoints)
+        {
+        }
+
+        internal FootballPlayer( string name,
             int pass, int shoot, int dribble,
             int save, int tackle, int interception,
             int awareness, int actionPoints)

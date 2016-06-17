@@ -1,16 +1,23 @@
 ﻿namespace FootballPlayerAssembly.RolesClasses.MartianFootballPlayer
 {
+    using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
     using FootballPlayerAssembly.SpeciesAbstractClasses;
 
     public static partial class FootballPlayerFactory
     {
         internal class MartianMidfielder : Martian
         {
+            internal MartianMidfielder(FootballPlayerFactoryClasses.GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer player) 
+                : base(player)
+            {
+            }
+
             internal MartianMidfielder(string name) : base(name)
             {
             }
 
-            internal MartianMidfielder(string name, int pass, int shoot, int dribble, int save, int tackle, int interception, int awareness, int actionPoints) : base(name, pass, shoot, dribble, save, tackle, interception, awareness, actionPoints)
+            internal MartianMidfielder(string name, int pass, int shoot, int dribble, int save, int tackle, int interception, int awareness, int actionPoints)
+                : base(name, pass, shoot, dribble, save, tackle, interception, awareness, actionPoints)
             {
             }
         }

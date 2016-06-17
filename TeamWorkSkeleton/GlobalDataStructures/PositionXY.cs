@@ -2,12 +2,13 @@
 {
     using System;
 
-    public struct Position
+    // ReSharper disable once InconsistentNaming
+    public struct PositionXY
     {
         private int _x;
         private int _y;
 
-        public Position(int x, int y)
+        public PositionXY(int x, int y)
             : this()
         {
             X = x;

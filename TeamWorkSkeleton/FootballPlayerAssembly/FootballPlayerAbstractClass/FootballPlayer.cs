@@ -1,12 +1,8 @@
-﻿using FootballPlayerAssembly.FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
-
-namespace FootballPlayerAssembly.FootballPlayerAbstractClass
+﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
+    using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
+    using GlobalDataStructures;
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor
@@ -63,7 +59,7 @@ namespace FootballPlayerAssembly.FootballPlayerAbstractClass
         public int ActionPoints { get; set; }
 
         //TODO: Replace with struct
-        public int Position { get; set; }
+        public PositionXY Position { get; set; }
         #endregion
 
 

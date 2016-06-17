@@ -13,6 +13,7 @@
     public static partial class FootballPlayerFactory
     {
         #region Static fields and consructor
+
         private static readonly Random Random;
 
         static FootballPlayerFactory()
@@ -64,7 +65,8 @@
         private static FootballPlayer CreateAttacker()
         {
             // Generate base stats.
-            var baseStatsGeneric = CreateGenericFootballPlayer.CreateGenericAttacker();
+            var baseStatsGenericPlayer =
+                CreateGenericFootballPlayer.CreateGenericAttacker(Random);
 
             // Pick Species.
             var species = PickSpecies();
@@ -75,7 +77,7 @@
                 BindingFlags.NonPublic | BindingFlags.Static);
 
             var newAttacker = (FootballPlayer)creatingMethod
-                .Invoke(null, new object[] { baseStatsGeneric });
+                .Invoke(null, new object[] { baseStatsGenericPlayer });
 
             return newAttacker;
         }
@@ -83,7 +85,8 @@
         private static FootballPlayer CreateDefender()
         {
             // Generate base stats.
-            var baseStatsGeneric = CreateGenericFootballPlayer.CreateGenericDefender();
+            var baseStatsGeneric = 
+                CreateGenericFootballPlayer.CreateGenericDefender(Random);
 
             // Pick Species.
             var species = PickSpecies();
@@ -102,7 +105,8 @@
         private static FootballPlayer CreateMidfielder()
         {
             // Generate base stats.
-            var baseStatsGeneric = CreateGenericFootballPlayer.CreateGenericMidfielder();
+            var baseStatsGeneric = 
+                CreateGenericFootballPlayer.CreateGenericMidfielder(Random);
 
             // Pick Species.
             var species = PickSpecies();
@@ -121,7 +125,8 @@
         private static FootballPlayer CreateGoalkeeper()
         {
             // Generate base stats.
-            var baseStatsGeneric = CreateGenericFootballPlayer.CreateGenericGoalkeeper();
+            var baseStatsGeneric = 
+                CreateGenericFootballPlayer.CreateGenericGoalkeeper(Random);
 
             // Pick Species.
             var species = PickSpecies();

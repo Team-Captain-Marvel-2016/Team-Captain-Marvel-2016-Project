@@ -46,7 +46,11 @@
     <Compile Include="FootballPlayerFactoryClasses\FootballPlayerFactory.cs" />
     <Compile Include="FootballPlayerFactoryClasses\GenericFootballPlayerClasses\CreateGenericFootballPlayer.cs" />
     <Compile Include="FootballPlayerFactoryClasses\GenericFootballPlayerClasses\GenericFootballPlayer.cs" />
-    <Compile Include="FootballPlayerFactoryClasses\NeptunianFootballPlayerConstructingMethodss.cs" />
+    <Compile Include="FootballPlayerFactoryClasses\NeptunianFootballPlayerConstructingMethods.cs" />
+    <Compile Include="FootballPlayerSettingsClasses\AttackerCreationConstants.cs" />
+    <Compile Include="FootballPlayerSettingsClasses\DefenderCreationConstants.cs" />
+    <Compile Include="FootballPlayerSettingsClasses\GoalkeeperCreationConstants.cs" />
+    <Compile Include="FootballPlayerSettingsClasses\MidfielderCreationConstants.cs" />
     <Compile Include="Interfaces\IGoalkeeper.cs" />
     <Compile Include="Interfaces\ITackle.cs" />
     <Compile Include="Interfaces\IPass.cs" />
@@ -73,7 +77,12 @@
     <Compile Include="SpeciesAbstractClasses\Human.cs" />
     <Compile Include="SpeciesAbstractClasses\Martian.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
+      <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
+      <Name>GlobalDataStructures</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

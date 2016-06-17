@@ -46,6 +46,6 @@ Stylecop https://stylecop.codeplex.com/
 - [ ] Jupiter
 - [ ] Saturn
 - [ ] Uranus
-- [ ] Neptune
+- [x] Neptune Hristo
   - Color
   - Name (unique name with dictionary or something like this)

@@ -35,6 +35,7 @@ Stylecop https://stylecop.codeplex.com/
 - [ ] Save
 - [ ] Range
 - [ ] ActionPoints
+- [ ] Position
 
 ## SpeciesAbstractClasses
 

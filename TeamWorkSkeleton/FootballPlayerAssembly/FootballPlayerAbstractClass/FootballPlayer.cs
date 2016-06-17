@@ -9,7 +9,7 @@
     /// TODO: Prop Validation
     /// TODO: Implement Interfaces
     /// </summary>
-    public abstract class FootballPlayer 
+    public abstract class FootballPlayer
     {
         #region Constructors
         // Simple Constructor
@@ -19,12 +19,12 @@
         }
 
         internal FootballPlayer(FootballPlayerFactory.GenericFootballPlayer player)
-            : this(player.Name, player.StatPass, player.StatShoot, player.StatDribble, 
+            : this(player.Name, player.StatPass, player.StatShoot, player.StatDribble,
                   player.StatSave, player.StatTackle, player.StatInterception, player.AwarenessRange, player.ActionPoints)
         {
         }
 
-        internal FootballPlayer( string name,
+        internal FootballPlayer(string name,
             int pass, int shoot, int dribble,
             int save, int tackle, int interception,
             int awareness, int actionPoints)
@@ -45,20 +45,19 @@
         #endregion
 
         #region Properties // TODO: Validation
-        public string Name { get; set; }
+        public string Name { get; protected set; }
         // Offensive
-        public int StatPass { get; set; }
-        public int StatShoot { get; set; }
-        public int StatDribble { get; set; }
+        public int StatPass { get; protected set; }
+        public int StatShoot { get; protected set; }
+        public int StatDribble { get; protected set; }
         // Defensive
-        public int StatSave { get; set; }
-        public int StatTackle { get; set; }
-        public int StatInterception { get; set; }
+        public int StatSave { get; protected set; }
+        public int StatTackle { get; protected set; }
+        public int StatInterception { get; protected set; }
 
-        public int AwarenessRange { get; set; }
-        public int ActionPoints { get; set; }
-
-        //TODO: Replace with struct
+        public int AwarenessRange { get; protected set; }
+        public int ActionPoints { get; protected set; }
+        
         public PositionXY Position { get; set; }
         #endregion
 

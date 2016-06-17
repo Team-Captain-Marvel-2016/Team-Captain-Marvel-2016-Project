@@ -1,8 +1,5 @@
-﻿
-namespace TestingAssembly
+﻿namespace TestingAssembly
 {
-    using System;
-
     internal class TestsStartup
     {
         private static void Main()

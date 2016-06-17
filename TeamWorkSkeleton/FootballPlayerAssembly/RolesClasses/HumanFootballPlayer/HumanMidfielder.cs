@@ -7,7 +7,7 @@
     using System.Threading.Tasks;
     using FootballPlayerAssembly.SpeciesAbstractClasses;
 
-    public partial class FootballPlayerFactory
+    public  partial class FootballPlayerFactory
     {
         internal class HumanMidfielder : Human
         {

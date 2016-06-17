@@ -2,7 +2,10 @@
 
 Stylecop https://stylecop.codeplex.com/
 
+![](http://www.whatmobile.net/wp-content/uploads/2014/06/FMH2014.png?0e0c84)
+
 ## generatePlayer
+
 
 - [ ] Factory
   - Generate player - Hristo

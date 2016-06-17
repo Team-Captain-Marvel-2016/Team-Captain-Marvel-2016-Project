@@ -48,6 +48,8 @@
     <Compile Include="Interfaces\IPass.cs" />
     <Compile Include="Interfaces\IShoot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolesClasses\FactoryConstructingMethods\GenericFootballPlayer.cs" />
+    <Compile Include="RolesClasses\FactoryConstructingMethods\NeptunianFootballPlayerConstructingMethods.cs" />
     <Compile Include="RolesClasses\FootballPlayerFactory.cs" />
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanAttacker.cs" />
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanDefender.cs" />

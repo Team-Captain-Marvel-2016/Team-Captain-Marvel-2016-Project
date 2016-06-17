@@ -16,11 +16,11 @@ namespace FootballPlayerAssembly.RolesClasses
     public static partial class FootballPlayerFactory
     {
         #region Static fields and consructor
-        private static Random _random;
+        private static readonly Random Random;
 
         static FootballPlayerFactory()
         {
-            _random = new Random();
+            Random = new Random();
         }
         #endregion
 
@@ -30,15 +30,21 @@ namespace FootballPlayerAssembly.RolesClasses
             return new NeptunianFootballPlayer.FootballPlayerFactory.NeptunianAttacker();
         }
 
+        /// <summary>
+        /// Randomly pick a Position.
+        /// Call the corresponding method.
+        /// </summary>
+        /// <param name="includeGoalkeeper"></param>
+        /// <returns>new FootballPlayer object</returns>
         public static FootballPlayer CreatePlayer(bool includeGoalkeeper)
         {
             const string methodNameFormat = "Create{0}";
-
+            
             var enumSize = Enum.GetValues(typeof(PositionType))
                 .Cast<PositionType>()
                 .Count();
 
-            var positionEnumIndex = _random.Next(0, enumSize);
+            var positionEnumIndex = Random.Next(0, enumSize);
 
             var positionName = (PositionType)positionEnumIndex;
             var methodName = string.Format(methodNameFormat, positionName);
@@ -51,7 +57,13 @@ namespace FootballPlayerAssembly.RolesClasses
         }
         #endregion
 
-        #region Generete Players by given position
+        #region Generete Player Stats by given position
+        /// <summary>
+        /// Generate appropriate stats for the currently selected position
+        /// and pick a species.
+        /// Pass the date to the corresponding contucting method.
+        /// </summary>
+        /// <returns></returns>
         private static FootballPlayer CreateAttacker()
         {
 

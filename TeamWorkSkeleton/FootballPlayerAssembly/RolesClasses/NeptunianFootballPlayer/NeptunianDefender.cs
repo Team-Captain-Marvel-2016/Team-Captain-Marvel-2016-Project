@@ -7,7 +7,8 @@
     {
         internal class NeptunianDefender : Neptunian
         {
-            internal NeptunianDefender(FootballPlayerFactoryClasses.GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer player) : base(player)
+            internal NeptunianDefender(FootballPlayerFactoryClasses.GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer player) 
+                : base(player)
             {
             }
 

@@ -1,5 +1,7 @@
 # Topics
 
+Stylecop https://stylecop.codeplex.com/
+
 ## generatePlayer
 
 - [ ] Factory

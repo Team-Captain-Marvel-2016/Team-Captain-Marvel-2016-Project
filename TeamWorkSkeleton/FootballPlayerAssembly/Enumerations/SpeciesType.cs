@@ -2,7 +2,7 @@
 {
     internal enum SpeciesType
     {
-        Neptunian,
+        Neptunian
         // TODO : Add the rest when they have constructors
     }
 }

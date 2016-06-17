@@ -68,7 +68,7 @@
 
             // Pick Species.
             var species = PickSpecies();
-
+            
             // Call the corresponing constructor intermediate method.
             var methodName = $"Create{species}Attacker";
             var creatingMethod = typeof(FootballPlayerFactory).GetMethod(methodName,

@@ -1,35 +1,35 @@
-﻿namespace FootballPlayerAssembly.RolesClasses.FactoryConstructingMethods
-{
-    using FootballPlayerAssembly.FootballPlayerAbstractClass;
-    using FootballPlayerAssembly.SpeciesNameGenerators;
+﻿using FootballPlayerAssembly.FootballPlayerAbstractClass;
+using FootballPlayerAssembly.SpeciesNameGenerators;
 
+namespace FootballPlayerAssembly.FootballPlayerFactoryClasses.FactoryConstructingMethods
+{
     public static partial class FootballPlayerFactory
     {
         private static FootballPlayer CreateNeptunianAtacker(FootballPlayer baseStats)
         {
             var newPlayerName = NeptuneNameGenerator.GenerateName();
-            var newPlayer = new NeptunianFootballPlayer.FootballPlayerFactory.NeptunianAttacker();
+            var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory.NeptunianAttacker();
             return newPlayer;
         }
 
         private static FootballPlayer CreateNeptunianDefender(FootballPlayer baseStats)
         {
             var newPlayerName = NeptuneNameGenerator.GenerateName();
-            var newPlayer = new NeptunianFootballPlayer.FootballPlayerFactory.NeptunianDefender();
+            var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory.NeptunianDefender();
             return newPlayer;
         }
 
         private static FootballPlayer CreateNeptunianMidfielder(FootballPlayer baseStats)
         {
             var newPlayerName = NeptuneNameGenerator.GenerateName();
-            var newPlayer = new NeptunianFootballPlayer.FootballPlayerFactory.NeptunianMidfielder();
+            var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory.NeptunianMidfielder();
             return newPlayer;
         }
 
         private static FootballPlayer CreateNeptunianGoalkeeper(FootballPlayer baseStats)
         {
             var newPlayerName = NeptuneNameGenerator.GenerateName();
-            var newPlayer = new NeptunianFootballPlayer.FootballPlayerFactory.NeptunianGoalkeeper();
+            var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory.NeptunianGoalkeeper();
             return newPlayer;
         }
     }

@@ -1,6 +1,7 @@
-﻿namespace FootballPlayerAssembly.RolesClasses.FactoryConstructingMethods
+﻿using FootballPlayerAssembly.FootballPlayerAbstractClass;
+
+namespace FootballPlayerAssembly.FootballPlayerFactoryClasses.GenericFootballPlayerClasses
 {
-    using FootballPlayerAbstractClass;
     public static partial class FootballPlayerFactory
     {
         /// <summary>

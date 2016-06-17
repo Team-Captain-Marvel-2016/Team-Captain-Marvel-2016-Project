@@ -1,6 +1,5 @@
 ﻿namespace FootballPlayerAssembly.RolesClasses.NeptunianFootballPlayer
 {
-    using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
     using SpeciesAbstractClasses;
 
     public static partial class FootballPlayerFactory

@@ -24,8 +24,8 @@ Stylecop https://stylecop.codeplex.com/
 - [ ] IShoot
 - [ ] ITackle
 
-## properties
-
+## properties 
+  : add validation
 - [ ] Name
 - [ ] Dribble
 - [ ] Pass

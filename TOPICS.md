@@ -7,7 +7,7 @@ Stylecop https://stylecop.codeplex.com/
 ## generatePlayer
 
 
-- [ ] Factory
+- [x] Factory
   - Generate player - Hristo
 
 ## gameRulesAssembley

@@ -61,6 +61,9 @@ namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 
         public int AwarenessRange { get; set; }
         public int ActionPoints { get; set; }
+
+        //TODO: Replace with struct
+        public int Position { get; set; }
         #endregion
 
 

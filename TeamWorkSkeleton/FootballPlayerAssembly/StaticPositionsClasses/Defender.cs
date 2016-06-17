@@ -1,5 +1,4 @@
-﻿
-namespace FootballPlayerAssembly.StaticPositionsClasses
+﻿namespace FootballPlayerAssembly.StaticPositionsClasses
 {
     using System;
     using System.Collections.Generic;
@@ -7,7 +6,7 @@ namespace FootballPlayerAssembly.StaticPositionsClasses
     using System.Text;
     using System.Threading.Tasks;
 
-    class Defender
+    public class Defender
     {
     }
 }

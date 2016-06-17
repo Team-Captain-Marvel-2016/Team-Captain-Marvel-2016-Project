@@ -1,5 +1,4 @@
-﻿
-namespace FootballPlayerAssembly.SpeciesAbstractClasses
+﻿namespace FootballPlayerAssembly.SpeciesAbstractClasses
 {
     using System;
     using System.Collections.Generic;

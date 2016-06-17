@@ -249,4 +249,7 @@ paket-files/
 
 # JetBrains Rider
 .idea/
+
+# StyleCop
 *.sln.iml
+*.StyleCop

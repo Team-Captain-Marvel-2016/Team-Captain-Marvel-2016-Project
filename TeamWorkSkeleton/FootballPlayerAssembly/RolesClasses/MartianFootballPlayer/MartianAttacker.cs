@@ -7,9 +7,9 @@
     using System.Threading.Tasks;
     using FootballPlayerAssembly.SpeciesAbstractClasses;
 
-    public partial class FootballPlayerFactory
+    public static partial class FootballPlayerFactory
     {
-        private class MartianAttacker : Martian
+        internal class MartianAttacker : Martian
         {
         }
     }

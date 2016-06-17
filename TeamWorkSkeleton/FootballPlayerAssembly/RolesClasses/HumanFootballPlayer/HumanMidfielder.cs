@@ -9,7 +9,7 @@
 
     public partial class FootballPlayerFactory
     {
-        private class HumanMidfielder : Human
+        internal class HumanMidfielder : Human
         {
         }
     }

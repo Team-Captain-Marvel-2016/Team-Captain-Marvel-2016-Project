@@ -7,7 +7,7 @@
     using System.Threading.Tasks;
     using FootballPlayerAbstractClass;
 
-    public abstract class Human : FootballPlayer
+    internal abstract class Human : FootballPlayer
     {
     }
 }

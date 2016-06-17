@@ -66,14 +66,10 @@
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianMidfielder.cs" />
     <Compile Include="SpeciesAbstractClasses\Neptunian.cs" />
     <Compile Include="SpeciesNameGenerators\NeptuneNameGenerator.cs" />
-    <Compile Include="StaticPositionsClasses\Attacker.cs" />
-    <Compile Include="StaticPositionsClasses\Defender.cs" />
-    <Compile Include="StaticPositionsClasses\GoalKeeper.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianAttacker.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianDefender.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianGoalkeeper.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianMidfielder.cs" />
-    <Compile Include="StaticPositionsClasses\Midfielder.cs" />
     <Compile Include="SpeciesAbstractClasses\Human.cs" />
     <Compile Include="SpeciesAbstractClasses\Martian.cs" />
   </ItemGroup>

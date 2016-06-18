@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FootballPlayerAssembly.FootballPlayerAbstractClass
+﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
     using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
     using GlobalDataStructures;
@@ -74,8 +72,7 @@ namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 
         public Ellipse VisualToken { get; set; }
         #endregion
-
-        [STAThread]
+        
         private void GetPlanetAndPositionTypes()
         {
             this.VisualToken = new Ellipse() { Width = 10, Height = 10 };

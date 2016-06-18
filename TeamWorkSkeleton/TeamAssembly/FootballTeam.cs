@@ -1,8 +1,10 @@
 ﻿namespace TeamAssembly
 {
+    using CreateTeamMethods;
     using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using FormationTypes;
     using System.Collections.Generic;
+    using System.Linq;
 
     public class FootballTeam
     {
@@ -19,7 +21,8 @@
         {
             if (generateRandomTeam)
             {
-                // GenerateRandomTeam
+                this.Team = CreateFootballTeam
+                    .CreateARandomFootballTeam();
             }
         }
 
@@ -27,14 +30,34 @@
             : this()
 
         {
-            // Generate Team by given formation
+            this.Team = CreateFootballTeam
+                .CreateAFootballTeamByFormation(formation);
         }
         #endregion
 
+        #region Properties
         public List<FootballPlayer> Team
         {
-            get { return _team; }
+            get
+            {
+                // Create a copy of the current 
+                // _team and pass it back;
+                var output =
+                    new List<FootballPlayer>().ToArray();
+
+                _team.CopyTo(output);
+
+                return output.ToList();
+            }
             private set { _team = value; }
         }
+        #endregion
+
+        public void CreateTeam(FormationType formation)
+        {
+            this.Team = CreateFootballTeam
+                .CreateAFootballTeamByFormation(formation);
+        }
+        
     }
 }

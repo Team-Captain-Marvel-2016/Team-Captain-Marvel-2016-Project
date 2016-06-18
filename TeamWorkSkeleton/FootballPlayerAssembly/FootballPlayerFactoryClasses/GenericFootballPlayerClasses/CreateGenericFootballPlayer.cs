@@ -1,10 +1,8 @@
-﻿using RandomizersAssembly.StaticRandomizersClasses;
-
-namespace FootballPlayerAssembly.FootballPlayerFactoryClasses.GenericFootballPlayerClasses
+﻿namespace FootballPlayerAssembly.FootballPlayerFactoryClasses.GenericFootballPlayerClasses
 {
     using FootballPlayerAbstractClass;
     using FootballPlayerSettingsClasses;
-    using System;
+    using RandomizersAssembly.StaticRandomizersClasses;
 
     /// <summary>
     /// Generate a GenericFootballPlayer

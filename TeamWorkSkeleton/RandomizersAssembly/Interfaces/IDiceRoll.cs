@@ -1,6 +1,6 @@
 ﻿namespace RandomizersAssembly.Interfaces
 {
-    internal interface IRoll
+    internal interface IDiceRoll
     {
         int Roll();
     }

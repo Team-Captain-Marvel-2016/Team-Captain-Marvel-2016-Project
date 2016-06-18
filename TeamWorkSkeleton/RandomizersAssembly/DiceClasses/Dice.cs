@@ -1,17 +1,20 @@
-﻿using RandomizersAssembly.Interfaces;
-namespace RandomizersAssembly.DiceClasses
+﻿namespace RandomizersAssembly.DiceClasses
 {
+    using Interfaces;
+    using StaticRandomizersClasses;
     using System;
 
-    public class Dice : IRoll
+    /// <summary>
+    /// Create a Dice object, pass a face value ( number of sides ).
+    /// Implements IDiceRoll, returns an int random value in range ( 1 - Face ).
+    /// </summary>
+    public class Dice : IDiceRoll
     {
         private int _face;
 
         public Dice(int face)
         {
             this.Face = face;
-
-            this.Random = new Random();
         }
 
         private int Face
@@ -32,12 +35,11 @@ namespace RandomizersAssembly.DiceClasses
                 }
             }
         }
-
-        private Random Random { get; set; }
-
+        
         #region Methods
 
-        public int Roll() => Random.Next(1, this.Face);
+        public int Roll()
+            => GenericRandomization.Random.Next(1, this.Face);
 
         #endregion
 

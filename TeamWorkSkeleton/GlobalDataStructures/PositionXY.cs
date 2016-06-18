@@ -1,7 +1,5 @@
 ﻿namespace GlobalDataStructures
 {
-    using System;
-
     // ReSharper disable once InconsistentNaming
     public struct PositionXY
     {

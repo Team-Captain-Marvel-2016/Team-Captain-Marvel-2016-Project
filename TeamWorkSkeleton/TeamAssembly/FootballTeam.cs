@@ -11,13 +11,12 @@
     public class FootballTeam : IEnumerable<FootballPlayer>
     {
         private string _teamName;
-        private List<FootballPlayer> _team;
 
         #region Constructors
         public FootballTeam(string teamName)
         {
             this.TeamName = teamName;
-            _team = new List<FootballPlayer>();
+            Team = new List<FootballPlayer>();
         }
 
         public FootballTeam(string teamName, bool generateRandomTeam)
@@ -45,23 +44,7 @@
         #endregion
 
         #region Properties
-        public List<FootballPlayer> Team
-        {
-            get
-            {
-                // Create a copy of the current 
-                // _team and pass it back;
-                var output = new FootballPlayer[this._team.Count];
-
-                _team.CopyTo(output);
-
-                return output.ToList();
-            }
-            private set
-            {
-                _team = value;
-            }
-        }
+        public List<FootballPlayer> Team { get; set; }
 
         public string TeamName
         {
@@ -107,7 +90,7 @@
         #region Interface Implementation
         public IEnumerator<FootballPlayer> GetEnumerator()
         {
-            return ((IEnumerable<FootballPlayer>) this._team).GetEnumerator();
+            return ((IEnumerable<FootballPlayer>) this.Team).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

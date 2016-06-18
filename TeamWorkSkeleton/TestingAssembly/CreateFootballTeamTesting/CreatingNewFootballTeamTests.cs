@@ -1,4 +1,7 @@
-﻿namespace TestingAssembly.CreateFootballTeamTesting
+﻿using VisualizationAssembly.Enumerations;
+using VisualizationAssembly.InitPlayingFieldClasses;
+
+namespace TestingAssembly.CreateFootballTeamTesting
 {
     using System;
     using TeamAssembly;
@@ -9,6 +12,8 @@
         {
             var testTeam = new FootballTeam("Testing", true);
             Console.WriteLine(string.Join(Environment.NewLine, testTeam.Team));
+
+            InitTeamVisualization.GetInitialFootballPlayerPositions(testTeam, StartingFieldType.Left);
         }
     }
 }

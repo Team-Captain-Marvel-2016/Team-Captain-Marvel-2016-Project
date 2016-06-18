@@ -1,4 +1,6 @@
-﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
+﻿using System;
+
+namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
     using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
     using GlobalDataStructures;
@@ -10,6 +12,7 @@
     /// TODO: Prop Validation
     /// TODO: Implement Interfaces
     /// </summary>
+    
     public abstract class FootballPlayer
     {
         #region Constructors
@@ -18,8 +21,8 @@
         {
             Name = name;
 
-            this.VisualToken = new Ellipse() { Width = 10, Height = 10 };
             this.GetPlanetAndPositionTypes();
+
         }
 
         internal FootballPlayer(FootballPlayerFactory.GenericFootballPlayer player)
@@ -63,6 +66,7 @@
         public int ActionPoints { get; protected set; }
 
         public PositionXY FieldPosition { get; set; }
+        public PositionXY GridPosition { get; set; }
 
         public string Planet { get; private set; }
 
@@ -71,8 +75,13 @@
         public Ellipse VisualToken { get; set; }
         #endregion
 
+        [STAThread]
         private void GetPlanetAndPositionTypes()
         {
+            this.VisualToken = new Ellipse() { Width = 10, Height = 10 };
+            this.GridPosition = new PositionXY();
+            this.FieldPosition = new PositionXY();
+
             var planetBuilder = new StringBuilder();
 
             var type = this.GetType().Name;

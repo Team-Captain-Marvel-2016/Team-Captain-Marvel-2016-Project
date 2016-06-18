@@ -3,7 +3,7 @@
     using FormationTypes;
     using System.Text;
 
-    internal static class ParseFormationType
+    public static class ParseFormationType
     {
         private const string RemoveMe = "Formation";
         private const int FormationLength = 3;
@@ -17,7 +17,7 @@
         /// </summary>
         /// <param name="formation"></param>
         /// <returns>int[] Value by position</returns>
-        internal static int[] GetFormationValues(FormationType formation)
+        public static int[] GetFormationValues(FormationType formation)
         {
             var output = new int[FormationLength];
 

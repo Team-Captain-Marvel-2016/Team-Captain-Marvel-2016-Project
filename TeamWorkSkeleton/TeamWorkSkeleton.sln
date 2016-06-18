@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUp", "StartUp\StartUp.csproj", "{550074DF-0E40-4120-A3F5-A93D8CEED41F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUpConsole", "StartUp\StartUpConsole.csproj", "{550074DF-0E40-4120-A3F5-A93D8CEED41F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingFIeldAssembly", "PlayingFIeldAssembly\PlayingFIeldAssembly.csproj", "{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}"
 EndProject

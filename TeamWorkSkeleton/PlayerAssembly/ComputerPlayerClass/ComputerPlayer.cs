@@ -1,11 +1,12 @@
 ﻿namespace PlayerAssembly.ComputerPlayerClass
 {
     using AbstractPlayerClass;
+    using System.Windows.Media;
 
-    public class ComputerPlayer : PlayerCharacter
+    public abstract class ComputerPlayer : PlayerCharacter
     {
-        public ComputerPlayer(string name, string teamName)
-            : base(name, teamName)
+        protected ComputerPlayer(string name, string teamName, SolidColorBrush color)
+            : base(name, teamName, color)
         {
         }
     }

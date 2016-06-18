@@ -1,11 +1,13 @@
-﻿namespace PlayerAssembly.ComputerPlayerClass.BotPeshoSingletonClass
+﻿
+namespace PlayerAssembly.ComputerPlayerClass.BotPeshoSingletonClass
 {
     using ComputerPlayerClass;
+    using System.Windows.Media;
 
     public class BotPesho : ComputerPlayer
     {
-        public BotPesho(string name, string teamName) 
-            : base(name, teamName)
+        public BotPesho(string name, string teamName, SolidColorBrush color)
+            : base(name, teamName, color)
         {
         }
     }

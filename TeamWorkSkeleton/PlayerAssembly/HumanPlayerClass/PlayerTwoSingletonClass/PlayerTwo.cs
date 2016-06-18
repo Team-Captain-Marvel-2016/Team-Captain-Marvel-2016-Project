@@ -1,13 +1,14 @@
 ﻿namespace PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass
 {
     using HumanPlayerClass;
+    using System.Windows.Media;
 
     public class PlayerTwo : HumanPlayer
     {
         private static PlayerTwo _player;
 
         private PlayerTwo(string name, string teamName)
-            : base(name, teamName)
+            : base(name, teamName, Brushes.Red)
         {
         }
 
@@ -16,7 +17,10 @@
 
         public static void CreatePlayerTwo(string name, string teamName)
         {
-            PlayerTwo._player = new PlayerTwo(name, teamName);
+            if (_player == null)
+            {
+                _player = new PlayerTwo(name, teamName);
+            }
         }
     }
 }

@@ -1,11 +1,10 @@
-﻿using System.Collections;
-
-namespace TeamAssembly
+﻿namespace TeamAssembly
 {
     using CreateTeamMethods;
     using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using FormationTypes;
     using System;
+    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
 
@@ -24,17 +23,22 @@ namespace TeamAssembly
         public FootballTeam(string teamName, bool generateRandomTeam)
             : this(teamName)
         {
-            if (generateRandomTeam)
-            {
-                this.Team = CreateFootballTeam
-                    .CreateARandomFootballTeam();
-            }
+            if (!generateRandomTeam) return;
+
+            FormationType formation;
+
+            this.Team = CreateFootballTeam
+                .CreateARandomFootballTeam(out formation);
+
+            this.Formation = formation;
         }
 
         public FootballTeam(string teamName, FormationType formation)
             : this(teamName)
 
         {
+            this.Formation = formation;
+
             this.Team = CreateFootballTeam
                 .CreateAFootballTeamByFormation(formation);
         }
@@ -78,20 +82,29 @@ namespace TeamAssembly
             }
         }
 
+        public FormationType Formation { get; private set; }
+
         #endregion
 
         public void CreateTeam(FormationType formation)
         {
+            this.Formation = formation;
+
             this.Team = CreateFootballTeam
                 .CreateAFootballTeamByFormation(formation);
         }
 
         public void CreateTeam()
         {
+            FormationType formation;
+
             this.Team = CreateFootballTeam
-                .CreateARandomFootballTeam();
+                .CreateARandomFootballTeam(out formation);
+
+            this.Formation = formation;
         }
 
+        #region Interface Implementation
         public IEnumerator<FootballPlayer> GetEnumerator()
         {
             return ((IEnumerable<FootballPlayer>) this._team).GetEnumerator();
@@ -101,5 +114,6 @@ namespace TeamAssembly
         {
            return this.GetEnumerator();
         }
+        #endregion
     }
 }

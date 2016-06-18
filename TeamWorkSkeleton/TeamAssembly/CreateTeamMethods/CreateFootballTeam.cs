@@ -18,7 +18,7 @@
         /// Then pass the picked formation to a method to generate a team.
         /// </summary>
         /// <returns> List of FootballPlayer objecs </returns>
-        internal static List<FootballPlayer> CreateARandomFootballTeam()
+        internal static List<FootballPlayer> CreateARandomFootballTeam(out FormationType returnFormation)
         {
             // Get the number of possible FormationType values.
             var formationSize = Enum
@@ -36,6 +36,7 @@
             // Generate a new team based on that formation.
             var output = CreateAFootballTeamByFormation(formation);
 
+            returnFormation = formation;
             return output;
         }
         

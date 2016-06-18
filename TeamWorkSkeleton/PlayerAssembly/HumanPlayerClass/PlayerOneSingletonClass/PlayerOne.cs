@@ -7,7 +7,7 @@
     {
         private static PlayerOne _player;
 
-        private PlayerOne(string name, string teamName) 
+        private PlayerOne(string name, string teamName)
             : base(name, teamName, Brushes.Blue)
         {
         }
@@ -16,7 +16,10 @@
 
         public static void CreatePlayerOne(string name, string teamName)
         {
-            PlayerOne._player = new PlayerOne(name, teamName); 
+            if (_player == null)
+            {
+                _player = new PlayerOne(name, teamName);
+            }
         }
     }
 }

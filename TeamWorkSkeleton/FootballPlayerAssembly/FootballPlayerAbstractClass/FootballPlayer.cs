@@ -1,9 +1,11 @@
-﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
+﻿
+namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
     using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
     using GlobalDataStructures;
     using System.Text;
-
+    using System.Windows.Shapes;
+    
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor
     /// TODO: Prop Validation
@@ -17,6 +19,7 @@
         {
             Name = name;
 
+            this.VisualToken = new Ellipse() { Width = 10, Height = 10 };
             this.GetPlanetAndPositionTypes();
         }
 
@@ -59,13 +62,14 @@
 
         public int AwarenessRange { get; protected set; }
         public int ActionPoints { get; protected set; }
-        
+
         public PositionXY FieldPosition { get; set; }
 
         public string Planet { get; private set; }
 
         public string Position { get; private set; }
 
+        public Ellipse VisualToken { get; set; }
         #endregion
 
         private void GetPlanetAndPositionTypes()
@@ -79,7 +83,7 @@
             var typeLenght = type.Length;
             for (var i = 1; i < typeLenght; i++)
             {
-                if (char.IsUpper( type[i]))
+                if (char.IsUpper(type[i]))
                 {
                     break;
                 }

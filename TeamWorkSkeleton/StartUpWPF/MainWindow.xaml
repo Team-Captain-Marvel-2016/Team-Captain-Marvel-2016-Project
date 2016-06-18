@@ -20,6 +20,30 @@
             </Canvas.Background>
         </Canvas>
         <Button x:Name="StartBtn" Content="Button" HorizontalAlignment="Left" Margin="454,461,0,0" VerticalAlignment="Top" Width="75" Click="StartBtn_Click"/>
+        <Button x:Name="MoveUp" Content="Up"
+                HorizontalAlignment="Left" Margin="60,160,0,0"
+                VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button x:Name="MoveDown" Content="Down"
+                HorizontalAlignment="Left" Margin="60,260,0,0"
+                VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button x:Name="MoveLeft" Content="Left"
+                HorizontalAlignment="Left" Margin="10,210,0,0"
+                VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button x:Name="MoveRight" Content="Right"
+                HorizontalAlignment="Left" Margin="110,210,0,0"
+                VerticalAlignment="Top" Width="40" Height="40"/>
+        <Button x:Name="PrevPlayerBtn" Content="Prev" 
+                HorizontalAlignment="Left" Margin="10,120,0,0"
+                VerticalAlignment="Top" Width="60" Height="30"/>
+        <Button x:Name="NextPlayerBtn" Content="Next" 
+                HorizontalAlignment="Left" Margin="90,120,0,0"
+                VerticalAlignment="Top" Width="60" Height="30"/>
+        <Button x:Name="PassBtn" Content="Pass" 
+                HorizontalAlignment="Left" Margin="90,310,0,0"
+                VerticalAlignment="Top" Width="60" Height="30"/>
+        <Button x:Name="ShootBtn" Content="Shoot" 
+                HorizontalAlignment="Left" Margin="10,310,0,0"
+                VerticalAlignment="Top" Width="60" Height="30"/>
 
 
     </Grid>

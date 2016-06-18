@@ -23,11 +23,6 @@
         #endregion
 
         #region Public methods
-        public static FootballPlayer CreatePlayer(bool isAttacker, bool isMidfielder, bool isDefender, bool isGoalkeeper)
-        {
-            return new GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer(string.Empty);
-        }
-
         /// <summary>
         /// Randomly pick a Position.
         /// Call the corresponding method.
@@ -35,7 +30,7 @@
         /// <returns>new FootballPlayer object</returns>
         public static FootballPlayer CreatePlayer()
         {
-            // Randomly a position and pass it along.
+            // Randomly generate a position and pass it along.
             var enumSize = Enum.GetValues(typeof(PositionType))
                 .Cast<PositionType>()
                 .Count();
@@ -54,7 +49,7 @@
         /// </summary>
         /// <param name="position"></param>
         /// <returns>FootballPlayer object</returns>
-        private static FootballPlayer CreatePlayerByPosition(PositionType position)
+        public static FootballPlayer CreatePlayerByPosition(PositionType position)
         {
             const string methodNameFormat = "Create{0}";
 

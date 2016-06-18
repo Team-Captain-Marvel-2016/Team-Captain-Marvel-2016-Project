@@ -1,6 +1,6 @@
 ﻿namespace FootballPlayerAssembly.Enumerations
 {
-    internal enum PositionType
+    public enum PositionType
     {
         Attacker,
         Defender,

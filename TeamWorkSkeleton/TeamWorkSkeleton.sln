@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalDataStructures", "Glo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomizersAssembly", "RandomizersAssembly\RandomizersAssembly.csproj", "{CCE761C0-B358-4E9C-855A-74A23F5826A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUpWPF", "StartUpWPF\StartUpWPF.csproj", "{D87748FF-3ED5-4335-996D-D12E4266E5CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{CCE761C0-B358-4E9C-855A-74A23F5826A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCE761C0-B358-4E9C-855A-74A23F5826A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCE761C0-B358-4E9C-855A-74A23F5826A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D87748FF-3ED5-4335-996D-D12E4266E5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87748FF-3ED5-4335-996D-D12E4266E5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87748FF-3ED5-4335-996D-D12E4266E5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87748FF-3ED5-4335-996D-D12E4266E5CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

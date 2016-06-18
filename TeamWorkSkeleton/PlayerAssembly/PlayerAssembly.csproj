@@ -40,14 +40,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractPlayerClass\Player.cs" />
-    <Compile Include="ComputerPlayerClass\AIPlayer.cs" />
+    <Compile Include="AbstractPlayerClass\PlayerCharacter.cs" />
+    <Compile Include="ComputerPlayerClass\ComputerPlayer.cs" />
     <Compile Include="ComputerPlayerClass\BotPeshoSingletonClass\BotPesho.cs" />
     <Compile Include="HumanPlayerClass\HumanPlayer.cs" />
     <Compile Include="HumanPlayerClass\PlayerOneSingletonClass\PlayerOne.cs" />
     <Compile Include="HumanPlayerClass\PlayerTwoSingletonClass\PlayerTwo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserInputClass\UserInput.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
+      <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
+      <Name>FootballPlayerAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
+      <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
+      <Name>GlobalDataStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamAssembly\TeamAssembly.csproj">
+      <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
+      <Name>TeamAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

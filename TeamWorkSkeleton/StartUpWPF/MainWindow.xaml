@@ -1,0 +1,25 @@
+﻿<Window x:Class="StartUpWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StartUpWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="540" Width="960">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="95*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas HorizontalAlignment="Left"
+                Height="400" Width="640"
+                Margin="160,0,0,0" 
+                VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Canvas.Background>
+                <ImageBrush ImageSource="imgs/footballpitch.png"></ImageBrush>
+            </Canvas.Background>
+        </Canvas>
+
+
+    </Grid>
+</Window>

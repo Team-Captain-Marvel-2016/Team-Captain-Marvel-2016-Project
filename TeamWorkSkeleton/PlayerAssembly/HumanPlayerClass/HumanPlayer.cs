@@ -3,9 +3,9 @@ namespace PlayerAssembly.HumanPlayerClass
 {
     using AbstractPlayerClass;
 
-    public class HumanPlayer : PlayerCharacter
+    public abstract class HumanPlayer : PlayerCharacter
     {
-        public HumanPlayer(string name, string teamName) 
+        protected HumanPlayer(string name, string teamName) 
             : base(name, teamName)
         {
         }

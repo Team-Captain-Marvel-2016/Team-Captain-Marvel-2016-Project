@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateFootballTeamTesting\CreatingNewFootballTeamTests.cs" />
     <Compile Include="FootballPlayerFactoryTesting\FootballPlayerFactoryInitialTesting.cs" />
     <Compile Include="TestsStartup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -54,6 +55,10 @@
     <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
       <Name>FootballPlayerAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamAssembly\TeamAssembly.csproj">
+      <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
+      <Name>TeamAssembly</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

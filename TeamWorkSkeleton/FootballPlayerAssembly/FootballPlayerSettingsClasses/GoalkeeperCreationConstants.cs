@@ -10,9 +10,9 @@
             Shoot = new MinMaxRange(30, 80);
             Dribble = new MinMaxRange(30, 60);
 
-            Save = new MinMaxRange(0, 30);
-            Tackle = new MinMaxRange(70, 100);
-            Intercept = new MinMaxRange(70, 100);
+            Save = new MinMaxRange(70, 100);
+            Tackle = new MinMaxRange(40, 70);
+            Intercept = new MinMaxRange(0, 40);
 
             Awareness = new MinMaxRange(4, 6);
             Ap = new MinMaxRange(3, 5);

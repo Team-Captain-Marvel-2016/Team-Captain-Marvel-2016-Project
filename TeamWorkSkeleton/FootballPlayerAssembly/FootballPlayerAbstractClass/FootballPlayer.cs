@@ -2,7 +2,7 @@
 {
     using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
     using GlobalDataStructures;
-    using System;
+    using System.Text;
 
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor
@@ -16,6 +16,8 @@
         internal FootballPlayer(string name)
         {
             Name = name;
+
+            this.GetPlanetAndPositionTypes();
         }
 
         internal FootballPlayer(FootballPlayerFactory.GenericFootballPlayer player)
@@ -58,9 +60,38 @@
         public int AwarenessRange { get; protected set; }
         public int ActionPoints { get; protected set; }
         
-        public PositionXY Position { get; set; }
+        public PositionXY FieldPosition { get; set; }
+
+        public string Planet { get; private set; }
+
+        public string Position { get; private set; }
+
         #endregion
 
+        private void GetPlanetAndPositionTypes()
+        {
+            var planetBuilder = new StringBuilder();
+
+            var type = this.GetType().Name;
+
+            planetBuilder.Append(type[0]);
+
+            var typeLenght = type.Length;
+            for (var i = 1; i < typeLenght; i++)
+            {
+                if (char.IsUpper( type[i]))
+                {
+                    break;
+                }
+                else
+                {
+                    planetBuilder.Append(type[i]);
+                }
+            }
+
+            this.Planet = planetBuilder.ToString();
+            this.Position = type.Replace(this.Planet, "");
+        }
 
     }
 }

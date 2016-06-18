@@ -13,18 +13,44 @@
             Min = min;
             Max = max;
         }
-
-        // TODO: Validate props
+        
         public int Min
         {
-            get { return _min; }
-            set { _min = value; }
+            get
+            {
+                return _min;
+            }
+            private set
+            {
+                if (!(0 <= value && value <= 100))
+                {
+                    throw new Exception("Value must be in the range 0-100");
+                }
+                else
+                {
+                    _min = value;
+                }
+            }
         }
 
         public int Max
         {
-            get { return _max; }
-            set { _max = value; }
+            get
+            {
+                return _max;
+            }
+            private set
+            {
+                if (!(1 <= value && value <= 100)
+                    && value < this.Min)
+                {
+                    throw new Exception("Value must be in the range 0-100");
+                }
+                else
+                {
+                    _max = value;
+                }
+            }
         }
     }
 }

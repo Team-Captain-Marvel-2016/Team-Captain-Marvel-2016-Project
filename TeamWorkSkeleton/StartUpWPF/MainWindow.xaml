@@ -8,10 +8,9 @@
         Title="MainWindow" Height="540" Width="960">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="41*"/>
-            <ColumnDefinition Width="95*"/>
         </Grid.ColumnDefinitions>
-        <Canvas HorizontalAlignment="Left"
+        <Canvas Name="PlayField"
+                HorizontalAlignment="Left"
                 Height="400" Width="640"
                 Margin="160,0,0,0" 
                 VerticalAlignment="Top" Grid.ColumnSpan="2">
@@ -19,6 +18,7 @@
                 <ImageBrush ImageSource="imgs/footballpitch.png"></ImageBrush>
             </Canvas.Background>
         </Canvas>
+        <Button x:Name="StartBtn" Content="Button" HorizontalAlignment="Left" Margin="454,461,0,0" VerticalAlignment="Top" Width="75" Click="StartBtn_Click"/>
 
 
     </Grid>

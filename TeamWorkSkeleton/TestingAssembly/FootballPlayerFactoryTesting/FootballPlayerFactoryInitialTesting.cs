@@ -6,7 +6,7 @@
     {
         public static void Test_01()
         {
-            var test = FootballPlayerFactory.CreatePlayer(false);
+            var test = FootballPlayerFactory.CreatePlayer();
         }
     }
 }

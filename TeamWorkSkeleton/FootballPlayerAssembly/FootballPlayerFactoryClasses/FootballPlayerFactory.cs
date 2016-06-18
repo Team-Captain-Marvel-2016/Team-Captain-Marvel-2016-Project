@@ -32,12 +32,10 @@
         /// Randomly pick a Position.
         /// Call the corresponding method.
         /// </summary>
-        /// <param name="includeGoalkeeper"></param>
         /// <returns>new FootballPlayer object</returns>
-        public static FootballPlayer CreatePlayer(bool includeGoalkeeper)
+        public static FootballPlayer CreatePlayer()
         {
-            const string methodNameFormat = "Create{0}";
-
+            // Randomly a position and pass it along.
             var enumSize = Enum.GetValues(typeof(PositionType))
                 .Cast<PositionType>()
                 .Count();
@@ -45,11 +43,30 @@
             var positionEnumIndex = Random.Next(0, enumSize);
 
             var positionName = (PositionType)positionEnumIndex;
-            var methodName = string.Format(methodNameFormat, positionName);
 
-            var method = typeof(FootballPlayerFactory).GetMethod(methodName, BindingFlags.NonPublic | BindingFlags.Static);
+            var newlyGeneratedPlayer = CreatePlayerByPosition(positionName);
 
-            var newlyGeneratedPlayer = (FootballPlayer)method.Invoke(null, new object[] { });
+            return newlyGeneratedPlayer;
+        }
+        
+        /// <summary>
+        /// Create a new FootballPlayer by a givern position
+        /// </summary>
+        /// <param name="position"></param>
+        /// <returns>FootballPlayer object</returns>
+        private static FootballPlayer CreatePlayerByPosition(PositionType position)
+        {
+            const string methodNameFormat = "Create{0}";
+
+            var methodName = string.Format(methodNameFormat, position);
+
+            var method = typeof(FootballPlayerFactory)
+                .GetMethod(methodName,
+                    BindingFlags.NonPublic | BindingFlags.Static);
+
+            var newlyGeneratedPlayer =
+                (FootballPlayer)method
+                    .Invoke(null, new object[] { });
 
             return newlyGeneratedPlayer;
         }
@@ -70,7 +87,7 @@
 
             // Pick Species.
             var species = PickSpecies();
-            
+
             // Call the corresponing constructor intermediate method.
             var methodName = $"Create{species}Attacker";
             var creatingMethod = typeof(FootballPlayerFactory).GetMethod(methodName,
@@ -85,7 +102,7 @@
         private static FootballPlayer CreateDefender()
         {
             // Generate base stats.
-            var baseStatsGeneric = 
+            var baseStatsGeneric =
                 CreateGenericFootballPlayer.CreateGenericDefender(Random);
 
             // Pick Species.
@@ -105,7 +122,7 @@
         private static FootballPlayer CreateMidfielder()
         {
             // Generate base stats.
-            var baseStatsGeneric = 
+            var baseStatsGeneric =
                 CreateGenericFootballPlayer.CreateGenericMidfielder(Random);
 
             // Pick Species.
@@ -125,7 +142,7 @@
         private static FootballPlayer CreateGoalkeeper()
         {
             // Generate base stats.
-            var baseStatsGeneric = 
+            var baseStatsGeneric =
                 CreateGenericFootballPlayer.CreateGenericGoalkeeper(Random);
 
             // Pick Species.

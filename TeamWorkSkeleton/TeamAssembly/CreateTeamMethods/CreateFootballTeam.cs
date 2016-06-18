@@ -20,6 +20,7 @@ namespace TeamAssembly.CreateTeamMethods
 
         internal static List<FootballPlayer> CreateARandomFootballTeam()
         {
+            // Get random formation
             
             return new List<FootballPlayer>();
         }

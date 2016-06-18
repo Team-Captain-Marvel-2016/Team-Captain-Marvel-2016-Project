@@ -78,6 +78,10 @@
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>GlobalDataStructures</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RandomizersAssembly\RandomizersAssembly.csproj">
+      <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
+      <Name>RandomizersAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

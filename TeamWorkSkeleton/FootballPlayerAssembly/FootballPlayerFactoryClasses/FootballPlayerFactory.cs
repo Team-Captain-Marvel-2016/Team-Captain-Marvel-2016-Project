@@ -1,4 +1,6 @@
-﻿namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
+﻿using RandomizersAssembly.StaticRandomizersClasses;
+
+namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
 {
     using Enumerations;
     using FootballPlayerAbstractClass;
@@ -12,16 +14,6 @@
     /// </summary>
     public static partial class FootballPlayerFactory
     {
-        #region Static fields and consructor
-
-        private static readonly Random Random;
-
-        static FootballPlayerFactory()
-        {
-            Random = new Random();
-        }
-        #endregion
-
         #region Public methods
         /// <summary>
         /// Randomly pick a Position.
@@ -35,7 +27,7 @@
                 .Cast<PositionType>()
                 .Count();
 
-            var positionEnumIndex = Random.Next(0, enumSize);
+            var positionEnumIndex = GenericRandomization.Random.Next(0, enumSize);
 
             var positionName = (PositionType)positionEnumIndex;
 
@@ -78,7 +70,7 @@
         {
             // Generate base stats.
             var baseStatsGenericPlayer =
-                CreateGenericFootballPlayer.CreateGenericAttacker(Random);
+                CreateGenericFootballPlayer.CreateGenericAttacker();
 
             // Pick Species.
             var species = PickSpecies();
@@ -98,7 +90,7 @@
         {
             // Generate base stats.
             var baseStatsGeneric =
-                CreateGenericFootballPlayer.CreateGenericDefender(Random);
+                CreateGenericFootballPlayer.CreateGenericDefender();
 
             // Pick Species.
             var species = PickSpecies();
@@ -118,7 +110,7 @@
         {
             // Generate base stats.
             var baseStatsGeneric =
-                CreateGenericFootballPlayer.CreateGenericMidfielder(Random);
+                CreateGenericFootballPlayer.CreateGenericMidfielder();
 
             // Pick Species.
             var species = PickSpecies();
@@ -138,7 +130,7 @@
         {
             // Generate base stats.
             var baseStatsGeneric =
-                CreateGenericFootballPlayer.CreateGenericGoalkeeper(Random);
+                CreateGenericFootballPlayer.CreateGenericGoalkeeper();
 
             // Pick Species.
             var species = PickSpecies();
@@ -160,7 +152,7 @@
             var enumSize = Enum.GetValues(typeof(SpeciesType))
                 .Cast<SpeciesType>().Count();
 
-            var speciesIndex = Random.Next(0, enumSize);
+            var speciesIndex = GenericRandomization.Random.Next(0, enumSize);
             var speciesName = (SpeciesType)speciesIndex;
 
             return speciesName.ToString();

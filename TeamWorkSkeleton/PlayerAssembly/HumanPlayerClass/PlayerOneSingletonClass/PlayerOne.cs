@@ -1,5 +1,6 @@
 ﻿namespace PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass
 {
+    using System.Windows.Media;
     using HumanPlayerClass;
 
     public class PlayerOne : HumanPlayer
@@ -7,7 +8,7 @@
         private static PlayerOne _player;
 
         private PlayerOne(string name, string teamName) 
-            : base(name, teamName)
+            : base(name, teamName, Brushes.Blue)
         {
         }
 

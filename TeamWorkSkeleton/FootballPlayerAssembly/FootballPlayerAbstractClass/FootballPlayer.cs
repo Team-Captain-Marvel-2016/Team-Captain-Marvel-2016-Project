@@ -1,11 +1,10 @@
-﻿
-namespace FootballPlayerAssembly.FootballPlayerAbstractClass
+﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
     using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
     using GlobalDataStructures;
     using System.Text;
     using System.Windows.Shapes;
-    
+
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor
     /// TODO: Prop Validation
@@ -96,6 +95,5 @@ namespace FootballPlayerAssembly.FootballPlayerAbstractClass
             this.Planet = planetBuilder.ToString();
             this.Position = type.Replace(this.Planet, "");
         }
-
     }
 }

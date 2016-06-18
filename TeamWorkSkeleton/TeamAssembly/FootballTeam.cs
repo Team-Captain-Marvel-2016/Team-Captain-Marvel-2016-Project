@@ -1,4 +1,6 @@
-﻿namespace TeamAssembly
+﻿using System.Collections;
+
+namespace TeamAssembly
 {
     using CreateTeamMethods;
     using FootballPlayerAssembly.FootballPlayerAbstractClass;
@@ -7,7 +9,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public class FootballTeam
+    public class FootballTeam : IEnumerable<FootballPlayer>
     {
         private string _teamName;
         private List<FootballPlayer> _team;
@@ -90,5 +92,14 @@
                 .CreateARandomFootballTeam();
         }
 
+        public IEnumerator<FootballPlayer> GetEnumerator()
+        {
+            return ((IEnumerable<FootballPlayer>) this._team).GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+           return this.GetEnumerator();
+        }
     }
 }

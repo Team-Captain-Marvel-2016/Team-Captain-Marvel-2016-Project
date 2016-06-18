@@ -1,14 +1,12 @@
-﻿
-namespace PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass
+﻿namespace PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using HumanPlayerClass;
 
-    class PlayerOne : HumanPlayer
+    public class PlayerOne : HumanPlayer
     {
+        public PlayerOne(string name, string teamName) 
+            : base(name, teamName)
+        {
+        }
     }
 }

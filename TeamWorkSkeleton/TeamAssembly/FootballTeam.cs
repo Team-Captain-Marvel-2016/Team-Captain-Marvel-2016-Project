@@ -84,5 +84,11 @@
                 .CreateAFootballTeamByFormation(formation);
         }
 
+        public void CreateTeam()
+        {
+            this.Team = CreateFootballTeam
+                .CreateARandomFootballTeam();
+        }
+
     }
 }

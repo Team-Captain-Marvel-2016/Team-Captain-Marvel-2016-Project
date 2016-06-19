@@ -1,6 +1,7 @@
 ﻿namespace FootballPlayerAssembly.Interfaces
 {
-    public interface IPass
+    public interface IOrigin
     {
+        string Planet { get; }
     }
 }

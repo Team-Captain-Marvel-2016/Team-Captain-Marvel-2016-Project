@@ -1,18 +1,22 @@
 ﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
     using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
+    using GameLogicInterfacesAssembly;
     using GlobalDataStructures;
+    using Interfaces;
     using System.Text;
     using System.Windows.Shapes;
     using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
-    
+
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor
     /// TODO: Prop Validation
     /// TODO: Implement Interfaces
     /// </summary>
-
-    public abstract class FootballPlayer : IDrawOnCanvas
+    public abstract class FootballPlayer : IDrawOnCanvas,
+        IGameStateTrackable, IGameMechanics,
+        IOffenseStats, IDefenseStats,
+        IOrigin, IPosition
     {
         #region Constructors
         // Simple Constructor
@@ -60,10 +64,10 @@
         public int StatSave { get; protected set; }
         public int StatTackle { get; protected set; }
         public int StatInterception { get; protected set; }
-
+        // Game Mechanics
         public int AwarenessRange { get; protected set; }
         public int ActionPoints { get; protected set; }
-        
+
         public string Planet { get; private set; }
         public string Position { get; private set; }
 
@@ -76,7 +80,7 @@
         public bool IsSelected { get; set; }
 
         #endregion
-        
+
         private void GetPlanetAndPositionTypes()
         {
             this.VisualToken = new Ellipse() { Width = 15, Height = 15 };

@@ -1,9 +1,7 @@
-﻿using GameLogicAssembly;
-using GameLogicAssembly.GameStatesClasses;
-
-namespace StartUpWPF
+﻿namespace StartUpWPF
 {
     using GameLogicAssembly.GameControlsClasses;
+    using GameLogicAssembly.GameStatesClasses;
     using GameLogicAssembly.InitialGameStateClasses;
     using System;
     using System.Collections.Generic;
@@ -66,7 +64,7 @@ namespace StartUpWPF
             // Increment Turn.
             if (!NextTurn.IncrementTurn())
             {
-                GameOver.Initializa();
+                GameOver.ResetGameState();
             }
             
             NextTurn.ChangeGameState(PlayFieldCanvas);
@@ -119,6 +117,9 @@ namespace StartUpWPF
             AllButtons.Add(EndTurnButtons);
         }
 
+        /// <summary>
+        /// Display appropriate Button group.
+        /// </summary>
         private void DisplayControlButtons()
         {
             // Hide all 

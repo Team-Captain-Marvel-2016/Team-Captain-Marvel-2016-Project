@@ -56,10 +56,10 @@
     <Compile Include="FootballPlayerSettingsClasses\DefenderCreationConstants.cs" />
     <Compile Include="FootballPlayerSettingsClasses\GoalkeeperCreationConstants.cs" />
     <Compile Include="FootballPlayerSettingsClasses\MidfielderCreationConstants.cs" />
-    <Compile Include="Interfaces\IGoalkeeper.cs" />
-    <Compile Include="Interfaces\ITackle.cs" />
-    <Compile Include="Interfaces\IPass.cs" />
-    <Compile Include="Interfaces\IShoot.cs" />
+    <Compile Include="Interfaces\IDefenseStats.cs" />
+    <Compile Include="Interfaces\IOffenseStats.cs" />
+    <Compile Include="Interfaces\IOrigin.cs" />
+    <Compile Include="Interfaces\IPosition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanAttacker.cs" />
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanDefender.cs" />
@@ -79,6 +79,10 @@
     <Compile Include="SpeciesAbstractClasses\Martian.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GameLogicInterfacesAssembly\GameLogicInterfacesAssembly.csproj">
+      <Project>{f12292f9-fedb-410a-9566-d91a17823780}</Project>
+      <Name>GameLogicInterfacesAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>GlobalDataStructures</Name>

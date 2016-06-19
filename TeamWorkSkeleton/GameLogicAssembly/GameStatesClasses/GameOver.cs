@@ -8,7 +8,7 @@
 
     public static class GameOver
     {
-        public static void Initializa()
+        public static void ResetGameState()
         {
             // TODO:
         }

@@ -1,7 +1,8 @@
-﻿using GameLogicAssembly.InitialGameStateClasses;
-
+﻿
 namespace StartUpWPF
 {
+    using GameLogicAssembly.GameControlsClasses;
+    using GameLogicAssembly.InitialGameStateClasses;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -17,7 +18,6 @@ namespace StartUpWPF
     using System.Windows.Navigation;
     using System.Windows.Shapes;
     using UserInterfaceAssembly.UserControlsClasses;
-    using GameLogicAssembly.GameControlsClasses;
 
     /// <summary>
     /// App runs here.

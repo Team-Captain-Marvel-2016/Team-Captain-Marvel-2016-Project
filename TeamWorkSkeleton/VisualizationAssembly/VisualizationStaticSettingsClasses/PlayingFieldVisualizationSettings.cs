@@ -2,9 +2,9 @@
 {
     using GlobalDataStructures;
 
-    public static class PlayingFieldSettings
+    public static class PlayingFieldVisualizationSettings
     {
-        static PlayingFieldSettings()
+        static PlayingFieldVisualizationSettings()
         {
             Width = 640;
             HalfWidth = Width / 2;

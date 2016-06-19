@@ -1,10 +1,9 @@
-﻿using System.Windows.Media;
-using System.Windows.Shapes;
-
-namespace VisualizationAssembly.CanvasUtilsClasses
+﻿namespace VisualizationAssembly.CanvasUtilsClasses
 {
     using System;
     using System.Windows.Controls;
+    using System.Windows.Media;
+    using VisualizationStaticSettingsClasses;
     using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
 
     public static class CanvasChildrenUtilities
@@ -62,9 +61,11 @@ namespace VisualizationAssembly.CanvasUtilsClasses
                 throw new Exception("Child does not have a valid CanvasIndex");
             }
 
-            child.VisualToken.Width = 25;
-            child.VisualToken.Height = 25;
-
+            child.VisualToken.Width
+                = FootballPlayerVisualizationSettings.SelectedVisualTokenSize;
+            child.VisualToken.Height
+                = FootballPlayerVisualizationSettings.SelectedVisualTokenSize;
+                
             canvas.Children[child.CanvasChildIndex.Value] = child.VisualToken;
         }
 
@@ -75,9 +76,7 @@ namespace VisualizationAssembly.CanvasUtilsClasses
             {
                 throw new Exception("Child does not have a valid CanvasIndex");
             }
-
-            child.VisualToken.Width = 25;
-            child.VisualToken.Height = 25;
+            
             child.VisualToken.Fill = Brushes.DeepPink;
         }
 

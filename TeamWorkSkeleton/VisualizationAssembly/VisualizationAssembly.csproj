@@ -48,7 +48,8 @@
     <Compile Include="Enumerations\StartingFieldType.cs" />
     <Compile Include="InitPlayingFieldClasses\InitTeamVisualization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VisualizationStaticSettingsClasses\PlayingFieldSettings.cs" />
+    <Compile Include="VisualizationStaticSettingsClasses\FootballPlayerVisualizationSettings.cs" />
+    <Compile Include="VisualizationStaticSettingsClasses\PlayingFieldVisualizationSettings.cs" />
     <Compile Include="Visualizer.cs" />
   </ItemGroup>
   <ItemGroup>

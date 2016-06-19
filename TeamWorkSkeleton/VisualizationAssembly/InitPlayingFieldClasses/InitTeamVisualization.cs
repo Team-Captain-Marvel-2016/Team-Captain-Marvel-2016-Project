@@ -20,7 +20,7 @@
 
             if (field == StartingFieldType.Right)
             {
-                goalkeeperCol = PlayingFieldSettings.GridCols - 1;
+                goalkeeperCol = PlayingFieldVisualizationSettings.GridCols - 1;
                 defenderCol = goalkeeperCol - 2;
                 midfielderCol = defenderCol - 2;
                 attackerCol = midfielderCol - 2;
@@ -34,11 +34,11 @@
                     .GetFormationValues(team.Formation);
 
             // Goalkeeper Position.
-            var row = PlayingFieldSettings.GridRows / 2;
+            var row = PlayingFieldVisualizationSettings.GridRows / 2;
 
             team.Team[0].GridPosition = new PositionXY(row, goalkeeperCol);
             team.Team[0].FieldPosition =
-                PlayingFieldSettings.GridCoordinates[
+                PlayingFieldVisualizationSettings.GridCoordinates[
                     team.Team[0].GridPosition.X,
                     team.Team[0].GridPosition.Y];
 
@@ -59,7 +59,7 @@
 
         private static int GetIncrement(int numberOfPlayers)
         {
-            return PlayingFieldSettings.GridRows
+            return PlayingFieldVisualizationSettings.GridRows
                 / (numberOfPlayers + 1);
         }
 
@@ -74,7 +74,7 @@
             {
                 team.Team[i].GridPosition = new PositionXY(row, colConstant);
                 team.Team[i].FieldPosition =
-                    PlayingFieldSettings.GridCoordinates[
+                    PlayingFieldVisualizationSettings.GridCoordinates[
                         team.Team[i].GridPosition.X,
                         team.Team[i].GridPosition.Y];
 

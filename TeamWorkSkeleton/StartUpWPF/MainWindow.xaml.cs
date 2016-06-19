@@ -1,5 +1,4 @@
-﻿
-namespace StartUpWPF
+﻿namespace StartUpWPF
 {
     using GameLogicAssembly.GameControlsClasses;
     using GameLogicAssembly.InitialGameStateClasses;

@@ -5,10 +5,10 @@
         public static int GetButtonGroupToDisplay()
         {
             // 0 -> SelectionButtons;
-            // 1 -> MovementButtons;    0 
-            // 2 -> BallActionButtons;  1
-            // 3 -> NoBallButtons;      2
-            // 4 -> DefenseButtons;     3
+            // 1 -> MovementButtons;    
+            // 2 -> BallActionButtons;  
+            // 3 -> NoBallButtons;      
+            // 4 -> DefenseButtons;     
 
             if (GameStateTrackers.SelecterFootballPlayer.HasBall)
             {

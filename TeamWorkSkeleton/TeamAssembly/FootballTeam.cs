@@ -67,6 +67,8 @@
 
         public FormationType Formation { get; private set; }
 
+        public bool HasBall { get; set; }
+
         #endregion
 
         public void CreateTeam(FormationType formation)
@@ -90,12 +92,12 @@
         #region Interface Implementation
         public IEnumerator<FootballPlayer> GetEnumerator()
         {
-            return ((IEnumerable<FootballPlayer>) this.Team).GetEnumerator();
+            return ((IEnumerable<FootballPlayer>)this.Team).GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-           return this.GetEnumerator();
+            return this.GetEnumerator();
         }
         #endregion
     }

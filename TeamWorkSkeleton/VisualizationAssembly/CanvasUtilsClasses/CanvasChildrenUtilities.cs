@@ -1,4 +1,7 @@
-﻿namespace VisualizationAssembly.CanvasUtilsClasses
+﻿using System.Windows.Media;
+using System.Windows.Shapes;
+
+namespace VisualizationAssembly.CanvasUtilsClasses
 {
     using System;
     using System.Windows.Controls;
@@ -51,6 +54,34 @@
             canvas.Children[child.CanvasChildIndex.Value] = child.VisualToken;
         }
 
+        public static void MarkCurrentPlayer<T>(Canvas canvas, T child)
+            where T:IDrawOnCanvas
+        {
+            if (child.CanvasChildIndex == null)
+            {
+                throw new Exception("Child does not have a valid CanvasIndex");
+            }
+
+            child.VisualToken.Width = 25;
+            child.VisualToken.Height = 25;
+
+            canvas.Children[child.CanvasChildIndex.Value] = child.VisualToken;
+        }
+
+        public static void MarkPlayerWithBall<T>(Canvas canvas, T child)
+            where T : IDrawOnCanvas
+        {
+            if (child.CanvasChildIndex == null)
+            {
+                throw new Exception("Child does not have a valid CanvasIndex");
+            }
+
+            child.VisualToken.Width = 25;
+            child.VisualToken.Height = 25;
+            child.VisualToken.Fill = Brushes.DeepPink;
+        }
+
+        #region Private methods
         /// <summary>
         /// Update a child elements position in 
         /// relation to the canvas, based on the 
@@ -59,10 +90,12 @@
         /// <typeparam name="T"></typeparam>
         /// <param name="child"></param>
         private static void UpdateCanvasPositionCoordinates<T>(T child)
-            where T: IDrawOnCanvas
+            where T : IDrawOnCanvas
         {
             Canvas.SetTop(child.VisualToken, child.FieldPosition.X);
             Canvas.SetLeft(child.VisualToken, child.FieldPosition.Y);
         }
+
+        #endregion
     }
 }

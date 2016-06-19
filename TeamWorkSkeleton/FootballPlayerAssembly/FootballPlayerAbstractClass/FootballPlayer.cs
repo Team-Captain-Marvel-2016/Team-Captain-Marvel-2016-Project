@@ -5,6 +5,7 @@
     using System.Text;
     using System.Windows.Shapes;
     using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
+    
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor
     /// TODO: Prop Validation
@@ -70,6 +71,9 @@
         public PositionXY GridPosition { get; set; }
         public Ellipse VisualToken { get; set; }
         public int? CanvasChildIndex { get; set; }
+
+        public bool HasBall { get; set; }
+        public bool IsSelected { get; set; }
 
         #endregion
         

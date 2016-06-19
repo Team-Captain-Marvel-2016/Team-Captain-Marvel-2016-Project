@@ -1,4 +1,6 @@
-﻿namespace StartUpWPF
+﻿using GameLogicAssembly.InitialGameStateClasses;
+
+namespace StartUpWPF
 {
     using System;
     using System.Collections.Generic;
@@ -15,6 +17,7 @@
     using System.Windows.Navigation;
     using System.Windows.Shapes;
     using UserInterfaceAssembly.UserControlsClasses;
+    using GameLogicAssembly.GameControlsClasses;
 
     /// <summary>
     /// App runs here.
@@ -28,6 +31,7 @@
         internal List<Button> BallActionButtons;
         internal List<Button> NoBallButtons;
         internal List<Button> DefenseButtons;
+        internal List<Button> EndTurnButtons;
 
         public MainWindow()
         {
@@ -39,10 +43,24 @@
 
         private void StartBtn_Click(object sender, RoutedEventArgs e)
         {
+            // Hide The Start Button
             StartBtn.Visibility = Visibility.Collapsed;
 
-            _00_TestingClassesAssembly.WPFCanvasTestingClasses
-                .WpfCanvasInitialStateTesting.Test_01(PlayFieldCanvas);
+            // Initialize players and their teams.
+            InitialGameState.InitializePlayers();
+
+            // Display players on the Field.
+            InitialGameState.InitializeCanvas(PlayFieldCanvas);
+
+            // Prep first turn.
+            InitialGameState.InitializeFirstTurn(PlayFieldCanvas);
+
+            // Display the appropriate buttons.
+            var buttonGroup = FootballPlayerControls.GetButtonGroupToDisplay();
+
+            MovementButtons.DisplayButtons();
+            EndTurnButtons.DisplayButtons();
+            AllButtons[buttonGroup].DisplayButtons();
         }
 
         /// <summary>
@@ -50,7 +68,7 @@
         /// </summary>
         private void InitializeButtonLists()
         {
-            // Buttons: Prev, Next
+            //// Buttons: Prev, Next
             SelectionButtons = new List<Button>();
             SelectionButtons.Add(PrevPlayerBtn);
             SelectionButtons.Add(NextPlayerBtn);
@@ -75,12 +93,19 @@
             // Buttons: Tackle
             DefenseButtons = new List<Button>();
 
+            // Buttons: End Turn
+            EndTurnButtons = new List<Button>();
+            EndTurnButtons.Add(EndTurnBtn);
+
             // TODO: Add the remaining two lists
             // All Buttons
             AllButtons = new List<List<Button>>();
             AllButtons.Add(SelectionButtons);
             AllButtons.Add(MovementButtons);
             AllButtons.Add(BallActionButtons);
+            AllButtons.Add(NoBallButtons);
+            AllButtons.Add(DefenseButtons);
+            AllButtons.Add(EndTurnButtons);
         }
     }
 }

@@ -13,6 +13,7 @@
             this.Name = name;
             this.Color = color;
             this.Team = new FootballTeam(teamName);
+            this.CurrentPlayer = 5;
         }
         
         #region Properties
@@ -39,7 +40,19 @@
 
         public FootballTeam Team { get; }
 
+        public int CurrentPlayer { get; set; }
+
         #endregion
+
+        public void NextPlayer()
+        {
+            this.CurrentPlayer++;
+
+            if (this.CurrentPlayer > 5)
+            {
+                this.CurrentPlayer = 1;
+            }
+        }
 
         public void CreateTeam(string name)
         {

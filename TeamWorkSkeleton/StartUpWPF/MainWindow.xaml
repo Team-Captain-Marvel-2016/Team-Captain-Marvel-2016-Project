@@ -48,6 +48,9 @@
         <Button x:Name="ShootBtn" Content="Shoot" 
                 HorizontalAlignment="Left" Margin="10,310,0,0"
                 VerticalAlignment="Top" Width="60" Height="30"/>
+        <Button x:Name="EndTurnBtn" Content="End Turn" 
+                HorizontalAlignment="Left" Margin="10,10,0,0"
+                VerticalAlignment="Top" Width="60" Height="30"/>
 
 
     </Grid>

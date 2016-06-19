@@ -105,6 +105,18 @@
       <Project>{b16c83d1-7581-4624-8354-c15cc107bf01}</Project>
       <Name>00-TestingClassesAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GameLogicAssembly\GameLogicAssembly.csproj">
+      <Project>{8df2c670-9460-4f7e-b938-711fc77ed1ec}</Project>
+      <Name>GameLogicAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameLogicInterfacesAssembly\GameLogicInterfacesAssembly.csproj">
+      <Project>{f12292f9-fedb-410a-9566-d91a17823780}</Project>
+      <Name>GameLogicInterfacesAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserInterfaceAssembly\UserInterfaceAssembly.csproj">
+      <Project>{9d64b841-a428-451a-965d-cb3b0a23a955}</Project>
+      <Name>UserInterfaceAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

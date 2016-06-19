@@ -19,21 +19,21 @@
                 <ImageBrush ImageSource="imgs/footballpitch.png"></ImageBrush>
             </Canvas.Background>
         </Canvas>
-        <Button x:Name="StartBtn" Content="Init" 
-                HorizontalAlignment="Left" Margin="428,431,0,0"
-                VerticalAlignment="Top" Width="120" Height="40" 
-                FontSize="24"
+        <Button x:Name="StartBtn" Content="Start Game" 
+                HorizontalAlignment="Left" Margin="400,180,0,0"
+                VerticalAlignment="Top" Width="160" Height="40" 
+                FontSize="24" Background="PaleGreen" Foreground="ForestGreen"
                 Click="StartBtn_Click"/>
-        <Button x:Name="MoveUp" Content="Up"
+        <Button x:Name="MoveUpBtn" Content="Up"
                 HorizontalAlignment="Left" Margin="60,160,0,0"
                 VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button x:Name="MoveDown" Content="Down"
+        <Button x:Name="MoveDownBtn" Content="Down"
                 HorizontalAlignment="Left" Margin="60,260,0,0"
                 VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button x:Name="MoveLeft" Content="Left"
+        <Button x:Name="MoveLeftBtn" Content="Left"
                 HorizontalAlignment="Left" Margin="10,210,0,0"
                 VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button x:Name="MoveRight" Content="Right"
+        <Button x:Name="MoveRightBtn" Content="Right"
                 HorizontalAlignment="Left" Margin="110,210,0,0"
                 VerticalAlignment="Top" Width="40" Height="40"/>
         <Button x:Name="PrevPlayerBtn" Content="Prev" 

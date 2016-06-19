@@ -75,7 +75,7 @@
         
         private void GetPlanetAndPositionTypes()
         {
-            this.VisualToken = new Ellipse() { Width = 10, Height = 10 };
+            this.VisualToken = new Ellipse() { Width = 15, Height = 15 };
             this.GridPosition = new PositionXY();
             this.FieldPosition = new PositionXY();
 

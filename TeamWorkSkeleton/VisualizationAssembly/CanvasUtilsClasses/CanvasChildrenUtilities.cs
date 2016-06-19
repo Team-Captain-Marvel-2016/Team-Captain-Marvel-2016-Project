@@ -58,7 +58,7 @@
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="child"></param>
-        public static void UpdateCanvasPositionCoordinates<T>(T child)
+        private static void UpdateCanvasPositionCoordinates<T>(T child)
             where T: IDrawOnCanvas
         {
             Canvas.SetTop(child.VisualToken, child.FieldPosition.X);

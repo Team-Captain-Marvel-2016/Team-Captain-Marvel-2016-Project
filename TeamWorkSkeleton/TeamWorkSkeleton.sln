@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualizationInterfacesAsse
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-TestingClassesAssembly", "00-TestingClassesAssembly\00-TestingClassesAssembly.csproj", "{B16C83D1-7581-4624-8354-C15CC107BF01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogicAssembly", "GameLogicAssembly\GameLogicAssembly.csproj", "{8DF2C670-9460-4F7E-B938-711FC77ED1EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogicInterfacesAssembly", "GameLogicInterfacesAssembly\GameLogicInterfacesAssembly.csproj", "{F12292F9-FEDB-410A-9566-D91A17823780}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{B16C83D1-7581-4624-8354-C15CC107BF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B16C83D1-7581-4624-8354-C15CC107BF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B16C83D1-7581-4624-8354-C15CC107BF01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF2C670-9460-4F7E-B938-711FC77ED1EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF2C670-9460-4F7E-B938-711FC77ED1EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF2C670-9460-4F7E-B938-711FC77ED1EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF2C670-9460-4F7E-B938-711FC77ED1EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F12292F9-FEDB-410A-9566-D91A17823780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F12292F9-FEDB-410A-9566-D91A17823780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F12292F9-FEDB-410A-9566-D91A17823780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F12292F9-FEDB-410A-9566-D91A17823780}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

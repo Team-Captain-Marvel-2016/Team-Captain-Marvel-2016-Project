@@ -33,10 +33,10 @@
             GridCoordinates = new PositionXY[GridRows, GridCols];
 
             // Fill Col coordinates.
-            var fillX = Step / 2;
+            var fillX = 30;
             for (var row = 0; row < GridRows; row++)
             {
-                var fillY = Step / 2;
+                var fillY = 30;
 
                 for (var col = 0; col < GridCols; col++)
                 {

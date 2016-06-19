@@ -69,7 +69,7 @@
         public PositionXY FieldPosition { get; set; }
         public PositionXY GridPosition { get; set; }
         public Ellipse VisualToken { get; set; }
-        public int CanvasChildIndex { get; set; }
+        public int? CanvasChildIndex { get; set; }
 
         #endregion
         

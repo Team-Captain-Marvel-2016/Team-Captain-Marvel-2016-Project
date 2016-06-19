@@ -10,7 +10,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
         </Grid.ColumnDefinitions>
-        <Canvas Name="PlayField"
+        <Canvas Name="PlayFieldCanvas"
                 HorizontalAlignment="Left"
                 Height="400" Width="640"
                 Margin="160,0,0,0" 

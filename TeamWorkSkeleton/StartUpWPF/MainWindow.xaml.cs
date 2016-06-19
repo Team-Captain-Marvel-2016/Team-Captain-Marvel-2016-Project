@@ -25,6 +25,7 @@
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void StartBtn_Click(object sender, RoutedEventArgs e)

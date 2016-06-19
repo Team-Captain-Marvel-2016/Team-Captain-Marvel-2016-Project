@@ -70,6 +70,10 @@
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
       <Name>TeamAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="..\VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj">
+      <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
+      <Name>VisualizationInterfacesAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

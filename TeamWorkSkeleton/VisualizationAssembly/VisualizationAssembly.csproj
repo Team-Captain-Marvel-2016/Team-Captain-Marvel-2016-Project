@@ -30,16 +30,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CanvasUtilsClasses\CanvasUtilities.cs" />
     <Compile Include="Enumerations\StartingFieldType.cs" />
     <Compile Include="InitPlayingFieldClasses\InitTeamVisualization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,6 +63,10 @@
     <ProjectReference Include="..\TeamAssembly\TeamAssembly.csproj">
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
       <Name>TeamAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj">
+      <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
+      <Name>VisualizationInterfacesAssembly</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

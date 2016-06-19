@@ -5,14 +5,9 @@
 
     public abstract class HumanPlayer : PlayerCharacter
     {
-        protected HumanPlayer(string name, string teamName, SolidColorBrush color) 
+        protected HumanPlayer(string name, string teamName, SolidColorBrush color)
             : base(name, teamName, color)
         {
-        }
-
-        protected HumanPlayer()
-        {
-            
         }
     }
 }

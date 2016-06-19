@@ -8,6 +8,6 @@
         PositionXY FieldPosition { get; set; }
         PositionXY GridPosition { get; set; }
         Ellipse VisualToken { get; set; }
-        int CanvasChildIndex { get; set; }
+        int? CanvasChildIndex { get; set; }
     }
 }

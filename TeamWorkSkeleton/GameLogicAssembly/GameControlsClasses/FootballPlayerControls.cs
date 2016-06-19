@@ -10,7 +10,7 @@
             // 3 -> NoBallButtons;      
             // 4 -> DefenseButtons;     
 
-            if (GameStateTrackers.SelecterFootballPlayer.HasBall)
+            if (GameStateTrackers.SelectedFootballPlayer.HasBall)
             {
                 return 2;
             }

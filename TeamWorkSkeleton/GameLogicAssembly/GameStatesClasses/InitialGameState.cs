@@ -34,14 +34,14 @@
         {
             PlayerOne.Player.Team.Team[5].HasBall = true;
             PlayerOne.Player.Team.HasBall = true;
-            PlayerOne.Player.CurrentPlayer = 5;
             PlayerOne.Player.Team.Team[PlayerOne.Player.CurrentPlayer].IsSelected = true;
 
             CanvasChildrenUtilities.MarkCurrentPlayer(canvas, PlayerOne.Player.Team.Team[5]);
             CanvasChildrenUtilities.MarkPlayerWithBall(canvas, PlayerOne.Player.Team.Team[5]);
 
             GameStateTrackers.PlayerOnTurn = PlayerOne.Player;
-            GameStateTrackers.SelecterFootballPlayer = PlayerOne.Player.Team.Team[5];
+            GameStateTrackers.SelectedFootballPlayer = PlayerOne.Player.Team.Team[5];
+            GameStateTrackers.FootballPlayerWithBall = PlayerOne.Player.Team.Team[5];
         }
 
         private static void GetFootballPlayerPositions(PlayerCharacter playerCharacter, StartingFieldType field)

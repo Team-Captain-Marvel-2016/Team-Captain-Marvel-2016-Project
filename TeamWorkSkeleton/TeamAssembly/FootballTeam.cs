@@ -68,7 +68,7 @@
         public FormationType Formation { get; private set; }
 
         public bool HasBall { get; set; }
-
+        
         #endregion
 
         public void CreateTeam(FormationType formation)

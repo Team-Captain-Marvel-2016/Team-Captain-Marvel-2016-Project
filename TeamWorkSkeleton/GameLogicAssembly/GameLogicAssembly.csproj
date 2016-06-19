@@ -45,8 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameControlsClasses\FootballPlayerControls.cs" />
+    <Compile Include="GameStatesClasses\GameOver.cs" />
+    <Compile Include="GameStatesClasses\NextTurn.cs" />
     <Compile Include="GameStateTrackers.cs" />
-    <Compile Include="InitialGameStateClasses\InitialGameState.cs" />
+    <Compile Include="GameStatesClasses\InitialGameState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

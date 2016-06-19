@@ -1,4 +1,7 @@
-﻿namespace StartUpWPF
+﻿using GameLogicAssembly;
+using GameLogicAssembly.GameStatesClasses;
+
+namespace StartUpWPF
 {
     using GameLogicAssembly.GameControlsClasses;
     using GameLogicAssembly.InitialGameStateClasses;
@@ -55,11 +58,20 @@
             InitialGameState.InitializeFirstTurn(PlayFieldCanvas);
 
             // Display the appropriate buttons.
-            var buttonGroup = FootballPlayerControls.GetButtonGroupToDisplay();
+            DisplayControlButtons();
+        }
 
-            MovementButtons.DisplayButtons();
-            EndTurnButtons.DisplayButtons();
-            AllButtons[buttonGroup].DisplayButtons();
+        private void EndTurnBtn_Click(object sender, RoutedEventArgs e)
+        {
+            // Increment Turn.
+            if (!NextTurn.IncrementTurn())
+            {
+                GameOver.Initializa();
+            }
+            
+            NextTurn.ChangeGameState(PlayFieldCanvas);
+
+            DisplayControlButtons();
         }
 
         /// <summary>
@@ -81,8 +93,8 @@
 
             // Buttons: Pass, Shoot
             BallActionButtons = new List<Button>();
-            MovementButtons.Add(PassBtn);
-            MovementButtons.Add(ShootBtn);
+            BallActionButtons.Add(PassBtn);
+            BallActionButtons.Add(ShootBtn);
 
             // TODO: Create offense without ball button
             // TODO: Create defense tackle button
@@ -105,6 +117,20 @@
             AllButtons.Add(NoBallButtons);
             AllButtons.Add(DefenseButtons);
             AllButtons.Add(EndTurnButtons);
+        }
+
+        private void DisplayControlButtons()
+        {
+            // Hide all 
+            AllButtons.CollapseAll();
+
+            // Always display Movement and End Turn
+            MovementButtons.DisplayButtons();
+            EndTurnButtons.DisplayButtons();
+
+            // Pick Action Button group
+            var buttonGroup = FootballPlayerControls.GetButtonGroupToDisplay();
+            AllButtons[buttonGroup].DisplayButtons();
         }
     }
 }

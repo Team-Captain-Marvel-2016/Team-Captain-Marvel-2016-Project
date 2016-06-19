@@ -15,7 +15,7 @@
             this.Team = new FootballTeam(teamName);
             this.CurrentPlayer = 5;
         }
-        
+
         #region Properties
         public string Name
         {
@@ -36,11 +36,11 @@
             }
         }
 
-        protected SolidColorBrush Color { get; set; }
+        public SolidColorBrush Color { get; protected set; }
 
         public FootballTeam Team { get; }
 
-        public int CurrentPlayer { get; set; }
+        public int CurrentPlayer { get; protected set; }
 
         #endregion
 
@@ -57,14 +57,23 @@
         public void CreateTeam(string name)
         {
             this.Team.CreateTeam();
-            this.AssignTeamColor();
+            this.ResetVisualTokenColor();
         }
 
-        private void AssignTeamColor()
+        public void ResetVisualTokenColor()
         {
             foreach (var player in this.Team)
             {
                 player.VisualToken.Fill = this.Color;
+            }
+        }
+
+        public void ResetVisualTokenSize()
+        {
+            foreach (var player in this.Team)
+            {
+                player.VisualToken.Width = 15;
+                player.VisualToken.Height = 15;
             }
         }
     }

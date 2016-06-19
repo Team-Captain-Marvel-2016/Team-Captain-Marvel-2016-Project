@@ -79,6 +79,7 @@
             
             child.VisualToken.Fill = Brushes.DeepPink;
         }
+        
 
         #region Private methods
         /// <summary>

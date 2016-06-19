@@ -15,6 +15,10 @@
             this.Team = new FootballTeam(teamName);
         }
 
+        protected PlayerCharacter()
+        {
+        }
+
         #region Properties
         public string Name
         {

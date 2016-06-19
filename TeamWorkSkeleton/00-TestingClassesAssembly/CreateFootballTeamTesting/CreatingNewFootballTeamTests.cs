@@ -1,10 +1,9 @@
-﻿using VisualizationAssembly.Enumerations;
-using VisualizationAssembly.InitPlayingFieldClasses;
-
-namespace TestingAssembly.CreateFootballTeamTesting
+﻿namespace _00_TestingClassesAssembly.CreateFootballTeamTesting
 {
     using System;
     using TeamAssembly;
+    using VisualizationAssembly.Enumerations;
+    using VisualizationAssembly.InitPlayingFieldClasses;
 
     public static class CreatingNewFootballTeamTests
     {

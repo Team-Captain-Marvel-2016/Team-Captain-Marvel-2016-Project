@@ -4,14 +4,14 @@
     using GlobalDataStructures;
     using System.Text;
     using System.Windows.Shapes;
-
+    using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor
     /// TODO: Prop Validation
     /// TODO: Implement Interfaces
     /// </summary>
-    
-    public abstract class FootballPlayer
+
+    public abstract class FootballPlayer : IDrawOnCanvas
     {
         #region Constructors
         // Simple Constructor
@@ -62,15 +62,15 @@
 
         public int AwarenessRange { get; protected set; }
         public int ActionPoints { get; protected set; }
+        
+        public string Planet { get; private set; }
+        public string Position { get; private set; }
 
         public PositionXY FieldPosition { get; set; }
         public PositionXY GridPosition { get; set; }
-
-        public string Planet { get; private set; }
-
-        public string Position { get; private set; }
-
         public Ellipse VisualToken { get; set; }
+        public int CanvasChildIndex { get; set; }
+
         #endregion
         
         private void GetPlanetAndPositionTypes()

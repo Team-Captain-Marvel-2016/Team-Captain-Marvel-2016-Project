@@ -87,6 +87,10 @@
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
       <Name>RandomizersAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="..\VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj">
+      <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
+      <Name>VisualizationInterfacesAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

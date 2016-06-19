@@ -19,7 +19,11 @@
                 <ImageBrush ImageSource="imgs/footballpitch.png"></ImageBrush>
             </Canvas.Background>
         </Canvas>
-        <Button x:Name="StartBtn" Content="Button" HorizontalAlignment="Left" Margin="454,461,0,0" VerticalAlignment="Top" Width="75" Click="StartBtn_Click"/>
+        <Button x:Name="StartBtn" Content="Init" 
+                HorizontalAlignment="Left" Margin="428,431,0,0"
+                VerticalAlignment="Top" Width="120" Height="40" 
+                FontSize="24"
+                Click="StartBtn_Click"/>
         <Button x:Name="MoveUp" Content="Up"
                 HorizontalAlignment="Left" Margin="60,160,0,0"
                 VerticalAlignment="Top" Width="40" Height="40"/>

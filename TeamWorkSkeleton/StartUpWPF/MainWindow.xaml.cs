@@ -21,30 +21,16 @@
     /// </summary>
     public partial class MainWindow : Window
     {
-        static int startLeft = 40;
-        static int startTop = 40;
-
-        Ellipse shape = new Ellipse() { Width = 10, Height = 10, Fill = Brushes.Blue };
 
         public MainWindow()
         {
-            Canvas.SetTop(shape, startTop);
-            Canvas.SetLeft(shape, startLeft);
             InitializeComponent();
-            PlayField.Children.Add(shape);
-            // TODO: Run App here
         }
 
         private void StartBtn_Click(object sender, RoutedEventArgs e)
         {
-            startTop += 40;
-            startLeft += 40;
-
-
-            Canvas.SetTop(shape, startTop);
-            Canvas.SetLeft(shape, startLeft);
-
-            PlayField.Children[0] = shape;
+            _00_TestingClassesAssembly.WPFCanvasTestingClasses
+                .WpfCanvasInitialStateTesting.Test_01();
         }
     }
 }

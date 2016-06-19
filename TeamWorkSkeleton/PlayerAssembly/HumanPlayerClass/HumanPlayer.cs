@@ -9,5 +9,10 @@
             : base(name, teamName, color)
         {
         }
+
+        protected HumanPlayer()
+        {
+            
+        }
     }
 }

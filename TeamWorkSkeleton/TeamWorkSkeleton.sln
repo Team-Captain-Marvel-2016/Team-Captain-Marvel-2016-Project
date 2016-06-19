@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUpConsole", "StartUp\StartUpConsole.csproj", "{550074DF-0E40-4120-A3F5-A93D8CEED41F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingFIeldAssembly", "PlayingFIeldAssembly\PlayingFIeldAssembly.csproj", "{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterfaceAssembly", "UserInterfaceAssembly\UserInterfaceAssembly.csproj", "{9D64B841-A428-451A-965D-CB3B0A23A955}"
@@ -27,16 +25,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomizersAssembly", "Rand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUpWPF", "StartUpWPF\StartUpWPF.csproj", "{D87748FF-3ED5-4335-996D-D12E4266E5CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualizationInterfacesAssembly", "VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj", "{7CB39159-6ECB-4B4C-925C-95D2197FD979}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-TestingClassesAssembly", "00-TestingClassesAssembly\00-TestingClassesAssembly.csproj", "{B16C83D1-7581-4624-8354-C15CC107BF01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{550074DF-0E40-4120-A3F5-A93D8CEED41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{550074DF-0E40-4120-A3F5-A93D8CEED41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{550074DF-0E40-4120-A3F5-A93D8CEED41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{550074DF-0E40-4120-A3F5-A93D8CEED41F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,6 +79,14 @@ Global
 		{D87748FF-3ED5-4335-996D-D12E4266E5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D87748FF-3ED5-4335-996D-D12E4266E5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D87748FF-3ED5-4335-996D-D12E4266E5CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB39159-6ECB-4B4C-925C-95D2197FD979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB39159-6ECB-4B4C-925C-95D2197FD979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB39159-6ECB-4B4C-925C-95D2197FD979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB39159-6ECB-4B4C-925C-95D2197FD979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B16C83D1-7581-4624-8354-C15CC107BF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16C83D1-7581-4624-8354-C15CC107BF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16C83D1-7581-4624-8354-C15CC107BF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16C83D1-7581-4624-8354-C15CC107BF01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4F8A4675-A147-4BB2-9D4B-43FAAE716FC1}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{B16C83D1-7581-4624-8354-C15CC107BF01}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestingAssembly</RootNamespace>
-    <AssemblyName>TestingAssembly</AssemblyName>
+    <RootNamespace>_00_TestingClassesAssembly</RootNamespace>
+    <AssemblyName>00-TestingClassesAssembly</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,31 +40,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestsStartup.cs" />
+    <Compile Include="CreateFootballTeamTesting\CreatingNewFootballTeamTests.cs" />
+    <Compile Include="FootballPlayerFactoryTesting\FootballPlayerFactoryInitialTesting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WPFCanvasTestingClasses\WPFCanvasInitialStateTesting.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\00-TestingClassesAssembly\00-TestingClassesAssembly.csproj">
-      <Project>{b16c83d1-7581-4624-8354-c15cc107bf01}</Project>
-      <Name>00-TestingClassesAssembly</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
       <Name>FootballPlayerAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
+      <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
+      <Name>GlobalDataStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayerAssembly\PlayerAssembly.csproj">
+      <Project>{a1c3ce0f-4a2f-44e3-beb6-8c2860edd7ee}</Project>
+      <Name>PlayerAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RandomizersAssembly\RandomizersAssembly.csproj">
+      <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
+      <Name>RandomizersAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TeamAssembly\TeamAssembly.csproj">
-      <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
+      <Project>{C432A3DC-CBBD-4B15-893D-6EECFFA9E9FB}</Project>
       <Name>TeamAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\VisualizationAssembly\VisualizationAssembly.csproj">
-      <Project>{c7ddcbc7-728a-4bea-9d74-bb73afbc7a2d}</Project>
+      <Project>{C7DDCBC7-728A-4BEA-9D74-BB73AFBC7A2D}</Project>
       <Name>VisualizationAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj">
-      <Project>{7CB39159-6ECB-4B4C-925C-95D2197FD979}</Project>
+      <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
       <Name>VisualizationInterfacesAssembly</Name>
     </ProjectReference>
   </ItemGroup>

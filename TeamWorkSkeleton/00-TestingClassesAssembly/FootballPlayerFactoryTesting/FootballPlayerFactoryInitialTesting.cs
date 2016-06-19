@@ -1,4 +1,4 @@
-﻿namespace TestingAssembly.FootballPlayerFactoryTesting
+﻿namespace _00_TestingClassesAssembly.FootballPlayerFactoryTesting
 {
     using FootballPlayerAssembly.FootballPlayerFactoryClasses;
 

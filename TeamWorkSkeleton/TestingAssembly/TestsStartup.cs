@@ -1,7 +1,7 @@
-﻿
-namespace TestingAssembly
+﻿namespace TestingAssembly
 {
-    using CreateFootballTeamTesting;
+    using _00_TestingClassesAssembly.CreateFootballTeamTesting;
+    using _00_TestingClassesAssembly.FootballPlayerFactoryTesting;
     using System;
 
     internal class TestsStartup
@@ -9,9 +9,9 @@ namespace TestingAssembly
         [STAThread]
         private static void Main()
         {
-            //FootballPlayerFactoryTesting.FootballPlayerFactoryInitialTesting.Test_01();
-            CreatingNewFootballTeamTests.Test_01();
+            //FootballPlayerFactoryInitialTesting.Test_01();
+            //CreatingNewFootballTeamTests.Test_01();
         }
     }
-    
+
 }

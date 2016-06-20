@@ -1,21 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StartUpWPF
+﻿namespace StartUpWPF
 {
+    using PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass;
+    using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
+    using System;
+    using UserInterfaceAssembly.UserControlsClasses;
+
     public partial class MainWindow
     {
         private void SubscribeToFootballPlayerEvents()
         {
-            
+            foreach (var footballPlayer in PlayerOne.Player.Team.Team)
+            {
+                footballPlayer.ZeroActionPoints += OnZeroActionPoints;
+            }
+
+            foreach (var footballPlayer in PlayerTwo.Player.Team.Team)
+            {
+                footballPlayer.ZeroActionPoints += OnZeroActionPoints;
+            }
         }
 
         private void OnZeroActionPoints(object sender, EventArgs args)
         {
-
+            AllButtons.DisableAll();
+            EndTurnButtons.EnableButtons();
         }
     }
 }

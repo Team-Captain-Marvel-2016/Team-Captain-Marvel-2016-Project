@@ -1,16 +1,17 @@
-﻿using PlayingFIeldAssembly;
-
-namespace GameLogicAssembly
+﻿namespace GameStateTrackerAssembly
 {
+    using System.Drawing;
     using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using PlayerAssembly.AbstractPlayerClass;
-    using System.Windows.Media;
+    using PlayingFIeldAssembly;
+    using VisualizationAssembly.VisualizationStaticSettingsClasses;
 
-    public static class GameStateTrackers
+    public static class GameStateTracker
     {
-        static GameStateTrackers()
+        static GameStateTracker()
         {
             GameLengthTurns = 20;
+            InitBoolGrid();
         }
         
         public static int GameLengthTurns { get; private set; }
@@ -23,6 +24,13 @@ namespace GameLogicAssembly
         public static FootballPlayer FootballPlayerWithBall { get; set; }
         public static Brushes OldFootballPlayerColor { get; set; }
 
-        public static PlayingField PlayingField { get; set; }
+        public static PlayingField HasPlayerAtPosition { get; set; }
+
+        private static void InitBoolGrid()
+        {
+            var rows = PlayingFieldVisualizationSettings.GridRows;
+            var cols = PlayingFieldVisualizationSettings.GridCols;
+            HasPlayerAtPosition = new PlayingField(rows, cols);
+        }
     }
 }

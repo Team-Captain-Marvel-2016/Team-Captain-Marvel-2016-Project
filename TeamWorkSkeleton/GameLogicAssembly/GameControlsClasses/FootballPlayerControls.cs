@@ -1,5 +1,7 @@
 ﻿namespace GameLogicAssembly.GameControlsClasses
 {
+    using GameStateTrackerAssembly;
+
     public static class FootballPlayerControls
     {
         /// <summary>
@@ -20,11 +22,11 @@
             const int noBallButtons = 3;
             const int defenseButtons = 4;
 
-            if (GameStateTrackers.SelectedFootballPlayer.HasBall)
+            if (GameStateTracker.SelectedFootballPlayer.HasBall)
             {
                 return ballActionButtons;
             }
-            else if (GameStateTrackers.PlayerOnTurn.Team.HasBall)
+            else if (GameStateTracker.PlayerOnTurn.Team.HasBall)
             {
                 return noBallButtons;
             }

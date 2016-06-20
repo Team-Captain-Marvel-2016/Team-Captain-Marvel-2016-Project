@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8DF2C670-9460-4F7E-B938-711FC77ED1EC}</ProjectGuid>
+    <ProjectGuid>{D36CE9EA-4307-4D40-951A-054299F9B09B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GameLogicAssembly</RootNamespace>
-    <AssemblyName>GameLogicAssembly</AssemblyName>
+    <RootNamespace>GameStateTrackerAssembly</RootNamespace>
+    <AssemblyName>GameStateTrackerAssembly</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,56 +30,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xaml" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameControlsClasses\FootballPlayerControls.cs" />
-    <Compile Include="GameStatesClasses\GameOver.cs" />
-    <Compile Include="GameStatesClasses\NextTurn.cs" />
-    <Compile Include="GameStatesClasses\ResetGame.cs" />
     <Compile Include="GameStateTrackers.cs" />
-    <Compile Include="GameStatesClasses\InitialGameState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GameActionsClasses\" />
-    <Folder Include="GameSettingsConstantsClass\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
-      <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
+      <Project>{D46F609D-BBA1-47DF-AEA0-DA4479FCB741}</Project>
       <Name>FootballPlayerAssembly</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GameLogicEventsAssembly\GameLogicEventsAssembly.csproj">
-      <Project>{a2430f2b-79f1-461e-a64a-60a1d9e4f5f7}</Project>
-      <Name>GameLogicEventsAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\GameLogicInterfacesAssembly\GameLogicInterfacesAssembly.csproj">
       <Project>{f12292f9-fedb-410a-9566-d91a17823780}</Project>
       <Name>GameLogicInterfacesAssembly</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GameStateTrackerAssembly\GameStateTrackerAssembly.csproj">
-      <Project>{d36ce9ea-4307-4d40-951a-054299f9b09b}</Project>
-      <Name>GameStateTrackerAssembly</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>GlobalDataStructures</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GlobalExceptionAssembly\GlobalExceptionAssembly.csproj">
-      <Project>{a0403c5c-4b70-4cb0-88c8-5cd7396a7f86}</Project>
-      <Name>GlobalExceptionAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\PlayerAssembly\PlayerAssembly.csproj">
       <Project>{a1c3ce0f-4a2f-44e3-beb6-8c2860edd7ee}</Project>
@@ -93,12 +69,8 @@
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
       <Name>RandomizersAssembly</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TeamAssembly\TeamAssembly.csproj">
-      <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
-      <Name>TeamAssembly</Name>
-    </ProjectReference>
     <ProjectReference Include="..\VisualizationAssembly\VisualizationAssembly.csproj">
-      <Project>{c7ddcbc7-728a-4bea-9d74-bb73afbc7a2d}</Project>
+      <Project>{C7DDCBC7-728A-4BEA-9D74-BB73AFBC7A2D}</Project>
       <Name>VisualizationAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj">

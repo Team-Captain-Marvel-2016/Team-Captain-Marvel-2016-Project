@@ -5,17 +5,18 @@
     using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
     using System.Windows.Controls;
     using VisualizationAssembly.CanvasUtilsClasses;
+    using GameStateTrackerAssembly;
 
     public static class NextTurn
     {
         public static bool IncrementTurn()
         {
-            if (GameStateTrackers.TurnNumber == GameStateTrackers.GameLengthTurns)
+            if (GameStateTracker.TurnNumber == GameStateTracker.GameLengthTurns)
             {
                 return false;
             }
 
-            GameStateTrackers.TurnNumber++;
+            GameStateTracker.TurnNumber++;
 
             return true;
         }
@@ -23,24 +24,24 @@
         public static void ChangeGameState(Canvas canvas)
         {
             // Reset marked FootballPlayer and Increment PC current player.
-            GameStateTrackers.PlayerOnTurn.ResetVisualTokenSize();
-            GameStateTrackers.PlayerOnTurn.NextPlayer();
+            GameStateTracker.PlayerOnTurn.ResetVisualTokenSize();
+            GameStateTracker.PlayerOnTurn.NextPlayer();
 
             // GetNext PlayerCharacter
-            GameStateTrackers.PlayerOnTurn = GetNextPlayer();
+            GameStateTracker.PlayerOnTurn = GetNextPlayer();
 
             // GetNext Football Player
-            GameStateTrackers.SelectedFootballPlayer =
-                GameStateTrackers.PlayerOnTurn.Team.Team[
-                    GameStateTrackers.PlayerOnTurn.CurrentPlayer];
+            GameStateTracker.SelectedFootballPlayer =
+                GameStateTracker.PlayerOnTurn.Team.Team[
+                    GameStateTracker.PlayerOnTurn.CurrentPlayer];
 
             CanvasChildrenUtilities.MarkCurrentPlayer
-                (canvas, GameStateTrackers.SelectedFootballPlayer);
+                (canvas, GameStateTracker.SelectedFootballPlayer);
         }
 
         private static PlayerCharacter GetNextPlayer()
         {
-            return GameStateTrackers.PlayerOnTurn.GetType() == PlayerOne.Player.GetType() ?
+            return GameStateTracker.PlayerOnTurn.GetType() == PlayerOne.Player.GetType() ?
                    (PlayerCharacter)PlayerTwo.Player : (PlayerCharacter)PlayerOne.Player;
         }
     }

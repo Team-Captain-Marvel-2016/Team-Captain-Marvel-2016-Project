@@ -40,9 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICallForPass.cs" />
     <Compile Include="IControlMovement.cs" />
     <Compile Include="IGameMechanics.cs" />
     <Compile Include="IGameStateTrackable.cs" />
+    <Compile Include="IPass.cs" />
+    <Compile Include="IShoot.cs" />
+    <Compile Include="ITackle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

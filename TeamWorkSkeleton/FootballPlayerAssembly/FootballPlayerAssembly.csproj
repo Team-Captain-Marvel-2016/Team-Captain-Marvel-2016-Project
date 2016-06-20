@@ -48,7 +48,11 @@
     <Compile Include="Enumerations\PositionType.cs" />
     <Compile Include="Enumerations\SpeciesType.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayer.cs" />
+    <Compile Include="FootballPlayerAbstractClass\FootballPlayerCallForPassImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerMovementMethods.cs" />
+    <Compile Include="FootballPlayerAbstractClass\FootballPlayerPassImplementation.cs" />
+    <Compile Include="FootballPlayerAbstractClass\FootballPlayerShootImplementation.cs" />
+    <Compile Include="FootballPlayerAbstractClass\FootballPlayerTackleImplementation.cs" />
     <Compile Include="FootballPlayerFactoryClasses\FootballPlayerFactory.cs" />
     <Compile Include="FootballPlayerFactoryClasses\GenericFootballPlayerClasses\CreateGenericFootballPlayer.cs" />
     <Compile Include="FootballPlayerFactoryClasses\GenericFootballPlayerClasses\GenericFootballPlayer.cs" />

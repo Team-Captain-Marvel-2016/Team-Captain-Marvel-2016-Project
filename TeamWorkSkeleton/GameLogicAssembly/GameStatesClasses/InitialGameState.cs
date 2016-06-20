@@ -7,6 +7,7 @@
     using VisualizationAssembly.CanvasUtilsClasses;
     using VisualizationAssembly.Enumerations;
     using VisualizationAssembly.InitPlayingFieldClasses;
+    using GameStateTrackerAssembly;
 
     public static class InitialGameState
     {
@@ -39,9 +40,12 @@
             CanvasChildrenUtilities.MarkCurrentPlayer(canvas, PlayerOne.Player.Team.Team[5]);
             CanvasChildrenUtilities.MarkPlayerWithBall(canvas, PlayerOne.Player.Team.Team[5]);
 
-            GameStateTrackers.PlayerOnTurn = PlayerOne.Player;
-            GameStateTrackers.SelectedFootballPlayer = PlayerOne.Player.Team.Team[5];
-            GameStateTrackers.FootballPlayerWithBall = PlayerOne.Player.Team.Team[5];
+            GameStateTracker.PlayerOnTurn = PlayerOne.Player;
+            GameStateTracker.SelectedFootballPlayer = PlayerOne.Player.Team.Team[5];
+            GameStateTracker.FootballPlayerWithBall = PlayerOne.Player.Team.Team[5];
+
+            GameStateTracker.HasPlayerAtPosition.UnMarkAllPlayersFromTeam(PlayerOne.Player.Team);
+            GameStateTracker.HasPlayerAtPosition.UnMarkAllPlayersFromTeam(PlayerTwo.Player.Team);
         }
 
         private static void GetFootballPlayerPositions(PlayerCharacter playerCharacter, StartingFieldType field)

@@ -11,7 +11,6 @@
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor
     /// TODO: Prop Validation
-    /// TODO: Implement Interfaces
     /// </summary>
     public abstract partial class FootballPlayer : IDrawOnCanvas,
         IGameStateTrackable, IGameMechanics,

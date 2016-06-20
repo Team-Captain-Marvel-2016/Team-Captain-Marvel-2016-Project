@@ -1,4 +1,4 @@
-﻿namespace FootballPlayerAssembly.RolesClasses.NeptunianFootballPlayer
+﻿namespace FootballPlayerAssembly.RolesClasses.VenusianFootballPlayer
 {
     using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
     using SpeciesAbstractClasses;

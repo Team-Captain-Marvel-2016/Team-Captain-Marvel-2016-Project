@@ -13,7 +13,7 @@
     /// TODO: Prop Validation
     /// TODO: Implement Interfaces
     /// </summary>
-    public abstract class FootballPlayer : IDrawOnCanvas,
+    public abstract partial class FootballPlayer : IDrawOnCanvas,
         IGameStateTrackable, IGameMechanics,
         IOffenseStats, IDefenseStats,
         IOrigin, IPosition

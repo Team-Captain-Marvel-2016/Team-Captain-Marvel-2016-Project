@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IControlMovement.cs" />
     <Compile Include="IGameMechanics.cs" />
     <Compile Include="IGameStateTrackable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

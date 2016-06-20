@@ -69,7 +69,12 @@
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianDefender.cs" />
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianGoalkeeper.cs" />
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianMidfielder.cs" />
+    <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianAttacker.cs" />
+    <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianDefender.cs" />
+    <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianGoalkeeper.cs" />
+    <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianMidfielder.cs" />
     <Compile Include="SpeciesAbstractClasses\Neptunian.cs" />
+    <Compile Include="SpeciesAbstractClasses\Venusian.cs" />
     <Compile Include="SpeciesNameGenerators\NeptuneNameGenerator.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianAttacker.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianDefender.cs" />

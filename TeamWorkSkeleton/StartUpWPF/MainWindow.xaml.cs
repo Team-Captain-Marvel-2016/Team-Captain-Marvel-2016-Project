@@ -98,9 +98,11 @@
             // TODO: Create defense tackle button
             // Button: Call For Pass
             NoBallButtons = new List<Button>();
+            NoBallButtons.Add(CallForPassBtn);
 
             // Buttons: Tackle
             DefenseButtons = new List<Button>();
+            DefenseButtons.Add(TackleBtn);
 
             // Buttons: End Turn
             EndTurnButtons = new List<Button>();

@@ -75,6 +75,7 @@
             DisplayControlButtons();
 
             // Subscribe to all FootballPlayer's events.
+            SubscribeToFootballPlayerEvents();
         }
 
         /// <summary>
@@ -115,7 +116,5 @@
             AllButtons.CollapseAll();
             StartBtn.Visibility = Visibility.Visible;
         }
-
-        
     }
 }

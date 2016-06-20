@@ -14,7 +14,7 @@
         /// <param name="baseStats"> 
         /// set of stats wrapped in a GenericFootballPlayer object 
         /// </param>
-        /// <returns>new Neptunian(Position) object</returns>
+        /// <returns>new Venusian(Position) object</returns>
         private static FootballPlayer CreateVenusianAttacker
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {

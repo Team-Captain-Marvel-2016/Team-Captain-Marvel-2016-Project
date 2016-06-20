@@ -1,5 +1,4 @@
-﻿
-namespace PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass
+﻿namespace PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass
 {
     using AbstractPlayerClass;
     using GameLogicEventsAssembly;
@@ -38,6 +37,7 @@ namespace PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass
             }
         }
 
+        // Event handler.
         private static void OnResetGameEvent(object sender, EventArgs args)
         {
             _player = null;

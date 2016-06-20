@@ -21,8 +21,7 @@
         {
             ResetGameState.ResetGameEvent += OnResetGameEvent;
         }
-
-        // ReSharper disable once ConvertToAutoPropertyWithPrivateSetter
+        
         public static PlayerTwo Player => _player;
 
         public static void CreatePlayerTwo(string name, string teamName)
@@ -37,6 +36,7 @@
             }
         }
 
+        // Event handler.
         private static void OnResetGameEvent(object sender, EventArgs args)
         {
             _player = null;

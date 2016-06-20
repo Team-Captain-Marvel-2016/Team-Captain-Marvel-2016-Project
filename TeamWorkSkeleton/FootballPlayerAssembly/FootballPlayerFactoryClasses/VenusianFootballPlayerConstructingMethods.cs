@@ -19,7 +19,7 @@
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
            var newPlayerName = GetVenusianName();
-            var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new RolesClasses.VenusianFootballPlayer.FootballPlayerFactory
                 .VenusianAttacker(baseStats);
             return newPlayer;
         }
@@ -28,7 +28,7 @@
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetVenusianName();
-            var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new RolesClasses.VenusianFootballPlayer.FootballPlayerFactory
                 .VenusianDefender(baseStats);
             return newPlayer;
         }
@@ -37,7 +37,7 @@
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetVenusianName();
-            var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new RolesClasses.VenusianFootballPlayer.FootballPlayerFactory
                 .VenusianMidfielder(baseStats);
             return newPlayer;
         }
@@ -46,7 +46,7 @@
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetVenusianName();
-            var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new RolesClasses.VenusianFootballPlayer.FootballPlayerFactory
                 .VenusianGoalkeeper(baseStats);
             return newPlayer;
         }

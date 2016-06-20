@@ -1,4 +1,8 @@
-﻿namespace StartUpWPF
+﻿using GameStateTrackerAssembly;
+using PlayingFieldMethodsAssembly;
+using VisualizationAssembly.CanvasUtilsClasses;
+
+namespace StartUpWPF
 {
     using GameLogicAssembly.GameControlsClasses;
     using GameLogicAssembly.GameStatesClasses;
@@ -111,6 +115,113 @@
             StartBtn.Visibility = Visibility.Visible;
         }
 
+        private void MoveUpBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            // Move Player On the Grid
+            try
+            {
+                PlayingFieldMethods.UnMarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
+                GameStateTracker.SelectedFootballPlayer.MoveUp();
+
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+            }
+            catch (Exception)
+            {
+                // TODO: Communicate Position was not free
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
+                return;
+            }
+
+            // Update Canvas Position
+            CanvasChildrenUtilities
+                .UpdateCanvasPosition(PlayFieldCanvas, GameStateTracker.SelectedFootballPlayer);
+        }
+
+        private void MoveDownBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            // Move Player On the Grid
+            try
+            {
+                PlayingFieldMethods.UnMarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
+                GameStateTracker.SelectedFootballPlayer.MoveDown();
+
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+            }
+            catch (Exception)
+            {
+                // TODO: Communicate Position was not free
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
+                return;
+            }
+
+            // Update Canvas Position
+            CanvasChildrenUtilities
+                .UpdateCanvasPosition(PlayFieldCanvas, GameStateTracker.SelectedFootballPlayer);
+        }
+
+        private void MoveLeftBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            // Move Player On the Grid
+            try
+            {
+                PlayingFieldMethods.UnMarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
+                GameStateTracker.SelectedFootballPlayer.MoveLeft();
+
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+            }
+            catch (Exception)
+            {
+                // TODO: Communicate Position was not free
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
+                return;
+            }
+
+            // Update Canvas Position
+            CanvasChildrenUtilities
+                .UpdateCanvasPosition(PlayFieldCanvas, GameStateTracker.SelectedFootballPlayer);
+        }
+
+        private void MoveRightBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            // Move Player On the Grid
+            try
+            {
+                PlayingFieldMethods.UnMarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
+                GameStateTracker.SelectedFootballPlayer.MoveRight();
+
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+            }
+            catch (Exception)
+            {
+                // TODO: Communicate Position was not free
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
+                return;
+            }
+
+            // Update Canvas Position
+            CanvasChildrenUtilities
+                .UpdateCanvasPosition(PlayFieldCanvas, GameStateTracker.SelectedFootballPlayer);
+        }
 
         /// <summary>
         /// Group buttons in groups for ease of access.
@@ -179,7 +290,5 @@
             var buttonGroup = FootballPlayerControls.GetButtonGroupToDisplay();
             AllButtons[buttonGroup].EnableButtons();
         }
-
-
     }
 }

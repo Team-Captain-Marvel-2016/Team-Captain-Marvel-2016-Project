@@ -26,16 +26,16 @@
                 Click="StartBtn_Click"/>
         <Button x:Name="MoveUpBtn" Content="Up"
                 HorizontalAlignment="Left" Margin="60,190,0,0"
-                VerticalAlignment="Top" Width="40" Height="40"/>
+                VerticalAlignment="Top" Width="40" Height="40" Click="MoveUpBtn_OnClick"/>
         <Button x:Name="MoveDownBtn" Content="Down"
                 HorizontalAlignment="Left" Margin="60,270,0,0"
-                VerticalAlignment="Top" Width="40" Height="40"/>
+                VerticalAlignment="Top" Width="40" Height="40" Click="MoveDownBtn_OnClick"/>
         <Button x:Name="MoveLeftBtn" Content="Left"
                 HorizontalAlignment="Left" Margin="20,230,0,0"
-                VerticalAlignment="Top" Width="40" Height="40"/>
+                VerticalAlignment="Top" Width="40" Height="40" Click="MoveLeftBtn_OnClick"/>
         <Button x:Name="MoveRightBtn" Content="Right"
                 HorizontalAlignment="Left" Margin="100,230,0,0"
-                VerticalAlignment="Top" Width="40" Height="40"/>
+                VerticalAlignment="Top" Width="40" Height="40" Click="MoveRightBtn_OnClick"/>
         <!--<Button x:Name="PrevPlayerBtn" Content="Prev" 
                 HorizontalAlignment="Left" Margin="10,120,0,0"
                 VerticalAlignment="Top" Width="60" Height="30"/>

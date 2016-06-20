@@ -64,7 +64,7 @@ namespace PlayingFieldMethodsAssembly
             MarkAllPlayersFromTeam(PlayerTwo.Player.Team);
         }
 
-        private static void GetPlayerXY(FootballPlayer player, out int x, out int y)
+        public static void GetPlayerXY(FootballPlayer player, out int x, out int y)
         {
             x = player.GridPosition.X;
             y = player.GridPosition.Y;

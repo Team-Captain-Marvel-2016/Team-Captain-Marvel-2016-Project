@@ -125,6 +125,10 @@
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>GlobalDataStructures</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PlayingFieldMethodsAssembly\PlayingFieldMethodsAssembly.csproj">
+      <Project>{8b0cd4dc-1798-4c44-8846-45d13e8c3610}</Project>
+      <Name>PlayingFieldMethodsAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TeamAssembly\TeamAssembly.csproj">
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
       <Name>TeamAssembly</Name>

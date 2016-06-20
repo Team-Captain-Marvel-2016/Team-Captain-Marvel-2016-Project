@@ -1,4 +1,5 @@
 ﻿using GameStateTrackerAssembly;
+using PlayingFieldMethodsAssembly;
 using VisualizationAssembly.CanvasUtilsClasses;
 
 namespace StartUpWPF
@@ -119,11 +120,20 @@ namespace StartUpWPF
             // Move Player On the Grid
             try
             {
+                PlayingFieldMethods.UnMarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
                 GameStateTracker.SelectedFootballPlayer.MoveUp();
+
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
             }
             catch (Exception)
             {
                 // TODO: Communicate Position was not free
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
                 return;
             }
 
@@ -137,11 +147,20 @@ namespace StartUpWPF
             // Move Player On the Grid
             try
             {
+                PlayingFieldMethods.UnMarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
                 GameStateTracker.SelectedFootballPlayer.MoveDown();
+
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
             }
             catch (Exception)
             {
                 // TODO: Communicate Position was not free
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
                 return;
             }
 
@@ -155,11 +174,20 @@ namespace StartUpWPF
             // Move Player On the Grid
             try
             {
+                PlayingFieldMethods.UnMarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
                 GameStateTracker.SelectedFootballPlayer.MoveLeft();
+
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
             }
             catch (Exception)
             {
                 // TODO: Communicate Position was not free
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
                 return;
             }
 
@@ -173,11 +201,20 @@ namespace StartUpWPF
             // Move Player On the Grid
             try
             {
+                PlayingFieldMethods.UnMarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
                 GameStateTracker.SelectedFootballPlayer.MoveRight();
+
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
             }
             catch (Exception)
             {
                 // TODO: Communicate Position was not free
+                PlayingFieldMethods.MarkPlayerPosition
+                    (GameStateTracker.SelectedFootballPlayer);
+
                 return;
             }
 

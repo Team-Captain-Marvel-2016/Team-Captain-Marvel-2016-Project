@@ -10,7 +10,7 @@
 
             Field = new bool[9, 15];
 
-            ResetGameState.ResetGameEvent += OnResetEvent;
+            //ResetGameState.ResetGameEvent += OnResetEvent;
         }
 
         public static bool[,] Field { get; set; }

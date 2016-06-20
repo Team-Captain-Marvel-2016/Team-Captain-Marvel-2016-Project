@@ -3,7 +3,9 @@
     internal enum SpeciesType
     {
         Neptunian,
-        Venusian
-        // TODO : Add the rest when they have constructors
+        Venusian,
+        Human,
+        Martian
+        // TODO : Add the rest when they have constructors when implemented
     }
 }

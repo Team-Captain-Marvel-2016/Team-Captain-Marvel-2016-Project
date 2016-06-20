@@ -69,6 +69,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindowPartialClass\MainWindowActionMethods.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowButtonGroups.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowFootballPlayerEvent.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowMovementMethods.cs" />

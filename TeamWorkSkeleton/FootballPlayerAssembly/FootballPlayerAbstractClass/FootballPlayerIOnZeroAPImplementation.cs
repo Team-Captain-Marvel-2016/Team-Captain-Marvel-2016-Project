@@ -7,11 +7,16 @@
     {
         public event EventHandler ZeroActionPoints;
 
+        public void ResetActionPoints()
+        {
+            this.CurrentAP = this.ActionPoints;
+        }
+
         private void DecrementActionPoints()
         {
-            this.ActionPoints--;
+            this.CurrentAP--;
 
-            if (this.ActionPoints == 0)
+            if (this.CurrentAP == 0)
             {
                 this.OnZeroActionPoints();
             }

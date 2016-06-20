@@ -23,6 +23,9 @@
 
         public static void ChangeGameState(Canvas canvas)
         {
+            // Reset current FootballPlayer AP
+            GameStateTracker.SelectedFootballPlayer.ResetActionPoints();
+
             // Reset marked FootballPlayer and Increment PC current player.
             GameStateTracker.PlayerOnTurn.ResetVisualTokenSize();
             GameStateTracker.PlayerOnTurn.NextPlayer();

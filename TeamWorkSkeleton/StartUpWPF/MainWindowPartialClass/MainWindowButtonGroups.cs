@@ -1,9 +1,11 @@
-﻿using System.Windows.Controls;
-using GameLogicAssembly.GameControlsClasses;
-using UserInterfaceAssembly.UserControlsClasses;
+﻿using System.Windows;
+
 namespace StartUpWPF
 {
+    using GameLogicAssembly.GameControlsClasses;
+    using System.Windows.Controls;
     using System.Collections.Generic;
+    using UserInterfaceAssembly.UserControlsClasses;
 
     public partial class MainWindow
     {

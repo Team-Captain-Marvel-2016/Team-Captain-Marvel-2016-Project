@@ -49,6 +49,7 @@
 
             AwarenessRange = awareness;
             ActionPoints = actionPoints;
+            CurrentAP = ActionPoints;
         }
         // Full Constructor
         #endregion
@@ -66,6 +67,7 @@
         // Game Mechanics
         public int AwarenessRange { get; protected set; }
         public int ActionPoints { get; protected set; }
+        private int CurrentAP { get; set; }
 
         public string Planet { get; private set; }
         public string Position { get; private set; }

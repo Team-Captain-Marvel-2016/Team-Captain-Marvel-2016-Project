@@ -44,16 +44,16 @@
                 VerticalAlignment="Top" Width="60" Height="30"/>-->
         <Button x:Name="PassBtn" Content="Pass" 
                 HorizontalAlignment="Left" Margin="855,270,0,0"
-                VerticalAlignment="Top" Width="40" Height="40"/>
+                VerticalAlignment="Top" Width="40" Height="40" Click="PassBtn_OnClick"/>
         <Button x:Name="ShootBtn" Content="Shoot" 
                 HorizontalAlignment="Left" Margin="895,230,0,0"
-                VerticalAlignment="Top" Width="40" Height="40" RenderTransformOrigin="1.225,0.3"/>
+                VerticalAlignment="Top" Width="40" Height="40" RenderTransformOrigin="1.225,0.3" Click="ShootBtn_OnClick"/>
         <Button x:Name="CallForPassBtn" Content="Call For Pass" 
                 HorizontalAlignment="Left" Margin="855,190,0,0"
-                VerticalAlignment="Top" Width="40" Height="40"/>
+                VerticalAlignment="Top" Width="40" Height="40" Click="CallForPassBtn_OnClick"/>
         <Button x:Name="TackleBtn" Content="Tackle" 
                 HorizontalAlignment="Left" Margin="815,230,0,0"
-                VerticalAlignment="Top" Width="40" Height="40"/>
+                VerticalAlignment="Top" Width="40" Height="40" Click="TackleBtn_OnClick"/>
         <Button x:Name="EndTurnBtn" Content="End Turn" 
                 HorizontalAlignment="Left" Margin="815,410,0,0"
                 VerticalAlignment="Top" Width="120" Height="40" Click="EndTurnBtn_Click"/>

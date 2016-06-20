@@ -99,6 +99,10 @@
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>GlobalDataStructures</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PlayingFIeldAssembly\PlayingFIeldAssembly.csproj">
+      <Project>{293c7edf-b1e1-40d9-b08c-9b010bbdf99e}</Project>
+      <Name>PlayingFIeldAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RandomizersAssembly\RandomizersAssembly.csproj">
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
       <Name>RandomizersAssembly</Name>

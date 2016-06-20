@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogicEventsAssembly", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateTrackerAssembly", "GameStateTrackerAssembly\GameStateTrackerAssembly.csproj", "{D36CE9EA-4307-4D40-951A-054299F9B09B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingFieldMethodsAssembly", "PlayingFieldMethodsAssembly\PlayingFieldMethodsAssembly.csproj", "{8B0CD4DC-1798-4C44-8846-45D13E8C3610}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{D36CE9EA-4307-4D40-951A-054299F9B09B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D36CE9EA-4307-4D40-951A-054299F9B09B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D36CE9EA-4307-4D40-951A-054299F9B09B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B0CD4DC-1798-4C44-8846-45D13E8C3610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B0CD4DC-1798-4C44-8846-45D13E8C3610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B0CD4DC-1798-4C44-8846-45D13E8C3610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B0CD4DC-1798-4C44-8846-45D13E8C3610}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

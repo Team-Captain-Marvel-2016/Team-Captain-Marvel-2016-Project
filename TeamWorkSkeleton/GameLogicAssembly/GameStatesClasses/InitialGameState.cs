@@ -1,13 +1,14 @@
 ﻿namespace GameLogicAssembly.GameStatesClasses
 {
-    using System.Windows.Controls;
+    using GameStateTrackerAssembly;
     using PlayerAssembly.AbstractPlayerClass;
     using PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass;
     using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
+    using PlayingFieldMethodsAssembly;
+    using System.Windows.Controls;
     using VisualizationAssembly.CanvasUtilsClasses;
     using VisualizationAssembly.Enumerations;
     using VisualizationAssembly.InitPlayingFieldClasses;
-    using GameStateTrackerAssembly;
 
     public static class InitialGameState
     {
@@ -44,8 +45,7 @@
             GameStateTracker.SelectedFootballPlayer = PlayerOne.Player.Team.Team[5];
             GameStateTracker.FootballPlayerWithBall = PlayerOne.Player.Team.Team[5];
 
-            GameStateTracker.HasPlayerAtPosition.UnMarkAllPlayersFromTeam(PlayerOne.Player.Team);
-            GameStateTracker.HasPlayerAtPosition.UnMarkAllPlayersFromTeam(PlayerTwo.Player.Team);
+            PlayingFieldMethods.UpdateAllPlayers();
         }
 
         private static void GetFootballPlayerPositions(PlayerCharacter playerCharacter, StartingFieldType field)

@@ -71,10 +71,6 @@
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanDefender.cs" />
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanGoalkeeper.cs" />
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanMidfielder.cs" />
-    <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianAttacker.cs" />
-    <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianDefender.cs" />
-    <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianGoalkeeper.cs" />
-    <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianMidfielder.cs" />
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianAttacker.cs" />
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianDefender.cs" />
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianGoalkeeper.cs" />
@@ -83,12 +79,11 @@
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianDefender.cs" />
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianGoalkeeper.cs" />
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianMidfielder.cs" />
-    <Compile Include="SpeciesAbstractClasses\Mercurian.cs">
-      <ExcludeFromStyleCop>False</ExcludeFromStyleCop>
-    </Compile>
     <Compile Include="SpeciesAbstractClasses\Neptunian.cs" />
     <Compile Include="SpeciesAbstractClasses\Venusian.cs" />
-    <Compile Include="SpeciesNameGenerators\MercurianNameGenerator.cs" />
+    <Compile Include="SpeciesNameGenerators\HumanNameGenerator.cs" />
+    <Compile Include="SpeciesNameGenerators\JupiterianNameGenerator.cs" />
+    <Compile Include="SpeciesNameGenerators\MartianNameGenerator.cs" />
     <Compile Include="SpeciesNameGenerators\NeptunianNameGenerator.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianAttacker.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianDefender.cs" />
@@ -120,7 +115,6 @@
       <Name>VisualizationInterfacesAssembly</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

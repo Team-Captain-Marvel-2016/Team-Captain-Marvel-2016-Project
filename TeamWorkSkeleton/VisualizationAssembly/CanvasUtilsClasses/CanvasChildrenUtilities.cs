@@ -54,7 +54,7 @@
         }
 
         public static void MarkCurrentPlayer<T>(Canvas canvas, T child)
-            where T:IDrawOnCanvas
+            where T : IDrawOnCanvas
         {
             if (child.CanvasChildIndex == null)
             {
@@ -65,7 +65,7 @@
                 = FootballPlayerVisualizationSettings.SelectedVisualTokenSize;
             child.VisualToken.Height
                 = FootballPlayerVisualizationSettings.SelectedVisualTokenSize;
-                
+
             canvas.Children[child.CanvasChildIndex.Value] = child.VisualToken;
         }
 
@@ -76,10 +76,10 @@
             {
                 throw new Exception("Child does not have a valid CanvasIndex");
             }
-            
+
             child.VisualToken.Fill = Brushes.DeepPink;
         }
-        
+
 
         #region Private methods
         /// <summary>
@@ -90,8 +90,18 @@
         /// <typeparam name="T"></typeparam>
         /// <param name="child"></param>
         private static void UpdateCanvasPositionCoordinates<T>(T child)
-            where T : IDrawOnCanvas
+             where T : IDrawOnCanvas
         {
+            // Get new Field Postion based on GridPosition
+            var fieldRow = child.GridPosition.X;
+            var fieldCol = child.GridPosition.Y;
+
+            var newFieldPosition =
+                PlayingFieldVisualizationSettings.GridCoordinates[fieldRow, fieldCol];
+
+            child.FieldPosition = newFieldPosition;
+
+            // Apply new position.
             Canvas.SetTop(child.VisualToken, child.FieldPosition.X);
             Canvas.SetLeft(child.VisualToken, child.FieldPosition.Y);
         }

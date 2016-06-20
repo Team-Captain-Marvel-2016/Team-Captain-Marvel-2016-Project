@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateTrackerAssembly", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingFieldMethodsAssembly", "PlayingFieldMethodsAssembly\PlayingFieldMethodsAssembly.csproj", "{8B0CD4DC-1798-4C44-8846-45D13E8C3610}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalSettingsAssembly", "GlobalSettingsAssembly\GlobalSettingsAssembly.csproj", "{C2B1B807-B8FE-4527-84BF-467D73408544}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{8B0CD4DC-1798-4C44-8846-45D13E8C3610}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B0CD4DC-1798-4C44-8846-45D13E8C3610}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B0CD4DC-1798-4C44-8846-45D13E8C3610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B1B807-B8FE-4527-84BF-467D73408544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B1B807-B8FE-4527-84BF-467D73408544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B1B807-B8FE-4527-84BF-467D73408544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B1B807-B8FE-4527-84BF-467D73408544}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

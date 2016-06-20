@@ -25,5 +25,21 @@ namespace UserInterfaceAssembly.UserControlsClasses
                 button.Visibility = Visibility.Visible;
             }
         }
+
+        public static void EnableButtons(this List<Button> buttons)
+        {
+            foreach (var button in buttons)
+            {
+                button.IsEnabled = true;
+            }
+        }
+
+        public static void DisableButtons(this List<Button> buttons)
+        {
+            foreach (var button in buttons)
+            {
+                button.IsEnabled = false;
+            }
+        }
     }
 }

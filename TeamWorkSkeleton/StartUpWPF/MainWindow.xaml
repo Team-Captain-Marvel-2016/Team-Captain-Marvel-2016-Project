@@ -13,50 +13,53 @@
         <Canvas Name="PlayFieldCanvas"
                 HorizontalAlignment="Left"
                 Height="400" Width="640"
-                Margin="160,0,0,0" 
+                Margin="160,50,0,0" 
                 VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Canvas.Background>
                 <ImageBrush ImageSource="imgs/footballpitch.png"></ImageBrush>
             </Canvas.Background>
         </Canvas>
         <Button x:Name="StartBtn" Content="Start Game" 
-                HorizontalAlignment="Left" Margin="400,180,0,0"
+                HorizontalAlignment="Left" Margin="400,230,0,0"
                 VerticalAlignment="Top" Width="160" Height="40" 
                 FontSize="24" Background="PaleGreen" Foreground="ForestGreen"
                 Click="StartBtn_Click"/>
         <Button x:Name="MoveUpBtn" Content="Up"
-                HorizontalAlignment="Left" Margin="60,160,0,0"
+                HorizontalAlignment="Left" Margin="60,190,0,0"
                 VerticalAlignment="Top" Width="40" Height="40"/>
         <Button x:Name="MoveDownBtn" Content="Down"
-                HorizontalAlignment="Left" Margin="60,260,0,0"
+                HorizontalAlignment="Left" Margin="60,270,0,0"
                 VerticalAlignment="Top" Width="40" Height="40"/>
         <Button x:Name="MoveLeftBtn" Content="Left"
-                HorizontalAlignment="Left" Margin="10,210,0,0"
+                HorizontalAlignment="Left" Margin="20,230,0,0"
                 VerticalAlignment="Top" Width="40" Height="40"/>
         <Button x:Name="MoveRightBtn" Content="Right"
-                HorizontalAlignment="Left" Margin="110,210,0,0"
+                HorizontalAlignment="Left" Margin="100,230,0,0"
                 VerticalAlignment="Top" Width="40" Height="40"/>
-        <Button x:Name="PrevPlayerBtn" Content="Prev" 
+        <!--<Button x:Name="PrevPlayerBtn" Content="Prev" 
                 HorizontalAlignment="Left" Margin="10,120,0,0"
                 VerticalAlignment="Top" Width="60" Height="30"/>
         <Button x:Name="NextPlayerBtn" Content="Next" 
                 HorizontalAlignment="Left" Margin="90,120,0,0"
-                VerticalAlignment="Top" Width="60" Height="30"/>
+                VerticalAlignment="Top" Width="60" Height="30"/>-->
         <Button x:Name="PassBtn" Content="Pass" 
-                HorizontalAlignment="Left" Margin="90,310,0,0"
-                VerticalAlignment="Top" Width="60" Height="30"/>
+                HorizontalAlignment="Left" Margin="855,270,0,0"
+                VerticalAlignment="Top" Width="40" Height="40"/>
         <Button x:Name="ShootBtn" Content="Shoot" 
-                HorizontalAlignment="Left" Margin="10,310,0,0"
-                VerticalAlignment="Top" Width="60" Height="30"/>
+                HorizontalAlignment="Left" Margin="895,230,0,0"
+                VerticalAlignment="Top" Width="40" Height="40" RenderTransformOrigin="1.225,0.3"/>
         <Button x:Name="CallForPassBtn" Content="Call For Pass" 
-                HorizontalAlignment="Left" Margin="50,310,0,0"
-                VerticalAlignment="Top" Width="60" Height="30"/>
+                HorizontalAlignment="Left" Margin="855,190,0,0"
+                VerticalAlignment="Top" Width="40" Height="40"/>
         <Button x:Name="TackleBtn" Content="Tackle" 
-                HorizontalAlignment="Left" Margin="50,310,0,0"
-                VerticalAlignment="Top" Width="60" Height="30"/>
+                HorizontalAlignment="Left" Margin="815,230,0,0"
+                VerticalAlignment="Top" Width="40" Height="40"/>
         <Button x:Name="EndTurnBtn" Content="End Turn" 
-                HorizontalAlignment="Left" Margin="10,10,0,0"
-                VerticalAlignment="Top" Width="60" Height="30" Click="EndTurnBtn_Click"/>
+                HorizontalAlignment="Left" Margin="815,410,0,0"
+                VerticalAlignment="Top" Width="120" Height="40" Click="EndTurnBtn_Click"/>
+        <Button x:Name="ResetBtn" Content="Reset" 
+                HorizontalAlignment="Left" Margin="20,410,0,0"
+                VerticalAlignment="Top" Width="120" Height="40" Click="EndTurnBtn_Click"/>
 
 
     </Grid>

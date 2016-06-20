@@ -55,7 +55,10 @@
             // Prep first turn.
             InitialGameState.InitializeFirstTurn(PlayFieldCanvas);
 
-            // Display the appropriate buttons.
+            // Display all 
+            AllButtons.DisplayAll();
+
+            // Enable Appropriate Buttons
             DisplayControlButtons();
         }
 
@@ -79,8 +82,8 @@
         {
             //// Buttons: Prev, Next
             SelectionButtons = new List<Button>();
-            SelectionButtons.Add(PrevPlayerBtn);
-            SelectionButtons.Add(NextPlayerBtn);
+            //SelectionButtons.Add(PrevPlayerBtn);
+            //SelectionButtons.Add(NextPlayerBtn);
 
             // Buttons: Up, Down, Left, Right
             MovementButtons = new List<Button>();
@@ -107,6 +110,7 @@
             // Buttons: End Turn
             EndTurnButtons = new List<Button>();
             EndTurnButtons.Add(EndTurnBtn);
+            EndTurnButtons.Add(ResetBtn);
 
             // TODO: Add the remaining two lists
             // All Buttons
@@ -125,15 +129,18 @@
         private void DisplayControlButtons()
         {
             // Hide all 
-            AllButtons.CollapseAll();
+            AllButtons.DisableAll();
 
-            // Always display Movement and End Turn
-            MovementButtons.DisplayButtons();
-            EndTurnButtons.DisplayButtons();
+            //// Always display Movement and End Turn
+            //MovementButtons.DisplayButtons();
+            //EndTurnButtons.DisplayButtons();
+
+            MovementButtons.EnableButtons();
+            EndTurnButtons.EnableButtons();
 
             // Pick Action Button group
             var buttonGroup = FootballPlayerControls.GetButtonGroupToDisplay();
-            AllButtons[buttonGroup].DisplayButtons();
+            AllButtons[buttonGroup].EnableButtons();
         }
     }
 }

@@ -20,5 +20,21 @@
                 list.DisplayButtons();
             }
         }
+
+        public static void DisableAll(this List<List<Button>> lists)
+        {
+            foreach (var list in lists)
+            {
+                list.DisableButtons();
+            }
+        }
+
+        public static void EnableAll(this List<List<Button>> lists)
+        {
+            foreach (var list in lists)
+            {
+                list.EnableButtons();
+            }
+        }
     }
 }

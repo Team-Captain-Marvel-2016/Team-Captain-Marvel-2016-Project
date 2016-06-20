@@ -1,12 +1,10 @@
-﻿using RandomizersAssembly.StaticRandomizersClasses;
-
-namespace FootballPlayerAssembly.SpeciesNameGenerators
+﻿namespace FootballPlayerAssembly.SpeciesNameGenerators
 {
-    using System;
+    using RandomizersAssembly.StaticRandomizersClasses;
     using System.Collections.Generic;
     using System.Text;
 
-    class MartianNameGenerator
+    internal class MartianNameGenerator
     {
 
         internal static Dictionary<int, string> FirstPartName = new Dictionary<int, string>()

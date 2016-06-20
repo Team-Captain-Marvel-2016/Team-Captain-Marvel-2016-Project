@@ -1,8 +1,6 @@
-﻿using RandomizersAssembly.StaticRandomizersClasses;
-
-namespace FootballPlayerAssembly.SpeciesNameGenerators
+﻿namespace FootballPlayerAssembly.SpeciesNameGenerators
 {
-    using System;
+    using RandomizersAssembly.StaticRandomizersClasses;
     using System.Collections.Generic;
     using System.Text;
 

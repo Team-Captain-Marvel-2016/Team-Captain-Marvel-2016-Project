@@ -1,4 +1,6 @@
-﻿namespace GameLogicAssembly
+﻿using PlayingFIeldAssembly;
+
+namespace GameLogicAssembly
 {
     using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using PlayerAssembly.AbstractPlayerClass;
@@ -20,5 +22,7 @@
         public static FootballPlayer SelectedFootballPlayer { get; set; }
         public static FootballPlayer FootballPlayerWithBall { get; set; }
         public static Brushes OldFootballPlayerColor { get; set; }
+
+        public static PlayingField PlayingField { get; set; }
     }
 }

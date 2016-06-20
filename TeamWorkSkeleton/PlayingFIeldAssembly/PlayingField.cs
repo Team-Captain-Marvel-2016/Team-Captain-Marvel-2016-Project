@@ -8,7 +8,7 @@
         static  PlayingField()
         {
 
-            Field = new bool[10, 16];
+            Field = new bool[9, 15];
 
             ResetGameState.ResetGameEvent += OnResetEvent;
         }

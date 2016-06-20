@@ -63,8 +63,6 @@
             {
                 this.ChangeGridPosition(newRow, newCol);
             }
-            // Re-Draw
-
         }
 
         private bool CheckPosition(int row, int col)

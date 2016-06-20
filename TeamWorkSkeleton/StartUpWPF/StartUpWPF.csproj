@@ -69,6 +69,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindowPartialClass\MainWindowButtonGroups.cs" />
+    <Compile Include="MainWindowPartialClass\MainWindowMovementMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

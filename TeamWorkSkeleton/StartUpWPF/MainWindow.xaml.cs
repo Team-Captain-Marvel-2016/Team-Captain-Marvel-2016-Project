@@ -113,8 +113,5 @@
             AllButtons.CollapseAll();
             StartBtn.Visibility = Visibility.Visible;
         }
-
-       
-        
     }
 }

@@ -79,6 +79,7 @@
 
         public bool HasBall { get; set; }
         public bool IsSelected { get; set; }
+        public bool IsTargeted { get; set; }
 
         #endregion
 

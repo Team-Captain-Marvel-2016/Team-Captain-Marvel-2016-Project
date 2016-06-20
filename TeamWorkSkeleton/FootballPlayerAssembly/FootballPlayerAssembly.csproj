@@ -50,6 +50,7 @@
     <Compile Include="FootballPlayerAbstractClass\FootballPlayer.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerCallForPassImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerIOnZeroAPImplementation.cs" />
+    <Compile Include="FootballPlayerAbstractClass\FootballPlayerMouseDownImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerMovementMethods.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerPassImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerShootImplementation.cs" />

@@ -2,7 +2,6 @@ namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
 {
     using FootballPlayerAbstractClass;
     using SpeciesNameGenerators;
-    using System;
 
     public static partial class FootballPlayerFactory
     {
@@ -19,7 +18,7 @@ namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
         private static FootballPlayer CreateNeptunianAttacker
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = NeptuneNameGenerator.GenerateName();
+            var newPlayerName = GetNeptunianName();
             var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianAttacker(baseStats);
             return newPlayer;
@@ -28,7 +27,7 @@ namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
         private static FootballPlayer CreateNeptunianDefender
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = NeptuneNameGenerator.GenerateName();
+            var newPlayerName = GetNeptunianName();
             var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianDefender(baseStats);
             return newPlayer;
@@ -37,7 +36,7 @@ namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
         private static FootballPlayer CreateNeptunianMidfielder
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = NeptuneNameGenerator.GenerateName();
+            var newPlayerName = GetNeptunianName();
             var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianMidfielder(baseStats);
             return newPlayer;
@@ -46,10 +45,15 @@ namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
         private static FootballPlayer CreateNeptunianGoalkeeper
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = NeptuneNameGenerator.GenerateName();
+            var newPlayerName = GetNeptunianName();
             var newPlayer = new RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianGoalkeeper(baseStats);
             return newPlayer;
+        }
+
+        private static string GetNeptunianName()
+        {
+            return NeptunianNameGenerator.GenerateName();
         }
     }
 }

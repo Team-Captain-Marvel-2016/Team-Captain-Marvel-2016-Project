@@ -116,9 +116,6 @@
             StartBtn.Visibility = Visibility.Visible;
         }
 
-        private void OnZeroActionPoints(object sender, EventArgs args)
-        {
-            
-        }
+        
     }
 }

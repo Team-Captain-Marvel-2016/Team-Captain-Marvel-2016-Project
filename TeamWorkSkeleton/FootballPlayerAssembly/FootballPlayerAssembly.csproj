@@ -83,6 +83,7 @@
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianDefender.cs" />
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianGoalkeeper.cs" />
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianMidfielder.cs" />
+    <Compile Include="SpeciesAbstractClasses\Jupiterian.cs" />
     <Compile Include="SpeciesAbstractClasses\Neptunian.cs" />
     <Compile Include="SpeciesAbstractClasses\Venusian.cs" />
     <Compile Include="SpeciesNameGenerators\HumanNameGenerator.cs" />

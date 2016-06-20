@@ -1,9 +1,12 @@
-﻿namespace PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass
+﻿
+namespace PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass
 {
+    using AbstractPlayerClass;
+    using GameLogicEventsAssembly;
+    using HumanPlayerClass;
     using System;
     using System.Windows.Media;
-    using HumanPlayerClass;
-
+    
     /// <summary>
     /// Encapsulate an Instance behind a private constructor
     /// as a private static field.
@@ -13,14 +16,15 @@
     /// </summary>
     public class PlayerOne : HumanPlayer
     {
-        private static PlayerOne _player;
+        private static PlayerCharacter _player;
         
         private PlayerOne(string name, string teamName)
             : base(name, teamName, Brushes.Blue)
         {
+            ResetGameState.ResetGameEvent += OnResetGameEvent;
         }
 
-        public static PlayerOne Player => _player;
+        public static PlayerCharacter Player => _player;
 
         public static void CreatePlayerOne(string name, string teamName)
         {
@@ -32,6 +36,11 @@
             {
                 throw new Exception("Instance already exists");
             }
+        }
+
+        private static void OnResetGameEvent(object sender, EventArgs args)
+        {
+            _player = null;
         }
     }
 }

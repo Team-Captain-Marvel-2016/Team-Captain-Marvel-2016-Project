@@ -47,6 +47,7 @@
     <Compile Include="GameControlsClasses\FootballPlayerControls.cs" />
     <Compile Include="GameStatesClasses\GameOver.cs" />
     <Compile Include="GameStatesClasses\NextTurn.cs" />
+    <Compile Include="GameStatesClasses\ResetGame.cs" />
     <Compile Include="GameStateTrackers.cs" />
     <Compile Include="GameStatesClasses\InitialGameState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +60,10 @@
     <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
       <Name>FootballPlayerAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameLogicEventsAssembly\GameLogicEventsAssembly.csproj">
+      <Project>{a2430f2b-79f1-461e-a64a-60a1d9e4f5f7}</Project>
+      <Name>GameLogicEventsAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\GameLogicInterfacesAssembly\GameLogicInterfacesAssembly.csproj">
       <Project>{f12292f9-fedb-410a-9566-d91a17823780}</Project>

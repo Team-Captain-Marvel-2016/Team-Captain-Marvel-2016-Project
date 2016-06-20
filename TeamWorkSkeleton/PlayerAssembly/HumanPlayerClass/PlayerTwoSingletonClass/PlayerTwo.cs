@@ -1,6 +1,7 @@
 ﻿namespace PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass
 {
     using HumanPlayerClass;
+    using GameLogicEventsAssembly;
     using System;
     using System.Windows.Media;
 
@@ -18,6 +19,7 @@
         private PlayerTwo(string name, string teamName)
             : base(name, teamName, Brushes.Red)
         {
+            ResetGameState.ResetGameEvent += OnResetGameEvent;
         }
 
         // ReSharper disable once ConvertToAutoPropertyWithPrivateSetter
@@ -33,6 +35,11 @@
             {
                 throw new Exception("Instance already exists");
             }
+        }
+
+        private static void OnResetGameEvent(object sender, EventArgs args)
+        {
+            _player = null;
         }
     }
 }

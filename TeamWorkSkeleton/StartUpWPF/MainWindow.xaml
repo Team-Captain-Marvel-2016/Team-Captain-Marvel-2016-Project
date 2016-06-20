@@ -59,7 +59,7 @@
                 VerticalAlignment="Top" Width="120" Height="40" Click="EndTurnBtn_Click"/>
         <Button x:Name="ResetBtn" Content="Reset" 
                 HorizontalAlignment="Left" Margin="20,410,0,0"
-                VerticalAlignment="Top" Width="120" Height="40" Click="EndTurnBtn_Click"/>
+                VerticalAlignment="Top" Width="120" Height="40" Click="ResetBtn_OnClick_Click"/>
 
 
     </Grid>

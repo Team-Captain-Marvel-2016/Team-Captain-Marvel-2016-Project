@@ -1,13 +1,13 @@
-﻿namespace GameLogicAssembly.InitialGameStateClasses
+﻿namespace GameLogicAssembly.GameStatesClasses
 {
+    using System.Windows.Controls;
     using PlayerAssembly.AbstractPlayerClass;
     using PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass;
     using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
-    using System.Windows.Controls;
     using VisualizationAssembly.CanvasUtilsClasses;
     using VisualizationAssembly.Enumerations;
     using VisualizationAssembly.InitPlayingFieldClasses;
-    
+
     public static class InitialGameState
     {
         public static void InitializePlayers()

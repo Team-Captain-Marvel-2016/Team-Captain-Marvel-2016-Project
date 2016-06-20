@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C432A3DC-CBBD-4B15-893D-6EECFFA9E9FB}</ProjectGuid>
+    <ProjectGuid>{A2430F2B-79F1-461E-A64A-60A1D9E4F5F7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TeamAssembly</RootNamespace>
-    <AssemblyName>TeamAssembly</AssemblyName>
+    <RootNamespace>GameLogicEventsAssembly</RootNamespace>
+    <AssemblyName>GameLogicEventsAssembly</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,29 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateTeamMethods\CreateFootballTeam.cs" />
-    <Compile Include="FootballTeam.cs" />
-    <Compile Include="FormationTypeParsingMethods\ParseFormationType.cs" />
-    <Compile Include="FormationTypes\FormationType.cs" />
+    <Compile Include="ResetGameState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
-      <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
-      <Name>FootballPlayerAssembly</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GameLogicInterfacesAssembly\GameLogicInterfacesAssembly.csproj">
-      <Project>{f12292f9-fedb-410a-9566-d91a17823780}</Project>
-      <Name>GameLogicInterfacesAssembly</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RandomizersAssembly\RandomizersAssembly.csproj">
-      <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
-      <Name>RandomizersAssembly</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj">
-      <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
-      <Name>VisualizationInterfacesAssembly</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

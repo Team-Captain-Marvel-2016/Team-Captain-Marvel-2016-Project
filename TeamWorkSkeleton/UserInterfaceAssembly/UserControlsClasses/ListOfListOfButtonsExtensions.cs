@@ -5,6 +5,10 @@
     
     public static class ListOfListOfButtonsExtensions
     {
+        /// <summary>
+        /// Hide all buttons from view.
+        /// </summary>
+        /// <param name="lists"></param>
         public static void CollapseAll(this List<List<Button>> lists)
         {
             foreach (var list in lists)
@@ -13,6 +17,10 @@
             }
         }
 
+        /// <summary>
+        /// Display all buttons on screen.
+        /// </summary>
+        /// <param name="lists"></param>
         public static void DisplayAll(this List<List<Button>> lists)
         {
             foreach (var list in lists)
@@ -21,6 +29,10 @@
             }
         }
 
+        /// <summary>
+        /// Disable all buttons.
+        /// </summary>
+        /// <param name="lists"></param>
         public static void DisableAll(this List<List<Button>> lists)
         {
             foreach (var list in lists)
@@ -29,6 +41,10 @@
             }
         }
 
+        /// <summary>
+        /// Enable all buttons.
+        /// </summary>
+        /// <param name="lists"></param>
         public static void EnableAll(this List<List<Button>> lists)
         {
             foreach (var list in lists)

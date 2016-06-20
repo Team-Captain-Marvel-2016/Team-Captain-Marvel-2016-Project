@@ -63,6 +63,8 @@
             {
                 this.ChangeGridPosition(newRow, newCol);
             }
+
+            this.DecrementActionPoints();
         }
 
         private bool CheckPosition(int row, int col)

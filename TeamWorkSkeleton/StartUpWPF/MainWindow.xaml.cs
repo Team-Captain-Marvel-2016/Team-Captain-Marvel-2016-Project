@@ -73,6 +73,8 @@
 
             // Enable Appropriate Buttons
             DisplayControlButtons();
+
+            // Subscribe to all FootballPlayer's events.
         }
 
         /// <summary>
@@ -112,6 +114,11 @@
             PlayFieldCanvas.Children.Clear();
             AllButtons.CollapseAll();
             StartBtn.Visibility = Visibility.Visible;
+        }
+
+        private void OnZeroActionPoints(object sender, EventArgs args)
+        {
+            
         }
     }
 }

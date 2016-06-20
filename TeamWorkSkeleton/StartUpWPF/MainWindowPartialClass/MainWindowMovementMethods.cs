@@ -32,6 +32,12 @@ namespace StartUpWPF
 
         private void Move(Action action)
         {
+            if (GameStateTracker.SelectedFootballPlayer.ActionPoints <= 0)
+            {
+                // TODO: Communicate Can't Move
+                return;
+            }
+
             // Move Player On the Grid
             try
             {

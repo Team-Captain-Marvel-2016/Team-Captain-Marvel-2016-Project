@@ -4,6 +4,10 @@
 
     public abstract partial class FootballPlayer
     {
+        public FootballPlayer()
+        {
+        }
+
         public void OnMouseDown(object sender, EventArgs args)
         {
             this.IsTargeted = true;

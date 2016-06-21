@@ -1,11 +1,14 @@
 ﻿
+using System.Windows.Media;
+
 namespace StartUpWPF
 {
     using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using GameStateTrackerAssembly;
     using System;
     using System.Windows;
-
+    using System.Windows.Shapes;
+    
     public partial class MainWindow
     {
         private delegate void OnMouseDownAdd(object sender, EventArgs args);
@@ -25,10 +28,13 @@ namespace StartUpWPF
 
         private void OnMouseDownPass(object sender, EventArgs args)
         {
+            // Remove Event.
             RemoveMouseDownEventPass();
-            
-            GameStateTracker.TargetFootballPlayer = (FootballPlayer)sender;
-            
+
+            // Find the target player by CanvasChildIndex based on the sender object.
+            var childIndex = PlayFieldCanvas.Children.IndexOf((Ellipse)sender);
+            var target = GetTargetPlayer(childIndex);
+
             // Check Path of the Ball.
 
             // Roll Dice / Do calculation.
@@ -57,6 +63,17 @@ namespace StartUpWPF
             throw new NotImplementedException();
         }
 
+        private FootballPlayer GetTargetPlayer(int index)
+        {
+            foreach (var footballPlayer in GameStateTracker.PlayerOnTurn.Team.Team)
+            {
+                if (footballPlayer.CanvasChildIndex == index)
+                {
+                    return footballPlayer;
+                }
+            }
 
+            throw new Exception("Target not found");
+        }
     }
 }

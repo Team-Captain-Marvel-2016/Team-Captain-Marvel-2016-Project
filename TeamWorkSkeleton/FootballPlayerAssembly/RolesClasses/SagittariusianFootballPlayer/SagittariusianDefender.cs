@@ -4,14 +4,13 @@ namespace FootballPlayerAssembly.RolesClasses.SagittariusianFootballPlayer
 {
     public static partial class FootballPlayerFactory
     {
-        internal class SagittariusianDefender:Sagittariusian
+        internal class SagittariusianDefender : Sagittariusian
         {
-            internal SagittariusianDefender(FootballPlayerFactoryClasses.GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer player) 
-                : base(player)
+            public SagittariusianDefender(FootballPlayerFactoryClasses.GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer player) : base(player)
             {
             }
 
-            public SagittariusianDefender(GenericFootballPlayer player) : base(player)
+            public SagittariusianDefender(string name) : base(name)
             {
             }
 

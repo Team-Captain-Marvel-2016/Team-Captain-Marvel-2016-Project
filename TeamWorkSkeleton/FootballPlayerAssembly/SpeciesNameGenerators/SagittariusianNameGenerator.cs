@@ -34,7 +34,7 @@
             {9,"Brinis" },
         };
 
-        internal static string NameGenerator()
+        internal static string GenerateName()
         {
             var random = GenericRandomization.Random;
             var names = new StringBuilder();

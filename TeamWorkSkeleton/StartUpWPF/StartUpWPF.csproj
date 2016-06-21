@@ -72,6 +72,7 @@
     <Compile Include="MainWindowPartialClass\MainWindowActionMethods.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowButtonGroups.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowFootballPlayerEvent.cs" />
+    <Compile Include="MainWindowPartialClass\MainWindowGetTargetedPlayer.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowMovementMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

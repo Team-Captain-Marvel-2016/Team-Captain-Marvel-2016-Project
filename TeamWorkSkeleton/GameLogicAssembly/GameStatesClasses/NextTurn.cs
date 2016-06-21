@@ -1,11 +1,11 @@
 ﻿namespace GameLogicAssembly.GameStatesClasses
 {
+    using GameStateTrackerAssembly;
     using PlayerAssembly.AbstractPlayerClass;
     using PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass;
     using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
     using System.Windows.Controls;
     using VisualizationAssembly.CanvasUtilsClasses;
-    using GameStateTrackerAssembly;
 
     public static class NextTurn
     {

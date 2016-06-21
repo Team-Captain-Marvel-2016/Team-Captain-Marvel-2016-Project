@@ -28,7 +28,7 @@
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetMercurianName();
-            var newPlayer = new RolesClasses.MartianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new RolesClasses.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianDefender(baseStats);
             return newPlayer;
         }
@@ -37,7 +37,7 @@
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetMercurianName();
-            var newPlayer = new RolesClasses.MartianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new RolesClasses.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianMidfielder(baseStats);
             return newPlayer;
         }
@@ -46,7 +46,7 @@
             (GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetMercurianName();
-            var newPlayer = new RolesClasses.MartianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new RolesClasses.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianGoalkeeper(baseStats);
             return newPlayer;
         }

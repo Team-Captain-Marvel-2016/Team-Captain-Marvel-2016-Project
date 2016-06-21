@@ -48,6 +48,7 @@
     <Compile Include="Enumerations\PositionType.cs" />
     <Compile Include="Enumerations\SpeciesType.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayer.cs" />
+    <Compile Include="FootballPlayerAbstractClass\FootballPlayerAwarenessImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerCallForPassImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerIOnZeroAPImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerMouseDownImplementation.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="FootballPlayerSettingsClasses\DefenderCreationConstants.cs" />
     <Compile Include="FootballPlayerSettingsClasses\GoalkeeperCreationConstants.cs" />
     <Compile Include="FootballPlayerSettingsClasses\MidfielderCreationConstants.cs" />
+    <Compile Include="Interfaces\IAwareness.cs" />
     <Compile Include="Interfaces\IDefenseStats.cs" />
     <Compile Include="Interfaces\IOffenseStats.cs" />
     <Compile Include="Interfaces\IOnZeroAP.cs" />

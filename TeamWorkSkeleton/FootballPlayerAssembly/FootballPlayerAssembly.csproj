@@ -48,7 +48,6 @@
     <Compile Include="Enumerations\PositionType.cs" />
     <Compile Include="Enumerations\SpeciesType.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayer.cs" />
-    <Compile Include="FootballPlayerAbstractClass\FootballPlayerAwarenessImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerCallForPassImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerIOnZeroAPImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerMouseDownImplementation.cs" />
@@ -136,6 +135,9 @@
       <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
       <Name>VisualizationInterfacesAssembly</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InterfaceMethods\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

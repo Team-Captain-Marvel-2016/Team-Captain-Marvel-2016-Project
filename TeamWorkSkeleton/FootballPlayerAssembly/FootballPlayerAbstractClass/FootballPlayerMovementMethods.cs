@@ -54,7 +54,7 @@
         private void Move(int newRow, int newCol)
         {
             // Check Position Up
-            if (CheckPosition(newRow, newCol))
+            if (this.CheckPosition(newRow, newCol))
             {
                 throw new Exception("Position is not free");
             }

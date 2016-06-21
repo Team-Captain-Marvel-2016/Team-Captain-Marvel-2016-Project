@@ -1,7 +1,10 @@
 ﻿namespace PlayerAssembly.AbstractPlayerClass
 {
     using System;
+    using System.Collections.Generic;
     using System.Windows.Media;
+    using FootballPlayerAssembly.FootballPlayerAbstractClass;
+    using GlobalDataStructures;
     using TeamAssembly;
 
     public abstract class PlayerCharacter
@@ -17,12 +20,10 @@
         }
 
         #region Properties
+
         public string Name
         {
-            get
-            {
-                return _name;
-            }
+            get { return _name; }
             private set
             {
                 if (string.IsNullOrEmpty(value))
@@ -75,6 +76,24 @@
                 player.VisualToken.Width = 15;
                 player.VisualToken.Height = 15;
             }
+        }
+
+        public List<FootballPlayer> GetPlayersOnPositionsList(List<PositionXY> positionsList)
+        {
+            var output = new List<FootballPlayer>();
+
+            foreach (var xy in positionsList)
+            {
+                foreach (var footballPlayer in this.Team)
+                {
+                    if (xy.X == footballPlayer.GridPosition.X && xy.Y == footballPlayer.GridPosition.Y)
+                    {
+                        output.Add(footballPlayer);
+                    }
+                }
+            }
+
+            return output;
         }
     }
 }

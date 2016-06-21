@@ -3,7 +3,10 @@ using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
 
 namespace PlayingFieldMethodsAssembly
 {
+    using System;
+    using System.Collections.Generic;
     using FootballPlayerAssembly.FootballPlayerAbstractClass;
+    using GlobalDataStructures;
     using PlayingFIeldAssembly;
     using TeamAssembly;
 
@@ -68,6 +71,28 @@ namespace PlayingFieldMethodsAssembly
         {
             x = player.GridPosition.X;
             y = player.GridPosition.Y;
+        }
+
+        public static List<PositionXY> FindOccupiedPositionsInRange(int startRow, int startCol)
+        {
+            var maxRow = PlayingField.Field.GetLength(0);
+            var maxCol = PlayingField.Field.GetLength(1);
+
+
+            var output = new List<PositionXY>();
+
+            for (int row = Math.Max(startRow, 0); row < Math.Min(startRow + 3, maxRow); row++)
+            {
+                for (int col = Math.Max(startCol, 0); col < Math.Min(startCol + 3, maxCol) ; col++)
+                {
+                    if (PlayingField.Field[row, col])
+                    {
+                        output.Add(new PositionXY(row, col));
+                    }
+                }
+            }
+
+            return output;
         }
     }
 }

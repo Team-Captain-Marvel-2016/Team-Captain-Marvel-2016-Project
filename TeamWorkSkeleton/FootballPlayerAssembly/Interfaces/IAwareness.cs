@@ -3,7 +3,5 @@
     public interface IAwareness
     {
         int AwarenessRange { get; }
-
-        bool HasObjectsInRange();
     }
 }

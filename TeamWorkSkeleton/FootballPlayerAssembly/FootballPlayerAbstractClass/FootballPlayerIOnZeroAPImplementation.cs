@@ -24,7 +24,7 @@
 
         protected virtual void OnZeroActionPoints()
         {
-            var handler = ZeroActionPoints;
+            var handler = this.ZeroActionPoints;
             handler?.Invoke(this, null);
         }
     }

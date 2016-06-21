@@ -49,6 +49,7 @@
     <Compile Include="GameStatesClasses\NextTurn.cs" />
     <Compile Include="GameStatesClasses\ResetGame.cs" />
     <Compile Include="GameStatesClasses\InitialGameState.cs" />
+    <Compile Include="GridPositionMethods\GridPositionUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

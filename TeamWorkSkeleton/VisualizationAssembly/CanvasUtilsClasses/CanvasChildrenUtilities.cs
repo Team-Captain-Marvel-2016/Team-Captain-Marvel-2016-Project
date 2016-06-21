@@ -1,9 +1,10 @@
-﻿namespace VisualizationAssembly.CanvasUtilsClasses
+﻿using GlobalSettingsAssembly.VisualizationSettings;
+
+namespace VisualizationAssembly.CanvasUtilsClasses
 {
     using System;
     using System.Windows.Controls;
     using System.Windows.Media;
-    using VisualizationStaticSettingsClasses;
     using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
 
     public static class CanvasChildrenUtilities

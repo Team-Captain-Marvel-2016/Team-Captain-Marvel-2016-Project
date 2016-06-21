@@ -18,7 +18,7 @@
             foreach (var footballPlayer in GameStateTracker.PlayerOnTurn.Team.Team)
             {
                 footballPlayer.VisualToken.MouseDown += OnMouseDownPass;
-            }
+            }      
         }
 
         private void AddMouseDownEventTackle(Func<object, EventArgs> func)

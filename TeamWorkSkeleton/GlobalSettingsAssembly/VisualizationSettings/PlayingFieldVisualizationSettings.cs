@@ -1,4 +1,4 @@
-﻿namespace VisualizationAssembly.VisualizationStaticSettingsClasses
+﻿namespace GlobalSettingsAssembly.VisualizationSettings
 {
     using GlobalDataStructures;
 

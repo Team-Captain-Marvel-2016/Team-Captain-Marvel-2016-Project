@@ -1,10 +1,11 @@
-﻿namespace VisualizationAssembly.InitPlayingFieldClasses
+﻿
+namespace VisualizationAssembly.InitPlayingFieldClasses
 {
     using Enumerations;
-    using VisualizationStaticSettingsClasses;
+    using GlobalSettingsAssembly.VisualizationSettings;
+    using GlobalDataStructures;
     using TeamAssembly;
     using TeamAssembly.FormationTypeParsingMethods;
-    using GlobalDataStructures;
 
 
     public static class InitTeamVisualization

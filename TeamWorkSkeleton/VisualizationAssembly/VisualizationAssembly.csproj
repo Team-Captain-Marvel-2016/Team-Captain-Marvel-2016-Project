@@ -48,8 +48,6 @@
     <Compile Include="Enumerations\StartingFieldType.cs" />
     <Compile Include="InitPlayingFieldClasses\InitTeamVisualization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VisualizationStaticSettingsClasses\FootballPlayerVisualizationSettings.cs" />
-    <Compile Include="VisualizationStaticSettingsClasses\PlayingFieldVisualizationSettings.cs" />
     <Compile Include="Visualizer.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -57,9 +55,17 @@
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
       <Name>FootballPlayerAssembly</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GameLogicInterfacesAssembly\GameLogicInterfacesAssembly.csproj">
+      <Project>{f12292f9-fedb-410a-9566-d91a17823780}</Project>
+      <Name>GameLogicInterfacesAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>GlobalDataStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalSettingsAssembly\GlobalSettingsAssembly.csproj">
+      <Project>{c2b1b807-b8fe-4527-84bf-467d73408544}</Project>
+      <Name>GlobalSettingsAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\TeamAssembly\TeamAssembly.csproj">
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
@@ -69,6 +75,9 @@
       <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
       <Name>VisualizationInterfacesAssembly</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="VisualizationStaticSettingsClasses\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -83,11 +83,13 @@
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianDefender.cs" />
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianGoalkeeper.cs" />
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianMidfielder.cs" />
+    <Compile Include="SpeciesAbstractClasses\Mercurian.cs" />
     <Compile Include="SpeciesAbstractClasses\Neptunian.cs" />
     <Compile Include="SpeciesAbstractClasses\Venusian.cs" />
     <Compile Include="SpeciesNameGenerators\HumanNameGenerator.cs" />
     <Compile Include="SpeciesNameGenerators\JupiterianNameGenerator.cs" />
     <Compile Include="SpeciesNameGenerators\MartianNameGenerator.cs" />
+    <Compile Include="SpeciesNameGenerators\MercurianNameGenerator.cs" />
     <Compile Include="SpeciesNameGenerators\NeptunianNameGenerator.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianAttacker.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianDefender.cs" />
@@ -118,6 +120,9 @@
       <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
       <Name>VisualizationInterfacesAssembly</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RolesClasses\MercurianFootballPlayer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

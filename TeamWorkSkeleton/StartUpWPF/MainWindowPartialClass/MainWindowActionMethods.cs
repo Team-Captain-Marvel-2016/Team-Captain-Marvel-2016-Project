@@ -1,7 +1,4 @@
-﻿
-using System.Windows.Media;
-
-namespace StartUpWPF
+﻿namespace StartUpWPF
 {
     using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using GameStateTrackerAssembly;

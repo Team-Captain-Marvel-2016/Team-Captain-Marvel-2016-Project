@@ -69,11 +69,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindowPartialClass\MainWindowActionMethods.cs" />
+    <Compile Include="MainWindowPartialClass\MainWindowCallForPassMethods.cs" />
+    <Compile Include="MainWindowPartialClass\MainWindowPassMethods.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowButtonGroups.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowFootballPlayerEvent.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowGetTargetedPlayer.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowMovementMethods.cs" />
+    <Compile Include="MainWindowPartialClass\MainWindowShootMethods.cs" />
+    <Compile Include="MainWindowPartialClass\MainWindowTackleMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -137,6 +140,10 @@
     <ProjectReference Include="..\PlayingFieldMethodsAssembly\PlayingFieldMethodsAssembly.csproj">
       <Project>{8b0cd4dc-1798-4c44-8846-45d13e8c3610}</Project>
       <Name>PlayingFieldMethodsAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RandomizersAssembly\RandomizersAssembly.csproj">
+      <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
+      <Name>RandomizersAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\TeamAssembly\TeamAssembly.csproj">
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>

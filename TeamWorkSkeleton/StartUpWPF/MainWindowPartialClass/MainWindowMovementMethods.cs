@@ -58,7 +58,7 @@
 
             // Update Canvas Position
             CanvasChildrenUtilities
-                .UpdateCanvasPosition(PlayFieldCanvas, GameStateTracker.SelectedFootballPlayer);
+                .UpdateCanvasPosition(this.PlayFieldCanvas, GameStateTracker.SelectedFootballPlayer);
         }
     }
 }

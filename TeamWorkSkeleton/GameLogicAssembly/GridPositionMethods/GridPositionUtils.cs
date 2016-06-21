@@ -46,10 +46,10 @@
             else if (objCol == targetCol && objRow > targetRow) func = Down;
             else if (objCol > targetCol && objRow == targetRow) func = Left;
             else if (objCol < targetCol && objRow == targetRow) func = Right;
-            else if (objCol < targetCol && objRow < targetRow) func = UpRight;
-            else if (objCol > targetCol && objRow < targetRow) func = DownRight;
-            else if (objCol < targetCol && objRow > targetRow) func = DownRight;
-            else if (objCol > targetCol && objRow > targetRow) func = DownLeft;
+            else if (objCol < targetCol && objRow > targetRow) func = UpRight;
+            else if (objCol < targetCol && objRow < targetRow) func = DownRight;
+            else if (objCol > targetCol && objRow > targetRow) func = UpLeft;
+            else if (objCol > targetCol && objRow < targetRow) func = DownLeft;
             
             var output = func?.Invoke(objRow, objCol);
 
@@ -68,7 +68,7 @@
 
         private static IEnumerable<PositionXY> Down(int row, int col)
         {
-            var startRow = row + 2;
+            var startRow = row;
             var startCol = col - 1;
 
             return GetList(startRow, startCol);
@@ -85,7 +85,7 @@
         private static IEnumerable<PositionXY> Right(int row, int col)
         {
             var startRow = row - 1;
-            var startCol = col + 2;
+            var startCol = col;
 
             return GetList(startRow, startCol);
         }
@@ -108,7 +108,7 @@
 
         private static IEnumerable<PositionXY> DownRight(int row, int col)
         {
-            var startRow = row + 2;
+            var startRow = row;
             var startCol = col;
 
             return GetList(startRow, startCol);
@@ -116,7 +116,7 @@
 
         private static IEnumerable<PositionXY> DownLeft(int row, int col)
         {
-            var startRow = row + 2;
+            var startRow = row;
             var startCol = col - 2;
 
             return GetList(startRow, startCol);

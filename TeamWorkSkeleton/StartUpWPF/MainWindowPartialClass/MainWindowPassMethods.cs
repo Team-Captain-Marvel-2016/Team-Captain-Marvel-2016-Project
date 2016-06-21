@@ -46,7 +46,24 @@
             if (listOfEnemyPlayers.Count == 0) this.UpdateGameStateOnSuccessfulPass(target);
 
             // If there are enemies then evaluate each possible interception
-            // Roll Dice / Do calculation.
+            FootballPlayer interceptintPlayer = null;
+            foreach (var enemyPlayer in listOfEnemyPlayers)
+            {
+                if (!GameStateTracker.SelectedFootballPlayer.Pass(enemyPlayer))
+                {
+                    interceptintPlayer = enemyPlayer;
+                    break;
+                }
+            }
+
+            if (interceptintPlayer == null)
+            {
+                this.UpdateGameStateOnSuccessfulPass(target);
+            }
+            else
+            {
+                this.UpdateGameStateOnUnsuccessfulPass(interceptintPlayer);
+            }
 
             // Transfer the ball to friendly/ enemy.
 

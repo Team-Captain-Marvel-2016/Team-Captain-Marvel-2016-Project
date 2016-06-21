@@ -10,16 +10,16 @@
             var enemy = e as FootballPlayer;
 
             if (enemy == null) throw new ApplicationException("Invalid Argument");
-            
+
             var thisScore = this.StatPass
                             + DiceOne.Roll()
                             + DiceTwo.Roll();
 
-            var enemyScore = enemy?.StatPass
+            var enemyScore = enemy.StatInterception
                              + DiceOne.Roll()
                              + DiceTwo.Roll();
 
-            return thisScore >= enemyScore.Value;
+            return thisScore >= enemyScore;
         }
     }
 }

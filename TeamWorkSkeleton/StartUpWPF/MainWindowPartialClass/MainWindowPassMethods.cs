@@ -20,13 +20,8 @@
             // Add MouseDownEvents to All Players.
             // On click -> remove those events.
             this.AddMouseDownEventPass();
-            }
-
-        private void CallForPassBtn_OnClick(object sender, RoutedEventArgs e)
-        {
-            throw new NotImplementedException();
         }
-
+        
         private void OnMouseDownPass(object sender, EventArgs args)
         {
             // Remove Event.
@@ -39,16 +34,16 @@
             // Find enemy players.
             var coordinatesWithObjects =
                 GridPositionUtils.FindObjectsInRange(GameStateTracker.SelectedFootballPlayer, target);
-            
+
             var opponent = GameStateTracker.PlayerOnTurn is PlayerOne
                 ? PlayerTwo.Player
                 : PlayerOne.Player;
 
-            var listOfEnemyPlayers = 
+            var listOfEnemyPlayers =
                 opponent.GetPlayersOnPositionsList(coordinatesWithObjects);
-            
-            // If there are no enemies than pass is successfull
-            if (listOfEnemyPlayers.Count == 0) this.UpdateGameStateOnSuccessfullPass(target);
+
+            // If there are no enemies then pass is successfull
+            if (listOfEnemyPlayers.Count == 0) this.UpdateGameStateOnSuccessfulPass(target);
 
             // If there are enemies then evaluate each possible interception
             // Roll Dice / Do calculation.
@@ -62,44 +57,21 @@
             //throw new NotImplementedException();
         }
 
-        private void UpdateGameStateOnSuccessfullPass(FootballPlayer targetFootballPlayer)
+        private void UpdateGameStateOnSuccessfulPass(FootballPlayer targetFootballPlayer)
         {
             GameStateTracker.FootballPlayerWithBall.HasBall = false;
             GameStateTracker.FootballPlayerWithBall = targetFootballPlayer;
             GameStateTracker.FootballPlayerWithBall.HasBall = true;
-            
+
             GameStateTracker.PlayerOnTurn.ResetVisualTokenColor();
             CanvasChildrenUtilities.MarkPlayerWithBall(
                 this.PlayFieldCanvas,
                 GameStateTracker.FootballPlayerWithBall);
         }
 
-        private void TackleBtn_OnClick(object sender, RoutedEventArgs e)
+        private void UpdateGameStateOnUnsuccessfulPass(FootballPlayer enemyPlayer)
         {
-            throw new System.NotImplementedException();
-        }
 
-        private void OnMouseDownTackle(object sender, EventArgs args)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void ShootBtn_OnClick(object sender, RoutedEventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private FootballPlayer GetTargetPlayer(int index)
-        {
-            foreach (var footballPlayer in GameStateTracker.PlayerOnTurn.Team.Team)
-            {
-                if (footballPlayer.CanvasChildIndex == index)
-                {
-                    return footballPlayer;
-                }
-            }
-
-            throw new Exception("Target not found");
         }
     }
 }

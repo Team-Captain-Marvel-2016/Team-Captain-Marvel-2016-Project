@@ -1,6 +1,4 @@
-﻿using System.Windows;
-
-namespace StartUpWPF
+﻿namespace StartUpWPF
 {
     using GameLogicAssembly.GameControlsClasses;
     using System.Windows.Controls;

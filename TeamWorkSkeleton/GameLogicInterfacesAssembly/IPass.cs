@@ -2,6 +2,6 @@
 {
     public interface IPass
     {
-        void Pass();
+        bool Pass(object enemy);
     }
 }

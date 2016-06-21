@@ -1,6 +1,4 @@
-﻿using FootballPlayerAssembly.FootballPlayerAbstractClass;
-
-namespace StartUpWPF
+﻿namespace StartUpWPF
 {
     using GameStateTrackerAssembly;
     using PlayingFieldMethodsAssembly;

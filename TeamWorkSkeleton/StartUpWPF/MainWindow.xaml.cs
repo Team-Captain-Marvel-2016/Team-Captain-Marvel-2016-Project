@@ -19,6 +19,7 @@
     using System.Windows.Media.Imaging;
     using System.Windows.Navigation;
     using System.Windows.Shapes;
+    using RandomizersAssembly.DiceClasses;
     using UserInterfaceAssembly.UserControlsClasses;
 
     /// <summary>
@@ -27,7 +28,6 @@
     /// </summary>
     public partial class MainWindow : Window
     {
-        #region Button groups
         internal List<List<Button>> AllButtons;
         internal List<Button> SelectionButtons;
         internal List<Button> MovementButtons;
@@ -35,14 +35,13 @@
         internal List<Button> NoBallButtons;
         internal List<Button> DefenseButtons;
         internal List<Button> EndTurnButtons;
-        #endregion
 
         public MainWindow()
         {
-            InitializeComponent();
+            this.InitializeComponent();
 
-            InitializeButtonLists();
-            AllButtons.CollapseAll();
+            this.InitializeButtonLists();
+            this.AllButtons.CollapseAll();
         }
 
         /// <summary>

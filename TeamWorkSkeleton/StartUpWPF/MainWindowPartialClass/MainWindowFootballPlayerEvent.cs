@@ -22,8 +22,8 @@
 
         private void OnZeroActionPoints(object sender, EventArgs args)
         {
-            AllButtons.DisableAll();
-            EndTurnButtons.EnableButtons();
+            this.AllButtons.DisableAll();
+            this.EndTurnButtons.EnableButtons();
         }
     }
 }

@@ -78,7 +78,7 @@
             }
         }
 
-        public List<FootballPlayer> GetPlayersOnPositionsList(List<PositionXY> positionsList)
+        public List<FootballPlayer> GetPlayersOnPositionsList(IEnumerable<PositionXY> positionsList)
         {
             var output = new List<FootballPlayer>();
 

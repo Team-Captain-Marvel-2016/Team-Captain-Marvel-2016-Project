@@ -5,9 +5,21 @@
 
     public abstract partial class FootballPlayer : IPass
     {
-        public void Pass()
+        public bool Pass(object e)
         {
-            throw new NotImplementedException();
+            var enemy = e as FootballPlayer;
+
+            if (enemy == null) throw new ApplicationException("Invalid Argument");
+            
+            var thisScore = this.StatPass
+                            + DiceOne.Roll()
+                            + DiceTwo.Roll();
+
+            var enemyScore = enemy?.StatPass
+                             + DiceOne.Roll()
+                             + DiceTwo.Roll();
+
+            return thisScore >= enemyScore.Value;
         }
     }
 }

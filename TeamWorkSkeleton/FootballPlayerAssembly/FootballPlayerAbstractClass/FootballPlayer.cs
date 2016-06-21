@@ -6,6 +6,7 @@
     using Interfaces;
     using System.Text;
     using System.Windows.Shapes;
+    using RandomizersAssembly.DiceClasses;
     using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
 
     /// <summary>
@@ -17,14 +18,21 @@
         IOffenseStats, IDefenseStats,
         IOrigin, IPosition
     {
+        private static readonly Dice DiceOne;
+        private static readonly Dice DiceTwo;
+
+        static FootballPlayer()
+        {
+            DiceOne = new Dice(6);
+            DiceTwo = new Dice(6);
+        }
+
         #region Constructors
         // Simple Constructor
         internal FootballPlayer(string name)
         {
-            Name = name;
-
+            this.Name = name;
             this.GetPlanetAndPositionTypes();
-
         }
 
         internal FootballPlayer(FootballPlayerFactory.GenericFootballPlayer player)

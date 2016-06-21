@@ -1,10 +1,10 @@
 ﻿namespace GameLogicAssembly.GridPositionMethods
 {
+    using GlobalDataStructures;
     using PlayingFIeldAssembly;
+    using PlayingFieldMethodsAssembly;
     using System;
     using System.Collections.Generic;
-    using GlobalDataStructures;
-    using PlayingFieldMethodsAssembly;
     using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
 
     public static class GridPositionUtils
@@ -32,7 +32,7 @@
             return false;
         }
 
-        public static List<PositionXY> FindObjectsInRange(IDrawOnCanvas obj, IDrawOnCanvas target)
+        public static IEnumerable<PositionXY> FindObjectsInRange(IDrawOnCanvas obj, IDrawOnCanvas target)
         {
             var objRow = obj.GridPosition.X;
             var objCol = obj.GridPosition.Y;
@@ -40,7 +40,7 @@
             var targetRow = target.GridPosition.X;
             var targetCol = target.GridPosition.Y;
 
-            Func<int, int, List<PositionXY>> func;
+            Func<int, int, IEnumerable<PositionXY>> func = null;
 
             if (objCol == targetCol && objRow < targetRow) func = Up;
             else if (objCol == targetCol && objRow > targetRow) func = Down;
@@ -51,10 +51,14 @@
             else if (objCol < targetCol && objRow > targetRow) func = DownRight;
             else if (objCol > targetCol && objRow > targetRow) func = DownLeft;
             
-            return new List<PositionXY>();
+            var output = func?.Invoke(objRow, objCol);
+
+            if (output == null) throw new ApplicationException("Inavlid input");
+
+            return output;
         }
 
-        private static List<PositionXY> Up(int row, int col)
+        private static IEnumerable<PositionXY> Up(int row, int col)
         {
             var startRow = row - 2;
             var startCol = col - 1;
@@ -62,7 +66,7 @@
             return GetList(startRow, startCol);
         }
 
-        private static List<PositionXY> Down(int row, int col)
+        private static IEnumerable<PositionXY> Down(int row, int col)
         {
             var startRow = row + 2;
             var startCol = col - 1;
@@ -70,7 +74,7 @@
             return GetList(startRow, startCol);
         }
 
-        private static List<PositionXY> Left(int row, int col)
+        private static IEnumerable<PositionXY> Left(int row, int col)
         {
             var startRow = row - 1;
             var startCol = col - 2;
@@ -78,7 +82,7 @@
             return GetList(startRow, startCol);
         }
 
-        private static List<PositionXY> Right(int row, int col)
+        private static IEnumerable<PositionXY> Right(int row, int col)
         {
             var startRow = row - 1;
             var startCol = col + 2;
@@ -86,7 +90,7 @@
             return GetList(startRow, startCol);
         }
 
-        private static List<PositionXY> UpRight(int row, int col)
+        private static IEnumerable<PositionXY> UpRight(int row, int col)
         {
             var startRow = row - 2;
             var startCol = col;
@@ -94,7 +98,7 @@
             return GetList(startRow, startCol);
         }
 
-        private static List<PositionXY> UpLeft(int row, int col)
+        private static IEnumerable<PositionXY> UpLeft(int row, int col)
         {
             var startRow = row - 2;
             var startCol = col - 2;
@@ -102,7 +106,7 @@
             return GetList(startRow, startCol);
         }
 
-        private static List<PositionXY> DownRight(int row, int col)
+        private static IEnumerable<PositionXY> DownRight(int row, int col)
         {
             var startRow = row + 2;
             var startCol = col;
@@ -110,7 +114,7 @@
             return GetList(startRow, startCol);
         }
 
-        private static List<PositionXY> DownLeft(int row, int col)
+        private static IEnumerable<PositionXY> DownLeft(int row, int col)
         {
             var startRow = row + 2;
             var startCol = col - 2;
@@ -118,7 +122,7 @@
             return GetList(startRow, startCol);
         }
 
-        private static List<PositionXY> GetList(int startRow, int startCol)
+        private static IEnumerable<PositionXY> GetList(int startRow, int startCol)
         {
             return PlayingFieldMethods.FindOccupiedPositionsInRange(startRow, startCol);
         }

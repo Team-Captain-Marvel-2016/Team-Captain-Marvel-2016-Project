@@ -73,7 +73,7 @@ namespace PlayingFieldMethodsAssembly
             y = player.GridPosition.Y;
         }
 
-        public static List<PositionXY> FindOccupiedPositionsInRange(int startRow, int startCol)
+        public static IEnumerable<PositionXY> FindOccupiedPositionsInRange(int startRow, int startCol)
         {
             var maxRow = PlayingField.Field.GetLength(0);
             var maxCol = PlayingField.Field.GetLength(1);

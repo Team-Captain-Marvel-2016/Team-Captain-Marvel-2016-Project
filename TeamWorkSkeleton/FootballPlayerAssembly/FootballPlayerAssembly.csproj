@@ -48,6 +48,7 @@
     <Compile Include="Enumerations\PositionType.cs" />
     <Compile Include="Enumerations\SpeciesType.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayer.cs" />
+    <Compile Include="FootballPlayerAbstractClass\FootballPlayerAwarenessImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerCallForPassImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerIOnZeroAPImplementation.cs" />
     <Compile Include="FootballPlayerAbstractClass\FootballPlayerMouseDownImplementation.cs" />
@@ -61,11 +62,13 @@
     <Compile Include="FootballPlayerFactoryClasses\HumanFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerFactoryClasses\MartianFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerFactoryClasses\NeptunianFootballPlayerConstructingMethods.cs" />
+    <Compile Include="FootballPlayerFactoryClasses\UranianFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerFactoryClasses\VenusianFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerSettingsClasses\AttackerCreationConstants.cs" />
     <Compile Include="FootballPlayerSettingsClasses\DefenderCreationConstants.cs" />
     <Compile Include="FootballPlayerSettingsClasses\GoalkeeperCreationConstants.cs" />
     <Compile Include="FootballPlayerSettingsClasses\MidfielderCreationConstants.cs" />
+    <Compile Include="Interfaces\IAwareness.cs" />
     <Compile Include="Interfaces\IDefenseStats.cs" />
     <Compile Include="Interfaces\IOffenseStats.cs" />
     <Compile Include="Interfaces\IOnZeroAP.cs" />
@@ -80,16 +83,27 @@
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianDefender.cs" />
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianGoalkeeper.cs" />
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianMidfielder.cs" />
+<<<<<<< HEAD
     <Compile Include="RolesClasses\SagittariusianFootballPlayer\SagittariusianAttacker.cs" />
     <Compile Include="RolesClasses\SagittariusianFootballPlayer\SagittariusianDefender.cs" />
     <Compile Include="RolesClasses\SagittariusianFootballPlayer\SagittariusianGoalKeeper.cs" />
     <Compile Include="RolesClasses\SagittariusianFootballPlayer\SagittariusianMidFielder.cs" />
+=======
+    <Compile Include="RolesClasses\UranianFootballPlayer\UranianAttacker.cs" />
+    <Compile Include="RolesClasses\UranianFootballPlayer\UranianDefender.cs" />
+    <Compile Include="RolesClasses\UranianFootballPlayer\UranianGoalkeeper.cs" />
+    <Compile Include="RolesClasses\UranianFootballPlayer\UranianMidfielder.cs" />
+>>>>>>> origin/master
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianAttacker.cs" />
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianDefender.cs" />
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianGoalkeeper.cs" />
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianMidfielder.cs" />
     <Compile Include="SpeciesAbstractClasses\Neptunian.cs" />
+<<<<<<< HEAD
     <Compile Include="SpeciesAbstractClasses\Sagittariusian.cs" />
+=======
+    <Compile Include="SpeciesAbstractClasses\Uranian.cs" />
+>>>>>>> origin/master
     <Compile Include="SpeciesAbstractClasses\Venusian.cs" />
     <Compile Include="SpeciesNameGenerators\HumanNameGenerator.cs" />
     <Compile Include="SpeciesNameGenerators\JupiterianNameGenerator.cs" />
@@ -101,7 +115,11 @@
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianMidfielder.cs" />
     <Compile Include="SpeciesAbstractClasses\Human.cs" />
     <Compile Include="SpeciesAbstractClasses\Martian.cs" />
+<<<<<<< HEAD
     <Compile Include="SpeciesNameGenerators\SagittariusianNameGenerator.cs" />
+=======
+    <Compile Include="SpeciesNameGenerators\UranianNameGenerator.cs" />
+>>>>>>> origin/master
     <Compile Include="SpeciesNameGenerators\VenusianNameGenerator.cs" />
   </ItemGroup>
   <ItemGroup>

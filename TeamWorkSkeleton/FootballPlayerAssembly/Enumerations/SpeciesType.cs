@@ -5,7 +5,8 @@
         Neptunian,
         Venusian,
         Human,
-        Martian
+        Martian,
+        Uranian
         // TODO : Add the rest when they have constructors when implemented
     }
 }

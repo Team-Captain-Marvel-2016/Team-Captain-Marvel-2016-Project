@@ -157,6 +157,18 @@ namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
 
             return speciesName.ToString();
         }
+
+        public class GenericFootballPlayer
+        {
+            public static implicit operator GenericFootballPlayer(GenericFootballPlayerplayer v)
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public class GenericFootballPlayerplayer
+        {
+        }
         #endregion
     }
 }

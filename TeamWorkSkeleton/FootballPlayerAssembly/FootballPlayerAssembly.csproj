@@ -60,6 +60,7 @@
     <Compile Include="FootballPlayerFactoryClasses\GenericFootballPlayerClasses\GenericFootballPlayer.cs" />
     <Compile Include="FootballPlayerFactoryClasses\HumanFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerFactoryClasses\MartianFootballPlayerConstructingMethods.cs" />
+    <Compile Include="FootballPlayerFactoryClasses\MercurianFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerFactoryClasses\NeptunianFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerFactoryClasses\SagittariusianFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerFactoryClasses\UranianFootballPlayerConstructingMethods.cs" />
@@ -79,6 +80,10 @@
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanDefender.cs" />
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanGoalkeeper.cs" />
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanMidfielder.cs" />
+    <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianAttacker.cs" />
+    <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianDefender.cs" />
+    <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianGoalkeeper.cs" />
+    <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianMidfielder.cs" />
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianAttacker.cs" />
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianDefender.cs" />
     <Compile Include="RolesClasses\NeptunianFootballPlayer\NeptunianGoalkeeper.cs" />
@@ -96,6 +101,7 @@
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianGoalkeeper.cs" />
     <Compile Include="RolesClasses\VenusianFootballPlayer\VenusianMidfielder.cs" />
     <Compile Include="SpeciesAbstractClasses\Jupiterian.cs" />
+    <Compile Include="SpeciesAbstractClasses\Mercurian.cs" />
     <Compile Include="SpeciesAbstractClasses\Neptunian.cs" />
     <Compile Include="SpeciesAbstractClasses\Sagittariusian.cs" />
     <Compile Include="SpeciesAbstractClasses\Uranian.cs" />
@@ -103,6 +109,7 @@
     <Compile Include="SpeciesNameGenerators\HumanNameGenerator.cs" />
     <Compile Include="SpeciesNameGenerators\JupiterianNameGenerator.cs" />
     <Compile Include="SpeciesNameGenerators\MartianNameGenerator.cs" />
+    <Compile Include="SpeciesNameGenerators\MercurianNameGenerator.cs" />
     <Compile Include="SpeciesNameGenerators\NeptunianNameGenerator.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianAttacker.cs" />
     <Compile Include="RolesClasses\MartianFootballPlayer\MartianDefender.cs" />

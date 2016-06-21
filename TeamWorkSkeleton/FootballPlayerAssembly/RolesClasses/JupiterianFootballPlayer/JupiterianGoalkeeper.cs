@@ -1,22 +1,21 @@
 ﻿namespace FootballPlayerAssembly.RolesClasses.JupiterianFootballPlayer
 {
-    using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
-    using FootballPlayerAssembly.SpeciesAbstractClasses;
+    using SpeciesAbstractClasses;
 
     public static partial class FootballPlayerFactory
     {
-        internal class JupiterianGoalKeeper : Jupiterian
+        internal class JupiterianGoalkeeper : Jupiterian
         {
-            internal JupiterianGoalKeeper(FootballPlayerFactoryClasses.GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer player)
+            internal JupiterianGoalkeeper(FootballPlayerFactoryClasses.GenericFootballPlayerClasses.FootballPlayerFactory.GenericFootballPlayer player)
                 : base(player)
             {
             }
 
-            internal JupiterianGoalKeeper(string name) : base(name)
+            internal JupiterianGoalkeeper(string name) : base(name)
             {
             }
 
-            internal JupiterianGoalKeeper(string name, int pass, int shoot, int dribble, int save, int tackle, int interception, int awareness, int actionPoints)
+            internal JupiterianGoalkeeper(string name, int pass, int shoot, int dribble, int save, int tackle, int interception, int awareness, int actionPoints)
                 : base(name, pass, shoot, dribble, save, tackle, interception, awareness, actionPoints)
             {
             }

@@ -59,6 +59,7 @@
     <Compile Include="FootballPlayerFactoryClasses\GenericFootballPlayerClasses\CreateGenericFootballPlayer.cs" />
     <Compile Include="FootballPlayerFactoryClasses\GenericFootballPlayerClasses\GenericFootballPlayer.cs" />
     <Compile Include="FootballPlayerFactoryClasses\HumanFootballPlayerConstructingMethods.cs" />
+    <Compile Include="FootballPlayerFactoryClasses\JupiterianFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerFactoryClasses\MartianFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerFactoryClasses\MercurianFootballPlayerConstructingMethods.cs" />
     <Compile Include="FootballPlayerFactoryClasses\NeptunianFootballPlayerConstructingMethods.cs" />

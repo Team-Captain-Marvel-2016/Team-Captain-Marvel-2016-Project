@@ -4,34 +4,34 @@
     using System.Collections.Generic;
     using System.Text;
 
-    internal static class VenusianNameGenerator
+    internal static class UranianNameGenerator
     {
         internal static Dictionary<int, string> FirstPartName = new Dictionary<int, string>()
         {
-            { 0 , "Mia" },
-            { 1 , "Riu" },
-            { 2 , "Khana" },
-            { 3 , "Pury" },
-            { 4 , "Erikq" },
-            { 5 , "Sey" },
-            { 6 , "Edo" },
-            { 7 , "Livo" },
-            { 8 , "Xipi" },
-            { 9 , "Kai" }
+            { 0 , "" },
+            { 1 , "" },
+            { 2 , "" },
+            { 3 , "" },
+            { 4 , "" },
+            { 5 , "" },
+            { 6 , "" },
+            { 7 , "" },
+            { 8 , "" },
+            { 9 , "" }
         };
 
         internal static Dictionary<int, string> LastPartName = new Dictionary<int, string>()
         {
-            { 0 , "vin" },
-            { 1 , "margion" },
-            { 2 , "philq" },
-            { 3 , "neuron" },
-            { 4 , "kakud" },
-            { 5 , "novese" },
-            { 6 , "muril" },
-            { 7 , "fyfy" },
-            { 8 , "diansin" },
-            { 9 , "purl" }
+            { 0 , "" },
+            { 1 , "" },
+            { 2 , "" },
+            { 3 , "" },
+            { 4 , "" },
+            { 5 , "" },
+            { 6 , "" },
+            { 7 , "" },
+            { 8 , "" },
+            { 9 , "" }
         };
 
         internal static string GenerateName()

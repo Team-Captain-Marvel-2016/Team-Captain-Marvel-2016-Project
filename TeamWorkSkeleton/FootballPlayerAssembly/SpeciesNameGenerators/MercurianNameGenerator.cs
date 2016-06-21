@@ -1,6 +1,6 @@
 ﻿namespace FootballPlayerAssembly.SpeciesNameGenerators
 {
-    using System;
+    using RandomizersAssembly.StaticRandomizersClasses;
     using System.Collections.Generic;
     using System.Text;
 
@@ -35,7 +35,7 @@
 
         internal static string GenerateName()
         {
-            var random = new Random();
+            var random = GenericRandomization.Random;
             var sb = new StringBuilder();
             sb.Append(FirstName[random.Next(0, 9)]);
             sb.Append(LastName[random.Next(0, 9)]);

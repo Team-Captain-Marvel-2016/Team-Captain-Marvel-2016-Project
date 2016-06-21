@@ -7,7 +7,8 @@
         Human,
         Martian,
         Uranian,
-        Sagittariusian
+        Sagittariusian,
+        Mercurian
         // TODO : Add the rest when they have constructors when implemented
     }
 }

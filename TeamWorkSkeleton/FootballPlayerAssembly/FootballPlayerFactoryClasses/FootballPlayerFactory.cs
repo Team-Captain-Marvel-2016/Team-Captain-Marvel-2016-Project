@@ -1,10 +1,10 @@
-﻿using RandomizersAssembly.StaticRandomizersClasses;
-
+﻿
 namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
 {
     using Enumerations;
     using FootballPlayerAbstractClass;
     using GenericFootballPlayerClasses;
+    using RandomizersAssembly.StaticRandomizersClasses;
     using System;
     using System.Linq;
     using System.Reflection;
@@ -35,7 +35,7 @@ namespace FootballPlayerAssembly.FootballPlayerFactoryClasses
 
             return newlyGeneratedPlayer;
         }
-        
+
         /// <summary>
         /// Create a new FootballPlayer by a givern position
         /// </summary>

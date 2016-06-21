@@ -80,6 +80,10 @@
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanDefender.cs" />
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanGoalkeeper.cs" />
     <Compile Include="RolesClasses\HumanFootballPlayer\HumanMidfielder.cs" />
+    <Compile Include="RolesClasses\JupiterianFootballPlayer\JupiterianAttacker.cs" />
+    <Compile Include="RolesClasses\JupiterianFootballPlayer\JupiterianDefender.cs" />
+    <Compile Include="RolesClasses\JupiterianFootballPlayer\JupiterianGoalkeeper.cs" />
+    <Compile Include="RolesClasses\JupiterianFootballPlayer\JupiterianMidfielder.cs" />
     <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianAttacker.cs" />
     <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianDefender.cs" />
     <Compile Include="RolesClasses\MercurianFootballPlayer\MercurianGoalkeeper.cs" />

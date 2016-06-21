@@ -93,9 +93,9 @@
                 GameOver.ResetGameState();
             }
 
-            NextTurn.ChangeGameState(PlayFieldCanvas);
+            NextTurn.ChangeGameState(this.PlayFieldCanvas);
 
-            DisplayControlButtons();
+            this.DisplayControlButtons();
         }
 
         /// <summary>

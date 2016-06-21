@@ -6,8 +6,6 @@
     using System.Windows;
     using System.Windows.Shapes;
     using GameLogicAssembly.GridPositionMethods;
-    using PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass;
-    using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
     using VisualizationAssembly.CanvasUtilsClasses;
 
     public partial class MainWindow
@@ -21,7 +19,7 @@
             // On click -> remove those events.
             this.AddMouseDownEventPass();
         }
-        
+
         private void OnMouseDownPass(object sender, EventArgs args)
         {
             // Remove Event.
@@ -35,9 +33,7 @@
             var coordinatesWithObjects =
                 GridPositionUtils.FindObjectsInRange(GameStateTracker.SelectedFootballPlayer, target);
 
-            var opponent = GameStateTracker.PlayerOnTurn is PlayerOne
-                ? PlayerTwo.Player
-                : PlayerOne.Player;
+            var opponent = GameStateTracker.GetOpponent();
 
             var listOfEnemyPlayers =
                 opponent.GetPlayersOnPositionsList(coordinatesWithObjects);
@@ -64,14 +60,6 @@
             {
                 this.UpdateGameStateOnUnsuccessfulPass(interceptintPlayer);
             }
-
-            // Transfer the ball to friendly/ enemy.
-
-            // Update visualization.
-
-            // Update Game State.
-
-            //throw new NotImplementedException();
         }
 
         private void UpdateGameStateOnSuccessfulPass(FootballPlayer targetFootballPlayer)
@@ -88,7 +76,18 @@
 
         private void UpdateGameStateOnUnsuccessfulPass(FootballPlayer enemyPlayer)
         {
+            GameStateTracker.FootballPlayerWithBall.HasBall = false;
+            GameStateTracker.FootballPlayerWithBall = enemyPlayer;
+            GameStateTracker.FootballPlayerWithBall.HasBall = true;
 
+            GameStateTracker.PlayerOnTurn.ResetVisualTokenColor();
+            CanvasChildrenUtilities.MarkPlayerWithBall(
+                this.PlayFieldCanvas,
+                GameStateTracker.FootballPlayerWithBall);
+
+            GameStateTracker.PlayerOnTurn.Team.HasBall = false;
+            GameStateTracker.GetOpponent().Team.HasBall = true;
+            GameStateTracker.PlayerWihBall = GameStateTracker.GetOpponent();
         }
     }
 }

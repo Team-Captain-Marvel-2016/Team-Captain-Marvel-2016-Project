@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindowPartialClass\MainWindowCallForPassMethods.cs" />
+    <Compile Include="MainWindowPartialClass\MainWindowGetOpponentMethod.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowPassMethods.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowButtonGroups.cs" />
     <Compile Include="MainWindowPartialClass\MainWindowFootballPlayerEvent.cs" />

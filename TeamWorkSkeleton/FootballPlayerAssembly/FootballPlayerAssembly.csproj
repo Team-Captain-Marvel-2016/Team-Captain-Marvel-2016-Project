@@ -121,10 +121,6 @@
     <Compile Include="SpeciesNameGenerators\VenusianNameGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GameLogicInterfacesAssembly\GameLogicInterfacesAssembly.csproj">
-      <Project>{f12292f9-fedb-410a-9566-d91a17823780}</Project>
-      <Name>GameLogicInterfacesAssembly</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>GlobalDataStructures</Name>

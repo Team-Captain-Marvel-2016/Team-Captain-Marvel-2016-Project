@@ -48,10 +48,6 @@
       <Project>{a2430f2b-79f1-461e-a64a-60a1d9e4f5f7}</Project>
       <Name>GameLogicEventsAssembly</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GameLogicInterfacesAssembly\GameLogicInterfacesAssembly.csproj">
-      <Project>{f12292f9-fedb-410a-9566-d91a17823780}</Project>
-      <Name>GameLogicInterfacesAssembly</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GlobalSettingsAssembly\GlobalSettingsAssembly.csproj">
       <Project>{c2b1b807-b8fe-4527-84bf-467d73408544}</Project>
       <Name>GlobalSettingsAssembly</Name>

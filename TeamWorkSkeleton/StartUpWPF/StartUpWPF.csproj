@@ -122,10 +122,6 @@
       <Project>{8df2c670-9460-4f7e-b938-711fc77ed1ec}</Project>
       <Name>GameLogicAssembly</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GameLogicInterfacesAssembly\GameLogicInterfacesAssembly.csproj">
-      <Project>{f12292f9-fedb-410a-9566-d91a17823780}</Project>
-      <Name>GameLogicInterfacesAssembly</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GameStateTrackerAssembly\GameStateTrackerAssembly.csproj">
       <Project>{d36ce9ea-4307-4d40-951a-054299f9b09b}</Project>
       <Name>GameStateTrackerAssembly</Name>

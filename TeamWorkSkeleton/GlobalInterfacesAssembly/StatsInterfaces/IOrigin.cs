@@ -1,4 +1,4 @@
-﻿namespace GlobalInterfacesAssembly.Interfaces
+﻿namespace GlobalInterfacesAssembly.StatsInterfaces
 {
     public interface IOrigin
     {

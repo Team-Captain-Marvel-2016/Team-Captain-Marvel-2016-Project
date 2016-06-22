@@ -1,11 +1,11 @@
 ﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
     using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
-    using GameLogicInterfacesAssembly;
     using GlobalDataStructures;
     using System.Text;
     using System.Windows.Shapes;
-    using GlobalInterfacesAssembly.Interfaces;
+    using GlobalInterfacesAssembly.GameLogicInterfaces;
+    using GlobalInterfacesAssembly.StatsInterfaces;
     using RandomizersAssembly.DiceClasses;
     using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
 

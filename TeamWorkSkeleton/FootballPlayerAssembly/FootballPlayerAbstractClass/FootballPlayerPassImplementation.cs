@@ -1,8 +1,8 @@
 ﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
     using System;
-    using GameLogicInterfacesAssembly;
-    using GlobalInterfacesAssembly.Interfaces;
+    using GlobalInterfacesAssembly.GameLogicInterfaces;
+    using GlobalInterfacesAssembly.StatsInterfaces;
 
     public abstract partial class FootballPlayer : IPass
     {

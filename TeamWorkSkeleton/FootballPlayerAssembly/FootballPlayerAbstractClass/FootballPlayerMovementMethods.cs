@@ -1,9 +1,9 @@
 ﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
-    using GameLogicInterfacesAssembly;
     using GlobalDataStructures;
     using PlayingFIeldAssembly;
     using System;
+    using GlobalInterfacesAssembly.GameLogicInterfaces;
 
     public abstract partial class FootballPlayer : IControlMovement
     {

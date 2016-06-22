@@ -10,22 +10,22 @@
     {
         private void MoveUpBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            Move(GameStateTracker.SelectedFootballPlayer.MoveUp);
+            this.Move(GameStateTracker.SelectedFootballPlayer.MoveUp);
         }
 
         private void MoveDownBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            Move(GameStateTracker.SelectedFootballPlayer.MoveDown);
+            this.Move(GameStateTracker.SelectedFootballPlayer.MoveDown);
         }
 
         private void MoveLeftBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            Move(GameStateTracker.SelectedFootballPlayer.MoveLeft);
+            this.Move(GameStateTracker.SelectedFootballPlayer.MoveLeft);
         }
 
         private void MoveRightBtn_OnClick(object sender, RoutedEventArgs e)
         {
-            Move(GameStateTracker.SelectedFootballPlayer.MoveRight);
+            this.Move(GameStateTracker.SelectedFootballPlayer.MoveRight);
         }
 
         private void Move(Action action)

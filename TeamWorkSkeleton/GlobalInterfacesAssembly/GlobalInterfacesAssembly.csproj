@@ -40,6 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameLogicInterfaces\ICallForPass.cs" />
+    <Compile Include="GameLogicInterfaces\IControlMovement.cs" />
+    <Compile Include="GameLogicInterfaces\IGameMechanics.cs" />
+    <Compile Include="GameLogicInterfaces\IGameStateTrackable.cs" />
+    <Compile Include="GameLogicInterfaces\IPass.cs" />
+    <Compile Include="GameLogicInterfaces\IShoot.cs" />
+    <Compile Include="GameLogicInterfaces\ITackle.cs" />
     <Compile Include="StatsInterfaces\IAwareness.cs" />
     <Compile Include="StatsInterfaces\IDefenseStats.cs" />
     <Compile Include="StatsInterfaces\IOffenseStats.cs" />

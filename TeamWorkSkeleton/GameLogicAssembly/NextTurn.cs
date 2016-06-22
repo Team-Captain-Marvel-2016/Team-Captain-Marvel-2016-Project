@@ -1,4 +1,4 @@
-﻿namespace Game.Logic.States
+﻿namespace Game.Logic
 {
     using System.Windows.Controls;
     using Teamwork.Models.PC.Abstract;

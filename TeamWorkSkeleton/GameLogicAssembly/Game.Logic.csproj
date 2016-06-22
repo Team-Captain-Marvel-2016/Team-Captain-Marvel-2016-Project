@@ -44,11 +44,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="States\GameOver.cs" />
-    <Compile Include="States\NextTurn.cs" />
-    <Compile Include="States\ResetGame.cs" />
-    <Compile Include="States\InitialGameState.cs" />
-    <Compile Include="GridPosition\GridPositionUtils.cs" />
+    <Compile Include="GameOver.cs" />
+    <Compile Include="NextTurn.cs" />
+    <Compile Include="ResetGame.cs" />
+    <Compile Include="InitialGameState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
@@ -85,13 +84,13 @@
       <Project>{a1c3ce0f-4a2f-44e3-beb6-8c2860edd7ee}</Project>
       <Name>TeamWork.Models.PC</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PlayingFIeldAssembly\PlayingFIeldAssembly.csproj">
+    <ProjectReference Include="..\PlayingFIeldAssembly\Game.PlayingField.csproj">
       <Project>{293c7edf-b1e1-40d9-b08c-9b010bbdf99e}</Project>
-      <Name>PlayingFIeldAssembly</Name>
+      <Name>Game.PlayingField</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PlayingFieldMethodsAssembly\PlayingFieldMethodsAssembly.csproj">
+    <ProjectReference Include="..\PlayingFieldMethodsAssembly\Game.PlayingField.Methods.csproj">
       <Project>{8b0cd4dc-1798-4c44-8846-45d13e8c3610}</Project>
-      <Name>PlayingFieldMethodsAssembly</Name>
+      <Name>Game.PlayingField.Methods</Name>
     </ProjectReference>
     <ProjectReference Include="..\RandomizersAssembly\Global.Randomization.csproj">
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>

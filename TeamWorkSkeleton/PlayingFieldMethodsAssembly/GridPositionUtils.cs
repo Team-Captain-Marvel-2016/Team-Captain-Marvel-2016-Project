@@ -1,11 +1,9 @@
-﻿namespace Game.Logic.GridPosition
+namespace Game.PlayingField.Methods
 {
     using System;
     using System.Collections.Generic;
     using Global.Contracts;
     using Global.DataStructures;
-    using PlayingFieldMethodsAssembly;
-    using PlayingFIeldAssembly;
 
     public static class GridPositionUtils
     {

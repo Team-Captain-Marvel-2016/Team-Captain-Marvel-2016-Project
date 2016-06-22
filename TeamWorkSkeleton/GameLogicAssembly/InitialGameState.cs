@@ -1,9 +1,8 @@
-﻿namespace Game.Logic.States
+﻿namespace Game.Logic
 {
     using System.Windows.Controls;
-    using Global.Enumerations;
     using Global.Enumerations.Team;
-    using PlayingFieldMethodsAssembly;
+    using PlayingField.Methods;
     using Teamwork.Models.PC.Abstract;
     using Teamwork.Models.PC.Human.Singletons;
     using Tracker;

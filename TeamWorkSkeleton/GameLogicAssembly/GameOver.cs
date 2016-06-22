@@ -1,4 +1,4 @@
-﻿namespace Game.Logic.States
+﻿namespace Game.Logic
 {
     public static class GameOver
     {

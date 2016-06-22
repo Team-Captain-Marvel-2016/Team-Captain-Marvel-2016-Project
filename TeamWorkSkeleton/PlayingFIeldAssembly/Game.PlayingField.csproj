@@ -7,8 +7,8 @@
     <ProjectGuid>{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PlayingFIeldAssembly</RootNamespace>
-    <AssemblyName>PlayingFIeldAssembly</AssemblyName>
+    <RootNamespace>Game.PlayingField</RootNamespace>
+    <AssemblyName>Game.PlayingField</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

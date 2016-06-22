@@ -1,6 +1,5 @@
 ﻿namespace StartUpWPF
 {
-    using PlayingFieldMethodsAssembly;
     using VisualizationAssembly.CanvasUtilsClasses;
     using System;
     using System.Collections.Generic;
@@ -16,7 +15,7 @@
     using System.Windows.Media.Imaging;
     using System.Windows.Navigation;
     using System.Windows.Shapes;
-    using Game.Logic.States;
+    using Game.Logic;
     using UserInterfaceAssembly.UserControlsClasses;
 
     /// <summary>

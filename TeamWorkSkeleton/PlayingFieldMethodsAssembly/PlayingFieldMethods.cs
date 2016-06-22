@@ -1,9 +1,9 @@
-﻿namespace PlayingFieldMethodsAssembly
+﻿namespace Game.PlayingField.Methods
 {
     using System;
     using System.Collections.Generic;
+    using Game.PlayingField;
     using Global.DataStructures;
-    using PlayingFIeldAssembly;
     using TeamAssembly;
     using Teamwork.Models.PC.Human.Singletons;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;

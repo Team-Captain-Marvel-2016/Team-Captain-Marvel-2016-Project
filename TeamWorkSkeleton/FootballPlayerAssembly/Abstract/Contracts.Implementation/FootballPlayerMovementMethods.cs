@@ -1,7 +1,7 @@
 ﻿namespace TeamWork.Models.Abstract
 {
-    using PlayingFIeldAssembly;
     using System;
+    using Game.PlayingField;
     using Global.Contracts.Actions;
     using Global.DataStructures;
 

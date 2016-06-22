@@ -131,9 +131,9 @@
       <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
       <Name>Global.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PlayingFIeldAssembly\PlayingFIeldAssembly.csproj">
+    <ProjectReference Include="..\PlayingFIeldAssembly\Game.PlayingField.csproj">
       <Project>{293c7edf-b1e1-40d9-b08c-9b010bbdf99e}</Project>
-      <Name>PlayingFIeldAssembly</Name>
+      <Name>Game.PlayingField</Name>
     </ProjectReference>
     <ProjectReference Include="..\RandomizersAssembly\Global.Randomization.csproj">
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>

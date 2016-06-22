@@ -1,4 +1,4 @@
-﻿namespace PlayingFIeldAssembly
+﻿namespace Game.PlayingField
 {
     using System;
     using Global.Settings.Visualization;

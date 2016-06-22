@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingFIeldAssembly", "PlayingFIeldAssembly\PlayingFIeldAssembly.csproj", "{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.PlayingField", "PlayingFIeldAssembly\Game.PlayingField.csproj", "{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterfaceAssembly", "UserInterfaceAssembly\UserInterfaceAssembly.csproj", "{9D64B841-A428-451A-965D-CB3B0A23A955}"
 EndProject
@@ -33,7 +33,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Events", "GameLogicEve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Tracker", "GameStateTrackerAssembly\Game.Tracker.csproj", "{D36CE9EA-4307-4D40-951A-054299F9B09B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingFieldMethodsAssembly", "PlayingFieldMethodsAssembly\PlayingFieldMethodsAssembly.csproj", "{8B0CD4DC-1798-4C44-8846-45D13E8C3610}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.PlayingField.Methods", "PlayingFieldMethodsAssembly\Game.PlayingField.Methods.csproj", "{8B0CD4DC-1798-4C44-8846-45D13E8C3610}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.Settings", "GlobalSettingsAssembly\Global.Settings.csproj", "{C2B1B807-B8FE-4527-84BF-467D73408544}"
 EndProject

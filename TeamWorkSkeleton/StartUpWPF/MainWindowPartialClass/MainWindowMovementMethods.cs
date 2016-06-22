@@ -1,8 +1,8 @@
 ﻿namespace StartUpWPF
 {
-    using PlayingFieldMethodsAssembly;
     using System;
     using System.Windows;
+    using Game.PlayingField.Methods;
     using Game.Tracker;
     using VisualizationAssembly.CanvasUtilsClasses;
 

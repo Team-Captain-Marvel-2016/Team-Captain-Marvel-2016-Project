@@ -56,9 +56,9 @@
       <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
       <Name>Global.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PlayerAssembly\Teamwork.Models.PC.csproj">
+    <ProjectReference Include="..\PlayerAssembly\TeamWork.Models.PC.csproj">
       <Project>{a1c3ce0f-4a2f-44e3-beb6-8c2860edd7ee}</Project>
-      <Name>Teamwork.Models.PC</Name>
+      <Name>TeamWork.Models.PC</Name>
     </ProjectReference>
     <ProjectReference Include="..\PlayingFIeldAssembly\PlayingFIeldAssembly.csproj">
       <Project>{293c7edf-b1e1-40d9-b08c-9b010bbdf99e}</Project>

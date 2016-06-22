@@ -7,8 +7,8 @@
     <ProjectGuid>{CCE761C0-B358-4E9C-855A-74A23F5826A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RandomizersAssembly</RootNamespace>
-    <AssemblyName>RandomizersAssembly</AssemblyName>
+    <RootNamespace>Global.Randomization</RootNamespace>
+    <AssemblyName>Global.Randomization</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,10 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DiceClasses\Dice.cs" />
-    <Compile Include="Interfaces\IDiceRoll.cs" />
+    <Compile Include="Dice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaticRandomizersClasses\GenericRandomization.cs" />
+    <Compile Include="GenericRandomization.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalInterfacesAssembly\Global.Contracts.csproj">
+      <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
+      <Name>Global.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

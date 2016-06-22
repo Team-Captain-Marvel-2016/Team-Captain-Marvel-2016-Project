@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.CustomExceptions", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Models", "FootballPlayerAssembly\TeamWork.Models.csproj", "{D46F609D-BBA1-47DF-AEA0-DA4479FCB741}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teamwork.Models.PC", "PlayerAssembly\Teamwork.Models.PC.csproj", "{A1C3CE0F-4A2F-44E3-BEB6-8C2860EDD7EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Models.PC", "PlayerAssembly\TeamWork.Models.PC.csproj", "{A1C3CE0F-4A2F-44E3-BEB6-8C2860EDD7EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Models.Team", "TeamAssembly\TeamWork.Models.Team.csproj", "{C432A3DC-CBBD-4B15-893D-6EECFFA9E9FB}"
 EndProject
@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-TestingAssembly", "Testi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.DataStructures", "GlobalDataStructures\Global.DataStructures.csproj", "{E5ABB4B1-ABCF-443E-80E9-8F79C3A00E0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomizersAssembly", "RandomizersAssembly\RandomizersAssembly.csproj", "{CCE761C0-B358-4E9C-855A-74A23F5826A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.Randomization", "RandomizersAssembly\Global.Randomization.csproj", "{CCE761C0-B358-4E9C-855A-74A23F5826A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.WPFClient", "StartUpWPF\TeamWork.WPFClient.csproj", "{D87748FF-3ED5-4335-996D-D12E4266E5CC}"
 EndProject

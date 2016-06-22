@@ -1,8 +1,8 @@
 ﻿
 namespace VisualizationAssembly.InitPlayingFieldClasses
 {
-    using Enumerations;
     using Global.DataStructures;
+    using Global.Enumerations;
     using Global.Enumerations.Team;
     using Global.Settings.Visualization;
     using TeamAssembly;
@@ -13,7 +13,6 @@ namespace VisualizationAssembly.InitPlayingFieldClasses
         public static void GetInitialFootballPlayerPositions
             (FootballTeam team, StartingFieldType field)
         {
-            #region // Column Indexes
             var goalkeeperCol = 0;
             var defenderCol = 2;
             var midfielderCol = 4;
@@ -26,7 +25,6 @@ namespace VisualizationAssembly.InitPlayingFieldClasses
                 midfielderCol = defenderCol - 2;
                 attackerCol = midfielderCol - 2;
             }
-            #endregion
 
             var playerCounter = 0;
 

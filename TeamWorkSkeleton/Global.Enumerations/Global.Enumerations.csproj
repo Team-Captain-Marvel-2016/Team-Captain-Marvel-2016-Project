@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Factory\PositionType.cs" />
     <Compile Include="Factory\SpeciesType.cs" />
+    <Compile Include="Team\StartingFieldType.cs" />
     <Compile Include="Team\FormationType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Team\ParseFormationType.cs" />

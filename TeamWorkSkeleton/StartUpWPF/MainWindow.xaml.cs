@@ -17,7 +17,6 @@
     using System.Windows.Navigation;
     using System.Windows.Shapes;
     using Game.Logic.States;
-    using RandomizersAssembly.DiceClasses;
     using UserInterfaceAssembly.UserControlsClasses;
 
     /// <summary>

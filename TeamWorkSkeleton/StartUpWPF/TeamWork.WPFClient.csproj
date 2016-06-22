@@ -135,17 +135,17 @@
       <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
       <Name>Global.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PlayerAssembly\Teamwork.Models.PC.csproj">
+    <ProjectReference Include="..\PlayerAssembly\TeamWork.Models.PC.csproj">
       <Project>{a1c3ce0f-4a2f-44e3-beb6-8c2860edd7ee}</Project>
-      <Name>Teamwork.Models.PC</Name>
+      <Name>TeamWork.Models.PC</Name>
     </ProjectReference>
     <ProjectReference Include="..\PlayingFieldMethodsAssembly\PlayingFieldMethodsAssembly.csproj">
       <Project>{8b0cd4dc-1798-4c44-8846-45d13e8c3610}</Project>
       <Name>PlayingFieldMethodsAssembly</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RandomizersAssembly\RandomizersAssembly.csproj">
+    <ProjectReference Include="..\RandomizersAssembly\Global.Randomization.csproj">
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
-      <Name>RandomizersAssembly</Name>
+      <Name>Global.Randomization</Name>
     </ProjectReference>
     <ProjectReference Include="..\TeamAssembly\TeamWork.Models.Team.csproj">
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>

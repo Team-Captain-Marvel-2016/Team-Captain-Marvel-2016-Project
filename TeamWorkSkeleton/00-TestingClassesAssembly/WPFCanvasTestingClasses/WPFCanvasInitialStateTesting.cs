@@ -8,8 +8,9 @@ namespace _00_TestingClassesAssembly.WPFCanvasTestingClasses
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Global.Enumerations;
+    using Global.Enumerations.Team;
     using Teamwork.Models.PC.Human.Singletons;
-    using VisualizationAssembly.Enumerations;
     using VisualizationAssembly.InitPlayingFieldClasses;
 
     public static class WpfCanvasInitialStateTesting

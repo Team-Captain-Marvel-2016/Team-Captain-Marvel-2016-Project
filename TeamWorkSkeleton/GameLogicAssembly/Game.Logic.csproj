@@ -65,6 +65,10 @@
       <Project>{d36ce9ea-4307-4d40-951a-054299f9b09b}</Project>
       <Name>Game.Tracker</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Global.Enumerations\Global.Enumerations.csproj">
+      <Project>{965a0d47-8b9e-4d47-93d9-ca51497d5472}</Project>
+      <Name>Global.Enumerations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GlobalDataStructures\Global.DataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>Global.DataStructures</Name>
@@ -77,9 +81,9 @@
       <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
       <Name>Global.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PlayerAssembly\Teamwork.Models.PC.csproj">
+    <ProjectReference Include="..\PlayerAssembly\TeamWork.Models.PC.csproj">
       <Project>{a1c3ce0f-4a2f-44e3-beb6-8c2860edd7ee}</Project>
-      <Name>Teamwork.Models.PC</Name>
+      <Name>TeamWork.Models.PC</Name>
     </ProjectReference>
     <ProjectReference Include="..\PlayingFIeldAssembly\PlayingFIeldAssembly.csproj">
       <Project>{293c7edf-b1e1-40d9-b08c-9b010bbdf99e}</Project>
@@ -89,9 +93,9 @@
       <Project>{8b0cd4dc-1798-4c44-8846-45d13e8c3610}</Project>
       <Name>PlayingFieldMethodsAssembly</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RandomizersAssembly\RandomizersAssembly.csproj">
+    <ProjectReference Include="..\RandomizersAssembly\Global.Randomization.csproj">
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
-      <Name>RandomizersAssembly</Name>
+      <Name>Global.Randomization</Name>
     </ProjectReference>
     <ProjectReference Include="..\TeamAssembly\TeamWork.Models.Team.csproj">
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>

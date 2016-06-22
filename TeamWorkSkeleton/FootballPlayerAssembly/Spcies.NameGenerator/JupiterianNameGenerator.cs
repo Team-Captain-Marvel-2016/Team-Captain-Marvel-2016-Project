@@ -1,8 +1,8 @@
 ﻿namespace FootballPlayerAssembly.SpeciesNameGenerators
 {
-    using RandomizersAssembly.StaticRandomizersClasses;
     using System.Collections.Generic;
     using System.Text;
+    using Global.Randomization;
 
     internal static class JupiterianNameGenerator
     {

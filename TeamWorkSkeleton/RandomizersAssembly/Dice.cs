@@ -1,8 +1,7 @@
-﻿namespace RandomizersAssembly.DiceClasses
+namespace Global.Randomization
 {
-    using Interfaces;
-    using StaticRandomizersClasses;
     using System;
+    using Contracts;
 
     /// <summary>
     /// Create a Dice object, pass a face value ( number of sides ).

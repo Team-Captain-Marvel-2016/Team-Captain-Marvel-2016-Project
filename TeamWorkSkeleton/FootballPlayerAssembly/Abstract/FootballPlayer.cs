@@ -7,7 +7,7 @@
     using Global.Contracts.Actions;
     using Global.Contracts.Statistics;
     using Global.DataStructures;
-    using RandomizersAssembly.DiceClasses;
+    using Global.Randomization;
 
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor

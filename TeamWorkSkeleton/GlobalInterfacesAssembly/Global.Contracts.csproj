@@ -51,6 +51,7 @@
     <Compile Include="Actions\IPass.cs" />
     <Compile Include="Actions\IShoot.cs" />
     <Compile Include="Actions\ITackle.cs" />
+    <Compile Include="IDiceRoll.cs" />
     <Compile Include="Statistics\IAwareness.cs" />
     <Compile Include="Statistics\IDefenseStats.cs" />
     <Compile Include="Statistics\IOffenseStats.cs" />

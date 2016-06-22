@@ -1,4 +1,4 @@
-﻿namespace RandomizersAssembly.StaticRandomizersClasses
+﻿namespace Global.Randomization
 {
     using System;
 

@@ -1,7 +1,7 @@
 ﻿namespace TeamWork.Models.Factory.Models.Generic
 {
     using FootballPlayerAssembly.FootballPlayerSettingsClasses;
-    using RandomizersAssembly.StaticRandomizersClasses;
+    using Global.Randomization;
     using FootballPlayer = Abstract.FootballPlayer;
 
     /// <summary>

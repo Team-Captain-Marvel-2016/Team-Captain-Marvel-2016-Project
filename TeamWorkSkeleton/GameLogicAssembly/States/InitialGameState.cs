@@ -1,12 +1,13 @@
 ﻿namespace Game.Logic.States
 {
     using System.Windows.Controls;
+    using Global.Enumerations;
+    using Global.Enumerations.Team;
     using PlayingFieldMethodsAssembly;
     using Teamwork.Models.PC.Abstract;
     using Teamwork.Models.PC.Human.Singletons;
     using Tracker;
     using VisualizationAssembly.CanvasUtilsClasses;
-    using VisualizationAssembly.Enumerations;
     using VisualizationAssembly.InitPlayingFieldClasses;
 
     public static class InitialGameState

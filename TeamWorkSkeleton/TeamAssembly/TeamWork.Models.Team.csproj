@@ -57,9 +57,9 @@
       <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
       <Name>Global.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RandomizersAssembly\RandomizersAssembly.csproj">
+    <ProjectReference Include="..\RandomizersAssembly\Global.Randomization.csproj">
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
-      <Name>RandomizersAssembly</Name>
+      <Name>Global.Randomization</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

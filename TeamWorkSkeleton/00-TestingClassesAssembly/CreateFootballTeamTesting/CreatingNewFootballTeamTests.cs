@@ -1,8 +1,9 @@
 ﻿namespace _00_TestingClassesAssembly.CreateFootballTeamTesting
 {
     using System;
+    using Global.Enumerations;
+    using Global.Enumerations.Team;
     using TeamAssembly;
-    using VisualizationAssembly.Enumerations;
     using VisualizationAssembly.InitPlayingFieldClasses;
 
     public static class CreatingNewFootballTeamTests

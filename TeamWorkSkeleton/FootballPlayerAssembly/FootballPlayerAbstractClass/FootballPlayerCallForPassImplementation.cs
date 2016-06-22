@@ -2,13 +2,13 @@
 {
     using System;
     using GlobalInterfacesAssembly.GameLogicInterfaces;
+    using GlobalInterfacesAssembly.StatsInterfaces;
 
     public abstract partial class FootballPlayer : ICallForPass
     {
-        public void CallForPass()
+        public bool CallForPass(IDefenseStats enemey)
         {
             throw new NotImplementedException();
         }
-        
     }
 }

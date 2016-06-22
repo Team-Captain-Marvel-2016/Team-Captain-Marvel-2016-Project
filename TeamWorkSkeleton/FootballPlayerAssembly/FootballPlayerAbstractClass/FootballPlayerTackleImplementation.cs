@@ -2,10 +2,11 @@
 {
     using System;
     using GlobalInterfacesAssembly.GameLogicInterfaces;
+    using GlobalInterfacesAssembly.StatsInterfaces;
 
     public abstract partial class FootballPlayer : ITackle
     {
-        public void Tackle()
+        public bool Tackle(IOffenseStats enemy)
         {
             throw new NotImplementedException();
         }

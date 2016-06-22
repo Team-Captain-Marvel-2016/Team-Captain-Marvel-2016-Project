@@ -1,7 +1,9 @@
 ﻿namespace GlobalInterfacesAssembly.GameLogicInterfaces
 {
+    using StatsInterfaces;
+
     public interface ICallForPass
     {
-        void CallForPass();
+        bool CallForPass(IDefenseStats enemey);
     }
 }

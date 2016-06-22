@@ -1,7 +1,9 @@
 ﻿namespace GlobalInterfacesAssembly.GameLogicInterfaces
 {
+    using StatsInterfaces;
+
     public interface IShoot
     {
-        void Shoot();
+        bool Shoot(IDefenseStats enemy);
     }
 }

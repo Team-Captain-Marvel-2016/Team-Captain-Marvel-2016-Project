@@ -1,7 +1,9 @@
 ﻿namespace GlobalInterfacesAssembly.GameLogicInterfaces
 {
+    using StatsInterfaces;
+
     public interface ITackle
     {
-        void Tackle();
+        bool Tackle(IOffenseStats enemy);
     }
 }

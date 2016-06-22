@@ -1,7 +1,7 @@
 ﻿namespace FootballPlayerAssembly.FootballPlayerAbstractClass
 {
-    using Interfaces;
     using System;
+    using GlobalInterfacesAssembly.Interfaces;
 
     public abstract partial class FootballPlayer : IOnZeroActionPoints
     {

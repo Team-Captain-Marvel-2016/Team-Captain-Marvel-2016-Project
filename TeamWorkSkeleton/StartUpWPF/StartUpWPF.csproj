@@ -134,6 +134,10 @@
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>GlobalDataStructures</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GlobalInterfacesAssembly\GlobalInterfacesAssembly.csproj">
+      <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
+      <Name>GlobalInterfacesAssembly</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PlayerAssembly\PlayerAssembly.csproj">
       <Project>{a1c3ce0f-4a2f-44e3-beb6-8c2860edd7ee}</Project>
       <Name>PlayerAssembly</Name>

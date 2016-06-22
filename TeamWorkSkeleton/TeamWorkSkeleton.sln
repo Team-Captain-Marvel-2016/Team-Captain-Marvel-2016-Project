@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingFieldMethodsAssembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalSettingsAssembly", "GlobalSettingsAssembly\GlobalSettingsAssembly.csproj", "{C2B1B807-B8FE-4527-84BF-467D73408544}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalInterfacesAssembly", "GlobalInterfacesAssembly\GlobalInterfacesAssembly.csproj", "{57D31868-525C-4EFF-9E3A-CEA971529A77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{C2B1B807-B8FE-4527-84BF-467D73408544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2B1B807-B8FE-4527-84BF-467D73408544}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2B1B807-B8FE-4527-84BF-467D73408544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D31868-525C-4EFF-9E3A-CEA971529A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D31868-525C-4EFF-9E3A-CEA971529A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D31868-525C-4EFF-9E3A-CEA971529A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D31868-525C-4EFF-9E3A-CEA971529A77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿namespace FootballPlayerAssembly.Interfaces
+﻿namespace GlobalInterfacesAssembly.Interfaces
 {
     using System;
 

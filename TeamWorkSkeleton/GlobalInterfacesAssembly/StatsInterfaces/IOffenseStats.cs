@@ -1,4 +1,4 @@
-﻿namespace FootballPlayerAssembly.Interfaces
+﻿namespace GlobalInterfacesAssembly.Interfaces
 {
     public interface IOffenseStats
     {

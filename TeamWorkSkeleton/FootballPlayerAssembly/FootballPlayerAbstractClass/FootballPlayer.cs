@@ -3,9 +3,9 @@
     using FootballPlayerFactoryClasses.GenericFootballPlayerClasses;
     using GameLogicInterfacesAssembly;
     using GlobalDataStructures;
-    using Interfaces;
     using System.Text;
     using System.Windows.Shapes;
+    using GlobalInterfacesAssembly.Interfaces;
     using RandomizersAssembly.DiceClasses;
     using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
 

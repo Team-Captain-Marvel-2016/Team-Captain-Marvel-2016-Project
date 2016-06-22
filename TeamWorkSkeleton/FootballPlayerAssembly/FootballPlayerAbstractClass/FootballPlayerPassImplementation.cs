@@ -2,13 +2,12 @@
 {
     using System;
     using GameLogicInterfacesAssembly;
+    using GlobalInterfacesAssembly.Interfaces;
 
     public abstract partial class FootballPlayer : IPass
     {
-        public bool Pass(object e)
+        public bool Pass(IDefenseStats enemy)
         {
-            var enemy = e as FootballPlayer;
-
             if (enemy == null) throw new ApplicationException("Invalid Argument");
 
             var thisScore = this.StatPass

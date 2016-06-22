@@ -1,7 +1,9 @@
 ﻿namespace GameLogicInterfacesAssembly
 {
+    using GlobalInterfacesAssembly.Interfaces;
+
     public interface IPass
     {
-        bool Pass(object enemy);
+        bool Pass(IDefenseStats enemy);
     }
 }

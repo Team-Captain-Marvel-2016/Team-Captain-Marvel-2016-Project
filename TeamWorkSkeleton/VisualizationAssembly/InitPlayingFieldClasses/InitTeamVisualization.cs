@@ -4,6 +4,7 @@ namespace VisualizationAssembly.InitPlayingFieldClasses
     using Global.DataStructures;
     using Global.Enumerations;
     using Global.Enumerations.Team;
+    using Global.Enumerations.Utils;
     using Global.Settings.Visualization;
     using TeamAssembly;
 

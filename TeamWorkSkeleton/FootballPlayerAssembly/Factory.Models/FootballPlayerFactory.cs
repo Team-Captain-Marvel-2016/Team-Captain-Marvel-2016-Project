@@ -6,6 +6,7 @@ namespace TeamWork.Models.Factory.Models
     using System.Reflection;
     using Generic;
     using Global.Enumerations.Factory;
+    using Global.Enumerations.Utils;
     using Global.Randomization;
     using FootballPlayer = Abstract.FootballPlayer;
 
@@ -22,9 +23,7 @@ namespace TeamWork.Models.Factory.Models
         public static FootballPlayer CreatePlayer()
         {
             // Randomly generate a position and pass it along.
-            var enumSize = Enum.GetValues(typeof(PositionType))
-                .Cast<PositionType>()
-                .Count();
+            var enumSize = EnumerationSize.GetPositionTypeSize();
 
             var positionEnumIndex = GenericRandomization.Random.Next(0, enumSize);
 
@@ -146,8 +145,7 @@ namespace TeamWork.Models.Factory.Models
         private static string PickSpecies()
         {
             // Get size of enum 
-            var enumSize = Enum.GetValues(typeof(SpeciesType))
-                .Cast<SpeciesType>().Count();
+            var enumSize = EnumerationSize.GetSpeciesTypeSize();
 
             var speciesIndex = GenericRandomization.Random.Next(0, enumSize);
             var speciesName = (SpeciesType)speciesIndex;

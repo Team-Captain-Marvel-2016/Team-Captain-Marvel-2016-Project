@@ -45,7 +45,8 @@
     <Compile Include="Team\StartingFieldType.cs" />
     <Compile Include="Team\FormationType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Team\ParseFormationType.cs" />
+    <Compile Include="Utils\EnumerationSize.cs" />
+    <Compile Include="Utils\ParseFormationType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

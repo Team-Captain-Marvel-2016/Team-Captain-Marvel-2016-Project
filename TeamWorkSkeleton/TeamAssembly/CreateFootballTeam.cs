@@ -5,6 +5,7 @@
     using System.Linq;
     using Global.Enumerations.Factory;
     using Global.Enumerations.Team;
+    using Global.Enumerations.Utils;
     using Global.Randomization;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
     using FootballPlayerFactory = TeamWork.Models.Factory.Models.FootballPlayerFactory;

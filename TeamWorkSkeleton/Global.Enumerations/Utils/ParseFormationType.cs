@@ -1,6 +1,7 @@
-﻿namespace Global.Enumerations.Team
+﻿namespace Global.Enumerations.Utils
 {
     using System.Text;
+    using Team;
 
     public static class ParseFormationType
     {

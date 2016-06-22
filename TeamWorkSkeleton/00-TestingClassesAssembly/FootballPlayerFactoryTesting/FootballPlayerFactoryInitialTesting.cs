@@ -1,6 +1,6 @@
 ﻿namespace _00_TestingClassesAssembly.FootballPlayerFactoryTesting
 {
-    using FootballPlayerAssembly.FootballPlayerFactoryClasses;
+    using FootballPlayerFactory = TeamWork.Models.Factory.Models.FootballPlayerFactory;
 
     public static class FootballPlayerFactoryInitialTesting
     {

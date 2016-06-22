@@ -5,10 +5,10 @@ namespace PlayingFieldMethodsAssembly
 {
     using System;
     using System.Collections.Generic;
-    using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using GlobalDataStructures;
     using PlayingFIeldAssembly;
     using TeamAssembly;
+    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public static class PlayingFieldMethods
     {

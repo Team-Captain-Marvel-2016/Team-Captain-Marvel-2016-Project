@@ -1,24 +1,24 @@
-﻿namespace GlobalDataStructures
+﻿namespace Global.DataStructures
 {
     using System;
 
     public struct MinMaxRange
     {
-        private int _min;
-        private int _max;
+        private int min;
+        private int max;
 
         public MinMaxRange(int min, int max)
             : this()
         {
-            Min = min;
-            Max = max;
+            this.Min = min;
+            this.Max = max;
         }
         
         public int Min
         {
             get
             {
-                return _min;
+                return this.min;
             }
             private set
             {
@@ -28,7 +28,7 @@
                 }
                 else
                 {
-                    _min = value;
+                    this.min = value;
                 }
             }
         }
@@ -37,7 +37,7 @@
         {
             get
             {
-                return _max;
+                return this.max;
             }
             private set
             {
@@ -48,7 +48,7 @@
                 }
                 else
                 {
-                    _max = value;
+                    this.max = value;
                 }
             }
         }

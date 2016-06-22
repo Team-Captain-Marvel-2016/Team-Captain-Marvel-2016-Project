@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterfaceAssembly", "Us
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalExceptionAssembly", "GlobalExceptionAssembly\GlobalExceptionAssembly.csproj", "{A0403C5C-4B70-4CB0-88C8-5CD7396A7F86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballPlayerAssembly", "FootballPlayerAssembly\FootballPlayerAssembly.csproj", "{D46F609D-BBA1-47DF-AEA0-DA4479FCB741}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Models", "FootballPlayerAssembly\TeamWork.Models.csproj", "{D46F609D-BBA1-47DF-AEA0-DA4479FCB741}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerAssembly", "PlayerAssembly\PlayerAssembly.csproj", "{A1C3CE0F-4A2F-44E3-BEB6-8C2860EDD7EE}"
 EndProject

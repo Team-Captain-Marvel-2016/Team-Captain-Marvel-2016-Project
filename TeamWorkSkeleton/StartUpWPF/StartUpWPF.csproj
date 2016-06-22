@@ -114,9 +114,9 @@
       <Project>{b16c83d1-7581-4624-8354-c15cc107bf01}</Project>
       <Name>00-TestingClassesAssembly</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
+    <ProjectReference Include="..\FootballPlayerAssembly\TeamWork.Models.csproj">
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
-      <Name>FootballPlayerAssembly</Name>
+      <Name>TeamWork.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\GameLogicAssembly\GameLogicAssembly.csproj">
       <Project>{8df2c670-9460-4f7e-b938-711fc77ed1ec}</Project>

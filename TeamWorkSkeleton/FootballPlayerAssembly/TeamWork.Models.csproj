@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D46F609D-BBA1-47DF-AEA0-DA4479FCB741}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeamWork.Models</RootNamespace>
+    <AssemblyName>TeamWork.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enumerations\PositionType.cs" />
+    <Compile Include="Enumerations\SpeciesType.cs" />
+    <Compile Include="Abstract\FootballPlayer.cs" />
+    <Compile Include="Abstract\Contracts.Implementation\FootballPlayerCallForPassImplementation.cs" />
+    <Compile Include="Abstract\Contracts.Implementation\FootballPlayerIOnZeroAPImplementation.cs" />
+    <Compile Include="Abstract\Contracts.Implementation\FootballPlayerMouseDownImplementation.cs" />
+    <Compile Include="Abstract\Contracts.Implementation\FootballPlayerMovementMethods.cs" />
+    <Compile Include="Abstract\Contracts.Implementation\FootballPlayerPassImplementation.cs" />
+    <Compile Include="Abstract\Contracts.Implementation\FootballPlayerShootImplementation.cs" />
+    <Compile Include="Abstract\Contracts.Implementation\FootballPlayerTackleImplementation.cs" />
+    <Compile Include="Factory.Models\FootballPlayerFactory.cs" />
+    <Compile Include="Factory.Models\Generic\CreateGenericFootballPlayer.cs" />
+    <Compile Include="Factory.Models\Generic\GenericFootballPlayer.cs" />
+    <Compile Include="Factory.Models\HumanFootballPlayerConstructingMethods.cs" />
+    <Compile Include="Factory.Models\JupiterianFootballPlayerConstructingMethods.cs" />
+    <Compile Include="Factory.Models\MartianFootballPlayerConstructingMethods.cs" />
+    <Compile Include="Factory.Models\MercurianFootballPlayerConstructingMethods.cs" />
+    <Compile Include="Factory.Models\NeptunianFootballPlayerConstructingMethods.cs" />
+    <Compile Include="Factory.Models\SagittariusianFootballPlayerConstructingMethods.cs" />
+    <Compile Include="Factory.Models\UranianFootballPlayerConstructingMethods.cs" />
+    <Compile Include="Factory.Models\VenusianFootballPlayerConstructingMethods.cs" />
+    <Compile Include="Factory.Settings\AttackerCreationConstants.cs" />
+    <Compile Include="Factory.Settings\DefenderCreationConstants.cs" />
+    <Compile Include="Factory.Settings\GoalkeeperCreationConstants.cs" />
+    <Compile Include="Factory.Settings\MidfielderCreationConstants.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roles\HumanFootballPlayer\HumanAttacker.cs" />
+    <Compile Include="Roles\HumanFootballPlayer\HumanDefender.cs" />
+    <Compile Include="Roles\HumanFootballPlayer\HumanGoalkeeper.cs" />
+    <Compile Include="Roles\HumanFootballPlayer\HumanMidfielder.cs" />
+    <Compile Include="Roles\JupiterianFootballPlayer\JupiterianAttacker.cs" />
+    <Compile Include="Roles\JupiterianFootballPlayer\JupiterianDefender.cs" />
+    <Compile Include="Roles\JupiterianFootballPlayer\JupiterianGoalkeeper.cs" />
+    <Compile Include="Roles\JupiterianFootballPlayer\JupiterianMidfielder.cs" />
+    <Compile Include="Roles\MercurianFootballPlayer\MercurianAttacker.cs" />
+    <Compile Include="Roles\MercurianFootballPlayer\MercurianDefender.cs" />
+    <Compile Include="Roles\MercurianFootballPlayer\MercurianGoalkeeper.cs" />
+    <Compile Include="Roles\MercurianFootballPlayer\MercurianMidfielder.cs" />
+    <Compile Include="Roles\NeptunianFootballPlayer\NeptunianAttacker.cs" />
+    <Compile Include="Roles\NeptunianFootballPlayer\NeptunianDefender.cs" />
+    <Compile Include="Roles\NeptunianFootballPlayer\NeptunianGoalkeeper.cs" />
+    <Compile Include="Roles\NeptunianFootballPlayer\NeptunianMidfielder.cs" />
+    <Compile Include="Roles\SagittariusianFootballPlayer\SagittariusianAttacker.cs" />
+    <Compile Include="Roles\SagittariusianFootballPlayer\SagittariusianDefender.cs" />
+    <Compile Include="Roles\SagittariusianFootballPlayer\SagittariusianGoalKeeper.cs" />
+    <Compile Include="Roles\SagittariusianFootballPlayer\SagittariusianMidFielder.cs" />
+    <Compile Include="Roles\UranianFootballPlayer\UranianAttacker.cs" />
+    <Compile Include="Roles\UranianFootballPlayer\UranianDefender.cs" />
+    <Compile Include="Roles\UranianFootballPlayer\UranianGoalkeeper.cs" />
+    <Compile Include="Roles\UranianFootballPlayer\UranianMidfielder.cs" />
+    <Compile Include="Roles\VenusianFootballPlayer\VenusianAttacker.cs" />
+    <Compile Include="Roles\VenusianFootballPlayer\VenusianDefender.cs" />
+    <Compile Include="Roles\VenusianFootballPlayer\VenusianGoalkeeper.cs" />
+    <Compile Include="Roles\VenusianFootballPlayer\VenusianMidfielder.cs" />
+    <Compile Include="Species.Abstract\Jupiterian.cs" />
+    <Compile Include="Species.Abstract\Mercurian.cs" />
+    <Compile Include="Species.Abstract\Neptunian.cs" />
+    <Compile Include="Species.Abstract\Sagittariusian.cs" />
+    <Compile Include="Species.Abstract\Uranian.cs" />
+    <Compile Include="Species.Abstract\Venusian.cs" />
+    <Compile Include="Spcies.NameGenerator\HumanNameGenerator.cs" />
+    <Compile Include="Spcies.NameGenerator\JupiterianNameGenerator.cs" />
+    <Compile Include="Spcies.NameGenerator\MartianNameGenerator.cs" />
+    <Compile Include="Spcies.NameGenerator\MercurianNameGenerator.cs" />
+    <Compile Include="Spcies.NameGenerator\NeptunianNameGenerator.cs" />
+    <Compile Include="Roles\MartianFootballPlayer\MartianAttacker.cs" />
+    <Compile Include="Roles\MartianFootballPlayer\MartianDefender.cs" />
+    <Compile Include="Roles\MartianFootballPlayer\MartianGoalkeeper.cs" />
+    <Compile Include="Roles\MartianFootballPlayer\MartianMidfielder.cs" />
+    <Compile Include="Species.Abstract\Human.cs" />
+    <Compile Include="Species.Abstract\Martian.cs" />
+    <Compile Include="Spcies.NameGenerator\SagittariusianNameGenerator.cs" />
+    <Compile Include="Spcies.NameGenerator\UranianNameGenerator.cs" />
+    <Compile Include="Spcies.NameGenerator\VenusianNameGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
+      <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
+      <Name>GlobalDataStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalInterfacesAssembly\GlobalInterfacesAssembly.csproj">
+      <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
+      <Name>GlobalInterfacesAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayingFIeldAssembly\PlayingFIeldAssembly.csproj">
+      <Project>{293c7edf-b1e1-40d9-b08c-9b010bbdf99e}</Project>
+      <Name>PlayingFIeldAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RandomizersAssembly\RandomizersAssembly.csproj">
+      <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
+      <Name>RandomizersAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj">
+      <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
+      <Name>VisualizationInterfacesAssembly</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts.Implamentation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

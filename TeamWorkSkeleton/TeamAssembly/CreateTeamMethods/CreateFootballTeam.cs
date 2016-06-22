@@ -1,14 +1,14 @@
 ﻿namespace TeamAssembly.CreateTeamMethods
 {
     using FootballPlayerAssembly.Enumerations;
-    using FootballPlayerAssembly.FootballPlayerFactoryClasses;
-    using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using FormationTypes;
     using FormationTypeParsingMethods;
     using RandomizersAssembly.StaticRandomizersClasses;
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
+    using FootballPlayerFactory = TeamWork.Models.Factory.Models.FootballPlayerFactory;
 
     internal static class CreateFootballTeam
     {

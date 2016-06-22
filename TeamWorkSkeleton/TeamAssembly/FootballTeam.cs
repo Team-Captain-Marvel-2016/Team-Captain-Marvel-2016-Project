@@ -1,18 +1,16 @@
 ﻿namespace TeamAssembly
 {
     using CreateTeamMethods;
-    using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using FormationTypes;
     using System;
     using System.Collections;
     using System.Collections.Generic;
-    using System.Linq;
+    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public class FootballTeam : IEnumerable<FootballPlayer>
     {
         private string _teamName;
-
-        #region Constructors
+        
         public FootballTeam(string teamName)
         {
             this.TeamName = teamName;
@@ -41,9 +39,7 @@
             this.Team = CreateFootballTeam
                 .CreateAFootballTeamByFormation(formation);
         }
-        #endregion
 
-        #region Properties
         public List<FootballPlayer> Team { get; set; }
 
         public string TeamName
@@ -69,7 +65,6 @@
 
         public bool HasBall { get; set; }
         
-        #endregion
 
         public void CreateTeam(FormationType formation)
         {
@@ -88,8 +83,7 @@
 
             this.Formation = formation;
         }
-
-        #region Interface Implementation
+        
         public IEnumerator<FootballPlayer> GetEnumerator()
         {
             return ((IEnumerable<FootballPlayer>)this.Team).GetEnumerator();
@@ -99,6 +93,5 @@
         {
             return this.GetEnumerator();
         }
-        #endregion
     }
 }

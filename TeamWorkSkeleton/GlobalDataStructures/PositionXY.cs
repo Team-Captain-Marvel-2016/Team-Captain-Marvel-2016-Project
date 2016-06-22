@@ -1,29 +1,29 @@
-﻿namespace GlobalDataStructures
+﻿namespace Global.DataStructures
 {
     // ReSharper disable once InconsistentNaming
     public struct PositionXY
     {
-        private int _x;
-        private int _y;
+        private int x;
+        private int y;
 
         public PositionXY(int x, int y)
             : this()
         {
-            X = x;
-            Y = y;
+            this.X = x;
+            this.Y = y;
         }
 
         // TODO: Validate props
         public int Y
         {
-            get { return _y; }
-            set { _y = value; }
+            get { return this.y; }
+            set { this.y = value; }
         }
 
         public int X
         {
-            get { return _x; }
-            set { _x = value; }
+            get { return this.x; }
+            set { this.x = value; }
         }
     }
 }

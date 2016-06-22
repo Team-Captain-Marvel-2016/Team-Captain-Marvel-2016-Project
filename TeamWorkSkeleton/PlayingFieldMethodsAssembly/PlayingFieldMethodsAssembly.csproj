@@ -44,13 +44,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
+    <ProjectReference Include="..\FootballPlayerAssembly\TeamWork.Models.csproj">
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
-      <Name>FootballPlayerAssembly</Name>
+      <Name>TeamWork.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>GlobalDataStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalInterfacesAssembly\GlobalInterfacesAssembly.csproj">
+      <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
+      <Name>GlobalInterfacesAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\PlayerAssembly\PlayerAssembly.csproj">
       <Project>{a1c3ce0f-4a2f-44e3-beb6-8c2860edd7ee}</Project>

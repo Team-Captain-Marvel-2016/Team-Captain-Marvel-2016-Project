@@ -57,9 +57,9 @@
     <Folder Include="GameSettingsConstantsClass\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
+    <ProjectReference Include="..\FootballPlayerAssembly\TeamWork.Models.csproj">
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
-      <Name>FootballPlayerAssembly</Name>
+      <Name>TeamWork.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\GameLogicEventsAssembly\GameLogicEventsAssembly.csproj">
       <Project>{a2430f2b-79f1-461e-a64a-60a1d9e4f5f7}</Project>

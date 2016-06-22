@@ -1,10 +1,10 @@
 ﻿namespace GameStateTrackerAssembly
 {
-    using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using PlayerAssembly.AbstractPlayerClass;
     using PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass;
     using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
     using System.Drawing;
+    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public static class GameStateTracker
     {

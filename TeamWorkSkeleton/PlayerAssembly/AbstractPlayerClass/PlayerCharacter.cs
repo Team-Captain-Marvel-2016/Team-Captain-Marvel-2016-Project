@@ -3,9 +3,9 @@
     using System;
     using System.Collections.Generic;
     using System.Windows.Media;
-    using FootballPlayerAssembly.FootballPlayerAbstractClass;
     using GlobalDataStructures;
     using TeamAssembly;
+    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public abstract class PlayerCharacter
     {

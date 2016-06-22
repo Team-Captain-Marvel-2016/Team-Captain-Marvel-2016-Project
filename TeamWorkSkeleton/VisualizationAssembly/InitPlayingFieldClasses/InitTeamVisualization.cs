@@ -2,8 +2,8 @@
 namespace VisualizationAssembly.InitPlayingFieldClasses
 {
     using Enumerations;
+    using Global.DataStructures;
     using GlobalSettingsAssembly.VisualizationSettings;
-    using GlobalDataStructures;
     using TeamAssembly;
     using TeamAssembly.FormationTypeParsingMethods;
 

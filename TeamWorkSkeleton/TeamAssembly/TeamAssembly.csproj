@@ -47,9 +47,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FootballPlayerAssembly\FootballPlayerAssembly.csproj">
+    <ProjectReference Include="..\FootballPlayerAssembly\TeamWork.Models.csproj">
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
-      <Name>FootballPlayerAssembly</Name>
+      <Name>TeamWork.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalInterfacesAssembly\GlobalInterfacesAssembly.csproj">
+      <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
+      <Name>GlobalInterfacesAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\RandomizersAssembly\RandomizersAssembly.csproj">
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>

@@ -1,7 +1,7 @@
 ﻿namespace StartUpWPF
 {
-    using GameStateTrackerAssembly;
     using System;
+    using Game.Tracker;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public partial class MainWindow

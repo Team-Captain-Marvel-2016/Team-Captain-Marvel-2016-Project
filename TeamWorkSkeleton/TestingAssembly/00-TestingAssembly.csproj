@@ -58,17 +58,13 @@
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
       <Name>TeamWork.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TeamAssembly\TeamAssembly.csproj">
+    <ProjectReference Include="..\TeamAssembly\TeamWork.Models.Team.csproj">
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
-      <Name>TeamAssembly</Name>
+      <Name>TeamWork.Models.Team</Name>
     </ProjectReference>
     <ProjectReference Include="..\VisualizationAssembly\VisualizationAssembly.csproj">
       <Project>{c7ddcbc7-728a-4bea-9d74-bb73afbc7a2d}</Project>
       <Name>VisualizationAssembly</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj">
-      <Project>{7CB39159-6ECB-4B4C-925C-95D2197FD979}</Project>
-      <Name>VisualizationInterfacesAssembly</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

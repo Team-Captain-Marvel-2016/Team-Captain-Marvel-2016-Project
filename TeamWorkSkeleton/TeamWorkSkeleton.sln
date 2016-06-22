@@ -7,39 +7,39 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingFIeldAssembly", "Pla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterfaceAssembly", "UserInterfaceAssembly\UserInterfaceAssembly.csproj", "{9D64B841-A428-451A-965D-CB3B0A23A955}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalExceptionAssembly", "GlobalExceptionAssembly\GlobalExceptionAssembly.csproj", "{A0403C5C-4B70-4CB0-88C8-5CD7396A7F86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.CustomExceptions", "GlobalExceptionAssembly\Global.CustomExceptions.csproj", "{A0403C5C-4B70-4CB0-88C8-5CD7396A7F86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Models", "FootballPlayerAssembly\TeamWork.Models.csproj", "{D46F609D-BBA1-47DF-AEA0-DA4479FCB741}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerAssembly", "PlayerAssembly\PlayerAssembly.csproj", "{A1C3CE0F-4A2F-44E3-BEB6-8C2860EDD7EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teamwork.Models.PC", "PlayerAssembly\Teamwork.Models.PC.csproj", "{A1C3CE0F-4A2F-44E3-BEB6-8C2860EDD7EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamAssembly", "TeamAssembly\TeamAssembly.csproj", "{C432A3DC-CBBD-4B15-893D-6EECFFA9E9FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Models.Team", "TeamAssembly\TeamWork.Models.Team.csproj", "{C432A3DC-CBBD-4B15-893D-6EECFFA9E9FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualizationAssembly", "VisualizationAssembly\VisualizationAssembly.csproj", "{C7DDCBC7-728A-4BEA-9D74-BB73AFBC7A2D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-TestingAssembly", "TestingAssembly\00-TestingAssembly.csproj", "{4F8A4675-A147-4BB2-9D4B-43FAAE716FC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalDataStructures", "GlobalDataStructures\GlobalDataStructures.csproj", "{E5ABB4B1-ABCF-443E-80E9-8F79C3A00E0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.DataStructures", "GlobalDataStructures\Global.DataStructures.csproj", "{E5ABB4B1-ABCF-443E-80E9-8F79C3A00E0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomizersAssembly", "RandomizersAssembly\RandomizersAssembly.csproj", "{CCE761C0-B358-4E9C-855A-74A23F5826A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUpWPF", "StartUpWPF\StartUpWPF.csproj", "{D87748FF-3ED5-4335-996D-D12E4266E5CC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualizationInterfacesAssembly", "VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj", "{7CB39159-6ECB-4B4C-925C-95D2197FD979}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.WPFClient", "StartUpWPF\TeamWork.WPFClient.csproj", "{D87748FF-3ED5-4335-996D-D12E4266E5CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-TestingClassesAssembly", "00-TestingClassesAssembly\00-TestingClassesAssembly.csproj", "{B16C83D1-7581-4624-8354-C15CC107BF01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogicAssembly", "GameLogicAssembly\GameLogicAssembly.csproj", "{8DF2C670-9460-4F7E-B938-711FC77ED1EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Logic", "GameLogicAssembly\Game.Logic.csproj", "{8DF2C670-9460-4F7E-B938-711FC77ED1EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLogicEventsAssembly", "GameLogicEventsAssembly\GameLogicEventsAssembly.csproj", "{A2430F2B-79F1-461E-A64A-60A1D9E4F5F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Events", "GameLogicEventsAssembly\Game.Events.csproj", "{A2430F2B-79F1-461E-A64A-60A1D9E4F5F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStateTrackerAssembly", "GameStateTrackerAssembly\GameStateTrackerAssembly.csproj", "{D36CE9EA-4307-4D40-951A-054299F9B09B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Tracker", "GameStateTrackerAssembly\Game.Tracker.csproj", "{D36CE9EA-4307-4D40-951A-054299F9B09B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingFieldMethodsAssembly", "PlayingFieldMethodsAssembly\PlayingFieldMethodsAssembly.csproj", "{8B0CD4DC-1798-4C44-8846-45D13E8C3610}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalSettingsAssembly", "GlobalSettingsAssembly\GlobalSettingsAssembly.csproj", "{C2B1B807-B8FE-4527-84BF-467D73408544}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.Settings", "GlobalSettingsAssembly\Global.Settings.csproj", "{C2B1B807-B8FE-4527-84BF-467D73408544}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalInterfacesAssembly", "GlobalInterfacesAssembly\GlobalInterfacesAssembly.csproj", "{57D31868-525C-4EFF-9E3A-CEA971529A77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.Contracts", "GlobalInterfacesAssembly\Global.Contracts.csproj", "{57D31868-525C-4EFF-9E3A-CEA971529A77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.Enumerations", "Global.Enumerations\Global.Enumerations.csproj", "{965A0D47-8B9E-4D47-93D9-CA51497D5472}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,10 +91,6 @@ Global
 		{D87748FF-3ED5-4335-996D-D12E4266E5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D87748FF-3ED5-4335-996D-D12E4266E5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D87748FF-3ED5-4335-996D-D12E4266E5CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7CB39159-6ECB-4B4C-925C-95D2197FD979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7CB39159-6ECB-4B4C-925C-95D2197FD979}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7CB39159-6ECB-4B4C-925C-95D2197FD979}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7CB39159-6ECB-4B4C-925C-95D2197FD979}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B16C83D1-7581-4624-8354-C15CC107BF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B16C83D1-7581-4624-8354-C15CC107BF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B16C83D1-7581-4624-8354-C15CC107BF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -123,6 +119,10 @@ Global
 		{57D31868-525C-4EFF-9E3A-CEA971529A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57D31868-525C-4EFF-9E3A-CEA971529A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57D31868-525C-4EFF-9E3A-CEA971529A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965A0D47-8B9E-4D47-93D9-CA51497D5472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965A0D47-8B9E-4D47-93D9-CA51497D5472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965A0D47-8B9E-4D47-93D9-CA51497D5472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965A0D47-8B9E-4D47-93D9-CA51497D5472}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

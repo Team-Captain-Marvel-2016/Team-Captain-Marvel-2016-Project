@@ -1,8 +1,7 @@
 ﻿namespace StartUpWPF
 {
-    using PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass;
-    using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
     using System;
+    using Teamwork.Models.PC.Human.Singletons;
     using UserInterfaceAssembly.UserControlsClasses;
 
     public partial class MainWindow

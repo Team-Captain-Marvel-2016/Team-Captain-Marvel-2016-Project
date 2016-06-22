@@ -30,30 +30,41 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameLogicInterfaces\ICallForPass.cs" />
-    <Compile Include="GameLogicInterfaces\IControlMovement.cs" />
-    <Compile Include="GameLogicInterfaces\IGameMechanics.cs" />
-    <Compile Include="GameLogicInterfaces\IGameStateTrackable.cs" />
-    <Compile Include="GameLogicInterfaces\IPass.cs" />
-    <Compile Include="GameLogicInterfaces\IShoot.cs" />
-    <Compile Include="GameLogicInterfaces\ITackle.cs" />
-    <Compile Include="StatsInterfaces\IAwareness.cs" />
-    <Compile Include="StatsInterfaces\IDefenseStats.cs" />
-    <Compile Include="StatsInterfaces\IOffenseStats.cs" />
-    <Compile Include="StatsInterfaces\IOnZeroAP.cs" />
-    <Compile Include="StatsInterfaces\IOrigin.cs" />
-    <Compile Include="StatsInterfaces\IPosition.cs" />
+    <Compile Include="Actions\ICallForPass.cs" />
+    <Compile Include="Actions\IControlMovement.cs" />
+    <Compile Include="Actions\IGameMechanics.cs" />
+    <Compile Include="Actions\IGameStateTrackable.cs" />
+    <Compile Include="Actions\IPass.cs" />
+    <Compile Include="Actions\IShoot.cs" />
+    <Compile Include="Actions\ITackle.cs" />
+    <Compile Include="Statistics\IAwareness.cs" />
+    <Compile Include="Statistics\IDefenseStats.cs" />
+    <Compile Include="Statistics\IOffenseStats.cs" />
+    <Compile Include="Statistics\IOnZeroAP.cs" />
+    <Compile Include="Statistics\IOrigin.cs" />
+    <Compile Include="Statistics\IPosition.cs" />
+    <Compile Include="IDrawOnCanvas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GlobalDataStructures\Global.DataStructures.csproj">
+      <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
+      <Name>Global.DataStructures</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

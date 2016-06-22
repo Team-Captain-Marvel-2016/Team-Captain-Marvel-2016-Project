@@ -4,9 +4,9 @@ namespace TeamWork.Models.Factory.Models
     using System;
     using System.Linq;
     using System.Reflection;
-    using FootballPlayerAssembly.Enumerations;
     using RandomizersAssembly.StaticRandomizersClasses;
     using Generic;
+    using Global.Enumerations.Factory;
     using FootballPlayer = Abstract.FootballPlayer;
 
     /// <summary>

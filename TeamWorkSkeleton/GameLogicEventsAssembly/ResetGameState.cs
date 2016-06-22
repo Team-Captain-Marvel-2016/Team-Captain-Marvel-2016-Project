@@ -1,4 +1,4 @@
-﻿namespace GameLogicEventsAssembly
+﻿namespace Game.Events
 {
     using System;
 

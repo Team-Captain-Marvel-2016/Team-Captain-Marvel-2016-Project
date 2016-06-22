@@ -45,8 +45,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enumerations\PositionType.cs" />
-    <Compile Include="Enumerations\SpeciesType.cs" />
     <Compile Include="Abstract\FootballPlayer.cs" />
     <Compile Include="Abstract\Contracts.Implementation\FootballPlayerCallForPassImplementation.cs" />
     <Compile Include="Abstract\Contracts.Implementation\FootballPlayerIOnZeroAPImplementation.cs" />
@@ -121,13 +119,17 @@
     <Compile Include="Spcies.NameGenerator\VenusianNameGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
-      <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
-      <Name>GlobalDataStructures</Name>
+    <ProjectReference Include="..\Global.Enumerations\Global.Enumerations.csproj">
+      <Project>{965a0d47-8b9e-4d47-93d9-ca51497d5472}</Project>
+      <Name>Global.Enumerations</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GlobalInterfacesAssembly\GlobalInterfacesAssembly.csproj">
+    <ProjectReference Include="..\GlobalDataStructures\Global.DataStructures.csproj">
+      <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
+      <Name>Global.DataStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalInterfacesAssembly\Global.Contracts.csproj">
       <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
-      <Name>GlobalInterfacesAssembly</Name>
+      <Name>Global.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\PlayingFIeldAssembly\PlayingFIeldAssembly.csproj">
       <Project>{293c7edf-b1e1-40d9-b08c-9b010bbdf99e}</Project>
@@ -137,14 +139,8 @@
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
       <Name>RandomizersAssembly</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj">
-      <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
-      <Name>VisualizationInterfacesAssembly</Name>
-    </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Contracts.Implamentation\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>

@@ -55,21 +55,25 @@
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
       <Name>TeamWork.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
+    <ProjectReference Include="..\Global.Enumerations\Global.Enumerations.csproj">
+      <Project>{965a0d47-8b9e-4d47-93d9-ca51497d5472}</Project>
+      <Name>Global.Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalDataStructures\Global.DataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
-      <Name>GlobalDataStructures</Name>
+      <Name>Global.DataStructures</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GlobalSettingsAssembly\GlobalSettingsAssembly.csproj">
+    <ProjectReference Include="..\GlobalInterfacesAssembly\Global.Contracts.csproj">
+      <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
+      <Name>Global.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalSettingsAssembly\Global.Settings.csproj">
       <Project>{c2b1b807-b8fe-4527-84bf-467d73408544}</Project>
-      <Name>GlobalSettingsAssembly</Name>
+      <Name>Global.Settings</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TeamAssembly\TeamAssembly.csproj">
+    <ProjectReference Include="..\TeamAssembly\TeamWork.Models.Team.csproj">
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
-      <Name>TeamAssembly</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VisualizationInterfacesAssembly\VisualizationInterfacesAssembly.csproj">
-      <Project>{7cb39159-6ecb-4b4c-925c-95d2197fd979}</Project>
-      <Name>VisualizationInterfacesAssembly</Name>
+      <Name>TeamWork.Models.Team</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

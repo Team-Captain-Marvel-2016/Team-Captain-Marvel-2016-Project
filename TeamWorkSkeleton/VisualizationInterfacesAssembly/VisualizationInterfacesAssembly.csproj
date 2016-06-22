@@ -44,18 +44,20 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CanvasVisualizationInterfaces\IDrawOnCanvas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GlobalDataStructures\GlobalDataStructures.csproj">
+    <ProjectReference Include="..\GlobalDataStructures\Global.DataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
-      <Name>GlobalDataStructures</Name>
+      <Name>Global.DataStructures</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GlobalExceptionAssembly\GlobalExceptionAssembly.csproj">
+    <ProjectReference Include="..\GlobalExceptionAssembly\Global.CustomExceptions.csproj">
       <Project>{a0403c5c-4b70-4cb0-88c8-5cd7396a7f86}</Project>
-      <Name>GlobalExceptionAssembly</Name>
+      <Name>Global.CustomExceptions</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Visu\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

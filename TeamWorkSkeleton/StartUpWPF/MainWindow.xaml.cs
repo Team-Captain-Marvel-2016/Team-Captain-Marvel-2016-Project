@@ -1,10 +1,7 @@
 ﻿namespace StartUpWPF
 {
-    using GameStateTrackerAssembly;
     using PlayingFieldMethodsAssembly;
     using VisualizationAssembly.CanvasUtilsClasses;
-    using GameLogicAssembly.GameControlsClasses;
-    using GameLogicAssembly.GameStatesClasses;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -19,6 +16,7 @@
     using System.Windows.Media.Imaging;
     using System.Windows.Navigation;
     using System.Windows.Shapes;
+    using Game.Logic.States;
     using RandomizersAssembly.DiceClasses;
     using UserInterfaceAssembly.UserControlsClasses;
 

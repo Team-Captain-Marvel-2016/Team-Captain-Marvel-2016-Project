@@ -1,8 +1,8 @@
 ﻿namespace StartUpWPF
 {
-    using GameLogicAssembly.GameControlsClasses;
     using System.Windows.Controls;
     using System.Collections.Generic;
+    using UserControls;
     using UserInterfaceAssembly.UserControlsClasses;
 
     public partial class MainWindow

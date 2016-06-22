@@ -3,12 +3,12 @@ using VisualizationAssembly.CanvasUtilsClasses;
 
 namespace _00_TestingClassesAssembly.WPFCanvasTestingClasses
 {
-    using PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Teamwork.Models.PC.Human.Singletons;
     using VisualizationAssembly.Enumerations;
     using VisualizationAssembly.InitPlayingFieldClasses;
 

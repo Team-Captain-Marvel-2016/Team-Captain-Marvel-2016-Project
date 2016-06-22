@@ -1,11 +1,10 @@
-﻿using GlobalSettingsAssembly.VisualizationSettings;
-
-namespace VisualizationAssembly.CanvasUtilsClasses
+﻿namespace VisualizationAssembly.CanvasUtilsClasses
 {
     using System;
     using System.Windows.Controls;
     using System.Windows.Media;
-    using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
+    using Global.Contracts;
+    using Global.Settings.Visualization;
 
     public static class CanvasChildrenUtilities
     {

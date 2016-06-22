@@ -1,9 +1,9 @@
 ﻿namespace StartUpWPF
 {
-    using GameStateTrackerAssembly;
     using PlayingFieldMethodsAssembly;
     using System;
     using System.Windows;
+    using Game.Tracker;
     using VisualizationAssembly.CanvasUtilsClasses;
 
     public partial class MainWindow : Window

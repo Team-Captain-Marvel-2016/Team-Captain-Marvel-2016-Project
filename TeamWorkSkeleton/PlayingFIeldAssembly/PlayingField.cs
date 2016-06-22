@@ -1,7 +1,7 @@
 ﻿namespace PlayingFIeldAssembly
 {
-    using GlobalSettingsAssembly.VisualizationSettings;
     using System;
+    using Global.Settings.Visualization;
 
     public static class PlayingField
     {

@@ -1,9 +1,8 @@
-﻿namespace GameStateTrackerAssembly
+﻿namespace Game.Tracker
 {
-    using PlayerAssembly.AbstractPlayerClass;
-    using PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass;
-    using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
     using System.Drawing;
+    using Teamwork.Models.PC.Abstract;
+    using Teamwork.Models.PC.Human.Singletons;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public static class GameStateTracker

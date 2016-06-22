@@ -3,9 +3,9 @@ namespace VisualizationAssembly.InitPlayingFieldClasses
 {
     using Enumerations;
     using Global.DataStructures;
-    using GlobalSettingsAssembly.VisualizationSettings;
+    using Global.Enumerations.Team;
+    using Global.Settings.Visualization;
     using TeamAssembly;
-    using TeamAssembly.FormationTypeParsingMethods;
 
 
     public static class InitTeamVisualization

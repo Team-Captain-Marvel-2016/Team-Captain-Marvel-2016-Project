@@ -1,10 +1,10 @@
 ﻿namespace StartUpWPF
 {
-    using GameStateTrackerAssembly;
     using System;
     using System.Windows;
     using System.Windows.Shapes;
-    using GameLogicAssembly.GridPositionMethods;
+    using Game.Logic.GridPosition;
+    using Game.Tracker;
     using VisualizationAssembly.CanvasUtilsClasses;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 

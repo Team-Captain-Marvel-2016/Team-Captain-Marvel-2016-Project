@@ -1,13 +1,11 @@
-﻿using PlayerAssembly.HumanPlayerClass.PlayerOneSingletonClass;
-using PlayerAssembly.HumanPlayerClass.PlayerTwoSingletonClass;
-
-namespace PlayingFieldMethodsAssembly
+﻿namespace PlayingFieldMethodsAssembly
 {
     using System;
     using System.Collections.Generic;
-    using GlobalDataStructures;
+    using Global.DataStructures;
     using PlayingFIeldAssembly;
     using TeamAssembly;
+    using Teamwork.Models.PC.Human.Singletons;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public static class PlayingFieldMethods

@@ -3,11 +3,11 @@
     using System.Text;
     using System.Windows.Shapes;
     using Factory.Models.Generic;
-    using GlobalDataStructures;
-    using GlobalInterfacesAssembly.GameLogicInterfaces;
-    using GlobalInterfacesAssembly.StatsInterfaces;
+    using Global.Contracts;
+    using Global.Contracts.Actions;
+    using Global.Contracts.Statistics;
+    using Global.DataStructures;
     using RandomizersAssembly.DiceClasses;
-    using VisualizationInterfacesAssembly.CanvasVisualizationInterfaces;
 
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor
@@ -26,8 +26,7 @@
             DiceOne = new Dice(6);
             DiceTwo = new Dice(6);
         }
-
-        #region Constructors
+        
         // Simple Constructor
         internal FootballPlayer(string name)
         {
@@ -60,9 +59,7 @@
             this.CurrentAP = this.ActionPoints;
         }
         // Full Constructor
-        #endregion
-
-        #region Properties // TODO: Validation
+            
         public string Name { get; protected set; }
         // Offensive
         public int StatPass { get; protected set; }
@@ -88,8 +85,7 @@
         public bool HasBall { get; set; }
         public bool IsSelected { get; set; }
         public bool IsTargeted { get; set; }
-
-        #endregion
+        
 
         private void GetPlanetAndPositionTypes()
         {

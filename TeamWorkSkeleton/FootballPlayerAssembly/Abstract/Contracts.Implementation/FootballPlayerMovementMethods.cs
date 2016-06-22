@@ -1,9 +1,9 @@
 ﻿namespace TeamWork.Models.Abstract
 {
-    using GlobalDataStructures;
     using PlayingFIeldAssembly;
     using System;
-    using GlobalInterfacesAssembly.GameLogicInterfaces;
+    using Global.Contracts.Actions;
+    using Global.DataStructures;
 
     public abstract partial class FootballPlayer : IControlMovement
     {

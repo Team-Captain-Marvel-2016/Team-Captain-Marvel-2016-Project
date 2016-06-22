@@ -1,6 +1,6 @@
 ﻿namespace FootballPlayerAssembly.FootballPlayerSettingsClasses
 {
-    using GlobalDataStructures;
+    using Global.DataStructures;
 
     internal static class DefenderCreationConstants
     {

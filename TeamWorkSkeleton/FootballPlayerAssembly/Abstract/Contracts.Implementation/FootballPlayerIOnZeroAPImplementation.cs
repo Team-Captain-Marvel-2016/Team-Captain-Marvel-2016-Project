@@ -1,7 +1,7 @@
 ﻿namespace TeamWork.Models.Abstract
 {
     using System;
-    using GlobalInterfacesAssembly.StatsInterfaces;
+    using Global.Contracts.Statistics;
 
     public abstract partial class FootballPlayer : IOnZeroActionPoints
     {

@@ -1,20 +1,19 @@
 ﻿namespace TeamAssembly
 {
-    using CreateTeamMethods;
-    using FormationTypes;
     using System;
     using System.Collections;
     using System.Collections.Generic;
+    using Global.Enumerations.Team;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
-    public class FootballTeam : IEnumerable<FootballPlayer>
+    public partial class FootballTeam : IEnumerable<FootballPlayer>
     {
-        private string _teamName;
-        
+        private string teamName;
+
         public FootballTeam(string teamName)
         {
             this.TeamName = teamName;
-            Team = new List<FootballPlayer>();
+            this.Team = new List<FootballPlayer>();
         }
 
         public FootballTeam(string teamName, bool generateRandomTeam)
@@ -24,8 +23,8 @@
 
             FormationType formation;
 
-            this.Team = CreateFootballTeam
-                .CreateARandomFootballTeam(out formation);
+            this.Team =
+                CreateARandomFootballTeam(out formation);
 
             this.Formation = formation;
         }
@@ -36,8 +35,8 @@
         {
             this.Formation = formation;
 
-            this.Team = CreateFootballTeam
-                .CreateAFootballTeamByFormation(formation);
+            this.Team =
+                CreateAFootballTeamByFormation(formation);
         }
 
         public List<FootballPlayer> Team { get; set; }
@@ -46,7 +45,7 @@
         {
             get
             {
-                return _teamName;
+                return this.teamName;
             }
             set
             {
@@ -56,7 +55,7 @@
                 }
                 else
                 {
-                    _teamName = value;
+                    this.teamName = value;
                 }
             }
         }
@@ -64,26 +63,26 @@
         public FormationType Formation { get; private set; }
 
         public bool HasBall { get; set; }
-        
+
 
         public void CreateTeam(FormationType formation)
         {
             this.Formation = formation;
 
-            this.Team = CreateFootballTeam
-                .CreateAFootballTeamByFormation(formation);
+            this.Team =
+                CreateAFootballTeamByFormation(formation);
         }
 
         public void CreateTeam()
         {
             FormationType formation;
 
-            this.Team = CreateFootballTeam
-                .CreateARandomFootballTeam(out formation);
+            this.Team =
+                CreateARandomFootballTeam(out formation);
 
             this.Formation = formation;
         }
-        
+
         public IEnumerator<FootballPlayer> GetEnumerator()
         {
             return ((IEnumerable<FootballPlayer>)this.Team).GetEnumerator();

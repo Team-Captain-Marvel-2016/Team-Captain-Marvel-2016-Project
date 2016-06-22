@@ -1,8 +1,8 @@
 ﻿namespace TeamWork.Models.Abstract
 {
     using System;
-    using GlobalInterfacesAssembly.GameLogicInterfaces;
-    using GlobalInterfacesAssembly.StatsInterfaces;
+    using Global.Contracts.Actions;
+    using Global.Contracts.Statistics;
 
     public abstract partial class FootballPlayer : IShoot
     {

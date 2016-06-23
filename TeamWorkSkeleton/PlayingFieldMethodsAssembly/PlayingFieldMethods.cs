@@ -3,10 +3,10 @@
     using System;
     using System.Collections.Generic;
     using Game.PlayingField;
+    using Global.Contracts;
     using Global.DataStructures;
     using TeamAssembly;
     using Teamwork.Models.PC.Human.Singletons;
-    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public static class PlayingFieldMethods
     {
@@ -32,7 +32,7 @@
             }
         }
 
-        public static void MarkPlayerPosition(FootballPlayer player)
+        public static void MarkPlayerPosition(IDrawOnCanvas player)
         {
             int row, col;
             GetPlayerXY(player, out row, out col);
@@ -40,7 +40,7 @@
             PlayingField.Field[row, col] = true;
         }
 
-        public static void UnMarkPlayerPosition(FootballPlayer player)
+        public static void UnMarkPlayerPosition(IDrawOnCanvas player)
         {
             int row, col;
             GetPlayerXY(player, out row, out col);
@@ -48,7 +48,7 @@
             PlayingField.Field[row, col] = false;
         }
 
-        public static void TogglePlayerPosition(FootballPlayer player)
+        public static void TogglePlayerPosition(IDrawOnCanvas player)
         {
             int row, col;
             GetPlayerXY(player, out row, out col);
@@ -65,7 +65,7 @@
             MarkAllPlayersFromTeam(PlayerTwo.Player.Team);
         }
 
-        public static void GetPlayerXY(FootballPlayer player, out int x, out int y)
+        public static void GetPlayerXY(IDrawOnCanvas player, out int x, out int y)
         {
             x = player.GridPosition.X;
             y = player.GridPosition.Y;

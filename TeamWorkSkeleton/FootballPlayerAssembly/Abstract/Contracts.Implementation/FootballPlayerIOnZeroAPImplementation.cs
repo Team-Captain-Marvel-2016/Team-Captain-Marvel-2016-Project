@@ -1,9 +1,8 @@
 ﻿namespace TeamWork.Models.Abstract
 {
     using System;
-    using Global.Contracts.Statistics;
 
-    public abstract partial class FootballPlayer : IOnZeroActionPoints
+    public abstract partial class FootballPlayer
     {
         public event EventHandler ZeroActionPoints;
 

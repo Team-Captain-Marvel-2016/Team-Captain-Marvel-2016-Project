@@ -1,22 +1,20 @@
 ﻿namespace TeamWork.Models.Abstract
 {
-    using System.Text;
-    using System.Windows.Shapes;
     using Factory.Models.Generic;
     using Global.Contracts;
     using Global.Contracts.Actions;
     using Global.Contracts.Statistics;
     using Global.DataStructures;
     using Global.Randomization;
+    using System.Text;
+    using System.Windows.Shapes;
 
     /// <summary>
     /// All Stats and methods for each type of FootballPlayer inheritor
     /// TODO: Prop Validation
     /// </summary>
-    public abstract partial class FootballPlayer : IDrawOnCanvas,
-        IGameStateTrackable, IGameMechanics,
-        IOffenseStats, IDefenseStats,
-        IOrigin, IPosition
+    public abstract partial class FootballPlayer
+        : IFootballPlayer
     {
         private static readonly Dice DiceOne;
         private static readonly Dice DiceTwo;
@@ -26,7 +24,7 @@
             DiceOne = new Dice(6);
             DiceTwo = new Dice(6);
         }
-        
+
         // Simple Constructor
         internal FootballPlayer(string name)
         {
@@ -59,7 +57,7 @@
             this.CurrentAP = this.ActionPoints;
         }
         // Full Constructor
-            
+
         public string Name { get; protected set; }
         // Offensive
         public int StatPass { get; protected set; }
@@ -85,7 +83,7 @@
         public bool HasBall { get; set; }
         public bool IsSelected { get; set; }
         public bool IsTargeted { get; set; }
-        
+
 
         private void GetPlanetAndPositionTypes()
         {

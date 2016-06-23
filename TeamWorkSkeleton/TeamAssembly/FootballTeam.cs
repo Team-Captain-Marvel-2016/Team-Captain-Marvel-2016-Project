@@ -3,6 +3,7 @@
     using System;
     using System.Collections;
     using System.Collections.Generic;
+    using Global.Contracts;
     using Global.Enumerations.Team;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
@@ -13,7 +14,7 @@
         public FootballTeam(string teamName)
         {
             this.TeamName = teamName;
-            this.Team = new List<FootballPlayer>();
+            this.Team = new List<IFootballPlayer>();
         }
 
         public FootballTeam(string teamName, bool generateRandomTeam)
@@ -39,7 +40,7 @@
                 CreateAFootballTeamByFormation(formation);
         }
 
-        public List<FootballPlayer> Team { get; set; }
+        public List<IFootballPlayer> Team { get; set; }
 
         public string TeamName
         {

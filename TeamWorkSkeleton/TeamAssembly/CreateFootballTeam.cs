@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using Global.Contracts;
     using Global.Enumerations.Factory;
     using Global.Enumerations.Team;
     using Global.Enumerations.Utils;
@@ -18,7 +19,7 @@
         /// Then pass the picked formation to a method to generate a team.
         /// </summary>
         /// <returns> List of FootballPlayer objecs </returns>
-        internal static List<FootballPlayer> CreateARandomFootballTeam(out FormationType returnFormation)
+        internal static List<IFootballPlayer> CreateARandomFootballTeam(out FormationType returnFormation)
         {
             // Get the number of possible FormationType values.
             var formationSize = Enum
@@ -47,9 +48,9 @@
         /// </summary>
         /// <param name="formation"></param>
         /// <returns> List of FootballPlayer objects </returns>
-        internal static List<FootballPlayer> CreateAFootballTeamByFormation(FormationType formation)
+        internal static List<IFootballPlayer> CreateAFootballTeamByFormation(FormationType formation)
         {
-            var output = new List<FootballPlayer>();
+            var output = new List<IFootballPlayer>();
 
             var numOfPlayersByPosition =
                 ParseFormationType.GetFormationValues(formation);

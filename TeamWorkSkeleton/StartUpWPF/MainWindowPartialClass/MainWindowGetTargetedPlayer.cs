@@ -2,6 +2,7 @@
 {
     using System;
     using Game.Tracker;
+    using Global.Contracts;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public partial class MainWindow
@@ -44,7 +45,7 @@
             }
         }
 
-        private FootballPlayer GetTargetPlayer(int index)
+        private IFootballPlayer GetTargetPlayer(int index)
         {
             foreach (var footballPlayer in GameStateTracker.PlayerOnTurn.Team.Team)
             {

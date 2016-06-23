@@ -62,9 +62,9 @@
             }
 
             child.VisualToken.Width
-                = FootballPlayerVisualizationSettings.SelectedVisualTokenSize;
+                = FootballPlayerSettings.SelectedVisualTokenSize;
             child.VisualToken.Height
-                = FootballPlayerVisualizationSettings.SelectedVisualTokenSize;
+                = FootballPlayerSettings.SelectedVisualTokenSize;
 
             canvas.Children[child.CanvasChildIndex.Value] = child.VisualToken;
         }

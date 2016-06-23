@@ -52,12 +52,13 @@
     <Compile Include="Actions\IShoot.cs" />
     <Compile Include="Actions\ITackle.cs" />
     <Compile Include="IDiceRoll.cs" />
-    <Compile Include="Statistics\IAwareness.cs" />
+    <Compile Include="IFootballPlayer.cs" />
+    <Compile Include="IFootballPlayerActions.cs" />
+    <Compile Include="IFootballPlayerStats.cs" />
     <Compile Include="Statistics\IDefenseStats.cs" />
     <Compile Include="Statistics\IOffenseStats.cs" />
     <Compile Include="Statistics\IOnZeroAP.cs" />
     <Compile Include="Statistics\IOrigin.cs" />
-    <Compile Include="Statistics\IPosition.cs" />
     <Compile Include="IDrawOnCanvas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

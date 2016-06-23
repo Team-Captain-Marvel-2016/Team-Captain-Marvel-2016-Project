@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Windows.Media;
     using Global.DataStructures;
+    using Global.Settings.Visualization;
     using TeamAssembly;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
@@ -65,16 +66,18 @@
         {
             foreach (var player in this.Team)
             {
-                player.VisualToken.Fill = this.Color;
+                player.SetVisualTokenColor(this.Color);
             }
         }
 
         public void ResetVisualTokenSize()
         {
+            var widthHeight = 
+                FootballPlayerSettings.VisualTokenSize;
+            
             foreach (var player in this.Team)
             {
-                player.VisualToken.Width = 15;
-                player.VisualToken.Height = 15;
+                player.SetVisualTokenSize(widthHeight, widthHeight);
             }
         }
 

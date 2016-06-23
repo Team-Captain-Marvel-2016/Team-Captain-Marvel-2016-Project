@@ -5,5 +5,7 @@
     public interface IOnZeroActionPoints
     {
         event EventHandler ZeroActionPoints;
+
+        void ResetActionPoints();
     }
 }

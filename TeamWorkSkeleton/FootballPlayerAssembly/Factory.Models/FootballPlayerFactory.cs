@@ -5,6 +5,7 @@ namespace TeamWork.Models.Factory.Models
     using System.Linq;
     using System.Reflection;
     using Generic;
+    using Global.Contracts;
     using Global.Enumerations.Factory;
     using Global.Enumerations.Utils;
     using Global.Randomization;
@@ -20,7 +21,7 @@ namespace TeamWork.Models.Factory.Models
         /// Call the corresponding method.
         /// </summary>
         /// <returns>new FootballPlayer object</returns>
-        public static FootballPlayer CreatePlayer()
+        public static IFootballPlayer CreatePlayer()
         {
             // Randomly generate a position and pass it along.
             var enumSize = EnumerationSize.GetPositionTypeSize();
@@ -39,7 +40,7 @@ namespace TeamWork.Models.Factory.Models
         /// </summary>
         /// <param name="position"></param>
         /// <returns>FootballPlayer object</returns>
-        public static FootballPlayer CreatePlayerByPosition(PositionType position)
+        public static IFootballPlayer CreatePlayerByPosition(PositionType position)
         {
             const string methodNameFormat = "Create{0}";
 

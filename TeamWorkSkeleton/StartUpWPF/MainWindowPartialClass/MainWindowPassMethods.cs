@@ -5,6 +5,7 @@
     using System.Windows.Shapes;
     using Game.PlayingField.Methods;
     using Game.Tracker;
+    using Global.Contracts;
     using VisualizationAssembly.CanvasUtilsClasses;
     using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
@@ -62,7 +63,7 @@
             }
         }
 
-        private void UpdateGameStateOnSuccessfulPass(FootballPlayer targetFootballPlayer)
+        private void UpdateGameStateOnSuccessfulPass(IFootballPlayer targetFootballPlayer)
         {
             GameStateTracker.FootballPlayerWithBall.HasBall = false;
             GameStateTracker.FootballPlayerWithBall = targetFootballPlayer;
@@ -74,7 +75,7 @@
                 GameStateTracker.FootballPlayerWithBall);
         }
 
-        private void UpdateGameStateOnUnsuccessfulPass(FootballPlayer enemyPlayer)
+        private void UpdateGameStateOnUnsuccessfulPass(IFootballPlayer enemyPlayer)
         {
             GameStateTracker.FootballPlayerWithBall.HasBall = false;
             GameStateTracker.FootballPlayerWithBall = enemyPlayer;

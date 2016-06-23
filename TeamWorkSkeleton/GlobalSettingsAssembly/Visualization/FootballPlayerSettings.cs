@@ -1,8 +1,8 @@
 ﻿namespace Global.Settings.Visualization
 {
-    public static class FootballPlayerVisualizationSettings
+    public static class FootballPlayerSettings
     {
-        static FootballPlayerVisualizationSettings()
+        static FootballPlayerSettings()
         {
             VisualTokenSize = 15;
             SelectedVisualTokenSize = 25;

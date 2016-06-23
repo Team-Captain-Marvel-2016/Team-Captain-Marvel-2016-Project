@@ -4,7 +4,7 @@
     using Global.Contracts.Actions;
     using Global.Contracts.Statistics;
 
-    public abstract partial class FootballPlayer : ITackle
+    public abstract partial class FootballPlayer
     {
         public bool Tackle(IOffenseStats enemy)
         {

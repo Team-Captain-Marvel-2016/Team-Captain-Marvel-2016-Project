@@ -1,5 +1,6 @@
 namespace Global.Contracts
 {
+    using System.Windows.Media;
     using System.Windows.Shapes;
     using DataStructures;
 
@@ -9,5 +10,8 @@ namespace Global.Contracts
         PositionXY GridPosition { get; set; }
         Ellipse VisualToken { get; set; }
         int? CanvasChildIndex { get; set; }
+
+        void SetVisualTokenColor(SolidColorBrush colorBrush);
+        void SetVisualTokenSize(int width, int height);
     }
 }

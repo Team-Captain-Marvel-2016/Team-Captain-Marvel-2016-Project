@@ -73,6 +73,10 @@
       <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
       <Name>Global.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GlobalSettingsAssembly\Global.Settings.csproj">
+      <Project>{c2b1b807-b8fe-4527-84bf-467d73408544}</Project>
+      <Name>Global.Settings</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TeamAssembly\TeamWork.Models.Team.csproj">
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
       <Name>TeamWork.Models.Team</Name>

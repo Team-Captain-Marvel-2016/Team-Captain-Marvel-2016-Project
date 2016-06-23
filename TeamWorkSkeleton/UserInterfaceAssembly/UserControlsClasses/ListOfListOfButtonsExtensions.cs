@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
     using System.Windows.Controls;
-    
+
     public static class ListOfListOfButtonsExtensions
     {
         /// <summary>

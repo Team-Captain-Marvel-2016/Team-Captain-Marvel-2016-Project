@@ -70,15 +70,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindowPartialClass\MainWindowCallForPassMethods.cs" />
-    <Compile Include="MainWindowPartialClass\MainWindowGetOpponentMethod.cs" />
-    <Compile Include="MainWindowPartialClass\MainWindowPassMethods.cs" />
-    <Compile Include="MainWindowPartialClass\MainWindowButtonGroups.cs" />
-    <Compile Include="MainWindowPartialClass\MainWindowFootballPlayerEvent.cs" />
-    <Compile Include="MainWindowPartialClass\MainWindowGetTargetedPlayer.cs" />
-    <Compile Include="MainWindowPartialClass\MainWindowMovementMethods.cs" />
-    <Compile Include="MainWindowPartialClass\MainWindowShootMethods.cs" />
-    <Compile Include="MainWindowPartialClass\MainWindowTackleMethods.cs" />
+    <Compile Include="MainWindowPartialClass\CallForPassImplementation.cs" />
+    <Compile Include="MainWindowPartialClass\GetOpponent.cs" />
+    <Compile Include="MainWindowPartialClass\PassImplementation.cs" />
+    <Compile Include="MainWindowPartialClass\ButtonGroups.cs" />
+    <Compile Include="MainWindowPartialClass\Events.cs" />
+    <Compile Include="MainWindowPartialClass\GetTargeted.cs" />
+    <Compile Include="MainWindowPartialClass\MovementImplementation.cs" />
+    <Compile Include="MainWindowPartialClass\ShootImplementation.cs" />
+    <Compile Include="MainWindowPartialClass\TackleImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

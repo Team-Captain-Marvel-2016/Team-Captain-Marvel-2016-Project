@@ -1,17 +1,17 @@
-﻿namespace FootballPlayerAssembly.RolesClasses.NeptunianFootballPlayer
+﻿namespace TeamWork.Models.Roles.NeptunianFootballPlayer
 {
-    using TeamWork.Models.Species.Abstract;
+    using Models.Species.Abstract;
 
     public static partial class FootballPlayerFactory
     {
         internal class NeptunianMidfielder : Neptunian
         {
-            internal NeptunianMidfielder(TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) : base(player)
+            internal NeptunianMidfielder(string name)
+                : base(name)
             {
             }
 
-            internal NeptunianMidfielder(string name)
-                : base(name)
+            internal NeptunianMidfielder(Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) : base(player)
             {
             }
 

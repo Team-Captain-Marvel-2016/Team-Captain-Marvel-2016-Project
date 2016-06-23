@@ -1,4 +1,4 @@
-﻿namespace FootballPlayerAssembly.FootballPlayerSettingsClasses
+﻿namespace TeamWork.Models.Factory.Settings
 {
     using Global.DataStructures;
 

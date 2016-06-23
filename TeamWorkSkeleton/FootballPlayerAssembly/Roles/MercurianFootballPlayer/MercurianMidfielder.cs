@@ -1,17 +1,17 @@
-﻿namespace FootballPlayerAssembly.RolesClasses.MercurianFootballPlayer
+﻿namespace TeamWork.Models.Roles.MercurianFootballPlayer
 {
-    using TeamWork.Models.Species.Abstract;
+    using Species.Abstract;
 
     public static partial class FootballPlayerFactory
     {
         internal class MercurianMidfielder : Mercurian
         {
-            internal MercurianMidfielder(
-                TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) : base(player)
+            internal MercurianMidfielder(string name)
+                : base(name)
             {
             }
 
-            internal MercurianMidfielder(string name) : base(name)
+            internal MercurianMidfielder(Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) : base(player)
             {
             }
 

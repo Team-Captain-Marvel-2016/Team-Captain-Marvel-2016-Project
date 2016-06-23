@@ -1,18 +1,18 @@
-﻿namespace FootballPlayerAssembly.RolesClasses.VenusianFootballPlayer
+﻿namespace TeamWork.Models.Roles.VenusianFootballPlayer
 {
-    using TeamWork.Models.Species.Abstract;
+    using Species.Abstract;
 
     public static partial class FootballPlayerFactory
     {
         internal class VenusianDefender : Venusian
         {
-            internal VenusianDefender(TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) 
-                : base(player)
+            internal VenusianDefender(string name)
+                : base(name)
             {
             }
 
-            internal VenusianDefender(string name) 
-                : base(name)
+            internal VenusianDefender(Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) 
+                : base(player)
             {
             }
 

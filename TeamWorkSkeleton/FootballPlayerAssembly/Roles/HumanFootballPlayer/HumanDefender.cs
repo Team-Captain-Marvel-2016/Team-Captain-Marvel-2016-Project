@@ -1,12 +1,12 @@
-﻿namespace FootballPlayerAssembly.RolesClasses.HumanFootballPlayer
+﻿namespace TeamWork.Models.Roles.HumanFootballPlayer
 {
-    using TeamWork.Models.Species.Abstract;
+    using Species.Abstract;
 
     public static partial class FootballPlayerFactory
     {
         internal class HumanDefender : Human
         {
-            internal HumanDefender(TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player)
+            internal HumanDefender(Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player)
                 : base(player)
             {
             }

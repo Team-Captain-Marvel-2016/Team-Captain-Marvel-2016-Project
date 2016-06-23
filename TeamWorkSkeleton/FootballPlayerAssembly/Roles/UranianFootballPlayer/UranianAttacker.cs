@@ -1,18 +1,18 @@
-﻿namespace FootballPlayerAssembly.RolesClasses.UranianFootballPlayer
+﻿namespace TeamWork.Models.Roles.UranianFootballPlayer
 {
-    using TeamWork.Models.Species.Abstract;
+    using Species.Abstract;
 
     public static partial class FootballPlayerFactory
     {
         internal class UranianAttacker : Uranian
         {
-            internal UranianAttacker(TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) 
-                : base(player)
+            internal UranianAttacker(string name)
+                : base(name)
             {
             }
 
-            internal UranianAttacker(string name) 
-                : base(name)
+            internal UranianAttacker(Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) 
+                : base(player)
             {
             }
 

@@ -1,7 +1,7 @@
 namespace TeamWork.Models.Factory.Models
 {
+    using Abstract;
     using Spcies.NameGenerator;
-    using FootballPlayer = Abstract.FootballPlayer;
 
     public static partial class FootballPlayerFactory
     {
@@ -19,7 +19,7 @@ namespace TeamWork.Models.Factory.Models
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetNeptunianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianAttacker(baseStats);
             return newPlayer;
         }
@@ -28,7 +28,7 @@ namespace TeamWork.Models.Factory.Models
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetNeptunianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianDefender(baseStats);
             return newPlayer;
         }
@@ -37,7 +37,7 @@ namespace TeamWork.Models.Factory.Models
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetNeptunianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianMidfielder(baseStats);
             return newPlayer;
         }
@@ -46,7 +46,7 @@ namespace TeamWork.Models.Factory.Models
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetNeptunianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.NeptunianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianGoalkeeper(baseStats);
             return newPlayer;
         }

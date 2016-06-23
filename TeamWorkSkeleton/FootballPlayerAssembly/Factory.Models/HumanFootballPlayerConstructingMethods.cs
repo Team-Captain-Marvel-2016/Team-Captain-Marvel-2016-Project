@@ -1,7 +1,7 @@
 ﻿namespace TeamWork.Models.Factory.Models
 {
+    using Abstract;
     using Spcies.NameGenerator;
-    using FootballPlayer = Abstract.FootballPlayer;
 
     public static partial class FootballPlayerFactory
     {
@@ -19,7 +19,7 @@
             (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetHumanName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.HumanFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanAttacker(baseStats);
             return newPlayer;
         }
@@ -28,7 +28,7 @@
             (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetHumanName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.HumanFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanDefender(baseStats);
             return newPlayer;
         }
@@ -37,7 +37,7 @@
             (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetHumanName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.HumanFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanMidfielder(baseStats);
             return newPlayer;
         }
@@ -46,7 +46,7 @@
             (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetHumanName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.HumanFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanGoalkeeper(baseStats);
             return newPlayer;
         }

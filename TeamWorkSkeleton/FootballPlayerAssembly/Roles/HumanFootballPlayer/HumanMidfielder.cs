@@ -1,4 +1,4 @@
-﻿namespace FootballPlayerAssembly.RolesClasses.HumanFootballPlayer
+﻿namespace TeamWork.Models.Roles.HumanFootballPlayer
 {
     using TeamWork.Models.Species.Abstract;
 

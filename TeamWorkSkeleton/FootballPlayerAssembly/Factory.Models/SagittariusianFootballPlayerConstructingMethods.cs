@@ -1,7 +1,7 @@
 ﻿namespace TeamWork.Models.Factory.Models
 {
+    using Abstract;
     using Spcies.NameGenerator;
-    using FootballPlayer = Abstract.FootballPlayer;
 
     public static partial class FootballPlayerFactory
     {
@@ -19,7 +19,7 @@
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetSagittariusianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.SagittariusianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianAttacker(baseStats);
             return newPlayer;
         }
@@ -28,7 +28,7 @@
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetSagittariusianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.SagittariusianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianDefender(baseStats);
             return newPlayer;
         }
@@ -37,7 +37,7 @@
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetSagittariusianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.SagittariusianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianMidfielder(baseStats);
             return newPlayer;
         }
@@ -46,7 +46,7 @@
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetSagittariusianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.SagittariusianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianGoalkeeper(baseStats);
             return newPlayer;
         }

@@ -1,7 +1,7 @@
 ﻿namespace TeamWork.Models.Factory.Models
 {
+    using Abstract;
     using Spcies.NameGenerator;
-    using FootballPlayer = Abstract.FootballPlayer;
 
     public static partial class FootballPlayerFactory
     {
@@ -19,7 +19,7 @@
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetJupiterianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.JupiterianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
                 .JupiterianAttacker(baseStats);
             return newPlayer;
         }
@@ -28,7 +28,7 @@
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetJupiterianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.JupiterianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
                 .JupiterianDefender(baseStats);
             return newPlayer;
         }
@@ -37,7 +37,7 @@
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetJupiterianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.JupiterianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
                 .JupiterianMidfielder(baseStats);
             return newPlayer;
         }
@@ -46,7 +46,7 @@
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
             var newPlayerName = GetJupiterianName();
-            var newPlayer = new FootballPlayerAssembly.RolesClasses.JupiterianFootballPlayer.FootballPlayerFactory
+            var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
                 .JupiterianGoalkeeper(baseStats);
             return newPlayer;
         }

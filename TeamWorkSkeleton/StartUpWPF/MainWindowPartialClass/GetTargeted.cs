@@ -1,10 +1,9 @@
 ﻿namespace StartUpWPF
 {
-    using System;
     using Game.Tracker;
     using Global.Contracts;
-    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
-
+    using System;
+    
     public partial class MainWindow
     {
         /// <summary>
@@ -29,7 +28,7 @@
         /// <summary>
         /// Add methods handling Tackle to MouseDown event
         /// </summary>
-        private void AddMouseDownEventTackle(Func<object, EventArgs> func)
+        private void AddMouseDownEventTackle()
         {
             foreach (var footballPlayer in GameStateTracker.PlayerOnTurn.Team.Team)
             {

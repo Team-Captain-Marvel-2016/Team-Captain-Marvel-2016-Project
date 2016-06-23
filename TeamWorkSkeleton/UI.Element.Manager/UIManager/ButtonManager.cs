@@ -1,10 +1,11 @@
 ﻿namespace UI.Element.Manager.UIManager
 {
-    using System;
-    using System.Collections.Generic;
     using Contracts;
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
 
-    public class ElementManager
+    public class ElementManager : IEnumerable<IElementGroup>
     {
         private readonly List<IElementGroup> groups;
         private readonly List<string> groupNames;
@@ -58,6 +59,51 @@
             }
 
             this.groups.RemoveAt(index);
+        }
+
+        public void Enable()
+        {
+            foreach (var elementGroup in this.groups)
+            {
+                elementGroup.Enable();
+            }
+        }
+
+        public void Disable()
+        {
+            foreach (var elementGroup in this.groups)
+            {
+                elementGroup.Disable();
+            }
+        }
+
+        public void Display()
+        {
+            foreach (var elementGroup in this.groups)
+            {
+                elementGroup.Display();
+            }
+        }
+
+        public void Hide()
+        {
+            foreach (var elementGroup in this.groups)
+            {
+                elementGroup.Hide();
+            }
+        }
+
+        public IEnumerator<IElementGroup> GetEnumerator()
+        {
+            foreach (var group in this.groups)
+            {
+                yield return group;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
         }
     }
 }

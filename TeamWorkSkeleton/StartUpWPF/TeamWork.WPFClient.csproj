@@ -56,7 +56,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="MainWindowPartialClass\ButtonManagerImplementation.cs" />
-    <Compile Include="UserControls\FootballPlayerControls.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -74,7 +73,6 @@
     <Compile Include="MainWindowPartialClass\CallForPassImplementation.cs" />
     <Compile Include="MainWindowPartialClass\GetOpponent.cs" />
     <Compile Include="MainWindowPartialClass\PassImplementation.cs" />
-    <Compile Include="MainWindowPartialClass\ButtonGroups.cs" />
     <Compile Include="MainWindowPartialClass\Events.cs" />
     <Compile Include="MainWindowPartialClass\GetTargeted.cs" />
     <Compile Include="MainWindowPartialClass\MovementImplementation.cs" />
@@ -155,10 +153,6 @@
     <ProjectReference Include="..\UI.Element.Manager\UI.Element.Manager.csproj">
       <Project>{6df8a08a-ad10-4502-aaef-c15e9bfac1bc}</Project>
       <Name>UI.Element.Manager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UserInterfaceAssembly\UserInterfaceAssembly.csproj">
-      <Project>{9d64b841-a428-451a-965d-cb3b0a23a955}</Project>
-      <Name>UserInterfaceAssembly</Name>
     </ProjectReference>
     <ProjectReference Include="..\VisualizationAssembly\VisualizationAssembly.csproj">
       <Project>{c7ddcbc7-728a-4bea-9d74-bb73afbc7a2d}</Project>

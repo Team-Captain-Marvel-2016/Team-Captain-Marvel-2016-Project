@@ -51,7 +51,6 @@
     <Compile Include="Actions\IPass.cs" />
     <Compile Include="Actions\IShoot.cs" />
     <Compile Include="Actions\ITackle.cs" />
-    <Compile Include="ICanvasVisualizer.cs" />
     <Compile Include="IDiceRoll.cs" />
     <Compile Include="IFootballPlayer.cs" />
     <Compile Include="Actions\IFootballPlayerActions.cs" />

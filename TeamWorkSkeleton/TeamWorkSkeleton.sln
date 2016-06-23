@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.PlayingField", "PlayingFIeldAssembly\Game.PlayingField.csproj", "{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterfaceAssembly", "UserInterfaceAssembly\UserInterfaceAssembly.csproj", "{9D64B841-A428-451A-965D-CB3B0A23A955}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.CustomExceptions", "GlobalExceptionAssembly\Global.CustomExceptions.csproj", "{A0403C5C-4B70-4CB0-88C8-5CD7396A7F86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Models", "FootballPlayerAssembly\TeamWork.Models.csproj", "{D46F609D-BBA1-47DF-AEA0-DA4479FCB741}"
@@ -53,10 +51,6 @@ Global
 		{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{293C7EDF-B1E1-40D9-B08C-9B010BBDF99E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9D64B841-A428-451A-965D-CB3B0A23A955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D64B841-A428-451A-965D-CB3B0A23A955}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D64B841-A428-451A-965D-CB3B0A23A955}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D64B841-A428-451A-965D-CB3B0A23A955}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A0403C5C-4B70-4CB0-88C8-5CD7396A7F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A0403C5C-4B70-4CB0-88C8-5CD7396A7F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0403C5C-4B70-4CB0-88C8-5CD7396A7F86}.Release|Any CPU.ActiveCfg = Release|Any CPU

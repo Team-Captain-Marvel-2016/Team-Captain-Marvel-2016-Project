@@ -20,7 +20,6 @@
     using Teamwork.Models.PC.Human.Singletons;
     using UI.Element.Manager.Contracts;
     using UI.Element.Manager.UIManager;
-    using UserInterfaceAssembly.UserControlsClasses;
     using VisualizationAssembly;
 
     /// <summary>
@@ -29,25 +28,12 @@
     /// </summary>
     public partial class MainWindow : Window
     {
-        internal List<List<Button>> AllButtons;
-        internal List<Button> SelectionButtons;
-        internal List<Button> MovementButtons;
-        internal List<Button> BallActionButtons;
-        internal List<Button> NoBallButtons;
-        internal List<Button> DefenseButtons;
-        internal List<Button> EndTurnButtons;
-
-        private ElementManager buttons; 
-
         public MainWindow()
         {
             this.InitializeComponent();
 
-            this.InitializeButtonLists();
-            this.AllButtons.CollapseAll();
-
-            // Experimental
-            //this.InitializeButtonManager();
+            this.InitializeButtonManager();
+            this.Buttons.Hide();
         }
 
         /// <summary>
@@ -74,10 +60,8 @@
             InitialGameState.InitializeFirstTurn(this.PlayFieldCanvas);
 
             // Display all 
-            this.AllButtons.DisplayAll();
-
-            // Enable Appropriate Buttons
-            this.DisplayControlButtons();
+            this.Buttons.Display();
+            this.Buttons.Enable();
 
             // Subscribe to all FootballPlayer's events.
             this.SubscribeToFootballPlayerEvents();
@@ -101,7 +85,7 @@
 
             NextTurn.ChangeGameState(this.PlayFieldCanvas);
 
-            this.DisplayControlButtons();
+            this.DisplayUI();
         }
 
         /// <summary>
@@ -118,8 +102,8 @@
             ResetGameMethods.ResetGame();
 
             this.PlayFieldCanvas.Children.Clear();
-            this.AllButtons.CollapseAll();
             this.StartBtn.Visibility = Visibility.Visible;
+            this.Buttons.Hide();
         }
     }
 }

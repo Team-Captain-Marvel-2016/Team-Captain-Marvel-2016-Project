@@ -2,7 +2,6 @@
 {
     using System;
     using Teamwork.Models.PC.Human.Singletons;
-    using UserInterfaceAssembly.UserControlsClasses;
 
     public partial class MainWindow
     {
@@ -21,8 +20,8 @@
 
         private void OnZeroActionPoints(object sender, EventArgs args)
         {
-            this.AllButtons.DisableAll();
-            this.EndTurnButtons.EnableButtons();
+            this.Buttons.Enable();
+            this.DisplayUIZeroAP?.Invoke(this, null);
         }
     }
 }

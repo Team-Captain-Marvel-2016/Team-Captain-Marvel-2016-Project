@@ -72,6 +72,8 @@
             CanvasChildrenUtilities.MarkPlayerWithBall(
                 this.PlayFieldCanvas,
                 GameStateTracker.FootballPlayerWithBall);
+
+            this.DisplayUIZeroAP?.Invoke(this, null);
         }
 
         private void UpdateGameStateOnUnsuccessfulPass(IFootballPlayer enemyPlayer)
@@ -88,6 +90,8 @@
             GameStateTracker.PlayerOnTurn.Team.HasBallPossession = false;
             GameStateTracker.GetOpponent().Team.HasBallPossession = true;
             GameStateTracker.PlayerWihBall = GameStateTracker.GetOpponent();
+
+            this.DisplayUIZeroAP?.Invoke(this, null);
         }
     }
 }

@@ -60,8 +60,7 @@
             InitialGameState.InitializeFirstTurn(this.PlayFieldCanvas);
 
             // Display all 
-            this.Buttons.Display();
-            this.Buttons.Enable();
+            this.DisplayUI();
 
             // Subscribe to all FootballPlayer's events.
             this.SubscribeToFootballPlayerEvents();

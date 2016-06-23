@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MainWindowPartialClass\ButtonManagerImplementation.cs" />
     <Compile Include="UserControls\FootballPlayerControls.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -150,6 +151,10 @@
     <ProjectReference Include="..\TeamAssembly\TeamWork.Models.Team.csproj">
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
       <Name>TeamWork.Models.Team</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI.Element.Manager\UI.Element.Manager.csproj">
+      <Project>{6df8a08a-ad10-4502-aaef-c15e9bfac1bc}</Project>
+      <Name>UI.Element.Manager</Name>
     </ProjectReference>
     <ProjectReference Include="..\UserInterfaceAssembly\UserInterfaceAssembly.csproj">
       <Project>{9d64b841-a428-451a-965d-cb3b0a23a955}</Project>

@@ -18,6 +18,8 @@
     using Game.Logic;
     using Global.Contracts.PC;
     using Teamwork.Models.PC.Human.Singletons;
+    using UI.Element.Manager.Contracts;
+    using UI.Element.Manager.UIManager;
     using UserInterfaceAssembly.UserControlsClasses;
     using VisualizationAssembly;
 
@@ -35,12 +37,17 @@
         internal List<Button> DefenseButtons;
         internal List<Button> EndTurnButtons;
 
+        private ElementManager buttons; 
+
         public MainWindow()
         {
             this.InitializeComponent();
 
             this.InitializeButtonLists();
             this.AllButtons.CollapseAll();
+
+            // Experimental
+            //this.InitializeButtonManager();
         }
 
         /// <summary>

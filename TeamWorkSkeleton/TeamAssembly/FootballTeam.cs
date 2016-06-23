@@ -5,9 +5,8 @@
     using System;
     using System.Collections;
     using System.Collections.Generic;
-    using TeamWork.Models.Abstract;
 
-    public partial class FootballTeam : ITeam, IEnumerable<FootballPlayer>
+    public partial class FootballTeam : ITeam, IEnumerable<IFootballPlayer>
     {
         private string teamName;
 
@@ -88,9 +87,12 @@
             this.FormationType = formation;
         }
 
-        public IEnumerator<FootballPlayer> GetEnumerator()
+        public IEnumerator<IFootballPlayer> GetEnumerator()
         {
-            return ((IEnumerable<FootballPlayer>)this.Team).GetEnumerator();
+            foreach (var footballPlayer in this.Team)
+            {
+                yield return footballPlayer;
+            }
         }
 
         IEnumerator IEnumerable.GetEnumerator()

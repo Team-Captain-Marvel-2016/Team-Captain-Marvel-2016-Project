@@ -47,7 +47,6 @@
     <Compile Include="CanvasUtilsClasses\CanvasChildrenUtilities.cs" />
     <Compile Include="InitPlayingFieldClasses\InitTeamVisualization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Visualizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FootballPlayerAssembly\TeamWork.Models.csproj">
@@ -75,9 +74,7 @@
       <Name>TeamWork.Models.Team</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="VisualizationStaticSettingsClasses\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

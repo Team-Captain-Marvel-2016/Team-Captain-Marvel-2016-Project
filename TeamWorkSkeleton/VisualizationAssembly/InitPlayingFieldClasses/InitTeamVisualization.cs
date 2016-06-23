@@ -1,15 +1,11 @@
-﻿
-namespace VisualizationAssembly.InitPlayingFieldClasses
+﻿namespace VisualizationAssembly.InitPlayingFieldClasses
 {
     using Global.Contracts;
     using Global.DataStructures;
-    using Global.Enumerations;
     using Global.Enumerations.Team;
     using Global.Enumerations.Utils;
     using Global.Settings.Visualization;
-    using TeamAssembly;
-
-
+    
     public static class InitTeamVisualization
     {
         public static void GetInitialFootballPlayerPositions
@@ -73,7 +69,9 @@ namespace VisualizationAssembly.InitPlayingFieldClasses
             var len = playerCounter + numberOfPlayers;
             for (var i = playerCounter; i < len; i++)
             {
-                team.Team[i].GridPosition = new PositionXY(row, colConstant);
+                team.Team[i].GridPosition = 
+                    new PositionXY(row, colConstant);
+
                 team.Team[i].FieldPosition =
                     PlayingFieldSettings.GridCoordinates[
                         team.Team[i].GridPosition.X,

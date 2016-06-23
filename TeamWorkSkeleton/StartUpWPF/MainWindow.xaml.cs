@@ -16,7 +16,10 @@
     using System.Windows.Navigation;
     using System.Windows.Shapes;
     using Game.Logic;
+    using Global.Contracts.PC;
+    using Teamwork.Models.PC.Human.Singletons;
     using UserInterfaceAssembly.UserControlsClasses;
+    using VisualizationAssembly;
 
     /// <summary>
     /// App runs here.
@@ -31,6 +34,8 @@
         internal List<Button> NoBallButtons;
         internal List<Button> DefenseButtons;
         internal List<Button> EndTurnButtons;
+
+        public Visualizer GraphicsVisualizer { get; private set; }
 
         public MainWindow()
         {
@@ -52,25 +57,25 @@
         private void StartBtn_Click(object sender, RoutedEventArgs e)
         {
             // Hide The Start Button
-            StartBtn.Visibility = Visibility.Collapsed;
+            this.StartBtn.Visibility = Visibility.Collapsed;
 
             // Initialize players and their teams.
             InitialGameState.InitializePlayers();
 
             // Display players on the Field.
-            InitialGameState.InitializeCanvas(PlayFieldCanvas);
+            InitialGameState.InitializeCanvas(this.PlayFieldCanvas);
 
             // Prep first turn.
-            InitialGameState.InitializeFirstTurn(PlayFieldCanvas);
+            InitialGameState.InitializeFirstTurn(this.PlayFieldCanvas);
 
             // Display all 
-            AllButtons.DisplayAll();
+            this.AllButtons.DisplayAll();
 
             // Enable Appropriate Buttons
-            DisplayControlButtons();
+            this.DisplayControlButtons();
 
             // Subscribe to all FootballPlayer's events.
-            SubscribeToFootballPlayerEvents();
+            this.SubscribeToFootballPlayerEvents();
         }
 
         /// <summary>
@@ -107,9 +112,9 @@
         {
             ResetGameMethods.ResetGame();
 
-            PlayFieldCanvas.Children.Clear();
-            AllButtons.CollapseAll();
-            StartBtn.Visibility = Visibility.Visible;
+            this.PlayFieldCanvas.Children.Clear();
+            this.AllButtons.CollapseAll();
+            this.StartBtn.Visibility = Visibility.Visible;
         }
     }
 }

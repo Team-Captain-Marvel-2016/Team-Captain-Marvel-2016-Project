@@ -1,6 +1,6 @@
 ﻿namespace Global.Settings.Visualization
 {
-    using Global.DataStructures;
+    using DataStructures;
 
     public static class PlayingFieldSettings
     {

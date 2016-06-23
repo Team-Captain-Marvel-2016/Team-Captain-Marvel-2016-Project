@@ -80,8 +80,7 @@
             child.VisualToken.Fill = Brushes.DeepPink;
         }
 
-
-        #region Private methods
+        
         /// <summary>
         /// Update a child elements position in 
         /// relation to the canvas, based on the 
@@ -105,7 +104,5 @@
             Canvas.SetTop(child.VisualToken, child.FieldPosition.X);
             Canvas.SetLeft(child.VisualToken, child.FieldPosition.Y);
         }
-
-        #endregion
     }
 }

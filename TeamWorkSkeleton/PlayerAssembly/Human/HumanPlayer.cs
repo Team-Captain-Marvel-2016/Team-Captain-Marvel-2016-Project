@@ -1,7 +1,7 @@
-﻿namespace PlayerAssembly.HumanPlayerClass
+﻿namespace Teamwork.Models.PC.Human
 {
+    using Abstract;
     using System.Windows.Media;
-    using Teamwork.Models.PC.Abstract;
 
     public abstract class HumanPlayer : PlayerCharacter
     {

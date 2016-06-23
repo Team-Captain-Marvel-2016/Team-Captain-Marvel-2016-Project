@@ -1,11 +1,10 @@
 ﻿namespace Teamwork.Models.PC.Human.Singletons
 {
+    using Abstract;
+    using Game.Events;
     using System;
     using System.Windows.Media;
-    using Game.Events;
-    using PlayerAssembly.HumanPlayerClass;
-    using Teamwork.Models.PC.Abstract;
-
+    
     /// <summary>
     /// Encapsulate an Instance behind a private constructor
     /// as a private static field.
@@ -13,9 +12,9 @@
     /// Only Create a new instace if one does not exist.
     /// ( Singleton )
     /// </summary>
-    public class PlayerOne : HumanPlayer
+    public sealed class PlayerOne : HumanPlayer
     {
-        private static PlayerCharacter _player;
+        private static PlayerCharacter player;
         
         private PlayerOne(string name, string teamName)
             : base(name, teamName, Brushes.Blue)
@@ -23,13 +22,13 @@
             ResetGameState.ResetGameEvent += OnResetGameEvent;
         }
 
-        public static PlayerCharacter Player => _player;
+        public static PlayerCharacter Player => player;
 
         public static void CreatePlayerOne(string name, string teamName)
         {
-            if (_player == null)
+            if (player == null)
             {
-                _player = new PlayerOne(name, teamName);
+                player = new PlayerOne(name, teamName);
             }
             else
             {
@@ -40,7 +39,7 @@
         // Event handler.
         private static void OnResetGameEvent(object sender, EventArgs args)
         {
-            _player = null;
+            player = null;
         }
     }
 }

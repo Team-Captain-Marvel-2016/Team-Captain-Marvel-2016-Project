@@ -3,7 +3,6 @@
     using System;
     using System.Windows.Media;
     using Game.Events;
-    using PlayerAssembly.HumanPlayerClass;
 
     /// <summary>
     /// Encapsulate an Instance behind a private constructor
@@ -12,9 +11,9 @@
     /// Only Create a new instace if one does not exist.
     /// ( Singleton )
     /// </summary>
-    public class PlayerTwo : HumanPlayer
+    public sealed class PlayerTwo : HumanPlayer
     {
-        private static PlayerTwo _player;
+        private static PlayerTwo player;
 
         private PlayerTwo(string name, string teamName)
             : base(name, teamName, Brushes.Red)
@@ -22,13 +21,13 @@
             ResetGameState.ResetGameEvent += OnResetGameEvent;
         }
         
-        public static PlayerTwo Player => _player;
+        public static PlayerTwo Player => player;
 
         public static void CreatePlayerTwo(string name, string teamName)
         {
-            if (_player == null)
+            if (player == null)
             {
-                _player = new PlayerTwo(name, teamName);
+                player = new PlayerTwo(name, teamName);
             }
             else
             {
@@ -39,7 +38,7 @@
         // Event handler.
         private static void OnResetGameEvent(object sender, EventArgs args)
         {
-            _player = null;
+            player = null;
         }
     }
 }

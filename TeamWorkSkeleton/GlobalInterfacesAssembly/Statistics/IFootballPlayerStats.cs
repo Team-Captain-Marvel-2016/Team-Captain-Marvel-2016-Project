@@ -1,7 +1,5 @@
-﻿namespace Global.Contracts
+﻿namespace Global.Contracts.Statistics
 {
-    using Statistics;
-
     public interface IFootballPlayerStats 
         : IDefenseStats, IOffenseStats, IOnZeroActionPoints, IOrigin
     {

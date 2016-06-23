@@ -2,20 +2,20 @@
 {
     using Global.DataStructures;
 
-    internal static class DefenderCreationConstants
+    internal static class Attacker
     {
-        static DefenderCreationConstants()
+        static Attacker()
         {
-            Pass = new MinMaxRange(30, 60);
-            Shoot = new MinMaxRange(30, 80);
-            Dribble = new MinMaxRange(30, 60);
+            Pass = new MinMaxRange(50, 90);
+            Shoot = new MinMaxRange(70, 100);
+            Dribble = new MinMaxRange(60, 90);
 
-            Save = new MinMaxRange(0, 30);
-            Tackle = new MinMaxRange(70, 100);
-            Intercept = new MinMaxRange(70, 100);
+            Save = new MinMaxRange(0, 10);
+            Tackle = new MinMaxRange(0, 50);
+            Intercept = new MinMaxRange(20, 60);
 
-            Awareness = new MinMaxRange(4, 6);
-            Ap = new MinMaxRange(3, 5);
+            Awareness = new MinMaxRange(2, 4);
+            Ap = new MinMaxRange(4, 6);
         }
 
         internal static MinMaxRange Ap { get; private set; }

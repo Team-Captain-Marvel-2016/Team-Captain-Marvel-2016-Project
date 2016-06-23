@@ -1,10 +1,9 @@
 ﻿namespace Game.Tracker
 {
-    using System.Drawing;
     using Global.Contracts;
+    using System.Drawing;
     using Teamwork.Models.PC.Abstract;
     using Teamwork.Models.PC.Human.Singletons;
-    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public static class GameStateTracker
     {

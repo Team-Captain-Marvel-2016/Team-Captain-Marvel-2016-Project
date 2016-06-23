@@ -1,6 +1,7 @@
 ﻿
 namespace VisualizationAssembly.InitPlayingFieldClasses
 {
+    using Global.Contracts;
     using Global.DataStructures;
     using Global.Enumerations;
     using Global.Enumerations.Team;
@@ -12,7 +13,7 @@ namespace VisualizationAssembly.InitPlayingFieldClasses
     public static class InitTeamVisualization
     {
         public static void GetInitialFootballPlayerPositions
-            (FootballTeam team, StartingFieldType field)
+            (ITeam team, StartingFieldType field)
         {
             var goalkeeperCol = 0;
             var defenderCol = 2;
@@ -21,7 +22,7 @@ namespace VisualizationAssembly.InitPlayingFieldClasses
 
             if (field == StartingFieldType.Right)
             {
-                goalkeeperCol = PlayingFieldVisualizationSettings.GridCols - 1;
+                goalkeeperCol = PlayingFieldSettings.GridCols - 1;
                 defenderCol = goalkeeperCol - 2;
                 midfielderCol = defenderCol - 2;
                 attackerCol = midfielderCol - 2;
@@ -31,14 +32,14 @@ namespace VisualizationAssembly.InitPlayingFieldClasses
 
             var formationValues =
                 ParseFormationType
-                    .GetFormationValues(team.Formation);
+                    .GetFormationValues(team.FormationType);
 
             // Goalkeeper Position.
-            var row = PlayingFieldVisualizationSettings.GridRows / 2;
+            var row = PlayingFieldSettings.GridRows / 2;
 
             team.Team[0].GridPosition = new PositionXY(row, goalkeeperCol);
             team.Team[0].FieldPosition =
-                PlayingFieldVisualizationSettings.GridCoordinates[
+                PlayingFieldSettings.GridCoordinates[
                     team.Team[0].GridPosition.X,
                     team.Team[0].GridPosition.Y];
 
@@ -59,11 +60,11 @@ namespace VisualizationAssembly.InitPlayingFieldClasses
 
         private static int GetIncrement(int numberOfPlayers)
         {
-            return PlayingFieldVisualizationSettings.GridRows
+            return PlayingFieldSettings.GridRows
                 / (numberOfPlayers + 1);
         }
 
-        private static int FillPosition(FootballTeam team, int playerCounter, int numberOfPlayers, int colConstant)
+        private static int FillPosition(ITeam team, int playerCounter, int numberOfPlayers, int colConstant)
         {
             var rowIncrement = GetIncrement(numberOfPlayers);
 
@@ -74,7 +75,7 @@ namespace VisualizationAssembly.InitPlayingFieldClasses
             {
                 team.Team[i].GridPosition = new PositionXY(row, colConstant);
                 team.Team[i].FieldPosition =
-                    PlayingFieldVisualizationSettings.GridCoordinates[
+                    PlayingFieldSettings.GridCoordinates[
                         team.Team[i].GridPosition.X,
                         team.Team[i].GridPosition.Y];
 

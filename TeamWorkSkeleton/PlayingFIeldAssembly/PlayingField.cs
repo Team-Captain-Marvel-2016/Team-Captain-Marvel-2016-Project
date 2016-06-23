@@ -21,8 +21,8 @@
 
         private static bool[,] InitField()
         {
-            var rows = PlayingFieldVisualizationSettings.GridRows;
-            var cols = PlayingFieldVisualizationSettings.GridCols;
+            var rows = PlayingFieldSettings.GridRows;
+            var cols = PlayingFieldSettings.GridCols;
 
             var field = new bool[rows, cols];
 

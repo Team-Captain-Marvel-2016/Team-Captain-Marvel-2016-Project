@@ -28,7 +28,7 @@ namespace _00_TestingClassesAssembly.WPFCanvasTestingClasses
             // Add all FootballPlayer objects as 
             // children to PlayingField Canvas
 
-            foreach (var player in PlayerOne.Player.Team)
+            foreach (var player in PlayerOne.Player.Team.Team)
             {
                 CanvasChildrenUtilities.AddChild(canvas, player);
             }

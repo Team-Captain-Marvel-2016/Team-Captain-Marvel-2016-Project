@@ -1,13 +1,12 @@
 ﻿namespace StartUpWPF
 {
-    using System;
-    using System.Windows;
-    using System.Windows.Shapes;
     using Game.PlayingField.Methods;
     using Game.Tracker;
     using Global.Contracts;
+    using System;
+    using System.Windows;
+    using System.Windows.Shapes;
     using VisualizationAssembly.CanvasUtilsClasses;
-    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public partial class MainWindow
     {
@@ -43,7 +42,7 @@
             if (listOfEnemyPlayers.Count == 0) this.UpdateGameStateOnSuccessfulPass(target);
 
             // If there are enemies then evaluate each possible interception
-            FootballPlayer interceptintPlayer = null;
+            IFootballPlayer interceptintPlayer = null;
             foreach (var enemyPlayer in listOfEnemyPlayers)
             {
                 if (!GameStateTracker.SelectedFootballPlayer.Pass(enemyPlayer))
@@ -86,8 +85,8 @@
                 this.PlayFieldCanvas,
                 GameStateTracker.FootballPlayerWithBall);
 
-            GameStateTracker.PlayerOnTurn.Team.HasBall = false;
-            GameStateTracker.GetOpponent().Team.HasBall = true;
+            GameStateTracker.PlayerOnTurn.Team.HasBallPossession = false;
+            GameStateTracker.GetOpponent().Team.HasBallPossession = true;
             GameStateTracker.PlayerWihBall = GameStateTracker.GetOpponent();
         }
     }

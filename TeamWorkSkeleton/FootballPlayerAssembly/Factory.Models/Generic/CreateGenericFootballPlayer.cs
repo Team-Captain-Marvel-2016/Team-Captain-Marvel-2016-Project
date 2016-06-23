@@ -16,36 +16,36 @@
         internal static FootballPlayer CreateGenericAttacker()
         {
             var pass = GenericRandomization.Random.Next(
-                AttackerCreationConstants.Pass.Min,
-                AttackerCreationConstants.Pass.Max);
+                Attacker.Pass.Min,
+                Attacker.Pass.Max);
 
             var shoot = GenericRandomization.Random.Next(
-                AttackerCreationConstants.Shoot.Min,
-                AttackerCreationConstants.Shoot.Max);
+                Attacker.Shoot.Min,
+                Attacker.Shoot.Max);
 
             var dribble = GenericRandomization.Random.Next(
-                AttackerCreationConstants.Dribble.Min,
-                AttackerCreationConstants.Dribble.Max);
+                Attacker.Dribble.Min,
+                Attacker.Dribble.Max);
 
             var save = GenericRandomization.Random.Next(
-                AttackerCreationConstants.Save.Min,
-                AttackerCreationConstants.Save.Max);
+                Attacker.Save.Min,
+                Attacker.Save.Max);
 
             var tackle = GenericRandomization.Random.Next(
-                AttackerCreationConstants.Tackle.Min,
-                AttackerCreationConstants.Tackle.Max);
+                Attacker.Tackle.Min,
+                Attacker.Tackle.Max);
 
             var intercept = GenericRandomization.Random.Next(
-                AttackerCreationConstants.Intercept.Min,
-                AttackerCreationConstants.Intercept.Max);
+                Attacker.Intercept.Min,
+                Attacker.Intercept.Max);
 
             var awareness = GenericRandomization.Random.Next(
-                AttackerCreationConstants.Awareness.Min,
-                AttackerCreationConstants.Awareness.Max);
+                Attacker.Awareness.Min,
+                Attacker.Awareness.Max);
 
             var ap = GenericRandomization.Random.Next(
-                AttackerCreationConstants.Ap.Min,
-                AttackerCreationConstants.Ap.Max);
+                Attacker.Ap.Min,
+                Attacker.Ap.Max);
 
             var newAttacker = new FootballPlayerFactory.GenericFootballPlayer(
                 Name, pass, shoot, dribble, save, tackle, intercept, awareness, ap);
@@ -56,36 +56,36 @@
         internal static FootballPlayer CreateGenericDefender()
         {
             var pass = GenericRandomization.Random.Next(
-                DefenderCreationConstants.Pass.Min,
-                DefenderCreationConstants.Pass.Max);
+                Defender.Pass.Min,
+                Defender.Pass.Max);
 
             var shoot = GenericRandomization.Random.Next(
-                DefenderCreationConstants.Shoot.Min,
-                DefenderCreationConstants.Shoot.Max);
+                Defender.Shoot.Min,
+                Defender.Shoot.Max);
 
             var dribble = GenericRandomization.Random.Next(
-                DefenderCreationConstants.Dribble.Min,
-                DefenderCreationConstants.Dribble.Max);
+                Defender.Dribble.Min,
+                Defender.Dribble.Max);
 
             var save = GenericRandomization.Random.Next(
-                DefenderCreationConstants.Save.Min,
-                DefenderCreationConstants.Save.Max);
+                Defender.Save.Min,
+                Defender.Save.Max);
 
             var tackle = GenericRandomization.Random.Next(
-                DefenderCreationConstants.Tackle.Min,
-                DefenderCreationConstants.Tackle.Max);
+                Defender.Tackle.Min,
+                Defender.Tackle.Max);
 
             var intercept = GenericRandomization.Random.Next(
-                DefenderCreationConstants.Intercept.Min,
-                DefenderCreationConstants.Intercept.Max);
+                Defender.Intercept.Min,
+                Defender.Intercept.Max);
 
             var awareness = GenericRandomization.Random.Next(
-                DefenderCreationConstants.Awareness.Min,
-                DefenderCreationConstants.Awareness.Max);
+                Defender.Awareness.Min,
+                Defender.Awareness.Max);
 
             var ap = GenericRandomization.Random.Next(
-                DefenderCreationConstants.Ap.Min,
-                DefenderCreationConstants.Ap.Max);
+                Defender.Ap.Min,
+                Defender.Ap.Max);
 
             var newDefender = new FootballPlayerFactory.GenericFootballPlayer(
                 Name, pass, shoot, dribble, save, tackle, intercept, awareness, ap);
@@ -96,36 +96,36 @@
         internal static FootballPlayer CreateGenericMidfielder()
         {
             var pass = GenericRandomization.Random.Next(
-               MidfielderCreationConstants.Pass.Min,
-               MidfielderCreationConstants.Pass.Max);
+               Midfielder.Pass.Min,
+               Midfielder.Pass.Max);
 
             var shoot = GenericRandomization.Random.Next(
-                MidfielderCreationConstants.Shoot.Min,
-                MidfielderCreationConstants.Shoot.Max);
+                Midfielder.Shoot.Min,
+                Midfielder.Shoot.Max);
 
             var dribble = GenericRandomization.Random.Next(
-                MidfielderCreationConstants.Dribble.Min,
-                MidfielderCreationConstants.Dribble.Max);
+                Midfielder.Dribble.Min,
+                Midfielder.Dribble.Max);
 
             var save = GenericRandomization.Random.Next(
-                MidfielderCreationConstants.Save.Min,
-                MidfielderCreationConstants.Save.Max);
+                Midfielder.Save.Min,
+                Midfielder.Save.Max);
 
             var tackle = GenericRandomization.Random.Next(
-                MidfielderCreationConstants.Tackle.Min,
-                MidfielderCreationConstants.Tackle.Max);
+                Midfielder.Tackle.Min,
+                Midfielder.Tackle.Max);
 
             var intercept = GenericRandomization.Random.Next(
-                MidfielderCreationConstants.Intercept.Min,
-                MidfielderCreationConstants.Intercept.Max);
+                Midfielder.Intercept.Min,
+                Midfielder.Intercept.Max);
 
             var awareness = GenericRandomization.Random.Next(
-                MidfielderCreationConstants.Awareness.Min,
-                MidfielderCreationConstants.Awareness.Max);
+                Midfielder.Awareness.Min,
+                Midfielder.Awareness.Max);
 
             var ap = GenericRandomization.Random.Next(
-                MidfielderCreationConstants.Ap.Min,
-                MidfielderCreationConstants.Ap.Max);
+                Midfielder.Ap.Min,
+                Midfielder.Ap.Max);
 
             var newMidfielder = new FootballPlayerFactory.GenericFootballPlayer(
                 Name, pass, shoot, dribble, save, tackle, intercept, awareness, ap);
@@ -136,36 +136,36 @@
         internal static FootballPlayer CreateGenericGoalkeeper()
         {
             var pass = GenericRandomization.Random.Next(
-               GoalkeeperCreationConstants.Pass.Min,
-               GoalkeeperCreationConstants.Pass.Max);
+               Goalkeeper.Pass.Min,
+               Goalkeeper.Pass.Max);
 
             var shoot = GenericRandomization.Random.Next(
-                GoalkeeperCreationConstants.Shoot.Min,
-                GoalkeeperCreationConstants.Shoot.Max);
+                Goalkeeper.Shoot.Min,
+                Goalkeeper.Shoot.Max);
 
             var dribble = GenericRandomization.Random.Next(
-                GoalkeeperCreationConstants.Dribble.Min,
-                GoalkeeperCreationConstants.Dribble.Max);
+                Goalkeeper.Dribble.Min,
+                Goalkeeper.Dribble.Max);
 
             var save = GenericRandomization.Random.Next(
-                GoalkeeperCreationConstants.Save.Min,
-                GoalkeeperCreationConstants.Save.Max);
+                Goalkeeper.Save.Min,
+                Goalkeeper.Save.Max);
 
             var tackle = GenericRandomization.Random.Next(
-                GoalkeeperCreationConstants.Tackle.Min,
-                GoalkeeperCreationConstants.Tackle.Max);
+                Goalkeeper.Tackle.Min,
+                Goalkeeper.Tackle.Max);
 
             var intercept = GenericRandomization.Random.Next(
-                GoalkeeperCreationConstants.Intercept.Min,
-                GoalkeeperCreationConstants.Intercept.Max);
+                Goalkeeper.Intercept.Min,
+                Goalkeeper.Intercept.Max);
 
             var awareness = GenericRandomization.Random.Next(
-                GoalkeeperCreationConstants.Awareness.Min,
-                GoalkeeperCreationConstants.Awareness.Max);
+                Goalkeeper.Awareness.Min,
+                Goalkeeper.Awareness.Max);
 
             var ap = GenericRandomization.Random.Next(
-                GoalkeeperCreationConstants.Ap.Min,
-                GoalkeeperCreationConstants.Ap.Max);
+                Goalkeeper.Ap.Min,
+                Goalkeeper.Ap.Max);
 
             var newGoalkeeper = new FootballPlayerFactory.GenericFootballPlayer(
                 Name, pass, shoot, dribble, save, tackle, intercept, awareness, ap);

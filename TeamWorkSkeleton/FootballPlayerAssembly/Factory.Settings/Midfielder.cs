@@ -2,9 +2,9 @@
 {
     using Global.DataStructures;
 
-    internal static class MidfielderCreationConstants
+    internal static class Midfielder
     {
-        static MidfielderCreationConstants()
+        static Midfielder()
         {
             Pass = new MinMaxRange(70, 100);
             Shoot = new MinMaxRange(40, 70);

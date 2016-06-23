@@ -1,16 +1,16 @@
 ﻿namespace Teamwork.Models.PC.Abstract
 {
+    using Global.DataStructures;
+    using Global.Settings.Visualization;
     using System;
     using System.Collections.Generic;
     using System.Windows.Media;
-    using Global.DataStructures;
-    using Global.Settings.Visualization;
+    using Global.Contracts;
     using TeamAssembly;
-    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
 
     public abstract class PlayerCharacter
     {
-        private string _name;
+        private string name;
 
         protected PlayerCharacter(string name, string teamName, SolidColorBrush color)
         {
@@ -19,12 +19,10 @@
             this.Team = new FootballTeam(teamName);
             this.CurrentPlayer = 5;
         }
-
-        #region Properties
-
+        
         public string Name
         {
-            get { return this._name; }
+            get { return this.name; }
             private set
             {
                 if (string.IsNullOrEmpty(value))
@@ -33,19 +31,17 @@
                 }
                 else
                 {
-                    this._name = value;
+                    this.name = value;
                 }
             }
         }
 
         public SolidColorBrush Color { get; protected set; }
 
-        public FootballTeam Team { get; }
+        public ITeam Team { get; }
 
         public int CurrentPlayer { get; protected set; }
-
-        #endregion
-
+        
         public void NextPlayer()
         {
             this.CurrentPlayer++;
@@ -56,15 +52,16 @@
             }
         }
 
-        public void CreateTeam(string name)
+        public void CreateTeam(string teamName)
         {
             this.Team.CreateTeam();
+            this.Team.SetTeamName(teamName);
             this.ResetVisualTokenColor();
         }
 
         public void ResetVisualTokenColor()
         {
-            foreach (var player in this.Team)
+            foreach (var player in this.Team.Team)
             {
                 player.SetVisualTokenColor(this.Color);
             }
@@ -75,19 +72,19 @@
             var widthHeight = 
                 FootballPlayerSettings.VisualTokenSize;
             
-            foreach (var player in this.Team)
+            foreach (var player in this.Team.Team)
             {
                 player.SetVisualTokenSize(widthHeight, widthHeight);
             }
         }
 
-        public List<FootballPlayer> GetPlayersOnPositionsList(IEnumerable<PositionXY> positionsList)
+        public List<IFootballPlayer> GetPlayersOnPositionsList(IEnumerable<PositionXY> positionsList)
         {
-            var output = new List<FootballPlayer>();
+            var output = new List<IFootballPlayer>();
 
             foreach (var xy in positionsList)
             {
-                foreach (var footballPlayer in this.Team)
+                foreach (var footballPlayer in this.Team.Team)
                 {
                     if (xy.X == footballPlayer.GridPosition.X && xy.Y == footballPlayer.GridPosition.Y)
                     {

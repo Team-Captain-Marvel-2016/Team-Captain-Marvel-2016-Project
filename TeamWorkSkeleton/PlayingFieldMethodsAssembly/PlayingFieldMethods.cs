@@ -10,7 +10,7 @@
 
     public static class PlayingFieldMethods
     {
-        public static void MarkAllPlayersFromTeam(FootballTeam team)
+        public static void MarkAllPlayersFromTeam(ITeam team)
         {
             foreach (var footballPlayer in team.Team)
             {
@@ -21,7 +21,7 @@
             }
         }
 
-        public static void UnMarkAllPlayersFromTeam(FootballTeam team)
+        public static void UnMarkAllPlayersFromTeam(ITeam team)
         {
             foreach (var footballPlayer in team.Team)
             {

@@ -1,13 +1,13 @@
 ﻿namespace TeamAssembly
 {
+    using Global.Contracts;
+    using Global.Enumerations.Team;
     using System;
     using System.Collections;
     using System.Collections.Generic;
-    using Global.Contracts;
-    using Global.Enumerations.Team;
-    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
+    using TeamWork.Models.Abstract;
 
-    public partial class FootballTeam : IEnumerable<FootballPlayer>
+    public partial class FootballTeam : ITeam, IEnumerable<FootballPlayer>
     {
         private string teamName;
 
@@ -27,14 +27,14 @@
             this.Team =
                 CreateARandomFootballTeam(out formation);
 
-            this.Formation = formation;
+            this.FormationType = formation;
         }
 
         public FootballTeam(string teamName, FormationType formation)
             : this(teamName)
 
         {
-            this.Formation = formation;
+            this.FormationType = formation;
 
             this.Team =
                 CreateAFootballTeamByFormation(formation);
@@ -48,7 +48,7 @@
             {
                 return this.teamName;
             }
-            set
+            private set
             {
                 if (string.IsNullOrEmpty(value))
                 {
@@ -61,14 +61,18 @@
             }
         }
 
-        public FormationType Formation { get; private set; }
+        public FormationType FormationType { get; private set; }
 
-        public bool HasBall { get; set; }
+        public bool HasBallPossession { get; set; }
 
+        public void SetTeamName(string teamName)
+        {
+            this.teamName = teamName;
+        }
 
         public void CreateTeam(FormationType formation)
         {
-            this.Formation = formation;
+            this.FormationType = formation;
 
             this.Team =
                 CreateAFootballTeamByFormation(formation);
@@ -81,7 +85,7 @@
             this.Team =
                 CreateARandomFootballTeam(out formation);
 
-            this.Formation = formation;
+            this.FormationType = formation;
         }
 
         public IEnumerator<FootballPlayer> GetEnumerator()

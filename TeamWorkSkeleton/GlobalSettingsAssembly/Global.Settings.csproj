@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Visualization\FootballPlayerSettings.cs" />
-    <Compile Include="Visualization\PlayingFieldVisualizationSettings.cs" />
+    <Compile Include="Visualization\PlayingFieldSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

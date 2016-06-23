@@ -97,7 +97,7 @@
             var fieldCol = child.GridPosition.Y;
 
             var newFieldPosition =
-                PlayingFieldVisualizationSettings.GridCoordinates[fieldRow, fieldCol];
+                PlayingFieldSettings.GridCoordinates[fieldRow, fieldCol];
 
             child.FieldPosition = newFieldPosition;
 

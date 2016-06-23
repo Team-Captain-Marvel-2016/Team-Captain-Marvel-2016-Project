@@ -1,5 +1,8 @@
 ﻿namespace Global.Contracts
 {
+    using Actions;
+    using Statistics;
+
     public interface IFootballPlayer
         : IFootballPlayerActions, IFootballPlayerStats, IDrawOnCanvas
     {

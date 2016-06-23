@@ -26,7 +26,7 @@
             {
                 return ballActionButtons;
             }
-            else if (GameStateTracker.PlayerOnTurn.Team.HasBall)
+            else if (GameStateTracker.PlayerOnTurn.Team.HasBallPossession)
             {
                 return noBallButtons;
             }

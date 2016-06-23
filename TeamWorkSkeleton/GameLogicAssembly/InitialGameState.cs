@@ -34,7 +34,7 @@
         public static void InitializeFirstTurn(Canvas canvas)
         {
             PlayerOne.Player.Team.Team[5].HasBall = true;
-            PlayerOne.Player.Team.HasBall = true;
+            PlayerOne.Player.Team.HasBallPossession = true;
             PlayerOne.Player.Team.Team[PlayerOne.Player.CurrentPlayer].IsSelected = true;
 
             CanvasChildrenUtilities.MarkCurrentPlayer(canvas, PlayerOne.Player.Team.Team[5]);
@@ -55,7 +55,7 @@
 
         private static void DisplayFootballPlayersOnCanvas(Canvas canvas, PlayerCharacter playerCharacter)
         {
-            foreach (var player in playerCharacter.Team)
+            foreach (var player in playerCharacter.Team.Team)
             {
                 CanvasChildrenUtilities.AddChild(canvas, player);
             }

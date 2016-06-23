@@ -1,7 +1,5 @@
-﻿namespace Global.Contracts
+﻿namespace Global.Contracts.Actions
 {
-    using Actions;
-
     public interface IFootballPlayerActions
         : ICallForPass, IControlMovement, IGameMechanics, IGameStateTrackable, IPass, IShoot, ITackle
     {

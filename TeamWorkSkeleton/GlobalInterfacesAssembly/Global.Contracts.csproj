@@ -53,9 +53,10 @@
     <Compile Include="Actions\ITackle.cs" />
     <Compile Include="IDiceRoll.cs" />
     <Compile Include="IFootballPlayer.cs" />
-    <Compile Include="IFootballPlayerActions.cs" />
-    <Compile Include="IFootballPlayerStats.cs" />
+    <Compile Include="Actions\IFootballPlayerActions.cs" />
+    <Compile Include="ITeam.cs" />
     <Compile Include="Statistics\IDefenseStats.cs" />
+    <Compile Include="Statistics\IFootballPlayerStats.cs" />
     <Compile Include="Statistics\IOffenseStats.cs" />
     <Compile Include="Statistics\IOnZeroAP.cs" />
     <Compile Include="Statistics\IOrigin.cs" />
@@ -63,6 +64,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Global.Enumerations\Global.Enumerations.csproj">
+      <Project>{965a0d47-8b9e-4d47-93d9-ca51497d5472}</Project>
+      <Name>Global.Enumerations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GlobalDataStructures\Global.DataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>Global.DataStructures</Name>

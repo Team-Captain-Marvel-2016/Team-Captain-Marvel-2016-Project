@@ -1,6 +1,6 @@
 ﻿namespace FootballPlayerAssembly.RolesClasses.SagittariusianFootballPlayer
 {
-    using SpeciesAbstractClasses;
+    using TeamWork.Models.Species.Abstract;
 
     public static partial class FootballPlayerFactory
     {

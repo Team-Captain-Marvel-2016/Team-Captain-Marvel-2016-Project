@@ -2,8 +2,6 @@
 {
     using Factory.Models.Generic;
     using Global.Contracts;
-    using Global.Contracts.Actions;
-    using Global.Contracts.Statistics;
     using Global.DataStructures;
     using Global.Randomization;
     using System.Text;
@@ -30,6 +28,7 @@
         {
             this.Name = name;
             this.GetPlanetAndPositionTypes();
+            this.InitVisualToken();
         }
 
         internal FootballPlayer(FootballPlayerFactory.GenericFootballPlayer player)
@@ -87,10 +86,6 @@
 
         private void GetPlanetAndPositionTypes()
         {
-            this.VisualToken = new Ellipse() { Width = 15, Height = 15 };
-            this.GridPosition = new PositionXY();
-            this.FieldPosition = new PositionXY();
-
             var planetBuilder = new StringBuilder();
 
             var type = this.GetType().Name;

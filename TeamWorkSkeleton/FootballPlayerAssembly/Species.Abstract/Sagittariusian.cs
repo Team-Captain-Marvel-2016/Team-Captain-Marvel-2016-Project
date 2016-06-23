@@ -1,7 +1,7 @@
-﻿namespace FootballPlayerAssembly.SpeciesAbstractClasses
+﻿namespace TeamWork.Models.Species.Abstract
 {
-    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
-    using FootballPlayerFactory = TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory;
+    using Factory.Models.Generic;
+    using Models.Abstract;
 
     internal abstract class Sagittariusian : FootballPlayer
     {

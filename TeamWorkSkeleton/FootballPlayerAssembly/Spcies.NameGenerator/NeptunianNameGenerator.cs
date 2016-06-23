@@ -1,4 +1,4 @@
-﻿namespace FootballPlayerAssembly.SpeciesNameGenerators
+﻿namespace TeamWork.Models.Spcies.NameGenerator
 {
     internal static class NeptunianNameGenerator
     {

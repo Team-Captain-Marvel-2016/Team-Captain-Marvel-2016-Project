@@ -1,6 +1,5 @@
 ﻿namespace FootballPlayerAssembly.RolesClasses.UranianFootballPlayer
 {
-    using SpeciesAbstractClasses;
     using TeamWork.Models.Species.Abstract;
 
     public static partial class FootballPlayerFactory

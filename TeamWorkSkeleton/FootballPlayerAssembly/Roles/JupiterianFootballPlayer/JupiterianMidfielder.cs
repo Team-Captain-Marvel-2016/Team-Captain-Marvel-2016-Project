@@ -1,6 +1,5 @@
 ﻿namespace FootballPlayerAssembly.RolesClasses.JupiterianFootballPlayer
 {
-    using SpeciesAbstractClasses;
     using TeamWork.Models.Species.Abstract;
 
     public partial class FootballPlayerFactory

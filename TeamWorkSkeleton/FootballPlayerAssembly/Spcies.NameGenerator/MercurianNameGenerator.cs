@@ -1,4 +1,4 @@
-﻿namespace FootballPlayerAssembly.SpeciesNameGenerators
+﻿namespace TeamWork.Models.Spcies.NameGenerator
 {
     using System.Collections.Generic;
     using System.Text;
@@ -6,7 +6,7 @@
 
     internal static class MercurianNameGenerator
     {
-        internal static Dictionary<int, string> FirstName = new Dictionary<int, string>()
+        private static Dictionary<int, string> FirstName = new Dictionary<int, string>()
         {
             {0, "meke"},
             {1, "keke"},
@@ -19,7 +19,8 @@
             {8, "poke"},
             {9, "voke"}
         };
-        internal static Dictionary<int, string> LastName = new Dictionary<int, string>()
+
+        private static Dictionary<int, string> LastName = new Dictionary<int, string>()
         {
             {0, "doko"},
             {1, "boko"},

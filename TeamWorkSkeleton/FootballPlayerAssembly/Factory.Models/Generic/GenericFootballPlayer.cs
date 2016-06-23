@@ -1,6 +1,6 @@
 ﻿namespace TeamWork.Models.Factory.Models.Generic
 {
-    using FootballPlayer = Abstract.FootballPlayer;
+    using Abstract;
 
     public static partial class FootballPlayerFactory
     {
@@ -9,9 +9,10 @@
         /// to simplify moving data down the assembly line 
         /// ( between methods ).
         /// </summary>
-        internal class GenericFootballPlayer : FootballPlayer
+        internal sealed class GenericFootballPlayer : FootballPlayer
         {
-            internal GenericFootballPlayer(string name) : base(name)
+            internal GenericFootballPlayer(string name)
+                : base(name)
             {
             }
 

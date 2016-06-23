@@ -1,4 +1,4 @@
-﻿namespace FootballPlayerAssembly.SpeciesNameGenerators
+﻿namespace TeamWork.Models.Spcies.NameGenerator
 {
     using System.Collections.Generic;
     using System.Text;
@@ -6,7 +6,8 @@
 
     internal static class SagittariusianNameGenerator
     {
-        internal static Dictionary<int, string> FirstName = new Dictionary<int, string>()
+        private static readonly Dictionary<int, string> FirstName
+            = new Dictionary<int, string>()
         {
             {0,"Azog" },
             {1,"Rolo" },
@@ -20,7 +21,8 @@
             {9,"Vorg" },
         };
 
-        internal static Dictionary<int, string> LastName = new Dictionary<int, string>()
+        private static readonly Dictionary<int, string> LastName
+            = new Dictionary<int, string>()
         {
             {0,"Rovels" },
             {1,"Sagian" },

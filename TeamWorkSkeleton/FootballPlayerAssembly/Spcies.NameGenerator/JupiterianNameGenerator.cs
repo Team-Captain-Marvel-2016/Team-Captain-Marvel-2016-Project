@@ -1,4 +1,4 @@
-﻿namespace FootballPlayerAssembly.SpeciesNameGenerators
+﻿namespace TeamWork.Models.Spcies.NameGenerator
 {
     using System.Collections.Generic;
     using System.Text;
@@ -6,7 +6,8 @@
 
     internal static class JupiterianNameGenerator
     {
-        internal static Dictionary<int, string> FirstPartName = new Dictionary<int, string>()
+        private static readonly Dictionary<int, string> FirstPartName = 
+            new Dictionary<int, string>()
         {
             { 0 , "Zen" },
             { 1 , "Feng" },
@@ -20,7 +21,8 @@
             { 9 , "Wort" }
         };
 
-        internal static Dictionary<int, string> LastPartName = new Dictionary<int, string>()
+        private static readonly Dictionary<int, string> LastPartName = 
+            new Dictionary<int, string>()
         {
             { 0 , "Spacer" },
             { 1 , "Lightning" },

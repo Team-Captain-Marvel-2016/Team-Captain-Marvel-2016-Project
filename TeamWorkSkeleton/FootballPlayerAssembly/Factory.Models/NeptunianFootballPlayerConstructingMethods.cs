@@ -1,6 +1,6 @@
 namespace TeamWork.Models.Factory.Models
 {
-    using FootballPlayerAssembly.SpeciesNameGenerators;
+    using Spcies.NameGenerator;
     using FootballPlayer = Abstract.FootballPlayer;
 
     public static partial class FootballPlayerFactory

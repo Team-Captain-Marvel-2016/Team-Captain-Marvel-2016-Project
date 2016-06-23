@@ -1,7 +1,7 @@
-﻿using FootballPlayerAssembly.SpeciesAbstractClasses;
-
-namespace FootballPlayerAssembly.RolesClasses.SagittariusianFootballPlayer
+﻿namespace FootballPlayerAssembly.RolesClasses.SagittariusianFootballPlayer
 {
+    using TeamWork.Models.Species.Abstract;
+
     public static partial class FootballPlayerFactory
     {
         internal class SagittariusianDefender : Sagittariusian

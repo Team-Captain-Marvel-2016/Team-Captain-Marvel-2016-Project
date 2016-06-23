@@ -1,8 +1,8 @@
 ﻿namespace TeamWork.Models.Factory.Models.Generic
 {
+    using Abstract;
     using FootballPlayerAssembly.FootballPlayerSettingsClasses;
     using Global.Randomization;
-    using FootballPlayer = Abstract.FootballPlayer;
 
     /// <summary>
     /// Generate a GenericFootballPlayer

@@ -1,4 +1,4 @@
-﻿namespace FootballPlayerAssembly.SpeciesNameGenerators
+﻿namespace TeamWork.Models.Spcies.NameGenerator
 {
     using System.Collections.Generic;
     using System.Text;
@@ -6,7 +6,8 @@
 
     internal class HumanNameGenerator
     {
-        internal static Dictionary<int, string> FirstPartName = new Dictionary<int, string>()
+        private static readonly Dictionary<int, string> FirstPartName = 
+            new Dictionary<int, string>()
         {
             { 0 , "David" },
             { 1 , "Gareth" },
@@ -20,7 +21,8 @@
             { 9 , "Thomas" }
         };
 
-        internal static Dictionary<int, string> LastPartName = new Dictionary<int, string>()
+        private static readonly Dictionary<int, string> LastPartName =
+            new Dictionary<int, string>()
         {
             { 0 , "O'Neil" },
             { 1 , "Larson" },

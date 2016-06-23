@@ -35,8 +35,6 @@
         internal List<Button> DefenseButtons;
         internal List<Button> EndTurnButtons;
 
-        public Visualizer GraphicsVisualizer { get; private set; }
-
         public MainWindow()
         {
             this.InitializeComponent();

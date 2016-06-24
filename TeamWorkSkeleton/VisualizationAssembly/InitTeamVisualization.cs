@@ -1,11 +1,11 @@
-﻿namespace VisualizationAssembly.InitPlayingFieldClasses
+﻿namespace Visualization
 {
     using Global.Contracts;
     using Global.DataStructures;
     using Global.Enumerations.Team;
     using Global.Enumerations.Utils;
     using Global.Settings.Visualization;
-    
+
     public static class InitTeamVisualization
     {
         public static void GetInitialFootballPlayerPositions

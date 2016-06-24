@@ -6,7 +6,7 @@
     using System;
     using System.Windows;
     using System.Windows.Shapes;
-    using VisualizationAssembly.CanvasUtilsClasses;
+    using Visualization;
 
     public partial class MainWindow
     {

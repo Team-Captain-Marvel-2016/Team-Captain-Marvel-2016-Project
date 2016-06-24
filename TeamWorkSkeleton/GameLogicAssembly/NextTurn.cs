@@ -4,7 +4,7 @@
     using Teamwork.Models.PC.Abstract;
     using Teamwork.Models.PC.Human.Singletons;
     using Tracker;
-    using VisualizationAssembly.CanvasUtilsClasses;
+    using Visualization;
 
     public static class NextTurn
     {

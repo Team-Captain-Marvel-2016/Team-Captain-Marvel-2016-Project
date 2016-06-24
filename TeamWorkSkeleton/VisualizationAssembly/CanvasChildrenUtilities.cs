@@ -1,4 +1,4 @@
-﻿namespace VisualizationAssembly.CanvasUtilsClasses
+﻿namespace Visualization
 {
     using System;
     using System.Windows.Controls;

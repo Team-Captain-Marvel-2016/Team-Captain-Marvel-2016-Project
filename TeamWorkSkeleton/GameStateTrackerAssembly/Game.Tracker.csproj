@@ -69,9 +69,9 @@
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
       <Name>Global.Randomization</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VisualizationAssembly\VisualizationAssembly.csproj">
+    <ProjectReference Include="..\VisualizationAssembly\Visualization.csproj">
       <Project>{C7DDCBC7-728A-4BEA-9D74-BB73AFBC7A2D}</Project>
-      <Name>VisualizationAssembly</Name>
+      <Name>Visualization</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

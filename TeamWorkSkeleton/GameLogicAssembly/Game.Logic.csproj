@@ -100,9 +100,9 @@
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
       <Name>TeamWork.Models.Team</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VisualizationAssembly\VisualizationAssembly.csproj">
+    <ProjectReference Include="..\VisualizationAssembly\Visualization.csproj">
       <Project>{c7ddcbc7-728a-4bea-9d74-bb73afbc7a2d}</Project>
-      <Name>VisualizationAssembly</Name>
+      <Name>Visualization</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,5 +1,4 @@
 ﻿using System.Windows.Controls;
-using VisualizationAssembly.CanvasUtilsClasses;
 
 namespace _00_TestingClassesAssembly.WPFCanvasTestingClasses
 {
@@ -11,7 +10,7 @@ namespace _00_TestingClassesAssembly.WPFCanvasTestingClasses
     using Global.Enumerations;
     using Global.Enumerations.Team;
     using Teamwork.Models.PC.Human.Singletons;
-    using VisualizationAssembly.InitPlayingFieldClasses;
+    using Visualization;
 
     public static class WpfCanvasInitialStateTesting
     {

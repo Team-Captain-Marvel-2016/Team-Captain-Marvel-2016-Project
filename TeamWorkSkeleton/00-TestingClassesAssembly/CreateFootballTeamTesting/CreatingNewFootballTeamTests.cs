@@ -4,7 +4,7 @@
     using Global.Enumerations;
     using Global.Enumerations.Team;
     using TeamAssembly;
-    using VisualizationAssembly.InitPlayingFieldClasses;
+    using Visualization;
 
     public static class CreatingNewFootballTeamTests
     {

@@ -1,6 +1,5 @@
 ﻿namespace StartUpWPF
 {
-    using VisualizationAssembly.CanvasUtilsClasses;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -20,7 +19,6 @@
     using Teamwork.Models.PC.Human.Singletons;
     using UI.Element.Manager.Contracts;
     using UI.Element.Manager.UIManager;
-    using VisualizationAssembly;
 
     /// <summary>
     /// App runs here.

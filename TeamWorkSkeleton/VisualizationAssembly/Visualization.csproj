@@ -7,8 +7,8 @@
     <ProjectGuid>{C7DDCBC7-728A-4BEA-9D74-BB73AFBC7A2D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VisualizationAssembly</RootNamespace>
-    <AssemblyName>VisualizationAssembly</AssemblyName>
+    <RootNamespace>Visualization</RootNamespace>
+    <AssemblyName>Visualization</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,8 +44,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CanvasUtilsClasses\CanvasChildrenUtilities.cs" />
-    <Compile Include="InitPlayingFieldClasses\InitTeamVisualization.cs" />
+    <Compile Include="CanvasChildrenUtilities.cs" />
+    <Compile Include="InitTeamVisualization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

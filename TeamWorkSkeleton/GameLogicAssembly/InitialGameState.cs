@@ -6,8 +6,7 @@
     using Teamwork.Models.PC.Abstract;
     using Teamwork.Models.PC.Human.Singletons;
     using Tracker;
-    using VisualizationAssembly.CanvasUtilsClasses;
-    using VisualizationAssembly.InitPlayingFieldClasses;
+    using Visualization;
 
     public static class InitialGameState
     {

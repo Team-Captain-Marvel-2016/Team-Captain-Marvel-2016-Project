@@ -4,7 +4,7 @@
     using System.Windows;
     using Game.PlayingField.Methods;
     using Game.Tracker;
-    using VisualizationAssembly.CanvasUtilsClasses;
+    using Visualization;
 
     public partial class MainWindow : Window
     {

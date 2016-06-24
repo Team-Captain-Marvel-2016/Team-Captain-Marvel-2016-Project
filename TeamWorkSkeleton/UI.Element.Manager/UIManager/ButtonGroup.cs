@@ -8,12 +8,12 @@
     using System.Windows.Controls;
     using Validation;
 
-    public partial class ButtonGroup : IElementGroup
+    public partial class ButtonGroup : IElementGroup, IComparable<ButtonGroup>
     {
         private readonly List<Button> buttons;
         private readonly List<string> buttonNames;
 
-        private string myNname;
+        private string myName;
 
         public ButtonGroup(string name)
         {
@@ -32,7 +32,7 @@
         {
             get
             {
-                return this.myNname;
+                return this.myName;
             }
             private set
             {
@@ -42,11 +42,13 @@
                 }
                 else
                 {
-                    this.myNname = value;
+                    this.myName = value;
                 }
             }
         }
 
+        public int ContainerSize => this.buttons.Count;
+        
         public Button this[int index]
         {
             get
@@ -155,6 +157,16 @@
             {
                 button.IsEnabled = false;
             }
+        }
+
+        public int CompareTo(ButtonGroup other)
+        {
+            return this.CompareTo(other as IElementGroup);
+        }
+        
+        public int CompareTo(IElementGroup other)
+        {
+            return this.ContainerSize - other.ContainerSize;
         }
     }
 }

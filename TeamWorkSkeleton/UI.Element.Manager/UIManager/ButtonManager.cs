@@ -1,9 +1,10 @@
 ﻿namespace UI.Element.Manager.UIManager
 {
     using Contracts;
-    using System;
     using System.Collections;
     using System.Collections.Generic;
+    using Exception;
+    using Validation;
 
     public class ElementManager : IEnumerable<IElementGroup>
     {
@@ -20,11 +21,14 @@
         {
             get
             {
-                if (index < 0 || this.groups.Count <= index)
+                if (Validate.IndexExists(index, this.groups))
                 {
-                    throw new IndexOutOfRangeException("Trying to access an unexisting button group");
+                    return this.groups[index];
                 }
-                return this.groups[index];
+                else
+                {
+                    throw new ElementManagerException("Index out of range");
+                }
             }
         }
 
@@ -32,33 +36,41 @@
         {
             get
             {
-                var index = this.groupNames.IndexOf(name);
-
-                if (index < 0)
+                if (Validate.ElementExists(name, this.groupNames))
                 {
-                    throw new ArgumentException("Element with this name does not exist");
-                }
+                    var index = this.groupNames.IndexOf(name);
 
-                return this.groups[index];
+                    return this.groups[index];
+                }
+                else
+                {
+                    throw new ElementManagerException("Element not found");
+                }
             }
         }
 
         public void Add(IElementGroup group)
         {
+            if (Validate.ElementExists(group.Name, this.groupNames))
+            {
+                throw new ElementManagerException
+                    ("Element already exists");
+            }
+
             this.groups.Add(group);
             this.groupNames.Add(group.Name);
         }
 
         public void Remove(IElementGroup group)
         {
-            var index = this.groups.IndexOf(group);
-
-            if (index < 0)
+            if (Validate.ElementExists(group.Name, this.groupNames))
             {
-                throw new ArgumentException("Group does not exist");
+                this.Remove(group);
             }
-
-            this.groups.RemoveAt(index);
+            else
+            {
+                throw new ElementManagerException("Element not found");
+            }
         }
 
         public void Enable()

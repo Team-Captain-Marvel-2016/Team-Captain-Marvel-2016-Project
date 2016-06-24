@@ -1,10 +1,13 @@
 ﻿namespace UI.Element.Manager.Contracts
 {
     using System;
+    using System.Collections;
+    using System.Collections.Generic;
 
-    public interface IElementGroup
+    public interface IElementGroup : IComparable<IElementGroup>
     {
         string Name { get; }
+        int ContainerSize { get; }
 
         void Add(object obj);
         void Remove(int index);

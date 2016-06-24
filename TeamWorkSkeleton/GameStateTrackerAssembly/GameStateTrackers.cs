@@ -4,6 +4,7 @@
     using System.Drawing;
     using Teamwork.Models.PC.Abstract;
     using Teamwork.Models.PC.Human.Singletons;
+    using TeamWork.Models.PC.Reimplementation.Contracts;
 
     public static class GameStateTracker
     {
@@ -16,18 +17,18 @@
 
         public static int TurnNumber { get; set; }
 
-        public static PlayerCharacter PlayerOnTurn { get; set; }
-        public static PlayerCharacter PlayerWihBall { get; set; }
+        public static IPlayer PlayerOnTurn { get; set; }
+        public static IPlayer PlayerWihBall { get; set; }
         public static IFootballPlayer SelectedFootballPlayer { get; set; }
         public static IFootballPlayer FootballPlayerWithBall { get; set; }
         public static IFootballPlayer TargetFootballPlayer { get; set; }
         public static Brushes OldFootballPlayerColor { get; set; }
 
-        public static PlayerCharacter GetOpponent()
+        public static IPlayer GetOpponent()
         {
-            var opponent = GameStateTracker.PlayerOnTurn is PlayerOne
-                ? PlayerTwo.Player
-                : PlayerOne.Player;
+            var opponent = GameStateTracker.PlayerOnTurn is TeamWork.Models.PC.Reimplementation.Models.PlayerOne
+                ? (IPlayer) TeamWork.Models.PC.Reimplementation.Models.PlayerTwo.Instance
+                : (IPlayer) TeamWork.Models.PC.Reimplementation.Models.PlayerOne.Instance;
 
             return opponent;
         }

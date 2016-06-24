@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C7DDCBC7-728A-4BEA-9D74-BB73AFBC7A2D}</ProjectGuid>
+    <ProjectGuid>{39C7BCCE-FE53-4FB6-8AF1-1ED44947E635}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Visualization</RootNamespace>
-    <AssemblyName>Visualization</AssemblyName>
+    <RootNamespace>TeamWork.Models.PC.Reimplementation</RootNamespace>
+    <AssemblyName>TeamWork.Models.PC.Reimplementation</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,10 +31,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,15 +42,17 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CanvasChildrenUtilities.cs" />
-    <Compile Include="InitTeamVisualization.cs" />
+    <Compile Include="Contracts\IPlayer.cs" />
+    <Compile Include="Contracts\IPlayerCharacter.cs" />
+    <Compile Include="Enumerations\PlayerCharacterType.cs" />
+    <Compile Include="Models\HumanPlayer.cs" />
+    <Compile Include="Models\PlayableCharacter.cs" />
+    <Compile Include="Models\PlayerCharacter.cs" />
+    <Compile Include="Models\PlayerOne.cs" />
+    <Compile Include="Models\PlayerTwo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FootballPlayerAssembly\TeamWork.Models.csproj">
-      <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
-      <Name>TeamWork.Models</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Global.Enumerations\Global.Enumerations.csproj">
       <Project>{965a0d47-8b9e-4d47-93d9-ca51497d5472}</Project>
       <Name>Global.Enumerations</Name>
@@ -70,11 +70,10 @@
       <Name>Global.Settings</Name>
     </ProjectReference>
     <ProjectReference Include="..\TeamAssembly\TeamWork.Models.Team.csproj">
-      <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
+      <Project>{C432A3DC-CBBD-4B15-893D-6EECFFA9E9FB}</Project>
       <Name>TeamWork.Models.Team</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

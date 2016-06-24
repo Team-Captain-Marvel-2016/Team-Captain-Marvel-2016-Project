@@ -5,14 +5,12 @@
     using Game.PlayingField;
     using Global.Contracts;
     using Global.DataStructures;
-    using TeamAssembly;
-    using Teamwork.Models.PC.Human.Singletons;
 
     public static class PlayingFieldMethods
     {
-        public static void MarkAllPlayersFromTeam(ITeam team)
+        public static void MarkAllPlayersFromTeam(IEnumerable<IDrawOnCanvas> collection)
         {
-            foreach (var footballPlayer in team.Team)
+            foreach (var footballPlayer in collection)
             {
                 int row, col;
                 GetPlayerXY(footballPlayer, out row, out col);
@@ -21,9 +19,9 @@
             }
         }
 
-        public static void UnMarkAllPlayersFromTeam(ITeam team)
+        public static void UnMarkAllPlayersFromTeam(IEnumerable<IDrawOnCanvas> collection)
         {
-            foreach (var footballPlayer in team.Team)
+            foreach (var footballPlayer in collection)
             {
                 int row, col;
                 GetPlayerXY(footballPlayer, out row, out col);
@@ -56,13 +54,10 @@
             PlayingField.Field[row, col] = !PlayingField.Field[row, col];
         }
 
-        public static void UpdateAllPlayers()
+        public static void UpdateAllPlayers(IEnumerable<IDrawOnCanvas> collection)
         {
-            UnMarkAllPlayersFromTeam(PlayerOne.Player.Team);
-            UnMarkAllPlayersFromTeam(PlayerTwo.Player.Team);
-
-            MarkAllPlayersFromTeam(PlayerOne.Player.Team);
-            MarkAllPlayersFromTeam(PlayerTwo.Player.Team);
+            UnMarkAllPlayersFromTeam(collection);
+            MarkAllPlayersFromTeam(collection);
         }
 
         public static void GetPlayerXY(IDrawOnCanvas player, out int x, out int y)
@@ -81,7 +76,7 @@
 
             for (int row = Math.Max(startRow, 0); row < Math.Min(startRow + 3, maxRow); row++)
             {
-                for (int col = Math.Max(startCol, 0); col < Math.Min(startCol + 3, maxCol) ; col++)
+                for (int col = Math.Max(startCol, 0); col < Math.Min(startCol + 3, maxCol); col++)
                 {
                     if (PlayingField.Field[row, col])
                     {

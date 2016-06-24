@@ -27,7 +27,7 @@
             {
                 this.DisplayUIWithBall?.Invoke(this, null);
             }
-            else if (GameStateTracker.PlayerOnTurn.Team.HasBallPossession)
+            else if (GameStateTracker.PlayerOnTurn.PlayerCharacter.Team.HasBallPossession)
             {
                 this.DisplayUIWithoutBall?.Invoke(this, null);
             }

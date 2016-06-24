@@ -6,7 +6,7 @@
     using System;
     using System.Windows;
     using System.Windows.Shapes;
-    using Visualization;
+    using VisualizationAssembly.CanvasUtilsClasses;
 
     public partial class MainWindow
     {
@@ -36,7 +36,7 @@
             var opponent = GameStateTracker.GetOpponent();
 
             var listOfEnemyPlayers =
-                opponent.GetPlayersOnPositionsList(coordinatesWithObjects);
+                opponent.PlayerCharacter.GetPlayersOnPositionsList(coordinatesWithObjects);
 
             // If there are no enemies then pass is successfull
             if (listOfEnemyPlayers.Count == 0) this.UpdateGameStateOnSuccessfulPass(target);
@@ -68,7 +68,7 @@
             GameStateTracker.FootballPlayerWithBall = targetFootballPlayer;
             GameStateTracker.FootballPlayerWithBall.HasBall = true;
 
-            GameStateTracker.PlayerOnTurn.ResetVisualTokenColor();
+            GameStateTracker.PlayerOnTurn.PlayerCharacter.ResetVisualTokenColor();
             CanvasChildrenUtilities.MarkPlayerWithBall(
                 this.PlayFieldCanvas,
                 GameStateTracker.FootballPlayerWithBall);
@@ -82,13 +82,13 @@
             GameStateTracker.FootballPlayerWithBall = enemyPlayer;
             GameStateTracker.FootballPlayerWithBall.HasBall = true;
 
-            GameStateTracker.PlayerOnTurn.ResetVisualTokenColor();
+            GameStateTracker.PlayerOnTurn.PlayerCharacter.ResetVisualTokenColor();
             CanvasChildrenUtilities.MarkPlayerWithBall(
                 this.PlayFieldCanvas,
                 GameStateTracker.FootballPlayerWithBall);
 
-            GameStateTracker.PlayerOnTurn.Team.HasBallPossession = false;
-            GameStateTracker.GetOpponent().Team.HasBallPossession = true;
+            GameStateTracker.PlayerOnTurn.PlayerCharacter.Team.HasBallPossession = false;
+            GameStateTracker.GetOpponent().PlayerCharacter.Team.HasBallPossession = true;
             GameStateTracker.PlayerWihBall = GameStateTracker.GetOpponent();
 
             this.DisplayUIZeroAP?.Invoke(this, null);

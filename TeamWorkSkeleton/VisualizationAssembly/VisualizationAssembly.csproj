@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{57D31868-525C-4EFF-9E3A-CEA971529A77}</ProjectGuid>
+    <ProjectGuid>{C7DDCBC7-728A-4BEA-9D74-BB73AFBC7A2D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Global.Contracts</RootNamespace>
-    <AssemblyName>Global.Contracts</AssemblyName>
+    <RootNamespace>VisualizationAssembly</RootNamespace>
+    <AssemblyName>VisualizationAssembly</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,26 +44,15 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actions\ICallForPass.cs" />
-    <Compile Include="Actions\IControlMovement.cs" />
-    <Compile Include="Actions\IGameMechanics.cs" />
-    <Compile Include="Actions\IGameStateTrackable.cs" />
-    <Compile Include="Actions\IPass.cs" />
-    <Compile Include="Actions\IShoot.cs" />
-    <Compile Include="Actions\ITackle.cs" />
-    <Compile Include="IDiceRoll.cs" />
-    <Compile Include="IFootballPlayer.cs" />
-    <Compile Include="Actions\IFootballPlayerActions.cs" />
-    <Compile Include="ITeam.cs" />
-    <Compile Include="Statistics\IDefenseStats.cs" />
-    <Compile Include="Statistics\IFootballPlayerStats.cs" />
-    <Compile Include="Statistics\IOffenseStats.cs" />
-    <Compile Include="Statistics\IOnZeroAP.cs" />
-    <Compile Include="Statistics\IOrigin.cs" />
-    <Compile Include="IDrawOnCanvas.cs" />
+    <Compile Include="CanvasUtilsClasses\CanvasChildrenUtilities.cs" />
+    <Compile Include="InitPlayingFieldClasses\InitTeamVisualization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FootballPlayerAssembly\TeamWork.Models.csproj">
+      <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
+      <Name>TeamWork.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Global.Enumerations\Global.Enumerations.csproj">
       <Project>{965a0d47-8b9e-4d47-93d9-ca51497d5472}</Project>
       <Name>Global.Enumerations</Name>
@@ -72,7 +61,20 @@
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>Global.DataStructures</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GlobalInterfacesAssembly\Global.Contracts.csproj">
+      <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
+      <Name>Global.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalSettingsAssembly\Global.Settings.csproj">
+      <Project>{c2b1b807-b8fe-4527-84bf-467d73408544}</Project>
+      <Name>Global.Settings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamAssembly\TeamWork.Models.Team.csproj">
+      <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
+      <Name>TeamWork.Models.Team</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

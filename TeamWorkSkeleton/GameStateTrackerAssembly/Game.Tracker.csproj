@@ -69,9 +69,13 @@
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
       <Name>Global.Randomization</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VisualizationAssembly\Visualization.csproj">
+    <ProjectReference Include="..\TeamWork.Models.PC.Reimplementation\TeamWork.Models.PC.Reimplementation.csproj">
+      <Project>{39c7bcce-fe53-4fb6-8af1-1ed44947e635}</Project>
+      <Name>TeamWork.Models.PC.Reimplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualizationAssembly\VisualizationAssembly.csproj">
       <Project>{C7DDCBC7-728A-4BEA-9D74-BB73AFBC7A2D}</Project>
-      <Name>Visualization</Name>
+      <Name>VisualizationAssembly</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -134,9 +134,9 @@
       <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
       <Name>Global.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PlayerAssembly\TeamWork.Models.PC.csproj">
-      <Project>{a1c3ce0f-4a2f-44e3-beb6-8c2860edd7ee}</Project>
-      <Name>TeamWork.Models.PC</Name>
+    <ProjectReference Include="..\GlobalSettingsAssembly\Global.Settings.csproj">
+      <Project>{c2b1b807-b8fe-4527-84bf-467d73408544}</Project>
+      <Name>Global.Settings</Name>
     </ProjectReference>
     <ProjectReference Include="..\PlayingFieldMethodsAssembly\Game.PlayingField.Methods.csproj">
       <Project>{8b0cd4dc-1798-4c44-8846-45d13e8c3610}</Project>
@@ -150,13 +150,21 @@
       <Project>{c432a3dc-cbbd-4b15-893d-6eecffa9e9fb}</Project>
       <Name>TeamWork.Models.Team</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TeamWork.Football.Visualizer\TeamWork.Football.Visualizer.csproj">
+      <Project>{413122ff-61c7-4e4d-aed6-d94bdd084879}</Project>
+      <Name>TeamWork.Football.Visualizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamWork.Models.PC.Reimplementation\TeamWork.Models.PC.Reimplementation.csproj">
+      <Project>{39c7bcce-fe53-4fb6-8af1-1ed44947e635}</Project>
+      <Name>TeamWork.Models.PC.Reimplementation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UI.Element.Manager\UI.Element.Manager.csproj">
       <Project>{6df8a08a-ad10-4502-aaef-c15e9bfac1bc}</Project>
       <Name>UI.Element.Manager</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VisualizationAssembly\Visualization.csproj">
+    <ProjectReference Include="..\VisualizationAssembly\VisualizationAssembly.csproj">
       <Project>{c7ddcbc7-728a-4bea-9d74-bb73afbc7a2d}</Project>
-      <Name>Visualization</Name>
+      <Name>VisualizationAssembly</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

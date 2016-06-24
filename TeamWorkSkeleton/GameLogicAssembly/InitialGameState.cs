@@ -2,48 +2,61 @@
 {
     using System.Windows.Controls;
     using Global.Enumerations.Team;
+    using Global.Settings.Visualization;
     using PlayingField.Methods;
-    using Teamwork.Models.PC.Abstract;
-    using Teamwork.Models.PC.Human.Singletons;
+    using TeamWork.Football.Visualizer.Contracts;
+    using TeamWork.Models.PC.Reimplementation.Models;
     using Tracker;
-    using Visualization;
+    using VisualizationAssembly.CanvasUtilsClasses;
+    using VisualizationAssembly.InitPlayingFieldClasses;
 
     public static class InitialGameState
     {
         public static void InitializePlayers()
         {
-            // Player One
-            PlayerOne.CreatePlayerOne("PlayerOne", "Captain Marvel");
-            PlayerOne.Player.CreateTeam("Captain Marvel");
-
-            // Player Two
-            PlayerTwo.CreatePlayerTwo("PlayerTwo", "Bad Guys");
-            PlayerTwo.Player.CreateTeam("Bad Guys");
+            PlayerOne.Initialize(new HumanPlayer("PlayerOne"));
+            PlayerTwo.Initialize(new HumanPlayer("PlayerTwo"));
         }
 
-        public static void InitializeCanvas(Canvas canvas)
+        public static void InitializeVisualizer(IVisualizer visualizer)
         {
-            GetFootballPlayerPositions(PlayerOne.Player, StartingFieldType.Left);
-            GetFootballPlayerPositions(PlayerTwo.Player, StartingFieldType.Right);
+            visualizer.Add(PlayerOne.Instance.PlayerCharacter.Team.Team);
+            visualizer.Add(PlayerTwo.Instance.PlayerCharacter.Team.Team);
 
-            DisplayFootballPlayersOnCanvas(canvas, PlayerOne.Player);
-            DisplayFootballPlayersOnCanvas(canvas, PlayerTwo.Player);
+            visualizer.SetPosition(PlayerOne.Instance.PlayerCharacter.Team.Team);
+            visualizer.SetPosition(PlayerTwo.Instance.PlayerCharacter.Team.Team);
         }
 
-        public static void InitializeFirstTurn(Canvas canvas)
+        public static void InitializeFirstTurn(IVisualizer visualizer)
         {
-            PlayerOne.Player.Team.Team[5].HasBall = true;
-            PlayerOne.Player.Team.HasBallPossession = true;
-            PlayerOne.Player.Team.Team[PlayerOne.Player.CurrentPlayer].IsSelected = true;
+            PlayingFieldMethods.MarkAllPlayersFromTeam(PlayerOne.Instance.PlayerCharacter.Team.Team);
+            PlayingFieldMethods.MarkAllPlayersFromTeam(PlayerTwo.Instance.PlayerCharacter.Team.Team);
 
-            CanvasChildrenUtilities.MarkCurrentPlayer(canvas, PlayerOne.Player.Team.Team[5]);
-            CanvasChildrenUtilities.MarkPlayerWithBall(canvas, PlayerOne.Player.Team.Team[5]);
+            PlayerOne.Instance.PlayerCharacter.Team.HasBallPossession = true;
 
-            GameStateTracker.PlayerOnTurn = PlayerOne.Player;
-            GameStateTracker.SelectedFootballPlayer = PlayerOne.Player.Team.Team[5];
-            GameStateTracker.FootballPlayerWithBall = PlayerOne.Player.Team.Team[5];
+            GameStateTracker.PlayerOnTurn = PlayerOne.Instance;
 
-            PlayingFieldMethods.UpdateAllPlayers();
+            GameStateTracker.SelectedFootballPlayer =
+                PlayerOne.Instance.PlayerCharacter.Team.Team[
+                    PlayerOne.Instance.PlayerCharacter.CurrentPlayer];
+
+            GameStateTracker.FootballPlayerWithBall =
+                PlayerOne.Instance.PlayerCharacter.Team.Team[
+                    PlayerOne.Instance.PlayerCharacter.CurrentPlayer];
+
+            GameStateTracker.FootballPlayerWithBall.HasBall = true;
+
+            visualizer.MarkCurrentPlayer(
+                GameStateTracker.SelectedFootballPlayer,
+                FootballPlayerSettings.SelectedVisualTokenSize,
+                FootballPlayerSettings.SelectedVisualTokenSize);
+
+            visualizer.MarkPlayerWithBall(
+                GameStateTracker.FootballPlayerWithBall,
+                FootballPlayerSettings.BallColor);
+
+            PlayingFieldMethods.UpdateAllPlayers(PlayerOne.Instance.PlayerCharacter.Team.Team);
+            PlayingFieldMethods.UpdateAllPlayers(PlayerTwo.Instance.PlayerCharacter.Team.Team);
         }
 
         private static void GetFootballPlayerPositions(PlayerCharacter playerCharacter, StartingFieldType field)

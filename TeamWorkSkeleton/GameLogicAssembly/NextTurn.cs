@@ -1,10 +1,9 @@
 ﻿namespace Game.Logic
 {
-    using System.Windows.Controls;
-    using Teamwork.Models.PC.Abstract;
-    using Teamwork.Models.PC.Human.Singletons;
+    using Global.Settings.Visualization;
+    using TeamWork.Football.Visualizer.Contracts;
+    using TeamWork.Models.PC.Reimplementation.Contracts;
     using Tracker;
-    using Visualization;
 
     public static class NextTurn
     {
@@ -20,31 +19,32 @@
             return true;
         }
 
-        public static void ChangeGameState(Canvas canvas)
+        public static void ChangeGameState(IVisualizer visualizer)
         {
             // Reset current FootballPlayer AP
             GameStateTracker.SelectedFootballPlayer.ResetActionPoints();
 
             // Reset marked FootballPlayer and Increment PC current player.
-            GameStateTracker.PlayerOnTurn.ResetVisualTokenSize();
-            GameStateTracker.PlayerOnTurn.NextPlayer();
+            GameStateTracker.PlayerOnTurn.PlayerCharacter.ResetVisualTokenSize();
+            GameStateTracker.PlayerOnTurn.PlayerCharacter.NextPlayer();
 
             // GetNext PlayerCharacter
             GameStateTracker.PlayerOnTurn = GetNextPlayer();
 
             // GetNext Football Player
             GameStateTracker.SelectedFootballPlayer =
-                GameStateTracker.PlayerOnTurn.Team.Team[
-                    GameStateTracker.PlayerOnTurn.CurrentPlayer];
+                GameStateTracker.PlayerOnTurn.PlayerCharacter.Team.Team[
+                    GameStateTracker.PlayerOnTurn.PlayerCharacter.CurrentPlayer];
 
-            CanvasChildrenUtilities.MarkCurrentPlayer
-                (canvas, GameStateTracker.SelectedFootballPlayer);
+            visualizer.MarkCurrentPlayer(
+                GameStateTracker.SelectedFootballPlayer,
+                FootballPlayerSettings.SelectedVisualTokenSize,
+                FootballPlayerSettings.SelectedVisualTokenSize);
         }
 
-        private static PlayerCharacter GetNextPlayer()
+        private static IPlayer GetNextPlayer()
         {
-            return GameStateTracker.PlayerOnTurn.GetType() == PlayerOne.Player.GetType() ?
-                   (PlayerCharacter)PlayerTwo.Player : (PlayerCharacter)PlayerOne.Player;
+            return GameStateTracker.GetOpponent();    
         }
     }
 }

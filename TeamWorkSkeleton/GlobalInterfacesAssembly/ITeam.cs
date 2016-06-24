@@ -3,7 +3,7 @@
     using Enumerations.Team;
     using System.Collections.Generic;
 
-    public interface ITeam
+    public interface ITeam : IEnumerable<IFootballPlayer>
     {
         string TeamName { get; }
 
@@ -18,5 +18,8 @@
         void CreateTeam(FormationType formationType);
 
         void CreateTeam();
+
+        void GetInitialFootballPlayerPositions
+            (int rows, int cols, StartingFieldType field);
     }
 }

@@ -1,24 +1,9 @@
 ﻿namespace StartUpWPF
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using System.Windows;
-    using System.Windows.Controls;
-    using System.Windows.Data;
-    using System.Windows.Documents;
-    using System.Windows.Input;
-    using System.Windows.Media;
-    using System.Windows.Media.Imaging;
-    using System.Windows.Navigation;
-    using System.Windows.Shapes;
     using Game.Logic;
-    using Global.Contracts.PC;
-    using Teamwork.Models.PC.Human.Singletons;
-    using UI.Element.Manager.Contracts;
-    using UI.Element.Manager.UIManager;
+    using Global.Settings.Visualization;
+    using TeamWork.Football.Visualizer;
 
     /// <summary>
     /// App runs here.
@@ -26,6 +11,8 @@
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Graphics GameGraphics { get; private set; }
+
         public MainWindow()
         {
             this.InitializeComponent();
@@ -52,11 +39,14 @@
             InitialGameState.InitializePlayers();
 
             // Display players on the Field.
-            InitialGameState.InitializeCanvas(this.PlayFieldCanvas);
+            var width = PlayingFieldSettings.Width;
+            var height = PlayingFieldSettings.Height;
+            this.GameGraphics = new Graphics(this.PlayFieldCanvas, width, height);
 
-            // Prep first turn.
-            InitialGameState.InitializeFirstTurn(this.PlayFieldCanvas);
-
+            InitialGameState.InitializeVisualizer(this.GameGraphics);
+            
+            InitialGameState.InitializeFirstTurn(this.GameGraphics);
+            
             // Display all 
             this.DisplayUI();
 
@@ -80,7 +70,7 @@
                 GameOver.ResetGameState();
             }
 
-            NextTurn.ChangeGameState(this.PlayFieldCanvas);
+            NextTurn.ChangeGameState(this.GameGraphics);
 
             this.DisplayUI();
         }
@@ -98,7 +88,7 @@
         {
             ResetGameMethods.ResetGame();
 
-            this.PlayFieldCanvas.Children.Clear();
+            this.GameGraphics.Reset();
             this.StartBtn.Visibility = Visibility.Visible;
             this.Buttons.Hide();
         }

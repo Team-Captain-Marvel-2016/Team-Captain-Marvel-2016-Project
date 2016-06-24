@@ -1,20 +1,20 @@
 ﻿namespace StartUpWPF
 {
     using System;
-    using Teamwork.Models.PC.Human.Singletons;
+    using TeamWork.Models.PC.Reimplementation.Models;
 
     public partial class MainWindow
     {
         private void SubscribeToFootballPlayerEvents()
         {
-            foreach (var footballPlayer in PlayerOne.Player.Team.Team)
+            foreach (var footballPlayer in PlayerOne.Instance.PlayerCharacter.Team.Team)
             {
-                footballPlayer.ZeroActionPoints += OnZeroActionPoints;
+                footballPlayer.ZeroActionPoints += this.OnZeroActionPoints;
             }
 
-            foreach (var footballPlayer in PlayerTwo.Player.Team.Team)
+            foreach (var footballPlayer in PlayerTwo.Instance.PlayerCharacter.Team.Team)
             {
-                footballPlayer.ZeroActionPoints += OnZeroActionPoints;
+                footballPlayer.ZeroActionPoints += this.OnZeroActionPoints;
             }
         }
 

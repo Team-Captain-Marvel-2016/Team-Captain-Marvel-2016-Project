@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Models.PC", "Playe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Models.Team", "TeamAssembly\TeamWork.Models.Team.csproj", "{C432A3DC-CBBD-4B15-893D-6EECFFA9E9FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visualization", "VisualizationAssembly\Visualization.csproj", "{C7DDCBC7-728A-4BEA-9D74-BB73AFBC7A2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualizationAssembly", "VisualizationAssembly\VisualizationAssembly.csproj", "{C7DDCBC7-728A-4BEA-9D74-BB73AFBC7A2D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-TestingAssembly", "TestingAssembly\00-TestingAssembly.csproj", "{4F8A4675-A147-4BB2-9D4B-43FAAE716FC1}"
 EndProject
@@ -40,6 +40,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Global.Enumerations", "Global.Enumerations\Global.Enumerations.csproj", "{965A0D47-8B9E-4D47-93D9-CA51497D5472}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Element.Manager", "UI.Element.Manager\UI.Element.Manager.csproj", "{6DF8A08A-AD10-4502-AAEF-C15E9BFAC1BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Models.PC.Reimplementation", "TeamWork.Models.PC.Reimplementation\TeamWork.Models.PC.Reimplementation.csproj", "{39C7BCCE-FE53-4FB6-8AF1-1ED44947E635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWork.Football.Visualizer", "TeamWork.Football.Visualizer\TeamWork.Football.Visualizer.csproj", "{413122FF-61C7-4E4D-AED6-D94BDD084879}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +127,14 @@ Global
 		{6DF8A08A-AD10-4502-AAEF-C15E9BFAC1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF8A08A-AD10-4502-AAEF-C15E9BFAC1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF8A08A-AD10-4502-AAEF-C15E9BFAC1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39C7BCCE-FE53-4FB6-8AF1-1ED44947E635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39C7BCCE-FE53-4FB6-8AF1-1ED44947E635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39C7BCCE-FE53-4FB6-8AF1-1ED44947E635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39C7BCCE-FE53-4FB6-8AF1-1ED44947E635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413122FF-61C7-4E4D-AED6-D94BDD084879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413122FF-61C7-4E4D-AED6-D94BDD084879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413122FF-61C7-4E4D-AED6-D94BDD084879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413122FF-61C7-4E4D-AED6-D94BDD084879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

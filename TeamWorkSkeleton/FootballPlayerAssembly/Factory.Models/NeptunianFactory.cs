@@ -1,7 +1,7 @@
 namespace TeamWork.Models.Factory.Models
 {
     using Abstract;
-    using Spcies.NameGenerator;
+    using Species.NameGenerator;
 
     public static partial class FootballPlayerFactory
     {

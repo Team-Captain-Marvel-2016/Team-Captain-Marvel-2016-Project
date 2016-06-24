@@ -1,4 +1,4 @@
-﻿namespace TeamWork.Models.Spcies.NameGenerator
+﻿namespace TeamWork.Models.Species.NameGenerator
 {
     internal static class NeptunianNameGenerator
     {

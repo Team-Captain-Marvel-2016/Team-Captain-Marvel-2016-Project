@@ -103,20 +103,20 @@
     <Compile Include="Species.Abstract\Sagittariusian.cs" />
     <Compile Include="Species.Abstract\Uranian.cs" />
     <Compile Include="Species.Abstract\Venusian.cs" />
-    <Compile Include="Spcies.NameGenerator\HumanNameGenerator.cs" />
-    <Compile Include="Spcies.NameGenerator\JupiterianNameGenerator.cs" />
-    <Compile Include="Spcies.NameGenerator\MartianNameGenerator.cs" />
-    <Compile Include="Spcies.NameGenerator\MercurianNameGenerator.cs" />
-    <Compile Include="Spcies.NameGenerator\NeptunianNameGenerator.cs" />
+    <Compile Include="Species.NameGenerator\HumanNameGenerator.cs" />
+    <Compile Include="Species.NameGenerator\JupiterianNameGenerator.cs" />
+    <Compile Include="Species.NameGenerator\MartianNameGenerator.cs" />
+    <Compile Include="Species.NameGenerator\MercurianNameGenerator.cs" />
+    <Compile Include="Species.NameGenerator\NeptunianNameGenerator.cs" />
     <Compile Include="Roles\MartianFootballPlayer\MartianAttacker.cs" />
     <Compile Include="Roles\MartianFootballPlayer\MartianDefender.cs" />
     <Compile Include="Roles\MartianFootballPlayer\MartianGoalkeeper.cs" />
     <Compile Include="Roles\MartianFootballPlayer\MartianMidfielder.cs" />
     <Compile Include="Species.Abstract\Human.cs" />
     <Compile Include="Species.Abstract\Martian.cs" />
-    <Compile Include="Spcies.NameGenerator\SagittariusianNameGenerator.cs" />
-    <Compile Include="Spcies.NameGenerator\UranianNameGenerator.cs" />
-    <Compile Include="Spcies.NameGenerator\VenusianNameGenerator.cs" />
+    <Compile Include="Species.NameGenerator\SagittariusianNameGenerator.cs" />
+    <Compile Include="Species.NameGenerator\UranianNameGenerator.cs" />
+    <Compile Include="Species.NameGenerator\VenusianNameGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Global.Enumerations\Global.Enumerations.csproj">

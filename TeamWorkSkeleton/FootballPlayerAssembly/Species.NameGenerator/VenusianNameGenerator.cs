@@ -1,4 +1,4 @@
-﻿namespace TeamWork.Models.Spcies.NameGenerator
+﻿namespace TeamWork.Models.Species.NameGenerator
 {
     using System.Collections.Generic;
     using System.Text;

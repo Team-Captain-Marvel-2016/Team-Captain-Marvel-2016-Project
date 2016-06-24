@@ -52,6 +52,7 @@
     <Compile Include="Models.Bots\BotIvan.cs" />
     <Compile Include="Models.Bots\BotKoce.cs" />
     <Compile Include="Models.Bots\BotMarto.cs" />
+    <Compile Include="Models.Bots\BotPavel.cs" />
     <Compile Include="Models.Bots\BotVladi.cs" />
     <Compile Include="Models\HumanPlayer.cs" />
     <Compile Include="Models\PlayerCharacter.cs" />

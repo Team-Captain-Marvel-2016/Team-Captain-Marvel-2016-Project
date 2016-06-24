@@ -1,10 +1,12 @@
 ﻿namespace UI.Element.Manager.UIManager
 {
+    using Contracts;
     using System;
     using System.Collections.Generic;
     using System.Windows;
     using System.Windows.Controls;
-    using Contracts;
+    using Exception;
+    using Validation;
 
     public partial class ButtonGroup : IElementGroup
     {
@@ -47,20 +49,22 @@
         {
             var button = element as Button;
 
-            if (button == null)
+            try
             {
-                throw new ArgumentException("Invalid object type");
+                Validate.ElementNull(button);
+                Validate.ElementExists(button?.Name, this.buttonNames);
             }
-
-            var check = this.buttons.IndexOf(button);
-
-            if (check >= 0)
+            catch (ArgumentNullException e)
             {
-                throw new ArgumentException("Element already exists");
+                throw new ElementManagerException("", e);
+            }
+            catch (ArgumentException e)
+            {
+                throw new ElementManagerException("", e);
             }
 
             this.buttons.Add(button);
-            this.buttonNames.Add(button.Name);
+            this.buttonNames.Add(button?.Name);
         }
 
         public void Remove(int index)

@@ -1,8 +1,8 @@
 ﻿namespace TeamWork.Models.Species.NameGenerator
 {
+    using Global.Randomization;
     using System.Collections.Generic;
     using System.Text;
-    using Global.Randomization;
 
     internal static class UranianNameGenerator
     {

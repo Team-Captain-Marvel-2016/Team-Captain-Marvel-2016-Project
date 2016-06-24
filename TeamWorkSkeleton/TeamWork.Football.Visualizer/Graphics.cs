@@ -93,12 +93,6 @@
             child.VisualToken.Fill = color;
         }
 
-        public void Reset()
-        {
-            this.Children.Clear();
-            this.GameCanvas.Children.Clear();
-        }
-
         public void SetGridPosition(IEnumerable<IDrawOnCanvas> elements, PositionXY[,] grid)
         {
 
@@ -116,6 +110,12 @@
                 Canvas.SetTop(child.VisualToken, child.FieldPosition.X);
                 Canvas.SetLeft(child.VisualToken, child.FieldPosition.Y);
             }
+        }
+
+        public void Reset()
+        {
+            this.Children.Clear();
+            this.GameCanvas.Children.Clear();
         }
     }
 }

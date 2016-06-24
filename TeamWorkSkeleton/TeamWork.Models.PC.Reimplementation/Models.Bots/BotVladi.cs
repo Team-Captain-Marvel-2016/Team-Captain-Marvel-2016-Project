@@ -1,6 +1,7 @@
 ﻿namespace TeamWork.Models.PC.Reimplementation.Models.Bots
 {
     using Contracts;
+
     public class BotVladi : PlayerCharacter, IBot
     {
         public BotVladi(string name) 

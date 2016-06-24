@@ -42,11 +42,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IBot.cs" />
     <Compile Include="Contracts\IPlayer.cs" />
     <Compile Include="Contracts\IPlayerCharacter.cs" />
     <Compile Include="Enumerations\PlayerCharacterType.cs" />
+    <Compile Include="Models.Bots\BotCuki.cs" />
+    <Compile Include="Models.Bots\BotDoncho.cs" />
+    <Compile Include="Models.Bots\BotEvlogi.cs" />
+    <Compile Include="Models.Bots\BotIvan.cs" />
+    <Compile Include="Models.Bots\BotKoce.cs" />
+    <Compile Include="Models.Bots\BotMarto.cs" />
+    <Compile Include="Models.Bots\BotVladi.cs" />
     <Compile Include="Models\HumanPlayer.cs" />
-    <Compile Include="Models\PlayableCharacter.cs" />
     <Compile Include="Models\PlayerCharacter.cs" />
     <Compile Include="Models\PlayerOne.cs" />
     <Compile Include="Models\PlayerTwo.cs" />

@@ -2,10 +2,9 @@
 {
     using Contracts;
 
-    public class BotMarto : PlayerCharacter, IBot
+    public class BotEvlogi : PlayerCharacter, IBot
     {
-        public BotMarto(string name) 
-            : base("BotMarto")
+        public BotEvlogi(string name) : base(name)
         {
         }
 

@@ -9,22 +9,17 @@
         internal static bool ElementExists<T>(T element, ICollection<T> collection)
             where T : IComparable<T>
         {
-            if (collection.Any(el => el.CompareTo(element) == 0))
-            {
-                throw new ArgumentException();
-            }
+            return (collection.Any(el => el.CompareTo(element) == 0));
+        }
 
-            return false;
+        internal static bool IndexExists<T>(int index, ICollection<T> collection)
+        {
+            return (0 <= index && index <= collection.Count - 1);
         }
 
         internal static bool ElementNull<T>(T element)
         {
-            if (element == null)
-            {
-                throw new ArgumentNullException();
-            }
-
-            return false;
-        }
+            return element == null;
+  ;      }
     }
 }

@@ -1,17 +1,19 @@
 ﻿namespace UI.Element.Manager.UIManager
 {
     using Contracts;
+    using Exception;
     using System;
     using System.Collections.Generic;
     using System.Windows;
     using System.Windows.Controls;
-    using Exception;
     using Validation;
 
     public partial class ButtonGroup : IElementGroup
     {
         private readonly List<Button> buttons;
         private readonly List<string> buttonNames;
+
+        private string myNname;
 
         public ButtonGroup(string name)
         {
@@ -26,22 +28,54 @@
             this.SubscribeToEvents(events);
         }
 
-        public string Name { get; private set; }
+        public string Name
+        {
+            get
+            {
+                return this.myNname;
+            }
+            private set
+            {
+                if (Validate.ElementNull(value))
+                {
+                    throw new ElementManagerException("Name is Empty");
+                }
+                else
+                {
+                    this.myNname = value;
+                }
+            }
+        }
 
-        public Button this[int index] => this.buttons[index];
+        public Button this[int index]
+        {
+            get
+            {
+                if (Validate.IndexExists(index, this.buttons))
+                {
+                    return this.buttons[index];
+                }
+                else
+                {
+                    throw new ElementManagerException("Index out of range");
+                }
+            }
+        }
 
         public Button this[string name]
         {
             get
             {
-                var index = this.buttonNames.IndexOf(name);
-
-                if (index < 0)
+                if (Validate.ElementExists(name, this.buttonNames))
                 {
-                    throw new ArgumentException("Name not found");
-                }
+                    var index = this.buttonNames.IndexOf(name);
 
-                return this.buttons[index];
+                    return this.buttons[index];
+                }
+                else
+                {
+                    throw new ElementManagerException("Element not found");
+                }
             }
         }
 
@@ -49,18 +83,16 @@
         {
             var button = element as Button;
 
-            try
+            if (button == null)
             {
-                Validate.ElementNull(button);
-                Validate.ElementExists(button?.Name, this.buttonNames);
+                throw new ElementManagerException
+                    ("Incorrect input object type");
             }
-            catch (ArgumentNullException e)
+
+            if (Validate.ElementExists(button.Name, this.buttonNames))
             {
-                throw new ElementManagerException("", e);
-            }
-            catch (ArgumentException e)
-            {
-                throw new ElementManagerException("", e);
+                throw new ElementManagerException
+                    ("Element already exists");
             }
 
             this.buttons.Add(button);
@@ -69,9 +101,10 @@
 
         public void Remove(int index)
         {
-            if (index < 0 || this.buttons.Count <= index)
+            if (!Validate.IndexExists(index, this.buttons))
             {
-                throw new IndexOutOfRangeException("Index Out Of Range");
+                throw new ElementManagerException
+                    ("Invalid index");
             }
 
             this.buttons.RemoveAt(index);
@@ -80,14 +113,16 @@
 
         public void Remove(string name)
         {
-            var index = this.buttonNames.IndexOf(name);
-
-            if (index < 0)
+            if (Validate.ElementExists(name, this.buttonNames))
             {
-                throw new ArgumentException("Name not found");
-            }
+                var index = this.buttonNames.IndexOf(name);
 
-            this.Remove(index);
+                this.Remove(index);
+            }
+            else
+            {
+                throw new ElementManagerException("Element not found");
+            }
         }
 
         public void Display()

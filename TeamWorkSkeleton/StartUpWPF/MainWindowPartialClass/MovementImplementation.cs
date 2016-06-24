@@ -1,12 +1,12 @@
 ﻿namespace StartUpWPF
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Windows;
     using Game.PlayingField.Methods;
     using Game.Tracker;
     using Global.Contracts;
     using Global.Settings.Visualization;
+    using System;
+    using System.Collections.Generic;
+    using System.Windows;
 
     public partial class MainWindow : Window
     {

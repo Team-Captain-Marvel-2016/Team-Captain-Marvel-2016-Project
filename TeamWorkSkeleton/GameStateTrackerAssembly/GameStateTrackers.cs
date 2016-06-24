@@ -2,8 +2,6 @@
 {
     using Global.Contracts;
     using System.Drawing;
-    using Teamwork.Models.PC.Abstract;
-    using Teamwork.Models.PC.Human.Singletons;
     using TeamWork.Models.PC.Reimplementation.Contracts;
 
     public static class GameStateTracker

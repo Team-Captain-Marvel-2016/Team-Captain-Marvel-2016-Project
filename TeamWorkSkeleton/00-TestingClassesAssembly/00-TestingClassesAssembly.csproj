@@ -66,10 +66,6 @@
       <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
       <Name>Global.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PlayerAssembly\TeamWork.Models.PC.csproj">
-      <Project>{a1c3ce0f-4a2f-44e3-beb6-8c2860edd7ee}</Project>
-      <Name>TeamWork.Models.PC</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RandomizersAssembly\Global.Randomization.csproj">
       <Project>{cce761c0-b358-4e9c-855a-74a23f5826a3}</Project>
       <Name>Global.Randomization</Name>

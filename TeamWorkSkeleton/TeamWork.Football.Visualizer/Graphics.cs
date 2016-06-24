@@ -1,13 +1,12 @@
 ﻿namespace TeamWork.Football.Visualizer
 {
+    using Contracts;
+    using Global.Contracts;
+    using Global.DataStructures;
     using System;
     using System.Collections.Generic;
     using System.Windows.Controls;
     using System.Windows.Media;
-    using Contracts;
-    using Global.Contracts;
-    using Global.DataStructures;
-    using Global.Settings.Visualization;
 
     public sealed class Graphics : IVisualizer
     {
@@ -54,6 +53,12 @@
             // Validate.
             foreach (var drawOnCanvase in elements)
             {
+                if (drawOnCanvase.CanvasChildIndex == null)
+                {
+                    throw new ArgumentException(
+                        "FootballPlayer Canvas Index is null");
+                }
+
                 Canvas.SetLeft(drawOnCanvase.VisualToken, drawOnCanvase.FieldPosition.Y);
                 Canvas.SetTop(drawOnCanvase.VisualToken, drawOnCanvase.FieldPosition.X);
 

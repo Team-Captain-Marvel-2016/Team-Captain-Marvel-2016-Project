@@ -6,7 +6,7 @@
     using System;
     using System.Windows;
     using System.Windows.Shapes;
-    using VisualizationAssembly.CanvasUtilsClasses;
+    using Global.Settings.Visualization;
 
     public partial class MainWindow
     {
@@ -69,9 +69,9 @@
             GameStateTracker.FootballPlayerWithBall.HasBall = true;
 
             GameStateTracker.PlayerOnTurn.PlayerCharacter.ResetVisualTokenColor();
-            CanvasChildrenUtilities.MarkPlayerWithBall(
-                this.PlayFieldCanvas,
-                GameStateTracker.FootballPlayerWithBall);
+            this.GameGraphics.MarkPlayerWithBall(
+                GameStateTracker.FootballPlayerWithBall,
+                FootballPlayerSettings.BallColor);
 
             this.DisplayUIZeroAP?.Invoke(this, null);
         }
@@ -83,9 +83,9 @@
             GameStateTracker.FootballPlayerWithBall.HasBall = true;
 
             GameStateTracker.PlayerOnTurn.PlayerCharacter.ResetVisualTokenColor();
-            CanvasChildrenUtilities.MarkPlayerWithBall(
-                this.PlayFieldCanvas,
-                GameStateTracker.FootballPlayerWithBall);
+            this.GameGraphics.MarkPlayerWithBall(
+                GameStateTracker.FootballPlayerWithBall,
+                FootballPlayerSettings.BallColor);
 
             GameStateTracker.PlayerOnTurn.PlayerCharacter.Team.HasBallPossession = false;
             GameStateTracker.GetOpponent().PlayerCharacter.Team.HasBallPossession = true;

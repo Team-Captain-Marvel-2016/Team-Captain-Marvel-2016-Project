@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Windows.Controls;
     using System.Windows.Media;
+    using Global.DataStructures;
 
     public interface IVisualizer
     {
@@ -25,5 +26,7 @@
         void MarkPlayerWithBall(IDrawOnCanvas child, SolidColorBrush color);
 
         void Reset();
+
+        void SetGridPosition(IEnumerable<IDrawOnCanvas> elements, PositionXY[,] grid);
     }
 }

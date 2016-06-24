@@ -1,11 +1,11 @@
 ﻿namespace Teamwork.Models.PC.Abstract
 {
+    using Global.Contracts;
     using Global.DataStructures;
     using Global.Settings.Visualization;
     using System;
     using System.Collections.Generic;
     using System.Windows.Media;
-    using Global.Contracts;
     using TeamAssembly;
 
     public abstract class PlayerCharacter

@@ -1,12 +1,11 @@
 ﻿namespace TeamWork.Models.PC.Reimplementation.Models
 {
-    using System.Collections.Generic;
-    using System.Windows.Media;
     using Contracts;
     using Global.Contracts;
     using Global.DataStructures;
-    using Global.Enumerations.Team;
     using Global.Settings.Visualization;
+    using System.Collections.Generic;
+    using System.Windows.Media;
     using TeamAssembly;
 
     public abstract class PlayerCharacter : IPlayerCharacter

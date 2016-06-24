@@ -7,8 +7,6 @@
     using TeamWork.Football.Visualizer.Contracts;
     using TeamWork.Models.PC.Reimplementation.Models;
     using Tracker;
-    using VisualizationAssembly.CanvasUtilsClasses;
-    using VisualizationAssembly.InitPlayingFieldClasses;
 
     public static class InitialGameState
     {
@@ -59,18 +57,18 @@
             PlayingFieldMethods.UpdateAllPlayers(PlayerTwo.Instance.PlayerCharacter.Team.Team);
         }
 
-        private static void GetFootballPlayerPositions(PlayerCharacter playerCharacter, StartingFieldType field)
-        {
-            InitTeamVisualization
-                .GetInitialFootballPlayerPositions(playerCharacter.Team, field);
-        }
+        //private static void GetFootballPlayerPositions(PlayerCharacter playerCharacter, StartingFieldType field)
+        //{
+        //    InitTeamVisualization
+        //        .GetInitialFootballPlayerPositions(playerCharacter.Team, field);
+        //}
 
-        private static void DisplayFootballPlayersOnCanvas(Canvas canvas, PlayerCharacter playerCharacter)
-        {
-            foreach (var player in playerCharacter.Team.Team)
-            {
-                CanvasChildrenUtilities.AddChild(canvas, player);
-            }
-        }
+        //private static void DisplayFootballPlayersOnCanvas(Canvas canvas, PlayerCharacter playerCharacter)
+        //{
+        //    foreach (var player in playerCharacter.Team.Team)
+        //    {
+        //        CanvasChildrenUtilities.AddChild(canvas, player);
+        //    }
+        //}
     }
 }

@@ -107,10 +107,6 @@
       <Project>{39c7bcce-fe53-4fb6-8af1-1ed44947e635}</Project>
       <Name>TeamWork.Models.PC.Reimplementation</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VisualizationAssembly\VisualizationAssembly.csproj">
-      <Project>{c7ddcbc7-728a-4bea-9d74-bb73afbc7a2d}</Project>
-      <Name>VisualizationAssembly</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

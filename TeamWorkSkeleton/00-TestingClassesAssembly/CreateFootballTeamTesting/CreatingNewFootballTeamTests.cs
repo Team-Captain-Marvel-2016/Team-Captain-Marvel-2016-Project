@@ -4,7 +4,6 @@
     using Global.Enumerations;
     using Global.Enumerations.Team;
     using TeamAssembly;
-    using VisualizationAssembly.InitPlayingFieldClasses;
 
     public static class CreatingNewFootballTeamTests
     {
@@ -13,7 +12,7 @@
             var testTeam = new FootballTeam("Testing", true);
             Console.WriteLine(string.Join(Environment.NewLine, testTeam.Team));
 
-            InitTeamVisualization.GetInitialFootballPlayerPositions(testTeam, StartingFieldType.Left);
+            //InitTeamVisualization.GetInitialFootballPlayerPositions(testTeam, StartingFieldType.Left);
         }
     }
 }

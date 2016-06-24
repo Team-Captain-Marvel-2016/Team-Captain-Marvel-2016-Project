@@ -6,6 +6,8 @@
     using System.Windows.Media;
     using Contracts;
     using Global.Contracts;
+    using Global.DataStructures;
+    using Global.Settings.Visualization;
 
     public sealed class Graphics : IVisualizer
     {
@@ -54,6 +56,10 @@
             {
                 Canvas.SetLeft(drawOnCanvase.VisualToken, drawOnCanvase.FieldPosition.Y);
                 Canvas.SetTop(drawOnCanvase.VisualToken, drawOnCanvase.FieldPosition.X);
+
+                this.GameCanvas.Children[
+                    drawOnCanvase.CanvasChildIndex.Value] =
+                        drawOnCanvase.VisualToken;
             }
         }
 
@@ -86,6 +92,25 @@
         {
             this.Children.Clear();
             this.GameCanvas.Children.Clear();
+        }
+
+        public void SetGridPosition(IEnumerable<IDrawOnCanvas> elements, PositionXY[,] grid)
+        {
+
+            foreach (var child in elements)
+            {
+                // Get new Field Postion based on GridPosition
+                var fieldRow = child.GridPosition.X;
+                var fieldCol = child.GridPosition.Y;
+
+                var newFieldPosition = grid[fieldRow, fieldCol];
+
+                child.FieldPosition = newFieldPosition;
+
+                // Apply new position.
+                Canvas.SetTop(child.VisualToken, child.FieldPosition.X);
+                Canvas.SetLeft(child.VisualToken, child.FieldPosition.Y);
+            }
         }
     }
 }

@@ -1,10 +1,12 @@
 ﻿namespace StartUpWPF
 {
     using System;
+    using System.Collections.Generic;
     using System.Windows;
     using Game.PlayingField.Methods;
     using Game.Tracker;
-    using VisualizationAssembly.CanvasUtilsClasses;
+    using Global.Contracts;
+    using Global.Settings.Visualization;
 
     public partial class MainWindow : Window
     {
@@ -57,8 +59,20 @@
             }
 
             // Update Canvas Position
-            CanvasChildrenUtilities
-                .UpdateCanvasPosition(this.PlayFieldCanvas, GameStateTracker.SelectedFootballPlayer);
+            //CanvasChildrenUtilities
+            //    .UpdateCanvasPosition(this.PlayFieldCanvas, GameStateTracker.SelectedFootballPlayer);
+
+            this.GameGraphics.SetGridPosition(new List<IDrawOnCanvas>()
+                {
+                    GameStateTracker.SelectedFootballPlayer
+                },
+                PlayingFieldSettings.GridCoordinates);
+
+            this.GameGraphics.SetPosition(
+                new List<IDrawOnCanvas>()
+                {
+                    GameStateTracker.SelectedFootballPlayer
+                });
         }
     }
 }

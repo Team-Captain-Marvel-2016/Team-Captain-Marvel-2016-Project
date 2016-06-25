@@ -2,6 +2,10 @@
 {
     using System;
 
+    /// <summary>
+    /// Used for setting ranges for the 
+    /// FootballPlayer factory random generation.
+    /// </summary>
     public struct MinMaxRange
     {
         private int min;

@@ -6,6 +6,9 @@
     using System.Collections;
     using System.Collections.Generic;
 
+    /// <summary>
+    /// Team of IFootballPlayer
+    /// </summary>
     public partial class FootballTeam : ITeam, IEnumerable<IFootballPlayer>
     {
         private string teamName;
@@ -69,6 +72,10 @@
             this.teamName = teamName;
         }
 
+        /// <summary>
+        /// Generates a team out of a preset formation.
+        /// </summary>
+        /// <param name="formation"></param>
         public void CreateTeam(FormationType formation)
         {
             this.FormationType = formation;
@@ -77,6 +84,10 @@
                 CreateAFootballTeamByFormation(formation);
         }
 
+        /// <summary>
+        /// Picks a formation from the enum FormationType
+        /// and creates a team based on that formation.
+        /// </summary>
         public void CreateTeam()
         {
             FormationType formation;

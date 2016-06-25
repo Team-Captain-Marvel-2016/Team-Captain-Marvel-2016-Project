@@ -5,8 +5,16 @@
     using TeamWork.Models.PC.Reimplementation.Contracts;
     using Tracker;
 
+    /// <summary>
+    /// Used when the NextTurnBtn is clicked
+    /// </summary>
     public static class NextTurn
     {
+        /// <summary>
+        /// Increment the GameStateTracker Turn counter.
+        /// Game Over if the turn limit is reached.
+        /// </summary>
+        /// <returns></returns>
         public static bool IncrementTurn()
         {
             if (GameStateTracker.TurnNumber == GameStateTracker.GameLengthTurns)
@@ -19,6 +27,12 @@
             return true;
         }
 
+        /// <summary>
+        /// Reassign all GameStateTracker props to reflect
+        /// which FootballPlayer is beingcontrolled.
+        /// Adjust visualization accordingly.
+        /// </summary>
+        /// <param name="visualizer"></param>
         public static void ChangeGameState(IVisualizer visualizer)
         {
             // Reset current FootballPlayer AP
@@ -42,6 +56,11 @@
                 FootballPlayerSettings.SelectedVisualTokenSize);
         }
 
+        /// <summary>
+        /// Return the IPlayer character which is NOT the 
+        /// current IPlayer on turn.
+        /// </summary>
+        /// <returns></returns>
         private static IPlayer GetNextPlayer()
         {
             return GameStateTracker.GetOpponent();    

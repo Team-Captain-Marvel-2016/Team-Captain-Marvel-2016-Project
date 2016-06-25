@@ -11,6 +11,13 @@
         private static int gridRows;
         private static int gridCols;
 
+        /// <summary>
+        /// Assign each player a position on the PlayingField grid 
+        /// and pixel position for Canvas drawing.
+        /// </summary>
+        /// <param name="rows"></param>
+        /// <param name="cols"></param>
+        /// <param name="field"></param>
         public void GetInitialFootballPlayerPositions
             (int rows, int cols , StartingFieldType field)
         {

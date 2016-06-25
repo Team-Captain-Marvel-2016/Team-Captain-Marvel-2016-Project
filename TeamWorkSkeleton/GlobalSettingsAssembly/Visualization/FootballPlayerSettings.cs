@@ -2,6 +2,11 @@
 {
     using System.Windows.Media;
 
+    /// <summary>
+    /// Setes the visualization settings for 
+    /// disaplying a IDrawOnCanvas.VisualToken 
+    /// of a FootballPlayer.
+    /// </summary>
     public static class FootballPlayerSettings
     {
         static FootballPlayerSettings()

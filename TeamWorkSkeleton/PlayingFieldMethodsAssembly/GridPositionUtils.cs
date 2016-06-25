@@ -5,8 +5,17 @@ namespace Game.PlayingField.Methods
     using Global.Contracts;
     using Global.DataStructures;
 
+    /// <summary>
+    /// Static Methods working with PlayingField
+    /// </summary>
     public static class GridPositionUtils
     {
+        /// <summary>
+        /// Checks all neighbouring grid cells for 
+        /// objects.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>Whether an object is present in a neighbouring cell.</returns>
         public static bool HasObjectsInRange(IDrawOnCanvas obj)
         {
             var playerRow = obj.GridPosition.X;
@@ -30,6 +39,16 @@ namespace Game.PlayingField.Methods
             return false;
         }
 
+        /// <summary>
+        /// Used for Passing.
+        /// Checks an area around the current object.
+        /// Area depends on the direction of the pass.
+        /// This Method determines which area to check, 
+        /// and passes it along.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public static IEnumerable<PositionXY> FindObjectsInRange(IDrawOnCanvas obj, IDrawOnCanvas target)
         {
             var objRow = obj.GridPosition.X;
@@ -120,6 +139,12 @@ namespace Game.PlayingField.Methods
             return GetList(startRow, startCol);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="startRow"></param>
+        /// <param name="startCol"></param>
+        /// <returns> List of PositionXY objects with occupied PlayingField Grid postions</returns>
         private static IEnumerable<PositionXY> GetList(int startRow, int startCol)
         {
             return PlayingFieldMethods.FindOccupiedPositionsInRange(startRow, startCol);

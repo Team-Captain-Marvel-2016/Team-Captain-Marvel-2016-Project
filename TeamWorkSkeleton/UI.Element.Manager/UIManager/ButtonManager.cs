@@ -6,6 +6,9 @@
     using Exception;
     using Validation;
 
+    /// <summary>
+    /// Manages a list of ButtonGroups.
+    /// </summary>
     public class ElementManager : IEnumerable<IElementGroup>
     {
         private readonly List<IElementGroup> groups;

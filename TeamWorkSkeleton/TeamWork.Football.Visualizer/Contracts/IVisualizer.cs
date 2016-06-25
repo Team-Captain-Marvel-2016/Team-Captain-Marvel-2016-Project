@@ -6,6 +6,10 @@
     using System.Windows.Controls;
     using System.Windows.Media;
 
+    /// <summary>
+    /// Interface for displaying 
+    /// IDrawOnCanvas objects on a grid.
+    /// </summary>
     public interface IVisualizer
     {
         int Width { get; }

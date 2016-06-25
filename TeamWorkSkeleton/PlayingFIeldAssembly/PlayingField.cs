@@ -3,6 +3,10 @@
     using System;
     using Global.Settings.Visualization;
 
+    /// <summary>
+    /// Creates a bool[] tracking FootballPlayer positions.
+    /// Playing is created based on PlayingFieldSettings.
+    /// </summary>
     public static class PlayingField
     {
         static PlayingField()
@@ -19,6 +23,10 @@
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Create the bool[] based on preset settings.
+        /// </summary>
+        /// <returns></returns>
         private static bool[,] InitField()
         {
             var rows = PlayingFieldSettings.GridRows;

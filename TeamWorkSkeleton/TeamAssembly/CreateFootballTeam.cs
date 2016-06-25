@@ -8,8 +8,7 @@
     using Global.Enumerations.Team;
     using Global.Enumerations.Utils;
     using Global.Randomization;
-    using FootballPlayer = TeamWork.Models.Abstract.FootballPlayer;
-    using FootballPlayerFactory = TeamWork.Models.Factory.Models.FootballPlayerFactory;
+    using TeamWork.Models.Factory.Models;
 
     public partial class FootballTeam
     {

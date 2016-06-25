@@ -2,6 +2,11 @@
 {
     using DataStructures;
 
+    /// <summary>
+    /// Generates a grid with pixel coordinates corespodning 
+    /// to grid positions.
+    /// Holds the size of the grid in cells and pixels.
+    /// </summary>
     public static class PlayingFieldSettings
     {
         static PlayingFieldSettings()

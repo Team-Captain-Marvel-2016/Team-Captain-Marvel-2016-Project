@@ -1,6 +1,9 @@
 ﻿namespace Global.DataStructures
 {
     // ReSharper disable once InconsistentNaming
+    /// <summary>
+    /// Used for tracking position in a grid easily.
+    /// </summary>
     public struct PositionXY
     {
         private int x;

@@ -3,6 +3,10 @@
     using System.Windows;
     using System.Windows.Controls;
 
+    /// <summary>
+    /// Implaments ITextVisualizer 
+    /// using a TextBlock as output.
+    /// </summary>
     public sealed class TextBlockVisualizer : ITextVisualizer
     {
         private readonly TextBlock textBlock;

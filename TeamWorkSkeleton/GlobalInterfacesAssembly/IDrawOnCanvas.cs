@@ -4,6 +4,11 @@ namespace Global.Contracts
     using System.Windows.Shapes;
     using DataStructures;
 
+    /// <summary>
+    /// Each object drawn on the canvas must have these properties and methods.
+    /// Grid Postion (matrix) , FieldPostion in Pixels for drawing.
+    /// Methods for setting token size and color.
+    /// </summary>
     public interface IDrawOnCanvas
     {
         PositionXY FieldPosition { get; set; }

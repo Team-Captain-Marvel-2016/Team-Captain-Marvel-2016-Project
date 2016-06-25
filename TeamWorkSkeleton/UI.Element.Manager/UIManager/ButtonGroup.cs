@@ -8,6 +8,11 @@
     using System.Windows.Controls;
     using Validation;
 
+    /// <summary>
+    /// Creates a group of buttons.
+    /// Overloads indexers to be able to access a button by name.
+    /// Methods for displaying and hiding.
+    /// </summary>
     public partial class ButtonGroup : IElementGroup, IComparable<ButtonGroup>
     {
         private readonly List<Button> buttons;

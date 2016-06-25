@@ -34,13 +34,8 @@ namespace Global.Randomization
                 }
             }
         }
-        
-        #region Methods
 
         public int Roll()
             => GenericRandomization.Random.Next(1, this.Face);
-
-        #endregion
-
     }
 }

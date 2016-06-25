@@ -3,6 +3,11 @@ namespace UI.Element.Manager.UIManager
     using System;
     using System.Windows;
 
+    /// <summary>
+    /// Methods for subscribing and unsubscribing 
+    /// a group to and from events.
+    /// The purpose of wrapping buttons in a class.
+    /// </summary>
     public partial class ButtonGroup
     {
         public void SubscribeEnable(ref EventHandler ev)

@@ -1,21 +1,32 @@
 ﻿namespace Game.Logic
 {
-    using System.Windows.Controls;
-    using Global.Enumerations.Team;
     using Global.Settings.Visualization;
     using PlayingField.Methods;
     using TeamWork.Football.Visualizer.Contracts;
     using TeamWork.Models.PC.Reimplementation.Models;
     using Tracker;
 
+    /// <summary>
+    /// Initial Game State.
+    /// This is used when Start Game button is clicked.
+    /// </summary>
     public static class InitialGameState
     {
+        /// <summary>
+        /// Create players and their teams
+        /// </summary>
         public static void InitializePlayers()
         {
             PlayerOne.Initialize(new HumanPlayer("PlayerOne"));
             PlayerTwo.Initialize(new HumanPlayer("PlayerTwo"));
         }
 
+        /// <summary>
+        /// Add IDrawOnCanvas objects to the visualizer.
+        /// Each FootballPlayer objects inherits the interface, 
+        /// each FootballPlayer.VisualToken is being added as child of the canvas.
+        /// </summary>
+        /// <param name="visualizer"></param>
         public static void InitializeVisualizer(IVisualizer visualizer)
         {
             visualizer.Add(PlayerOne.Instance.PlayerCharacter.Team.Team);
@@ -25,6 +36,13 @@
             visualizer.SetPosition(PlayerTwo.Instance.PlayerCharacter.Team.Team);
         }
 
+        /// <summary>
+        /// Initializes the first turn state.
+        /// Player with ball, team with ball, selected football player.
+        /// All GameStateTracker static props are being assigned here, 
+        /// preparing the game.
+        /// </summary>
+        /// <param name="visualizer"></param>
         public static void InitializeFirstTurn(IVisualizer visualizer)
         {
             PlayingFieldMethods.MarkAllPlayersFromTeam(PlayerOne.Instance.PlayerCharacter.Team.Team);
@@ -56,19 +74,5 @@
             PlayingFieldMethods.UpdateAllPlayers(PlayerOne.Instance.PlayerCharacter.Team.Team);
             PlayingFieldMethods.UpdateAllPlayers(PlayerTwo.Instance.PlayerCharacter.Team.Team);
         }
-
-        //private static void GetFootballPlayerPositions(PlayerCharacter playerCharacter, StartingFieldType field)
-        //{
-        //    InitTeamVisualization
-        //        .GetInitialFootballPlayerPositions(playerCharacter.Team, field);
-        //}
-
-        //private static void DisplayFootballPlayersOnCanvas(Canvas canvas, PlayerCharacter playerCharacter)
-        //{
-        //    foreach (var player in playerCharacter.Team.Team)
-        //    {
-        //        CanvasChildrenUtilities.AddChild(canvas, player);
-        //    }
-        //}
     }
 }

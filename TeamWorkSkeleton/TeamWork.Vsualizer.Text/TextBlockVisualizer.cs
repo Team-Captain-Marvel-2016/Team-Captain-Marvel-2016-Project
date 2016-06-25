@@ -1,7 +1,9 @@
 ﻿namespace TeamWork.Vsualizer.Text
 {
+    using System;
     using System.Collections.Generic;
     using System.Text;
+    using System.Windows;
     using System.Windows.Controls;
 
     public sealed class TextBlockVisualizer : ITextVisualizer
@@ -36,6 +38,21 @@
         public void AddFormat(string format)
         {
             throw new System.NotImplementedException();
+        }
+
+        public void Hide()
+        {
+            this.textBlock.Visibility = Visibility.Collapsed;
+        }
+
+        public void Show()
+        {
+            this.textBlock.Visibility = Visibility.Visible;
+        }
+
+        public void Clear()
+        {
+            this.textBlock.Text = string.Empty;
         }
     }
 }

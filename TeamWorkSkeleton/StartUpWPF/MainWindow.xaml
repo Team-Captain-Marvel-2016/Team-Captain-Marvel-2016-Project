@@ -83,7 +83,7 @@
                 VerticalAlignment="Top" Width="120" Height="40" Click="ResetBtn_OnClick_Click"
                 FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
                 BorderThickness="3" BorderBrush="LightGreen"/>
-        <ScrollViewer VerticalScrollBarVisibility="Hidden"
+        <ScrollViewer Name="ScrollViewerBot" VerticalScrollBarVisibility="Hidden"
                       Margin="160,455,144,20"
                       Width="646" Height="30"
                       Background="PaleGreen">
@@ -93,7 +93,7 @@
                    FontFamily="consolas" FontSize="16" 
                    VerticalAlignment="Top" />
         </ScrollViewer>
-        <ScrollViewer VerticalScrollBarVisibility="Hidden"
+        <ScrollViewer Name="ScrollViewerTop"  VerticalScrollBarVisibility="Hidden"
                       Margin="160,20,144,458"
                       Width="646" Height="30"
                       Background="PaleGreen">

@@ -14,5 +14,11 @@
         void Display(object obj);
 
         void AddFormat(string format);
+
+        void Hide();
+
+        void Show();
+
+        void Clear();
     }
 }

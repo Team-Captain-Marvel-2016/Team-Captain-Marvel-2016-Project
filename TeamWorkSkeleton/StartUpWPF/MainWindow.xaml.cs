@@ -15,13 +15,17 @@
     public partial class MainWindow : Window
     {
         internal Graphics GameGraphics { get; private set; }
-        internal TextBlockVisualizer TextBlockVisualizer { get; private set; }
+        internal TextBlockVisualizer TextBlockBottom { get; private set; }
+        internal TextBlockVisualizer TextBlockTop { get; private set; }
 
         public MainWindow()
         {
             this.InitializeComponent();
+            
+            this.ScrollViewerBot.Visibility = Visibility.Collapsed;
+            this.ScrollViewerTop.Visibility = Visibility.Collapsed;
 
-            this.InitializeTextBlockVisualizer(this.LogTextBlock);
+            this.InitializeTextBlockVisualizer();
 
             this.InitializeButtonManager();
             this.Buttons.Hide();
@@ -41,6 +45,12 @@
             // Hide The Start Button
             this.StartBtn.Visibility = Visibility.Collapsed;
 
+            this.ScrollViewerBot.Visibility = Visibility.Visible;
+            this.ScrollViewerTop.Visibility = Visibility.Visible;
+
+            this.TextBlockTop.Show();
+            this.TextBlockBottom.Show();
+
             // Initialize players and their teams.
             InitialGameState.InitializePlayers();
 
@@ -58,6 +68,9 @@
 
             // Subscribe to all FootballPlayer's events.
             this.SubscribeToFootballPlayerEvents();
+
+            // Update Top TextBlock
+            this.UpdateInfoText();
         }
 
         /// <summary>
@@ -70,9 +83,6 @@
         /// <param name="e"></param>
         private void EndTurnBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.LogTextBlock.Text = this.LogTextBlock.Text.Insert(0,
-                GameStateTracker.TurnNumber.ToString() + Environment.NewLine);
-
             // Increment Turn.
             if (!NextTurn.IncrementTurn())
             {
@@ -82,6 +92,8 @@
             NextTurn.ChangeGameState(this.GameGraphics);
 
             this.DisplayUI();
+
+            this.UpdateInfoText();
         }
 
         /// <summary>
@@ -100,6 +112,12 @@
             this.GameGraphics.Reset();
             this.StartBtn.Visibility = Visibility.Visible;
             this.Buttons.Hide();
+
+            this.ScrollViewerBot.Visibility = Visibility.Collapsed;
+            this.ScrollViewerTop.Visibility = Visibility.Collapsed;
+
+            this.TextBlockTop.Clear();
+            this.TextBlockBottom.Clear();
         }
     }
 }

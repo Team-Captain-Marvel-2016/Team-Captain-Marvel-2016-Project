@@ -73,6 +73,8 @@
                 {
                     GameStateTracker.SelectedFootballPlayer
                 });
+
+            this.DisplayUI();
         }
     }
 }

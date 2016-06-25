@@ -11,6 +11,7 @@
         private event EventHandler DisplayUIWithBall;
         private event EventHandler DisplayUIWithoutBall;
         private event EventHandler DisplayUIDefense;
+        private event EventHandler DisplayUINoActions;
         private event EventHandler DisplayUIZeroAP;
 
         private void DisplayUI()
@@ -33,7 +34,18 @@
             }
             else
             {
-                this.DisplayUIDefense?.Invoke(this, null);
+                var startRow = GameStateTracker.SelectedFootballPlayer.GridPosition.X - 1;
+                var startCol = GameStateTracker.SelectedFootballPlayer.GridPosition.Y - 1;
+
+                // Check for enemy player in range
+                if (this.GetEnemeiesForTackle(startRow, startCol))
+                {
+                    this.DisplayUIDefense?.Invoke(this, null);
+                }
+                else
+                {
+                    this.DisplayUINoActions?.Invoke(this, null);
+                }
             }
         }
 
@@ -65,6 +77,7 @@
             this.InitializeDisplayUIWithoutBall();
             this.InitializeDisplayUIDefense();
             this.InitializeDisplayUIZeroAP();
+            this.InitializeDisplayUINoActions();
         }
 
         private void InitializeDisplayUIWithBall()
@@ -101,6 +114,16 @@
                 .SubscribeDisable(ref this.DisplayUIZeroAP);
             this.Buttons["Movement"]
                 .SubscribeDisable(ref this.DisplayUIZeroAP);
+        }
+
+        private void InitializeDisplayUINoActions()
+        {
+            this.Buttons["Defense"]
+                .SubscribeDisable(ref this.DisplayUINoActions);
+            this.Buttons["Ball"]
+                .SubscribeDisable(ref this.DisplayUINoActions);
+            this.Buttons["NoBall"]
+                .SubscribeDisable(ref this.DisplayUINoActions);
         }
     }
 }

@@ -4,6 +4,7 @@
     using Game.Tracker;
     using Global.Contracts;
     using System;
+    using System.Collections.Generic;
     using System.Windows;
     using System.Windows.Shapes;
     using Global.Settings.Visualization;
@@ -30,13 +31,7 @@
             var target = this.GetTargetPlayer(childIndex);
 
             // Find enemy players.
-            var coordinatesWithObjects =
-                GridPositionUtils.FindObjectsInRange(GameStateTracker.SelectedFootballPlayer, target);
-
-            var opponent = GameStateTracker.GetOpponent();
-
-            var listOfEnemyPlayers =
-                opponent.PlayerCharacter.GetPlayersOnPositionsList(coordinatesWithObjects);
+            var listOfEnemyPlayers = this.GetEnemyPlayers(target);
 
             // If there are no enemies then pass is successfull
             if (listOfEnemyPlayers.Count == 0) this.UpdateGameStateOnSuccessfulPass(target);
@@ -60,6 +55,41 @@
             {
                 this.UpdateGameStateOnUnsuccessfulPass(interceptintPlayer);
             }
+        }
+
+        private List<IFootballPlayer> GetEnemyPlayers(IFootballPlayer target)
+        {
+            // Find enemy players.
+            var coordinatesWithObjects =
+                GridPositionUtils
+                    .FindObjectsInRange(GameStateTracker.SelectedFootballPlayer, target);
+
+            var opponent = GameStateTracker.GetOpponent();
+
+            var listOfEnemyPlayers =
+                opponent.PlayerCharacter.GetPlayersOnPositionsList(coordinatesWithObjects);
+
+            return listOfEnemyPlayers;
+        }
+
+        private bool GetEnemeiesForTackle(int startRow, int startCol)
+        {
+            var coordinatesWithObjects = PlayingFieldMethods.FindOccupiedPositionsInRange(startRow, startCol);
+
+            var opponent = GameStateTracker.GetOpponent();
+
+            var listOfEnemyPlayers =
+                opponent.PlayerCharacter.GetPlayersOnPositionsList(coordinatesWithObjects);
+
+            foreach (var player in listOfEnemyPlayers)
+            {
+                if (player.HasBall)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         private void UpdateGameStateOnSuccessfulPass(IFootballPlayer targetFootballPlayer)

@@ -18,36 +18,36 @@
         private static FootballPlayer CreateVenusianAttacker
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-           var newPlayerName = GetVenusianName();
             var newPlayer = new Roles.VenusianFootballPlayer.FootballPlayerFactory
                 .VenusianAttacker(baseStats);
+            newPlayer.Name = GetVenusianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateVenusianDefender
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetVenusianName();
             var newPlayer = new Roles.VenusianFootballPlayer.FootballPlayerFactory
                 .VenusianDefender(baseStats);
+            newPlayer.Name = GetVenusianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateVenusianMidfielder
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetVenusianName();
             var newPlayer = new Roles.VenusianFootballPlayer.FootballPlayerFactory
                 .VenusianMidfielder(baseStats);
+            newPlayer.Name = GetVenusianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateVenusianGoalkeeper
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetVenusianName();
             var newPlayer = new Roles.VenusianFootballPlayer.FootballPlayerFactory
                 .VenusianGoalkeeper(baseStats);
+            newPlayer.Name = GetVenusianName();
             return newPlayer;
         }
 

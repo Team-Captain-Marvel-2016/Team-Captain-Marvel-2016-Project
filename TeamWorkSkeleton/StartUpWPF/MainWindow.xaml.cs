@@ -1,10 +1,8 @@
 ﻿namespace StartUpWPF
 {
-    using System;
     using Game.Logic;
     using Global.Settings.Visualization;
     using System.Windows;
-    using Game.Tracker;
     using TeamWork.Football.Visualizer;
     using TeamWork.Vsualizer.Text;
 
@@ -71,6 +69,7 @@
 
             // Update Top TextBlock
             this.UpdateInfoText();
+            this.UpdatePlayerText();
         }
 
         /// <summary>
@@ -94,6 +93,7 @@
             this.DisplayUI();
 
             this.UpdateInfoText();
+            this.UpdatePlayerText();
         }
 
         /// <summary>

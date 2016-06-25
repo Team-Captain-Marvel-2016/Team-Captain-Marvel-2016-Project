@@ -25,5 +25,14 @@
                     GameStateTracker.TurnNumber,
                     GameStateTracker.PlayerOnTurn.PlayerCharacter.Name));
         }
+
+        private void UpdatePlayerText()
+        {
+            this.TextBlockBottom.Display(
+                string.Format(
+                    "Football Player: {0,-20}\t\t  Action Points: {1}",
+                    GameStateTracker.SelectedFootballPlayer.Name,
+                    GameStateTracker.SelectedFootballPlayer.CurrentAP));
+        }
     }
 }

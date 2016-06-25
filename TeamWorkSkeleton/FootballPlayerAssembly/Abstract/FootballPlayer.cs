@@ -57,7 +57,7 @@
         }
         // Full Constructor
 
-        public string Name { get; protected set; }
+        public string Name { get; internal set; }
         // Offensive
         public int StatPass { get; protected set; }
         public int StatShoot { get; protected set; }

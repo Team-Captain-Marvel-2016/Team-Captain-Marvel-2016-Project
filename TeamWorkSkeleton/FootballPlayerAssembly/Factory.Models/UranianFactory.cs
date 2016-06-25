@@ -18,36 +18,36 @@
         private static FootballPlayer CreateUranianAttacker
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetUranianName();
             var newPlayer = new Roles.UranianFootballPlayer.FootballPlayerFactory
                 .UranianAttacker(baseStats);
+            newPlayer.Name = GetUranianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateUranianDefender
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetUranianName();
             var newPlayer = new Roles.UranianFootballPlayer.FootballPlayerFactory
                 .UranianDefender(baseStats);
+            newPlayer.Name = GetUranianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateUranianMidfielder
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetUranianName();
             var newPlayer = new Roles.UranianFootballPlayer.FootballPlayerFactory
                 .UranianMidfielder(baseStats);
+            newPlayer.Name = GetUranianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateUranianGoalkeeper
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetUranianName();
             var newPlayer = new Roles.UranianFootballPlayer.FootballPlayerFactory
                 .UranianGoalkeeper(baseStats);
+            newPlayer.Name = GetUranianName();
             return newPlayer;
         }
 

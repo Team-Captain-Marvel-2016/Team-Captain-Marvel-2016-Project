@@ -6,7 +6,7 @@
     public static partial class FootballPlayerFactory
     {
         /// <summary>
-        /// Creates a new Human player object 
+        /// Creates a new Martian player object 
         /// applying previously generated set of base 
         /// FootballPlayer base abstract stats
         /// wrapped in a GenericFootballPlayer object
@@ -18,36 +18,36 @@
         private static FootballPlayer CreateMartianAttacker
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetMartianName();
             var newPlayer = new Roles.MartianFootballPlayer.FootballPlayerFactory
                 .MartianAttacker(baseStats);
+            newPlayer.Name = GetMartianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateMartianDefender
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetMartianName();
             var newPlayer = new Roles.MartianFootballPlayer.FootballPlayerFactory
                 .MartianDefender(baseStats);
+            newPlayer.Name = GetMartianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateMartianMidfielder
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetMartianName();
             var newPlayer = new Roles.MartianFootballPlayer.FootballPlayerFactory
                 .MartianMidfielder(baseStats);
+            newPlayer.Name = GetMartianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateMartianGoalkeeper
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetMartianName();
             var newPlayer = new Roles.MartianFootballPlayer.FootballPlayerFactory
                 .MartianGoalkeeper(baseStats);
+            newPlayer.Name = GetMartianName();
             return newPlayer;
         }
 

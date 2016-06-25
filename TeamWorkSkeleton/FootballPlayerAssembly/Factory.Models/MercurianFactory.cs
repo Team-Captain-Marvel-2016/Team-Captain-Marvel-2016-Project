@@ -6,7 +6,7 @@
     public static partial class FootballPlayerFactory
     {
         /// <summary>
-        /// Creates a new Human player object 
+        /// Creates a new Mercurian player object 
         /// applying previously generated set of base 
         /// FootballPlayer base abstract stats
         /// wrapped in a GenericFootballPlayer object
@@ -18,36 +18,36 @@
         private static FootballPlayer CreateMercurianAttacker
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetMercurianName();
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianAttacker(baseStats);
+            newPlayer.Name = GetMercurianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateMercurianDefender
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetMercurianName();
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianDefender(baseStats);
+            newPlayer.Name = GetMercurianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateMercurianMidfielder
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetMercurianName();
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianMidfielder(baseStats);
+            newPlayer.Name = GetMercurianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateMercurianGoalkeeper
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetMercurianName();
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianGoalkeeper(baseStats);
+            newPlayer.Name = GetMercurianName();
             return newPlayer;
         }
 

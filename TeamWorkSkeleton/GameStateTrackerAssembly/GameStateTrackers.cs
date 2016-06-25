@@ -8,7 +8,7 @@
     {
         static GameStateTracker()
         {
-            GameLengthTurns = 20;
+            GameLengthTurns = 90;
         }
 
         public static int GameLengthTurns { get; private set; }

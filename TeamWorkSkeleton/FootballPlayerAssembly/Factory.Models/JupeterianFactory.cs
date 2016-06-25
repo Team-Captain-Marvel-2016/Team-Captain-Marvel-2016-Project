@@ -18,36 +18,36 @@
         private static FootballPlayer CreateJupiterianAttacker
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetJupiterianName();
             var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
                 .JupiterianAttacker(baseStats);
+            newPlayer.Name = GetJupiterianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateJupiterianDefender
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetJupiterianName();
             var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
                 .JupiterianDefender(baseStats);
+            newPlayer.Name = GetJupiterianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateJupiterianMidfielder
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetJupiterianName();
             var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
                 .JupiterianMidfielder(baseStats);
+            newPlayer.Name = GetJupiterianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateJupiterianGoalkeeper
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetJupiterianName();
             var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
                 .JupiterianGoalkeeper(baseStats);
+            newPlayer.Name = GetJupiterianName();
             return newPlayer;
         }
 

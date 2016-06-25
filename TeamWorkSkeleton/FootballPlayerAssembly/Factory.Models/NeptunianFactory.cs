@@ -18,36 +18,36 @@ namespace TeamWork.Models.Factory.Models
         private static FootballPlayer CreateNeptunianAttacker
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetNeptunianName();
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianAttacker(baseStats);
+            newPlayer.Name = GetNeptunianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateNeptunianDefender
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetNeptunianName();
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianDefender(baseStats);
+            newPlayer.Name = GetNeptunianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateNeptunianMidfielder
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetNeptunianName();
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianMidfielder(baseStats);
+            newPlayer.Name = GetNeptunianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateNeptunianGoalkeeper
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetNeptunianName();
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianGoalkeeper(baseStats);
+            newPlayer.Name = GetNeptunianName();
             return newPlayer;
         }
 

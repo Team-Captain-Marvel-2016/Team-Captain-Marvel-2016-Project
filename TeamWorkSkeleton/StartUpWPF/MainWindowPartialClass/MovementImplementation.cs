@@ -75,6 +75,8 @@
             {
                 this.DisplayUI();
             }
+
+            this.UpdatePlayerText();
         }
     }
 }

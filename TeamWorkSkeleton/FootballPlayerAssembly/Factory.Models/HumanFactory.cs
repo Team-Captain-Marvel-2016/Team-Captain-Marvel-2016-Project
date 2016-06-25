@@ -18,36 +18,36 @@
         private static FootballPlayer CreateHumanAttacker
             (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetHumanName();
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanAttacker(baseStats);
+            newPlayer.Name = GetHumanName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateHumanDefender
             (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetHumanName();
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanDefender(baseStats);
+            newPlayer.Name = GetHumanName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateHumanMidfielder
             (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetHumanName();
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanMidfielder(baseStats);
+            newPlayer.Name = GetHumanName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateHumanGoalkeeper
             (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetHumanName();
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanGoalkeeper(baseStats);
+            newPlayer.Name = GetHumanName();
             return newPlayer;
         }
 

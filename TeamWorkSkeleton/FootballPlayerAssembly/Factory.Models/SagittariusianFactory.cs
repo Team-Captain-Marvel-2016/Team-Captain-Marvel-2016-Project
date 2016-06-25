@@ -18,36 +18,36 @@
         private static FootballPlayer CreateSagittariusianAttacker
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetSagittariusianName();
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianAttacker(baseStats);
+            newPlayer.Name = GetSagittariusianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateSagittariusianDefender
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetSagittariusianName();
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianDefender(baseStats);
+            newPlayer.Name = GetSagittariusianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateSagittariusianMidfielder
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetSagittariusianName();
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianMidfielder(baseStats);
+            newPlayer.Name = GetSagittariusianName();
             return newPlayer;
         }
 
         private static FootballPlayer CreateSagittariusianGoalkeeper
             (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
         {
-            var newPlayerName = GetSagittariusianName();
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianGoalkeeper(baseStats);
+            newPlayer.Name = GetSagittariusianName();
             return newPlayer;
         }
 

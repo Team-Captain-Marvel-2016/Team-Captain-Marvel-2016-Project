@@ -1,6 +1,6 @@
 ﻿namespace TeamWork.Models.Roles.HumanFootballPlayer
 {
-    using TeamWork.Models.Species.Abstract;
+    using Species.Abstract;
 
     public static partial class FootballPlayerFactory
     {

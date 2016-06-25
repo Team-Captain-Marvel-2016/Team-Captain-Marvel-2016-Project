@@ -101,47 +101,47 @@
         private void InitializeDisplayUIWithBall()
         {
             this.Buttons["Defense"]
-                .SubscribeDisable(ref this.DisplayUIWithBall);
+                .SubscribeHide(ref this.DisplayUIWithBall);
             this.Buttons["NoBall"]
-                .SubscribeDisable(ref this.DisplayUIWithBall);
+                .SubscribeHide(ref this.DisplayUIWithBall);
         }
 
         private void InitializeDisplayUIWithoutBall()
         {
             this.Buttons["Defense"]
-                .SubscribeDisable(ref this.DisplayUIWithoutBall);
+                .SubscribeHide(ref this.DisplayUIWithoutBall);
             this.Buttons["Ball"]
-                .SubscribeDisable(ref this.DisplayUIWithoutBall);
+                .SubscribeHide(ref this.DisplayUIWithoutBall);
         }
 
         private void InitializeDisplayUIDefense()
         {
             this.Buttons["NoBall"]
-                .SubscribeDisable(ref this.DisplayUIDefense);
+                .SubscribeHide(ref this.DisplayUIDefense);
             this.Buttons["Ball"]
-                .SubscribeDisable(ref this.DisplayUIDefense);
+                .SubscribeHide(ref this.DisplayUIDefense);
         }
 
         private void InitializeDisplayUIZeroAP()
         {
             this.Buttons["Defense"]
-                .SubscribeDisable(ref this.DisplayUIZeroAP);
+                .SubscribeHide(ref this.DisplayUIZeroAP);
             this.Buttons["Ball"]
-                .SubscribeDisable(ref this.DisplayUIZeroAP);
+                .SubscribeHide(ref this.DisplayUIZeroAP);
             this.Buttons["NoBall"]
-                .SubscribeDisable(ref this.DisplayUIZeroAP);
+                .SubscribeHide(ref this.DisplayUIZeroAP);
             this.Buttons["Movement"]
-                .SubscribeDisable(ref this.DisplayUIZeroAP);
+                .SubscribeHide(ref this.DisplayUIZeroAP);
         }
 
         private void InitializeDisplayUINoActions()
         {
             this.Buttons["Defense"]
-                .SubscribeDisable(ref this.DisplayUINoActions);
+                .SubscribeHide(ref this.DisplayUINoActions);
             this.Buttons["Ball"]
-                .SubscribeDisable(ref this.DisplayUINoActions);
+                .SubscribeHide(ref this.DisplayUINoActions);
             this.Buttons["NoBall"]
-                .SubscribeDisable(ref this.DisplayUINoActions);
+                .SubscribeHide(ref this.DisplayUINoActions);
         }
     }
 }

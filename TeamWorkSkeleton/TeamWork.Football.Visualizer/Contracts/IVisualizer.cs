@@ -1,10 +1,10 @@
 ﻿namespace TeamWork.Football.Visualizer.Contracts
 {
     using Global.Contracts;
+    using Global.DataStructures;
     using System.Collections.Generic;
     using System.Windows.Controls;
     using System.Windows.Media;
-    using Global.DataStructures;
 
     public interface IVisualizer
     {
@@ -21,9 +21,9 @@
 
         void SetPosition(IEnumerable<IDrawOnCanvas> elements);
 
-        void MarkCurrentPlayer(IDrawOnCanvas child, int newWidth, int newHeight);
+        void SetTokenSize(IDrawOnCanvas child, int newWidth, int newHeight);
 
-        void MarkPlayerWithBall(IDrawOnCanvas child, SolidColorBrush color);
+        void SetTokenColor(IDrawOnCanvas child, SolidColorBrush color);
 
         void Reset();
 

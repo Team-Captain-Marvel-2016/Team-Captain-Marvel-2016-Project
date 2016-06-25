@@ -44,12 +44,12 @@
 
             GameStateTracker.FootballPlayerWithBall.HasBall = true;
 
-            visualizer.MarkCurrentPlayer(
+            visualizer.SetTokenSize(
                 GameStateTracker.SelectedFootballPlayer,
                 FootballPlayerSettings.SelectedVisualTokenSize,
                 FootballPlayerSettings.SelectedVisualTokenSize);
 
-            visualizer.MarkPlayerWithBall(
+            visualizer.SetTokenColor(
                 GameStateTracker.FootballPlayerWithBall,
                 FootballPlayerSettings.BallColor);
 

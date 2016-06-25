@@ -69,7 +69,7 @@
         // Game Mechanics
         public int AwarenessRange { get; protected set; }
         public int ActionPoints { get; protected set; }
-        private int CurrentAP { get; set; }
+        public int CurrentAP { get; private set; }
 
         public string Planet { get; private set; }
         public string Position { get; private set; }

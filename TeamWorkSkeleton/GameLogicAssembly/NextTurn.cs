@@ -36,7 +36,7 @@
                 GameStateTracker.PlayerOnTurn.PlayerCharacter.Team.Team[
                     GameStateTracker.PlayerOnTurn.PlayerCharacter.CurrentPlayer];
 
-            visualizer.MarkCurrentPlayer(
+            visualizer.SetTokenSize(
                 GameStateTracker.SelectedFootballPlayer,
                 FootballPlayerSettings.SelectedVisualTokenSize,
                 FootballPlayerSettings.SelectedVisualTokenSize);

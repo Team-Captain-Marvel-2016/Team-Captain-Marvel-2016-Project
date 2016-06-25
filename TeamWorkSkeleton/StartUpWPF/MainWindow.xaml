@@ -23,43 +23,76 @@
                 HorizontalAlignment="Left" Margin="400,230,0,0"
                 VerticalAlignment="Top" Width="160" Height="40" 
                 FontSize="24" Background="PaleGreen" Foreground="ForestGreen"
-                Click="StartBtn_Click"/>
-        <Button x:Name="MoveUpBtn" Content="Up"
+                Click="StartBtn_Click"  />
+        <Button x:Name="MoveUpBtn" Content="U"
                 HorizontalAlignment="Left" Margin="60,190,0,0"
-                VerticalAlignment="Top" Width="40" Height="40" Click="MoveUpBtn_OnClick"/>
-        <Button x:Name="MoveDownBtn" Content="Down"
+                VerticalAlignment="Top" Width="40" Height="40" Click="MoveUpBtn_OnClick"
+                FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
+                BorderThickness="3" BorderBrush="LightGreen"/>
+        <Button x:Name="MoveDownBtn" Content="D"
                 HorizontalAlignment="Left" Margin="60,270,0,0"
-                VerticalAlignment="Top" Width="40" Height="40" Click="MoveDownBtn_OnClick"/>
-        <Button x:Name="MoveLeftBtn" Content="Left"
+                VerticalAlignment="Top" Width="40" Height="40" Click="MoveDownBtn_OnClick"
+                FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
+                BorderThickness="3" BorderBrush="LightGreen"/>
+        <Button x:Name="MoveLeftBtn" Content="L"
                 HorizontalAlignment="Left" Margin="20,230,0,0"
-                VerticalAlignment="Top" Width="40" Height="40" Click="MoveLeftBtn_OnClick"/>
-        <Button x:Name="MoveRightBtn" Content="Right"
+                VerticalAlignment="Top" Width="40" Height="40" Click="MoveLeftBtn_OnClick"
+                FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
+                BorderThickness="3" BorderBrush="LightGreen"/>
+        <Button x:Name="MoveRightBtn" Content="R"
                 HorizontalAlignment="Left" Margin="100,230,0,0"
-                VerticalAlignment="Top" Width="40" Height="40" Click="MoveRightBtn_OnClick"/>
+                VerticalAlignment="Top" Width="40" Height="40" Click="MoveRightBtn_OnClick"
+                FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
+                BorderThickness="3" BorderBrush="LightGreen"/>
         <!--<Button x:Name="PrevPlayerBtn" Content="Prev" 
                 HorizontalAlignment="Left" Margin="10,120,0,0"
                 VerticalAlignment="Top" Width="60" Height="30"/>
         <Button x:Name="NextPlayerBtn" Content="Next" 
                 HorizontalAlignment="Left" Margin="90,120,0,0"
                 VerticalAlignment="Top" Width="60" Height="30"/>-->
-        <Button x:Name="PassBtn" Content="Pass" 
+        <Button x:Name="PassBtn" Content="P" 
                 HorizontalAlignment="Left" Margin="855,270,0,0"
-                VerticalAlignment="Top" Width="40" Height="40" Click="PassBtn_OnClick"/>
-        <Button x:Name="ShootBtn" Content="Shoot" 
+                VerticalAlignment="Top" Width="40" Height="40" Click="PassBtn_OnClick"
+                FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
+                BorderThickness="3" BorderBrush="LightGreen"/>
+        <Button x:Name="ShootBtn" Content="S" 
                 HorizontalAlignment="Left" Margin="895,230,0,0"
-                VerticalAlignment="Top" Width="40" Height="40" RenderTransformOrigin="1.225,0.3" Click="ShootBtn_OnClick"/>
-        <Button x:Name="CallForPassBtn" Content="Call For Pass" 
+                VerticalAlignment="Top" Width="40" Height="40" RenderTransformOrigin="1.225,0.3" Click="ShootBtn_OnClick"
+                FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
+                BorderThickness="3" BorderBrush="LightGreen"/>
+        <Button x:Name="CallForPassBtn" Content="C" 
                 HorizontalAlignment="Left" Margin="855,190,0,0"
-                VerticalAlignment="Top" Width="40" Height="40" Click="CallForPassBtn_OnClick"/>
-        <Button x:Name="TackleBtn" Content="Tackle" 
+                VerticalAlignment="Top" Width="40" Height="40" Click="CallForPassBtn_OnClick"
+                FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
+                BorderThickness="3" BorderBrush="LightGreen"/>
+        <Button x:Name="TackleBtn" Content="T" 
                 HorizontalAlignment="Left" Margin="815,230,0,0"
-                VerticalAlignment="Top" Width="40" Height="40" Click="TackleBtn_OnClick"/>
-        <Button x:Name="EndTurnBtn" Content="End Turn" 
+                VerticalAlignment="Top" Width="40" Height="40" Click="TackleBtn_OnClick"
+                FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
+                BorderThickness="3" BorderBrush="LightGreen"/>
+        <Button x:Name="EndTurnBtn" Content="END TURN" 
                 HorizontalAlignment="Left" Margin="815,410,0,0"
-                VerticalAlignment="Top" Width="120" Height="40" Click="EndTurnBtn_Click"/>
-        <Button x:Name="ResetBtn" Content="Reset" 
+                VerticalAlignment="Top" Width="120" Height="40" Click="EndTurnBtn_Click"
+                FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
+                BorderThickness="3" BorderBrush="LightGreen"/>
+        <Button x:Name="ResetBtn" Content="RESET" 
                 HorizontalAlignment="Left" Margin="20,410,0,0"
-                VerticalAlignment="Top" Width="120" Height="40" Click="ResetBtn_OnClick_Click"/>
+                VerticalAlignment="Top" Width="120" Height="40" Click="ResetBtn_OnClick_Click"
+                FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
+                BorderThickness="3" BorderBrush="LightGreen"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      CanContentScroll="True"
+                      Background="LightGreen"
+                      Foreground="White"
+                      FontFamily="consolas"
+                      FontSize="16"
+                      Margin="160,455,152,24"
+                      Width="640" Height="30">
+            <TextBlock x:Name="LogTextBlock" 
+                   HorizontalAlignment="Left" Margin="160,450,0,0"
+                   TextWrapping="Wrap" Text="" 
+                   VerticalAlignment="Top"/>
+        </ScrollViewer>
 
 
     </Grid>

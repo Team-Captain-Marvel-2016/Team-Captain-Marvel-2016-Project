@@ -71,7 +71,10 @@
                     GameStateTracker.SelectedFootballPlayer
                 });
 
-            this.DisplayUI();
+            if (GameStateTracker.SelectedFootballPlayer.CurrentAP > 0)
+            {
+                this.DisplayUI();
+            }
         }
     }
 }

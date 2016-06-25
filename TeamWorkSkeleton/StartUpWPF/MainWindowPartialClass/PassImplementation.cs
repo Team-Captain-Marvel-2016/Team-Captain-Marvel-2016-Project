@@ -99,7 +99,7 @@
             GameStateTracker.FootballPlayerWithBall.HasBall = true;
 
             GameStateTracker.PlayerOnTurn.PlayerCharacter.ResetVisualTokenColor();
-            this.GameGraphics.MarkPlayerWithBall(
+            this.GameGraphics.SetTokenColor(
                 GameStateTracker.FootballPlayerWithBall,
                 FootballPlayerSettings.BallColor);
 
@@ -113,7 +113,7 @@
             GameStateTracker.FootballPlayerWithBall.HasBall = true;
 
             GameStateTracker.PlayerOnTurn.PlayerCharacter.ResetVisualTokenColor();
-            this.GameGraphics.MarkPlayerWithBall(
+            this.GameGraphics.SetTokenColor(
                 GameStateTracker.FootballPlayerWithBall,
                 FootballPlayerSettings.BallColor);
 

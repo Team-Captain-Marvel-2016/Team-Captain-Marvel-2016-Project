@@ -6,6 +6,8 @@
     {
         event EventHandler ZeroActionPoints;
 
+        int CurrentAP { get;  }
+
         void ResetActionPoints();
     }
 }

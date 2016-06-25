@@ -68,7 +68,7 @@
             }
         }
 
-        public void MarkCurrentPlayer(IDrawOnCanvas child, int newWidth, int newHeight)
+        public void SetTokenSize(IDrawOnCanvas child, int newWidth, int newHeight)
         {
             if (child.CanvasChildIndex == null)
             {
@@ -83,7 +83,7 @@
             this.GameCanvas.Children[child.CanvasChildIndex.Value] = child.VisualToken;
         }
 
-        public void MarkPlayerWithBall(IDrawOnCanvas child, SolidColorBrush color)
+        public void SetTokenColor(IDrawOnCanvas child, SolidColorBrush color)
         {
             if (child.CanvasChildIndex == null)
             {

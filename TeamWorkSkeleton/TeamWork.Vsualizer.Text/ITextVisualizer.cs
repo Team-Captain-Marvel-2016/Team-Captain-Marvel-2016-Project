@@ -5,16 +5,8 @@
 
     public interface ITextVisualizer
     {
-        void Display<T>(string format, ICollection<T> collection);
-
         void Display(string message);
-
-        void Display(StringBuilder message);
-
-        void Display(object obj);
-
-        void AddFormat(string format);
-
+        
         void Hide();
 
         void Show();

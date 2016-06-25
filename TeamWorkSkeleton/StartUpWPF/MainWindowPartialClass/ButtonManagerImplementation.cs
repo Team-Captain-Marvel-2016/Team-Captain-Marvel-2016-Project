@@ -1,7 +1,7 @@
 ﻿namespace StartUpWPF
 {
-    using System;
     using Game.Tracker;
+    using System;
     using UI.Element.Manager.UIManager;
 
     public partial class MainWindow
@@ -14,6 +14,12 @@
         private event EventHandler DisplayUINoActions;
         private event EventHandler DisplayUIZeroAP;
 
+        /// <summary>
+        /// Display sets of buttons depending on Game State
+        /// 1. Display All
+        /// 2. Enable All
+        /// 3. Display Action Buttons
+        /// </summary>
         private void DisplayUI()
         {
             this.Buttons.Display();
@@ -22,6 +28,13 @@
             this.DisplayActionButtons();
         }
 
+        /// <summary>
+        /// Display Action buttons depending on Game State
+        /// 1. With Ball - > Display Pass and Shoot
+        /// 2. Without Ball > Display Call For Pass
+        /// 3. Ball in enemy team and Enemy player with ball - > display Tackle
+        /// 4. Ball in enemy team and no enem with ball -> display none
+        /// </summary>
         private void DisplayActionButtons()
         {
             if (GameStateTracker.SelectedFootballPlayer.HasBall)
@@ -49,6 +62,11 @@
             }
         }
 
+        /// <summary>
+        /// Initialize the ButtonManager object
+        /// 1. Add all buttons to manage in groups
+        /// 2. Add button actions to appropriate events to trigger
+        /// </summary>
         private void InitializeButtonManager()
         {
             this.Buttons = new ElementManager();

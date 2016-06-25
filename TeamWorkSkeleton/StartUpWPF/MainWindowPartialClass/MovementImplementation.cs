@@ -59,9 +59,6 @@
             }
 
             // Update Canvas Position
-            //CanvasChildrenUtilities
-            //    .UpdateCanvasPosition(this.PlayFieldCanvas, GameStateTracker.SelectedFootballPlayer);
-
             this.GameGraphics.SetGridPosition(new List<IDrawOnCanvas>()
                 {
                     GameStateTracker.SelectedFootballPlayer

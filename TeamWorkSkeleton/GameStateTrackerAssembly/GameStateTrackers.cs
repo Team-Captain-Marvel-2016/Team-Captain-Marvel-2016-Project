@@ -22,6 +22,9 @@
         public static IFootballPlayer TargetFootballPlayer { get; set; }
         public static Brushes OldFootballPlayerColor { get; set; }
 
+        public static int PlayerOneScore { get; set; }
+        public static int PlayerTwoScore { get; set; }
+
         public static IPlayer GetOpponent()
         {
             var opponent = GameStateTracker.PlayerOnTurn is TeamWork.Models.PC.Reimplementation.Models.PlayerOne

@@ -1,9 +1,9 @@
 ﻿namespace UI.Element.Manager.UIManager
 {
     using Contracts;
+    using Exception;
     using System.Collections;
     using System.Collections.Generic;
-    using Exception;
     using Validation;
 
     /// <summary>

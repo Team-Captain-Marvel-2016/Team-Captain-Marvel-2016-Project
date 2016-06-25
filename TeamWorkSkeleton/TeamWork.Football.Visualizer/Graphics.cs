@@ -8,6 +8,10 @@
     using System.Windows.Controls;
     using System.Windows.Media;
 
+    /// <summary>
+    /// Implements the IVisualizer interface 
+    /// to display each VisualToken on Canvas control.
+    /// </summary>
     public sealed class Graphics : IVisualizer
     {
         public Graphics(Canvas canvas, int width, int height)

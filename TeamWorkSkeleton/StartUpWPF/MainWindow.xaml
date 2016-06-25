@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StartUpWPF"
         mc:Ignorable="d"
-        Title="SoccerRPG" Height="540" Width="960"
-        Background="Black">
+        Title="SoccerRPG" Height="540" Width="960">
+    <Window.Background>
+        <ImageBrush ImageSource="imgs/bg-img.png"></ImageBrush>
+    </Window.Background>
+
     <Grid>
         <Grid.ColumnDefinitions>
         </Grid.ColumnDefinitions>
@@ -80,18 +83,25 @@
                 VerticalAlignment="Top" Width="120" Height="40" Click="ResetBtn_OnClick_Click"
                 FontFamily="consolas" FontSize="16" Background="Transparent" Foreground="DimGray"
                 BorderThickness="3" BorderBrush="LightGreen"/>
-        <ScrollViewer VerticalScrollBarVisibility="Auto"
-                      CanContentScroll="True"
-                      Background="LightGreen"
-                      Foreground="White"
-                      FontFamily="consolas"
-                      FontSize="16"
-                      Margin="160,455,152,24"
-                      Width="640" Height="30">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden"
+                      Margin="160,455,144,20"
+                      Width="646" Height="30"
+                      Background="PaleGreen">
             <TextBlock x:Name="LogTextBlock" 
-                   HorizontalAlignment="Left" Margin="160,450,0,0"
-                   TextWrapping="Wrap" Text="" 
-                   VerticalAlignment="Top"/>
+                   HorizontalAlignment="Left" Margin="10,3,10,0"
+                   TextWrapping="Wrap"   Text="" Foreground="ForestGreen"
+                   FontFamily="consolas" FontSize="16" 
+                   VerticalAlignment="Top" />
+        </ScrollViewer>
+        <ScrollViewer VerticalScrollBarVisibility="Hidden"
+                      Margin="160,20,144,458"
+                      Width="646" Height="30"
+                      Background="PaleGreen">
+            <TextBlock x:Name="InfoTextBlock" 
+                   HorizontalAlignment="Left" Margin="10,3,10,0"
+                   TextWrapping="Wrap"   Text="" Foreground="ForestGreen"
+                   FontFamily="consolas" FontSize="16" 
+                   VerticalAlignment="Top" />
         </ScrollViewer>
 
 

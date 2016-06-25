@@ -1,9 +1,12 @@
 ﻿namespace StartUpWPF
 {
-    using System.Windows;
+    using System;
     using Game.Logic;
     using Global.Settings.Visualization;
+    using System.Windows;
+    using Game.Tracker;
     using TeamWork.Football.Visualizer;
+    using TeamWork.Vsualizer.Text;
 
     /// <summary>
     /// App runs here.
@@ -11,11 +14,14 @@
     /// </summary>
     public partial class MainWindow : Window
     {
-        public Graphics GameGraphics { get; private set; }
+        internal Graphics GameGraphics { get; private set; }
+        internal TextBlockVisualizer TextBlockVisualizer { get; private set; }
 
         public MainWindow()
         {
             this.InitializeComponent();
+
+            this.InitializeTextBlockVisualizer(this.LogTextBlock);
 
             this.InitializeButtonManager();
             this.Buttons.Hide();
@@ -64,6 +70,9 @@
         /// <param name="e"></param>
         private void EndTurnBtn_Click(object sender, RoutedEventArgs e)
         {
+            this.LogTextBlock.Text = this.LogTextBlock.Text.Insert(0,
+                GameStateTracker.TurnNumber.ToString() + Environment.NewLine);
+
             // Increment Turn.
             if (!NextTurn.IncrementTurn())
             {

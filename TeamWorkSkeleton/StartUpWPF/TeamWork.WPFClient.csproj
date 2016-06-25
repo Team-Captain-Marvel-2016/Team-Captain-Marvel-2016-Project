@@ -78,6 +78,7 @@
     <Compile Include="MainWindowPartialClass\MovementImplementation.cs" />
     <Compile Include="MainWindowPartialClass\ShootImplementation.cs" />
     <Compile Include="MainWindowPartialClass\TackleImplementation.cs" />
+    <Compile Include="MainWindowPartialClass\TextBlockVisualizerImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -105,6 +106,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="imgs\bg-img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="imgs\footballpitch.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -157,6 +161,10 @@
     <ProjectReference Include="..\TeamWork.Models.PC.Reimplementation\TeamWork.Models.PC.Reimplementation.csproj">
       <Project>{39c7bcce-fe53-4fb6-8af1-1ed44947e635}</Project>
       <Name>TeamWork.Models.PC.Reimplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamWork.Vsualizer.Text\TeamWork.Vsualizer.Text.csproj">
+      <Project>{9d52f9c0-9f56-4f6e-a633-ba9665f7aa72}</Project>
+      <Name>TeamWork.Vsualizer.Text</Name>
     </ProjectReference>
     <ProjectReference Include="..\UI.Element.Manager\UI.Element.Manager.csproj">
       <Project>{6df8a08a-ad10-4502-aaef-c15e9bfac1bc}</Project>

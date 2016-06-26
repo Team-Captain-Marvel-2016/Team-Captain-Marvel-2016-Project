@@ -1,11 +1,14 @@
 ﻿namespace StartUpWPF
 {
-    using System.Windows.Controls;
     using Game.Tracker;
     using TeamWork.Vsualizer.Text;
 
     public partial class MainWindow
     {
+        /// <summary>
+        /// Wrap the TextBlocks in their
+        /// ITextVisualizer objects.
+        /// </summary>
         private void InitializeTextBlockVisualizer()
         {
             this.TextBlockBottom = new TextBlockVisualizer(this.LogTextBlock);
@@ -15,6 +18,9 @@
             this.TextBlockTop.Hide();
         }
 
+        /// <summary>
+        /// Displays Score, Player on turn and turn number
+        /// </summary>
         private void UpdateInfoText()
         {
             this.TextBlockTop.Display(
@@ -26,6 +32,10 @@
                     GameStateTracker.PlayerOnTurn.PlayerCharacter.Name));
         }
 
+        /// <summary>
+        /// Displays the name of the current football player
+        /// and the remaining AP.
+        /// </summary>
         private void UpdatePlayerText()
         {
             this.TextBlockBottom.Display(

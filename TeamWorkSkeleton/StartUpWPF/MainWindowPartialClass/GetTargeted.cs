@@ -26,24 +26,12 @@
         }
 
         /// <summary>
-        /// Add methods handling Tackle to MouseDown event
+        /// Searches for a football player object
+        /// based on the Canvas Children index of its
+        /// VisualToken.
         /// </summary>
-        private void AddMouseDownEventTackle()
-        {
-            foreach (var footballPlayer in GameStateTracker.PlayerOnTurn.PlayerCharacter.Team.Team)
-            {
-                footballPlayer.VisualToken.MouseDown += OnMouseDownTackle;
-            }
-        }
-
-        private void RemoveMouseDownEventTackle()
-        {
-            foreach (var footballPlayer in GameStateTracker.PlayerOnTurn.PlayerCharacter.Team.Team)
-            {
-                footballPlayer.VisualToken.MouseDown += OnMouseDownTackle;
-            }
-        }
-
+        /// <param name="index"></param>
+        /// <returns></returns>
         private IFootballPlayer GetTargetPlayer(int index)
         {
             foreach (var footballPlayer in GameStateTracker.PlayerOnTurn.PlayerCharacter.Team.Team)

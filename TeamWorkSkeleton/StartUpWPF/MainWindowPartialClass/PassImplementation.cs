@@ -1,10 +1,8 @@
 ﻿namespace StartUpWPF
 {
-    using Game.PlayingField.Methods;
     using Game.Tracker;
     using Global.Contracts;
     using System;
-    using System.Collections.Generic;
     using System.Windows;
     using System.Windows.Shapes;
     using Global.Settings.Visualization;
@@ -13,6 +11,12 @@
     {
         private delegate void OnMouseDownAdd(object sender, EventArgs args);
 
+        /// <summary>
+        /// Add an OnMouseDown event to the VisualTokens
+        /// of all friendly targets.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PassBtn_OnClick(object sender, RoutedEventArgs e)
         {
             // Select Target.
@@ -21,6 +25,15 @@
             this.AddMouseDownEventPass();
         }
 
+        /// <summary>
+        /// object sender is the VisualToken of the target player.
+        /// Identify the football player object through it's 
+        /// visual token.
+        /// Check for enemey players which can affect the pass.
+        /// Calculate the action for each enemy in range.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
         private void OnMouseDownPass(object sender, EventArgs args)
         {
             // Remove Event.
@@ -56,42 +69,13 @@
                 this.UpdateGameStateOnUnsuccessfulPass(interceptintPlayer);
             }
         }
-
-        private List<IFootballPlayer> GetEnemyPlayers(IFootballPlayer target)
-        {
-            // Find enemy players.
-            var coordinatesWithObjects =
-                GridPositionUtils
-                    .FindObjectsInRange(GameStateTracker.SelectedFootballPlayer, target);
-
-            var opponent = GameStateTracker.GetOpponent();
-
-            var listOfEnemyPlayers =
-                opponent.PlayerCharacter.GetPlayersOnPositionsList(coordinatesWithObjects);
-
-            return listOfEnemyPlayers;
-        }
-
-        private bool GetEnemeiesForTackle(int startRow, int startCol)
-        {
-            var coordinatesWithObjects = PlayingFieldMethods.FindOccupiedPositionsInRange(startRow, startCol);
-
-            var opponent = GameStateTracker.GetOpponent();
-
-            var listOfEnemyPlayers =
-                opponent.PlayerCharacter.GetPlayersOnPositionsList(coordinatesWithObjects);
-
-            foreach (var player in listOfEnemyPlayers)
-            {
-                if (player.HasBall)
-                {
-                    return true;
-                }
-            }
-
-            return false;
-        }
-
+        
+        /// <summary>
+        /// Transfer the "ball" to the target player.
+        /// Adjust GameStateTracker props
+        /// Adjust Visuals
+        /// </summary>
+        /// <param name="targetFootballPlayer"></param>
         private void UpdateGameStateOnSuccessfulPass(IFootballPlayer targetFootballPlayer)
         {
             GameStateTracker.FootballPlayerWithBall.HasBall = false;
@@ -106,6 +90,12 @@
             this.DisplayUIZeroAP?.Invoke(this, null);
         }
 
+        /// <summary>
+        /// Transfer the ball to the intercepting enemy player.
+        /// Adjust GameStateTracker props
+        /// Adjust visuals.
+        /// </summary>
+        /// <param name="enemyPlayer"></param>
         private void UpdateGameStateOnUnsuccessfulPass(IFootballPlayer enemyPlayer)
         {
             GameStateTracker.FootballPlayerWithBall.HasBall = false;

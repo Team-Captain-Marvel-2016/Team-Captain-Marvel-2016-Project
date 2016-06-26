@@ -30,6 +30,18 @@
             this.Move(GameStateTracker.SelectedFootballPlayer.MoveRight);
         }
 
+        /// <summary>
+        /// Unmark a player from the PlayingField grid,
+        /// perform the action ( football player method )
+        /// Mark the new position on the grid. 
+        /// In case of an exception ( indeces out of range of the array )
+        /// then cannot move.
+        /// If the move was successfull - update the position 
+        /// of the VisualToken on the canvas.
+        /// Last Display the appropriate action buttons depending 
+        /// on position and update the Info text.
+        /// </summary>
+        /// <param name="action"></param>
         private void Move(Action action)
         {
             if (GameStateTracker.SelectedFootballPlayer.ActionPoints <= 0)

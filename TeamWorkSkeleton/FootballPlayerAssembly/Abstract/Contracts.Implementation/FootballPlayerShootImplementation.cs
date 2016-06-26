@@ -8,7 +8,27 @@
     {
         public bool Shoot(IDefenseStats enemy)
         {
-            throw new NotImplementedException();
+            if (enemy == null) throw new ApplicationException("Invalid Argument");
+
+            var thisScore = this.StatShoot
+                            + DiceOne.Roll()
+                            + DiceTwo.Roll();
+
+            var enemyScore = enemy.StatSave
+                             + DiceOne.Roll()
+                             + DiceTwo.Roll();
+
+            bool isGoal = thisScore > enemyScore;
+            
+            if(isGoal)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+           
         }
     }
 }

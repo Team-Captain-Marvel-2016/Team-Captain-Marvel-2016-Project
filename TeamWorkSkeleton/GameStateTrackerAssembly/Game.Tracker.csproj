@@ -45,10 +45,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FootballPlayerAssembly\TeamWork.Models.csproj">
-      <Project>{D46F609D-BBA1-47DF-AEA0-DA4479FCB741}</Project>
-      <Name>TeamWork.Models</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GlobalDataStructures\Global.DataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>Global.DataStructures</Name>

@@ -106,6 +106,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="txt-assets\neptunian-names.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="imgs\bg-img.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

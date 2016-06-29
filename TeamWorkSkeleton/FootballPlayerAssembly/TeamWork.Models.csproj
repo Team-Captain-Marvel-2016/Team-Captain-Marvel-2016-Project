@@ -123,6 +123,10 @@
       <Project>{965a0d47-8b9e-4d47-93d9-ca51497d5472}</Project>
       <Name>Global.Enumerations</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Global.IO\Global.IO.csproj">
+      <Project>{fae8ee60-5267-4154-b491-4fe98da80fc3}</Project>
+      <Name>Global.IO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GlobalDataStructures\Global.DataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>Global.DataStructures</Name>

@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    public interface IWriter
+    public interface IWriter 
     {
         void Write<T>(IEnumerable<T> collection);
     }

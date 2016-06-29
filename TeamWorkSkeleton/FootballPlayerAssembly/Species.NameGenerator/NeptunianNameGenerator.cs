@@ -21,7 +21,7 @@
             var file = new FileInfo(FileName);
             var myReader = new MyFileReader(file);
             var names = myReader.Read();
-
+            
             // Get bounds for random generator
             var bound = names.Count;
 
@@ -30,7 +30,8 @@
 
             for (int i = 0; i < LengthInNames; i++)
             {
-                namesToAdd.Add(names
+                namesToAdd.Add(
+                    names
                         .Skip(GenericRandomization.Random.Next(0, bound - 1))
                         .Take(1).First());
             }

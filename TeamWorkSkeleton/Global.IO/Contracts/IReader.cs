@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    public interface IReader
+    public interface IReader 
     {
         ICollection<string> Read();
     }

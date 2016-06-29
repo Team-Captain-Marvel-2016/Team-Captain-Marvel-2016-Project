@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TeamWork.Models.Abstract.FootballPlayer" Collapsed="true">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAUBgAAQAIQENgGwEECAAAQIAAAACIAIcAIYAAQAVCA=</HashCode>
+      <FileName>Abstract\Contracts.Implementation\FootballPlayer.IDrawOnCanvas.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Human" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Human.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Jupiterian" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Jupiterian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Martian" Collapsed="true">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Martian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Mercurian" Collapsed="true">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Mercurian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Neptunian" Collapsed="true">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Neptunian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Sagittariusian" Collapsed="true">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Sagittariusian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Uranian" Collapsed="true">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Uranian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Venusian" Collapsed="true">
+    <Position X="12.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Venusian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.HumanFootballPlayer.FootballPlayerFactory">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TeamWork.Models.Roles.HumanFootballPlayer.FootballPlayerFactory.HumanDefender" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\HumanFootballPlayer\HumanDefender.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.HumanFootballPlayer.FootballPlayerFactory.HumanAttacker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\HumanFootballPlayer\HumanAttacker.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.HumanFootballPlayer.FootballPlayerFactory.HumanGoalkeeper" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\HumanFootballPlayer\HumanGoalkeeper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.HumanFootballPlayer.FootballPlayerFactory.HumanMidfielder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\HumanFootballPlayer\HumanMidfielder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\HumanFootballPlayer\HumanAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.JupiterianFootballPlayer.FootballPlayerFactory">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TeamWork.Models.Roles.JupiterianFootballPlayer.FootballPlayerFactory.JupiterianAttacker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\JupiterianFootballPlayer\JupiterianAttacker.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.JupiterianFootballPlayer.FootballPlayerFactory.JupiterianDefender" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\JupiterianFootballPlayer\JupiterianDefender.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.JupiterianFootballPlayer.FootballPlayerFactory.JupiterianGoalkeeper" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\JupiterianFootballPlayer\JupiterianGoalkeeper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.JupiterianFootballPlayer.FootballPlayerFactory.JupiterianMidfielder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\JupiterianFootballPlayer\JupiterianMidfielder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\JupiterianFootballPlayer\JupiterianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.MartianFootballPlayer.FootballPlayerFactory">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TeamWork.Models.Roles.MartianFootballPlayer.FootballPlayerFactory.MartianAttacker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\MartianFootballPlayer\MartianAttacker.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.MartianFootballPlayer.FootballPlayerFactory.MartianDefender" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\MartianFootballPlayer\MartianDefender.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.MartianFootballPlayer.FootballPlayerFactory.MartianGoalkeeper" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\MartianFootballPlayer\MartianGoalkeeper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.MartianFootballPlayer.FootballPlayerFactory.MartianMidfielder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\MartianFootballPlayer\MartianMidfielder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\MartianFootballPlayer\MartianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.MercurianFootballPlayer.FootballPlayerFactory">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TeamWork.Models.Roles.MercurianFootballPlayer.FootballPlayerFactory.MercurianAttacker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\MercurianFootballPlayer\MercurianAttacker.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.MercurianFootballPlayer.FootballPlayerFactory.MercurianDefender" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\MercurianFootballPlayer\MercurianDefender.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.MercurianFootballPlayer.FootballPlayerFactory.MercurianGoalkeeper" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\MercurianFootballPlayer\MercurianGoalkeeper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.MercurianFootballPlayer.FootballPlayerFactory.MercurianMidfielder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\MercurianFootballPlayer\MercurianMidfielder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\MercurianFootballPlayer\MercurianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.NeptunianFootballPlayer.FootballPlayerFactory">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TeamWork.Models.Roles.NeptunianFootballPlayer.FootballPlayerFactory.NeptunianAttacker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\NeptunianFootballPlayer\NeptunianAttacker.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.NeptunianFootballPlayer.FootballPlayerFactory.NeptunianDefender" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\NeptunianFootballPlayer\NeptunianDefender.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.NeptunianFootballPlayer.FootballPlayerFactory.NeptunianGoalkeeper" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\NeptunianFootballPlayer\NeptunianGoalkeeper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.NeptunianFootballPlayer.FootballPlayerFactory.NeptunianMidfielder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\NeptunianFootballPlayer\NeptunianMidfielder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\NeptunianFootballPlayer\NeptunianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.SagittariusianFootballPlayer.FootballPlayerFactory">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TeamWork.Models.Roles.SagittariusianFootballPlayer.FootballPlayerFactory.SagittariusianAttacker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\SagittariusianFootballPlayer\SagittariusianAttacker.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.SagittariusianFootballPlayer.FootballPlayerFactory.SagittariusianDefender" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\SagittariusianFootballPlayer\SagittariusianDefender.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.SagittariusianFootballPlayer.FootballPlayerFactory.SagittariusianGoalkeeper" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\SagittariusianFootballPlayer\SagittariusianGoalKeeper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.SagittariusianFootballPlayer.FootballPlayerFactory.SagittariusianMidfielder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\SagittariusianFootballPlayer\SagittariusianMidFielder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\SagittariusianFootballPlayer\SagittariusianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.UranianFootballPlayer.FootballPlayerFactory">
+    <Position X="11" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TeamWork.Models.Roles.UranianFootballPlayer.FootballPlayerFactory.UranianAttacker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\UranianFootballPlayer\UranianAttacker.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.UranianFootballPlayer.FootballPlayerFactory.UranianDefender" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\UranianFootballPlayer\UranianDefender.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.UranianFootballPlayer.FootballPlayerFactory.UranianGoalkeeper" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\UranianFootballPlayer\UranianGoalkeeper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.UranianFootballPlayer.FootballPlayerFactory.UranianMidfielder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\UranianFootballPlayer\UranianMidfielder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\UranianFootballPlayer\UranianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.VenusianFootballPlayer.FootballPlayerFactory">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TeamWork.Models.Roles.VenusianFootballPlayer.FootballPlayerFactory.VenusianAttacker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\VenusianFootballPlayer\VenusianAttacker.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.VenusianFootballPlayer.FootballPlayerFactory.VenusianDefender" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\VenusianFootballPlayer\VenusianDefender.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.VenusianFootballPlayer.FootballPlayerFactory.VenusianGoalkeeper" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\VenusianFootballPlayer\VenusianGoalkeeper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamWork.Models.Roles.VenusianFootballPlayer.FootballPlayerFactory.VenusianMidfielder" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Roles\VenusianFootballPlayer\VenusianMidfielder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\VenusianFootballPlayer\VenusianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Settings.Attacker">
+    <Position X="9.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAAQEBAIAAAAAAAAAAAAAAAAAAAAAAgAgAAA=</HashCode>
+      <FileName>Factory.Settings\Attacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Settings.Defender">
+    <Position X="5.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAAQEBAIAAAAAAAAAAAAAAAAAAAAAAgAgAAA=</HashCode>
+      <FileName>Factory.Settings\Defender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Settings.Goalkeeper">
+    <Position X="4" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAAQEBAIAAAAAAAAAAAAAAAAAAAAAAgAgAAA=</HashCode>
+      <FileName>Factory.Settings\Goalkeeper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Settings.Midfielder">
+    <Position X="7.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAAQEBAIAAAAAAAAAAAAAAAAAAAAAAgAgAAA=</HashCode>
+      <FileName>Factory.Settings\Midfielder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

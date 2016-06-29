@@ -1,5 +1,4 @@
 #Team Captain Marvel 2016
-###[Team Captain Marvel on GitHub](https://github.com/Team-Captain-Marvel-2016)
 
 | name | TALS | github 
 | :------------------ | :-------------------: | :--------------------: |
@@ -11,6 +10,8 @@
 | Спас Стоимиров | sstoimirov | [sstoimirov](https://github.com/sstoimirov) |
 | Христо Тодоров | todorovh | [shakuu](https://github.com/shakuu) |
 
+------------------
+##[Team Captain Marvel on GitHub](https://github.com/Team-Captain-Marvel-2016)
 
 ------------------
 ## Class Diagrams

@@ -26,7 +26,7 @@
                     value,
                     string.Format(
                         ErrorMessages.IsNull,
-                        nameof(this.File)));
+                        nameof(value)));
 
                 Validator.CheckIfFileExists(
                     value,

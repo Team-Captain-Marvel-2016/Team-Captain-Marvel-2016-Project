@@ -1,6 +1,7 @@
 #Team Captain Marvel 2016
+##[Team Captain Marvel on GitHub](https://github.com/Team-Captain-Marvel-2016)
 
-| name | username | github 
+| name | TALS | github 
 | :------------------ | :-------------------: | :--------------------: |
 | Златин Костов | owolp | [owolp](https://github.com/owolp) |
 | Иван Китанов | optional303 | [optional303](https://github.com/optional303) |
@@ -11,4 +12,8 @@
 | Христо Тодоров | todorovh | [shakuu](https://github.com/shakuu) |
 
 
-[Team Captain Marvel on GitHub](https://github.com/Team-Captain-Marvel-2016)
+------------------
+## Class Diagrams
+  - [Football Players](https://github.com/Team-Captain-Marvel-2016/TeamWorkSkeletonSample/blob/master/TeamWorkSkeleton/FootballPlayerAssembly/FootballPlayerDiagram.cd0)
+
+  

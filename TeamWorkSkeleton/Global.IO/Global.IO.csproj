@@ -42,8 +42,13 @@
   <ItemGroup>
     <Compile Include="Contracts\IFileIO.cs" />
     <Compile Include="Contracts\IReader.cs" />
+    <Compile Include="Contracts\IWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reader\MyFileReader.cs" />
+    <Compile Include="Models\FileIO.cs" />
+    <Compile Include="Models\MyFileReader.cs" />
+    <Compile Include="Models\MyFileWriter.cs" />
+    <Compile Include="Validation\ErrorMessages.cs" />
+    <Compile Include="Validation\Validator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

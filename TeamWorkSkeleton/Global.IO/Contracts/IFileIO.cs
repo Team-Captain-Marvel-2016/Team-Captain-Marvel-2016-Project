@@ -5,5 +5,7 @@
     public interface IFileIO
     {
         FileInfo File { get; }
+
+        void SetFile(FileInfo file);
     }
 }

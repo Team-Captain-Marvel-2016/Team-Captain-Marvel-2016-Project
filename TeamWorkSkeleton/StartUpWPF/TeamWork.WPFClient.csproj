@@ -109,9 +109,9 @@
     <Content Include="txt-assets\neptunian-names.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="imgs\bg-img.png">
+    <Content Include="imgs\bg-img.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </Content>
     <Content Include="imgs\footballpitch.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -129,6 +129,10 @@
       <Project>{8df2c670-9460-4f7e-b938-711fc77ed1ec}</Project>
       <Name>Game.Logic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GameLogicEventsAssembly\Game.Events.csproj">
+      <Project>{A2430F2B-79F1-461E-A64A-60A1D9E4F5F7}</Project>
+      <Name>Game.Events</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GameStateTrackerAssembly\Game.Tracker.csproj">
       <Project>{d36ce9ea-4307-4d40-951a-054299f9b09b}</Project>
       <Name>Game.Tracker</Name>

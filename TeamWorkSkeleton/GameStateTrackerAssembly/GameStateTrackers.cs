@@ -1,7 +1,9 @@
 ﻿namespace Game.Tracker
 {
+    using System;
     using Global.Contracts;
     using System.Drawing;
+    using Events;
     using TeamWork.Models.PC.Reimplementation.Contracts;
 
     /// <summary>
@@ -18,6 +20,8 @@
         static GameStateTracker()
         {
             GameLengthTurns = 90;
+
+            ResetGameState.ResetGameEvent += OnGameReset;
         }
 
         public static int GameLengthTurns { get; private set; }
@@ -47,6 +51,18 @@
                 : (IPlayer) TeamWork.Models.PC.Reimplementation.Models.PlayerOne.Instance;
 
             return opponent;
+        }
+
+        /// <summary>
+        /// Resets game state when the ResetButton is pressed.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
+        private static void OnGameReset(object sender, EventArgs args)
+        {
+            TurnNumber = 1;
+            PlayerOneScore = 0;
+            PlayerTwoScore = 0;
         }
     }
 }

@@ -33,7 +33,7 @@ Each species calls a unique Name generating method ( and should be applying a sp
 Each FootballPlayer implements the IDrawOnCanvas interface on the opposite end our Graphics class draws IDrawOnCanvas objects on it's encapsulated Canvas object.
 
 IDrawOnCanvas contains a VisualToken property ( an Ellipse in this case ), the size and color of it. Also the FieldPosition ( position in pixels within the canvas ) and Grid Position on the PlayingField.
-GridPosition allows us to track player position on a predetermined grid and implement game logic based on that, field position translates those positions for drawing, with the help of a position grid array, which contains the pixel position corresponding to each grid position and is generated based on the canvas size in pixels. All sizes are kept in a static class as readonly properties ( private setters and a static constructor )
+GridPosition allows us to track player position on a predetermined grid and implement game logic based on that, field position translates those positions for drawing, with the help of a position grid array, which contains the pixel position corresponding to each grid position and is generated based on the canvas size in pixels, wrapped in struct PositionXY objects. All sizes are kept in a static class as readonly properties ( private setters and a static constructor ).
 
 We use the change of color to communicate ball possession and change of size to communicate the currently controlled football player.
 

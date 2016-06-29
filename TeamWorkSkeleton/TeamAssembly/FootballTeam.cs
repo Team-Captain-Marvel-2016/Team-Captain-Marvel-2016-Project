@@ -42,7 +42,7 @@
                 CreateAFootballTeamByFormation(formation);
         }
 
-        public List<IFootballPlayer> Team { get; set; }
+        public IList<IFootballPlayer> Team { get; set; }
 
         public string TeamName
         {

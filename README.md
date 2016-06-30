@@ -19,26 +19,17 @@
 SoccerRPG is a turn-based, stat-based football game. Players on each team take turns controlling one of their football players each turn.
 Possible player actions - movement, pass, call for pass, shoot, tackle, depending on the current ball posseission.
 
-Each team is manufactured out of a factory, based on a preset ( enum FormationType ) which determines the number of football players on each position.
+Each team is manufactured out of a factory. We store options in enums, then generate random values within that range. First we pick a formation for the football team, based on that we generate the appropriate number of players for each position.
 
-Each position has a range for generating each statistic set in namespace TeamWork.Models.Factory.Settings. Each static class contains a set of readonly struct RangeMinMax() ranges.
+We store limitations for each position in a separate static class. The factory wraps those base stats in a GenericFootballPlayer objects, then picks a random species out of the enum SpeciesType and passes the generated stats to the appropriate constructing method.
 
-The factory wraps the randomly generated set of stats in a GenericFootballPlayer and randomly picks a species to which constructor to pass those stats. 
+We use IDrawOnCanvas to draw. Each FootballPlayer objects implements it, our Graphics class draws IDrawOnCanvas objects on its encapsulated Canvas. The interface requires each object implementing it have a visual token ( an Ellipse in this case ), have methods to manipulate it's size and color and store it's position.
 
-The randomizer gets the size of enum SpeciesType, picks a random number in that range, takes the value as string and calls the method containing the string of the enum value refelctively.
-As a bonus this made the process of "plugging in" new species quite straight forward.
+We have an ElementManager class which manages IUIElementGroups, each group has methods for subscribing and unsubscring from events. We use these to display and hide appropriate control Button-s.
 
-Each species calls a unique Name generating method ( and should be applying a species unique stat bonuses ).
+We also use MouseDown events on each appropriate Canvas.Children object to select a target for passing, indetifying the sender object to a FootballPlayer object through it's Canvas.Children index.
 
-Each FootballPlayer implements the IDrawOnCanvas interface on the opposite end our Graphics class draws IDrawOnCanvas objects on it's encapsulated Canvas object.
-
-IDrawOnCanvas contains a VisualToken property ( an Ellipse in this case ), the size and color of it. Also the FieldPosition ( position in pixels within the canvas ) and Grid Position on the PlayingField.
-GridPosition allows us to track player position on a predetermined grid and implement game logic based on that, field position translates those positions for drawing, with the help of a position grid array, which contains the pixel position corresponding to each grid position and is generated based on the canvas size in pixels, wrapped in struct PositionXY objects. All sizes are kept in a static class as readonly properties ( private setters and a static constructor ).
-
-We use the change of color to communicate ball possession and change of size to communicate the currently controlled football player.
-
-We've implemented an ElementManager class which displays and hides UI elements ( the control buttons ) based on events invoked depending on the game state and player actions.
-The ElementManager manages IUIElementGroup objects, which we've implemented through ButtonGroups. Each group has methods to subscribe and unsubscire it's elements to a passed event.
+Our structs store positions on the canvas and on our PlayingField, also we have a struct MinMaxRange, which is used for storing the constaints for generating FootballPlayer objects.
 
 ------------------
 ## Class Diagrams

@@ -1,6 +1,6 @@
 ﻿namespace Global.IO.Models
 {
-    using System.Collections.Generic;
+    using System.Collections;
     using System.IO;
     using System.Text;
 
@@ -18,7 +18,7 @@
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="collection"></param>
-        public void Write<T>(IEnumerable<T> collection)
+        public void Write(IEnumerable collection)
         {
             var stream = new FileStream(
                 this.File.FullName, 

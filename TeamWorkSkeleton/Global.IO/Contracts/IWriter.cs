@@ -1,9 +1,9 @@
 ﻿namespace Global.IO.Contracts
 {
-    using System.Collections.Generic;
+    using System.Collections;
 
     public interface IWriter 
     {
-        void Write<T>(IEnumerable<T> collection);
+        void Write(IEnumerable collection);
     }
 }

@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("StartUpWPF")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("SoccerRPG")]
+[assembly: AssemblyDescription("Team Captain Marvel 2016 - Team Work Project")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("StartUpWPF")]
+[assembly: AssemblyCompany("Team Captain Marvel @ Telerik Academy 2016")]
+[assembly: AssemblyProduct("SoccerRPG")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

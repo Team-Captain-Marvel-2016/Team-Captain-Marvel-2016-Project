@@ -2,9 +2,9 @@
 {
     using Global.DataStructures;
 
-    internal static class Attacker
+    internal class AttackerSettings : IFactorySettings
     {
-        static Attacker()
+        internal AttackerSettings()
         {
             Pass = new MinMaxRange(50, 90);
             Shoot = new MinMaxRange(70, 100);
@@ -18,20 +18,20 @@
             Ap = new MinMaxRange(4, 6);
         }
 
-        internal static MinMaxRange Ap { get; private set; }
-
-        internal static MinMaxRange Awareness { get; private set; }
-
-        internal static MinMaxRange Intercept { get; private set; }
-
-        internal static MinMaxRange Tackle { get; private set; }
-
-        internal static MinMaxRange Save { get; private set; }
-
-        internal static MinMaxRange Dribble { get; private set; }
-
-        internal static MinMaxRange Shoot { get; private set; }
-
-        internal static MinMaxRange Pass { get; private set; }
+        public MinMaxRange Ap { get; private set; }
+              
+        public MinMaxRange Awareness { get; private set; }
+              
+        public MinMaxRange Intercept { get; private set; }
+              
+        public MinMaxRange Tackle { get; private set; }
+              
+        public MinMaxRange Save { get; private set; }
+              
+        public MinMaxRange Dribble { get; private set; }
+              
+        public MinMaxRange Shoot { get; private set; }
+              
+        public MinMaxRange Pass { get; private set; }
     }
 }

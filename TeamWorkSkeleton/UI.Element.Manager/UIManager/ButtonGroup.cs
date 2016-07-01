@@ -18,6 +18,8 @@
         private readonly IList<Button> buttons;
         private readonly IList<string> buttonNames;
 
+        private readonly IValidate validator;
+
         private string myName;
 
         public ButtonGroup(string name)
@@ -25,6 +27,7 @@
             this.Name = name;
             this.buttons = new List<Button>();
             this.buttonNames = new List<string>();
+            this.validator = new Validate();
         }
 
         public ButtonGroup(string name, params EventHandler[] events)
@@ -41,7 +44,7 @@
             }
             private set
             {
-                if (Validate.ElementNull(value))
+                if (this.validator.ElementNull(value))
                 {
                     throw new ElementManagerException("Name is Empty");
                 }
@@ -58,7 +61,7 @@
         {
             get
             {
-                if (Validate.IndexExists(index, this.buttons))
+                if (this.validator.IndexExists(index, this.buttons))
                 {
                     return this.buttons[index];
                 }
@@ -73,7 +76,7 @@
         {
             get
             {
-                if (Validate.ElementExists(name, this.buttonNames))
+                if (this.validator.ElementExists(name, this.buttonNames))
                 {
                     var index = this.buttonNames.IndexOf(name);
 
@@ -96,7 +99,7 @@
                     ("Incorrect input object type");
             }
 
-            if (Validate.ElementExists(button.Name, this.buttonNames))
+            if (this.validator.ElementExists(button.Name, this.buttonNames))
             {
                 throw new ElementManagerException
                     ("Element already exists");
@@ -108,7 +111,7 @@
 
         public void Remove(int index)
         {
-            if (!Validate.IndexExists(index, this.buttons))
+            if (!this.validator.IndexExists(index, this.buttons))
             {
                 throw new ElementManagerException
                     ("Invalid index");
@@ -120,7 +123,7 @@
 
         public void Remove(string name)
         {
-            if (Validate.ElementExists(name, this.buttonNames))
+            if (this.validator.ElementExists(name, this.buttonNames))
             {
                 var index = this.buttonNames.IndexOf(name);
 

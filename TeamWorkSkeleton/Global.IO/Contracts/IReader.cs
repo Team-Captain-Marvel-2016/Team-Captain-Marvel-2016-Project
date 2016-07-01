@@ -4,6 +4,6 @@
 
     public interface IReader 
     {
-        ICollection<string> Read();
+        IList<string> Read();
     }
 }

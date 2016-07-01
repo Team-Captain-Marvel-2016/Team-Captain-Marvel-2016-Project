@@ -9,22 +9,26 @@
     /// <summary>
     /// Manages a list of ButtonGroups.
     /// </summary>
-    public class ElementManager : IEnumerable<IElementGroup>
+    public class ElementManager : IElementManager, IEnumerable<IElementGroup>
     {
         private readonly IList<IElementGroup> groups;
         private readonly IList<string> groupNames;
+
+        private readonly IValidate validator;
 
         public ElementManager()
         {
             this.groups = new List<IElementGroup>();
             this.groupNames = new List<string>();
+
+            this.validator = new Validate();
         }
 
         public IElementGroup this[int index]
         {
             get
             {
-                if (Validate.IndexExists(index, this.groups))
+                if (this.validator.IndexExists(index, this.groups))
                 {
                     return this.groups[index];
                 }
@@ -39,7 +43,7 @@
         {
             get
             {
-                if (Validate.ElementExists(name, this.groupNames))
+                if (this.validator.ElementExists(name, this.groupNames))
                 {
                     var index = this.groupNames.IndexOf(name);
 
@@ -54,7 +58,7 @@
 
         public void Add(IElementGroup group)
         {
-            if (Validate.ElementExists(group.Name, this.groupNames))
+            if (this.validator.ElementExists(group.Name, this.groupNames))
             {
                 throw new ElementManagerException
                     ("Element already exists");
@@ -62,11 +66,13 @@
 
             this.groups.Add(group);
             this.groupNames.Add(group.Name);
+
+            
         }
 
         public void Remove(IElementGroup group)
         {
-            if (Validate.ElementExists(group.Name, this.groupNames))
+            if (this.validator.ElementExists(group.Name, this.groupNames))
             {
                 this.Remove(group);
             }

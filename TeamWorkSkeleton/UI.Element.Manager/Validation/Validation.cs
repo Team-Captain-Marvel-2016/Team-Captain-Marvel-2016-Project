@@ -3,23 +3,24 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using Contracts;
 
-    internal static class Validate
+    internal class Validate : IValidate
     {
-        internal static bool ElementExists<T>(T element, ICollection<T> collection)
+        public bool ElementExists<T>(T element, ICollection<T> collection)
             where T : IComparable<T>
         {
             return (collection.Any(el => el.CompareTo(element) == 0));
         }
 
-        internal static bool IndexExists<T>(int index, ICollection<T> collection)
+        public bool IndexExists<T>(int index, ICollection<T> collection)
         {
             return (0 <= index && index <= collection.Count - 1);
         }
 
-        internal static bool ElementNull(object element)
+        public bool ElementNull(object element)
         {
             return element == null;
-  ;      }
+        }
     }
 }

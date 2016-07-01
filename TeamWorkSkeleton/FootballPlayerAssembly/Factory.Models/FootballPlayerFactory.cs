@@ -1,14 +1,13 @@
 ﻿
 namespace TeamWork.Models.Factory.Models
 {
-    using System;
-    using System.Linq;
     using System.Reflection;
     using Generic;
     using Global.Contracts;
     using Global.Enumerations.Factory;
     using Global.Enumerations.Utils;
     using Global.Randomization;
+    using Settings;
     using FootballPlayer = Abstract.FootballPlayer;
 
     /// <summary>
@@ -67,7 +66,7 @@ namespace TeamWork.Models.Factory.Models
         {
             // Generate base stats.
             var baseStatsGenericPlayer =
-                CreateGenericFootballPlayer.CreateGenericAttacker();
+                CreateGenericFootballPlayer.CreateGeneric(new AttackerSettings());
 
             // Pick Species.
             var species = PickSpecies();
@@ -87,7 +86,7 @@ namespace TeamWork.Models.Factory.Models
         {
             // Generate base stats.
             var baseStatsGeneric =
-                CreateGenericFootballPlayer.CreateGenericDefender();
+                CreateGenericFootballPlayer.CreateGeneric(new DefenderSettings());
 
             // Pick Species.
             var species = PickSpecies();
@@ -105,9 +104,10 @@ namespace TeamWork.Models.Factory.Models
 
         private static FootballPlayer CreateMidfielder()
         {
+            // TODO:
             // Generate base stats.
             var baseStatsGeneric =
-                CreateGenericFootballPlayer.CreateGenericMidfielder();
+                CreateGenericFootballPlayer.CreateGeneric(new MidfielderSettings());
 
             // Pick Species.
             var species = PickSpecies();
@@ -127,7 +127,7 @@ namespace TeamWork.Models.Factory.Models
         {
             // Generate base stats.
             var baseStatsGeneric =
-                CreateGenericFootballPlayer.CreateGenericGoalkeeper();
+                CreateGenericFootballPlayer.CreateGeneric(new GoalkeeperSettings());
 
             // Pick Species.
             var species = PickSpecies();

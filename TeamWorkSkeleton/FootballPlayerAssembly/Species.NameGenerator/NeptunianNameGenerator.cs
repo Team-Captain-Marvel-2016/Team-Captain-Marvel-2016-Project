@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.ObjectModel;
     using System.IO;
     using System.Linq;
     using Global.IO.Models;
@@ -21,19 +22,17 @@
             var file = new FileInfo(FileName);
             var myReader = new MyFileReader(file);
             var names = myReader.Read();
-            
+
             // Get bounds for random generator
             var bound = names.Count;
 
             // Create a list to fill
-            var namesToAdd = new List<string>();
+            var namesToAdd = new Collection<string>();
 
             for (int i = 0; i < LengthInNames; i++)
             {
                 namesToAdd.Add(
-                    names
-                        .Skip(GenericRandomization.Random.Next(0, bound - 1))
-                        .Take(1).First());
+                    names[GenericRandomization.Random.Next(0, bound - 1)]);
             }
 
             return String.Format(

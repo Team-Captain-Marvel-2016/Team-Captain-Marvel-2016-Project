@@ -9,7 +9,7 @@
 
         bool HasBallPossession { get; set; }
 
-        List<IFootballPlayer> Team { get; }
+        IList<IFootballPlayer> Team { get; }
 
         FormationType FormationType { get; }
         

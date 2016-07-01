@@ -17,7 +17,7 @@
             return (0 <= index && index <= collection.Count - 1);
         }
 
-        internal static bool ElementNull<T>(T element)
+        internal static bool ElementNull(object element)
         {
             return element == null;
   ;      }

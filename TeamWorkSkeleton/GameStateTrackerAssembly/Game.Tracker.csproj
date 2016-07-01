@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GameLogicEventsAssembly\Game.Events.csproj">
+      <Project>{A2430F2B-79F1-461E-A64A-60A1D9E4F5F7}</Project>
+      <Name>Game.Events</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GlobalDataStructures\Global.DataStructures.csproj">
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>Global.DataStructures</Name>

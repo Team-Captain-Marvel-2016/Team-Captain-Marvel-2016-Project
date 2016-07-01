@@ -19,7 +19,7 @@
         public MainWindow()
         {
             this.InitializeComponent();
-            
+
             this.ScrollViewerBot.Visibility = Visibility.Collapsed;
             this.ScrollViewerTop.Visibility = Visibility.Collapsed;
 
@@ -58,9 +58,9 @@
             this.GameGraphics = new Graphics(this.PlayFieldCanvas, width, height);
 
             InitialGameState.InitializeVisualizer(this.GameGraphics);
-            
+
             InitialGameState.InitializeFirstTurn(this.GameGraphics);
-            
+
             // Display all 
             this.DisplayUI();
 
@@ -70,6 +70,7 @@
             // Update Top TextBlock
             this.UpdateInfoText();
             this.UpdatePlayerText();
+
         }
 
         /// <summary>
@@ -110,6 +111,7 @@
             ResetGameMethods.ResetGame();
 
             this.GameGraphics.Reset();
+            
             this.StartBtn.Visibility = Visibility.Visible;
             this.Buttons.Hide();
 

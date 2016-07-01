@@ -15,8 +15,8 @@
     /// </summary>
     public partial class ButtonGroup : IElementGroup, IComparable<ButtonGroup>
     {
-        private readonly List<Button> buttons;
-        private readonly List<string> buttonNames;
+        private readonly IList<Button> buttons;
+        private readonly IList<string> buttonNames;
 
         private string myName;
 

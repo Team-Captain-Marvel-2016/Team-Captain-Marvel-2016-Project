@@ -106,9 +106,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="imgs\bg-img.png">
+    <Content Include="txt-assets\neptunian-names.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    </Content>
+    <Content Include="imgs\bg-img.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="imgs\footballpitch.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -125,6 +128,10 @@
     <ProjectReference Include="..\GameLogicAssembly\Game.Logic.csproj">
       <Project>{8df2c670-9460-4f7e-b938-711fc77ed1ec}</Project>
       <Name>Game.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameLogicEventsAssembly\Game.Events.csproj">
+      <Project>{A2430F2B-79F1-461E-A64A-60A1D9E4F5F7}</Project>
+      <Name>Game.Events</Name>
     </ProjectReference>
     <ProjectReference Include="..\GameStateTrackerAssembly\Game.Tracker.csproj">
       <Project>{d36ce9ea-4307-4d40-951a-054299f9b09b}</Project>

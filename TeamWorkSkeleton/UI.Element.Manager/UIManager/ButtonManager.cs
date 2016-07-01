@@ -11,8 +11,8 @@
     /// </summary>
     public class ElementManager : IEnumerable<IElementGroup>
     {
-        private readonly List<IElementGroup> groups;
-        private readonly List<string> groupNames;
+        private readonly IList<IElementGroup> groups;
+        private readonly IList<string> groupNames;
 
         public ElementManager()
         {

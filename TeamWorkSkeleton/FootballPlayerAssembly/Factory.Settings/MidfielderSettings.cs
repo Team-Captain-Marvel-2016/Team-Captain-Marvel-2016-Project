@@ -2,14 +2,24 @@
 {
     using Abstract;
     using Global.DataStructures;
+    using System.IO;
 
     internal class MidfielderSettings : FactorySettings
     {
+        private const string FileName = ".\\txt-assets\\midfielder-settings.csv";
+
         internal MidfielderSettings()
         {
-            InitializeDefaultValues();   
+            try
+            {
+                InitializeValuesFromFile(new FileInfo(FileName));
+            }
+            catch (System.Exception)
+            {
+                InitializeDefaultValues();
+            }
         }
-        
+
         protected override void InitializeDefaultValues()
         {
             Pass = new MinMaxRange(70, 100);

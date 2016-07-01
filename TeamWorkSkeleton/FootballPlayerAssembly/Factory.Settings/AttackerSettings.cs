@@ -2,6 +2,7 @@
 {
     using Abstract;
     using Global.DataStructures;
+    using System.IO;
 
     internal class AttackerSettings : FactorySettings
     {
@@ -9,9 +10,16 @@
 
         internal AttackerSettings()
         {
-            InitializeDefaultValues();
+            try
+            {
+                InitializeValuesFromFile(new FileInfo(FileName));
+            }
+            catch (System.Exception)
+            {
+                InitializeDefaultValues();
+            }
         }
-        
+
         protected override void InitializeDefaultValues()
         {
             Pass = new MinMaxRange(50, 90);

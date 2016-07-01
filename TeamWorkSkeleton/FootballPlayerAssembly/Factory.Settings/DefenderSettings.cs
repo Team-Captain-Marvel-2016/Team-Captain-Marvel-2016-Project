@@ -2,12 +2,22 @@
 {
     using Abstract;
     using Global.DataStructures;
+    using System.IO;
 
     internal class DefenderSettings : FactorySettings
     {
+        private const string FileName = ".\\txt-assets\\defender-settings.csv";
+        
         internal DefenderSettings()
         {
-            InitializeDefaultValues();
+            try
+            {
+                InitializeValuesFromFile(new FileInfo(FileName));
+            }
+            catch (System.Exception)
+            {
+                InitializeDefaultValues();
+            }
         }
 
         protected override void InitializeDefaultValues()

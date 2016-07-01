@@ -37,13 +37,11 @@
 
             var inputSettingsStrings = myReader.Read();
 
-            var separators = GetSeparator(inputSettingsStrings.First());
+            var separator = GetSeparator(inputSettingsStrings.First());
 
             foreach (var setting in inputSettingsStrings)
             {
-                var settingAsArray = setting.Split(
-                        separators as char[],
-                        StringSplitOptions.RemoveEmptyEntries);
+                var settingAsArray = setting.Split(separator);
 
                 this.GetType()
                     .GetProperty(settingAsArray[0])
@@ -55,9 +53,10 @@
             }
         }
 
-        private IEnumerable<char> GetSeparator(string sample)
+        private char GetSeparator(string sample)
         {
-            return sample.Where(x => !char.IsLetterOrDigit(x));
+            return sample
+                .FirstOrDefault(x => !char.IsLetterOrDigit(x));
         }
     }
 }

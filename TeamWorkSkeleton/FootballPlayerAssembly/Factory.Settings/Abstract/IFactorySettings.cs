@@ -1,4 +1,4 @@
-﻿namespace TeamWork.Models.Factory.Settings
+﻿namespace TeamWork.Models.Factory.Settings.Abstract
 {
     using Global.DataStructures;
 

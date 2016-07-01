@@ -21,7 +21,8 @@
             // Get List of nouns from file
             var file = new FileInfo(FileName);
             var myReader = new MyFileReader(file);
-            var names = myReader.Read();
+
+            var names = myReader.Read() as Collection<string>;
 
             // Get bounds for random generator
             var bound = names.Count;

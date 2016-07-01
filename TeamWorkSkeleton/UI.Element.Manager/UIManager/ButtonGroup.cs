@@ -24,10 +24,11 @@
 
         public ButtonGroup(string name)
         {
+            this.validator = new Validate();
+
             this.Name = name;
             this.buttons = new List<Button>();
             this.buttonNames = new List<string>();
-            this.validator = new Validate();
         }
 
         public ButtonGroup(string name, params EventHandler[] events)
@@ -56,7 +57,7 @@
         }
 
         public int ContainerSize => this.buttons.Count;
-        
+
         public Button this[int index]
         {
             get
@@ -171,7 +172,7 @@
         {
             return this.CompareTo(other as IElementGroup);
         }
-        
+
         public int CompareTo(IElementGroup other)
         {
             return this.ContainerSize - other.ContainerSize;

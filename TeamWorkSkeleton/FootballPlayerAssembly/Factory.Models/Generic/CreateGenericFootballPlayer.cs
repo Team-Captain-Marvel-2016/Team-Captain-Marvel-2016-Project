@@ -2,7 +2,7 @@
 {
     using Abstract;
     using Global.Randomization;
-    using Settings;
+    using Settings.Abstract;
 
     /// <summary>
     /// Generate a GenericFootballPlayer
@@ -47,10 +47,10 @@
                 settings.Ap.Min,
                 settings.Ap.Max);
 
-            var newAttacker = new FootballPlayerFactory.GenericFootballPlayer(
+            var genericFootballPlayer = new FootballPlayerFactory.GenericFootballPlayer(
                 Name, pass, shoot, dribble, save, tackle, intercept, awareness, ap);
 
-            return newAttacker;
+            return genericFootballPlayer;
         }
     }
 }

@@ -17,7 +17,7 @@
         /// Reads File Contents to a Collection
         /// </summary>
         /// <returns></returns>
-        public IList<string> Read()
+        public IEnumerable<string> Read()
         {
             var output = new Collection<string>();
 

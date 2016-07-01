@@ -1,10 +1,16 @@
 ﻿namespace TeamWork.Models.Factory.Settings
 {
+    using Abstract;
     using Global.DataStructures;
 
-    internal class GoalkeeperSettings : IFactorySettings
+    internal class GoalkeeperSettings : FactorySettings
     {
         internal GoalkeeperSettings()
+        {
+            InitializeDefaultValues();
+        }
+        
+        protected override void InitializeDefaultValues()
         {
             Pass = new MinMaxRange(30, 60);
             Shoot = new MinMaxRange(30, 80);
@@ -17,14 +23,5 @@
             Awareness = new MinMaxRange(4, 6);
             Ap = new MinMaxRange(3, 5);
         }
-
-        public MinMaxRange Ap { get; private set; }
-        public MinMaxRange Awareness { get; private set; }
-        public MinMaxRange Intercept { get; private set; }
-        public MinMaxRange Tackle { get; private set; }
-        public MinMaxRange Save { get; private set; }
-        public MinMaxRange Dribble { get; private set; }
-        public MinMaxRange Shoot { get; private set; }
-        public MinMaxRange Pass { get; private set; }
     }
 }

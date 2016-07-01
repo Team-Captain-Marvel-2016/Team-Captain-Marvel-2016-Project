@@ -8,7 +8,7 @@ namespace TeamWork.Models.Factory.Models
     using Global.Enumerations.Utils;
     using Global.Randomization;
     using Settings;
-    using FootballPlayer = Abstract.FootballPlayer;
+    using Abstract;
 
     /// <summary>
     /// Methods for generating a random player

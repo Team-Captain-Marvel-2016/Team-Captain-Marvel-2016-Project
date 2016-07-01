@@ -1,5 +1,4 @@
-﻿
-namespace TeamWork.Models.Factory.Models
+﻿namespace TeamWork.Models.Factory.Models
 {
     using System.Reflection;
 

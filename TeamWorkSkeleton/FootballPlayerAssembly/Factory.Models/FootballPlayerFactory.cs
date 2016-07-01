@@ -2,13 +2,14 @@
 namespace TeamWork.Models.Factory.Models
 {
     using System.Reflection;
-    using Generic;
+
+    using Abstract;
     using Global.Contracts;
     using Global.Enumerations.Factory;
     using Global.Enumerations.Utils;
     using Global.Randomization;
     using Settings;
-    using Abstract;
+    using Settings.Abstract;
 
     /// <summary>
     /// Methods for generating a random player
@@ -55,7 +56,7 @@ namespace TeamWork.Models.Factory.Models
 
             return newlyGeneratedPlayer;
         }
-        
+
         /// <summary>
         /// Generate appropriate stats for the currently selected position
         /// and pick a species.
@@ -65,8 +66,7 @@ namespace TeamWork.Models.Factory.Models
         private static FootballPlayer CreateAttacker()
         {
             // Generate base stats.
-            var baseStatsGenericPlayer =
-                CreateGenericFootballPlayer.CreateGeneric(new AttackerSettings());
+            var baseStatsGenericPlayer = CreateGeneric(new AttackerSettings());
 
             // Pick Species.
             var species = PickSpecies();
@@ -85,8 +85,7 @@ namespace TeamWork.Models.Factory.Models
         private static FootballPlayer CreateDefender()
         {
             // Generate base stats.
-            var baseStatsGeneric =
-                CreateGenericFootballPlayer.CreateGeneric(new DefenderSettings());
+            var baseStatsGeneric = CreateGeneric(new DefenderSettings());
 
             // Pick Species.
             var species = PickSpecies();
@@ -106,8 +105,7 @@ namespace TeamWork.Models.Factory.Models
         {
             // TODO:
             // Generate base stats.
-            var baseStatsGeneric =
-                CreateGenericFootballPlayer.CreateGeneric(new MidfielderSettings());
+            var baseStatsGeneric = CreateGeneric(new MidfielderSettings());
 
             // Pick Species.
             var species = PickSpecies();
@@ -126,8 +124,7 @@ namespace TeamWork.Models.Factory.Models
         private static FootballPlayer CreateGoalkeeper()
         {
             // Generate base stats.
-            var baseStatsGeneric =
-                CreateGenericFootballPlayer.CreateGeneric(new GoalkeeperSettings());
+            var baseStatsGeneric = CreateGeneric(new GoalkeeperSettings());
 
             // Pick Species.
             var species = PickSpecies();
@@ -141,6 +138,48 @@ namespace TeamWork.Models.Factory.Models
                 .Invoke(null, new object[] { baseStatsGeneric });
 
             return newGoalkeeper;
+        }
+
+        internal static IFootballPlayer CreateGeneric(IFactorySettings settings)
+        {
+            const string Name = "placeholder";
+
+            var pass = GenericRandomization.Random.Next(
+                    settings.Pass.Min,
+                    settings.Pass.Max);
+
+            var shoot = GenericRandomization.Random.Next(
+                settings.Shoot.Min,
+                settings.Shoot.Max);
+
+            var dribble = GenericRandomization.Random.Next(
+                settings.Dribble.Min,
+                settings.Dribble.Max);
+
+            var save = GenericRandomization.Random.Next(
+                settings.Save.Min,
+                settings.Save.Max);
+
+            var tackle = GenericRandomization.Random.Next(
+                settings.Tackle.Min,
+                settings.Tackle.Max);
+
+            var intercept = GenericRandomization.Random.Next(
+                settings.Intercept.Min,
+                settings.Intercept.Max);
+
+            var awareness = GenericRandomization.Random.Next(
+                settings.Awareness.Min,
+                settings.Awareness.Max);
+
+            var ap = GenericRandomization.Random.Next(
+                settings.Ap.Min,
+                settings.Ap.Max);
+
+            var genericFootballPlayer = new Generic.FootballPlayerFactory.GenericFootballPlayer(
+                Name, pass, shoot, dribble, save, tackle, intercept, awareness, ap);
+
+            return genericFootballPlayer;
         }
 
         private static string PickSpecies()

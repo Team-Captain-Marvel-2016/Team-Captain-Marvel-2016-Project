@@ -54,7 +54,6 @@
     <Compile Include="Abstract\Contracts.Implementation\FootballPlayerShootImplementation.cs" />
     <Compile Include="Abstract\Contracts.Implementation\FootballPlayerTackleImplementation.cs" />
     <Compile Include="Factory.Models\FootballPlayerFactory.cs" />
-    <Compile Include="Factory.Models\Generic\CreateGenericFootballPlayer.cs" />
     <Compile Include="Factory.Models\Generic\GenericFootballPlayer.cs" />
     <Compile Include="Factory.Models\HumanFactory.cs" />
     <Compile Include="Factory.Models\JupeterianFactory.cs" />

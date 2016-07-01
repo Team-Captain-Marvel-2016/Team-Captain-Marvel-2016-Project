@@ -1,6 +1,6 @@
 ﻿namespace Global.Contracts
 {
-    using Enumerations.Team;
+    using Global.Enumerations.Team;
     using System.Collections.Generic;
 
     public interface ITeam : IEnumerable<IFootballPlayer>

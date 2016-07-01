@@ -62,7 +62,7 @@
         /// Pass the date to the corresponding contucting method.
         /// </summary>
         /// <returns></returns>
-        private static FootballPlayer CreateAttacker()
+        private static IFootballPlayer CreateAttacker()
         {
             // Generate base stats.
             var baseStatsGenericPlayer = CreateGeneric(new AttackerSettings());
@@ -81,7 +81,7 @@
             return newAttacker;
         }
 
-        private static FootballPlayer CreateDefender()
+        private static IFootballPlayer CreateDefender()
         {
             // Generate base stats.
             var baseStatsGeneric = CreateGeneric(new DefenderSettings());
@@ -100,7 +100,7 @@
             return newDefender;
         }
 
-        private static FootballPlayer CreateMidfielder()
+        private static IFootballPlayer CreateMidfielder()
         {
             // TODO:
             // Generate base stats.
@@ -120,7 +120,7 @@
             return newMidfielder;
         }
 
-        private static FootballPlayer CreateGoalkeeper()
+        private static IFootballPlayer CreateGoalkeeper()
         {
             // Generate base stats.
             var baseStatsGeneric = CreateGeneric(new GoalkeeperSettings());
@@ -139,13 +139,13 @@
             return newGoalkeeper;
         }
 
-        internal static IFootballPlayer CreateGeneric(IFactorySettings settings)
+        private static IFootballPlayer CreateGeneric(IFactorySettings settings)
         {
             const string Name = "placeholder";
 
             var pass = GenericRandomization.Random.Next(
-                    settings.Pass.Min,
-                    settings.Pass.Max);
+                settings.Pass.Min,
+                settings.Pass.Max);
 
             var shoot = GenericRandomization.Random.Next(
                 settings.Shoot.Min,

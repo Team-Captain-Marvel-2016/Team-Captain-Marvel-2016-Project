@@ -14,12 +14,10 @@
     {
         private string teamName;
 
-        private readonly IFactory factory;
+        private IFactory factory;
 
         public FootballTeam(string teamName)
         {
-            this.factory = new FootballPlayerFactory();
-
             this.TeamName = teamName;
             this.Team = new List<IFootballPlayer>();
         }
@@ -83,10 +81,14 @@
         /// <param name="formation"></param>
         public void CreateTeam(FormationType formation)
         {
+            this.CreateFactory();
+
             this.FormationType = formation;
 
             this.Team =
                 CreateAFootballTeamByFormation(formation);
+
+            this.ClearFactory();
         }
 
         /// <summary>
@@ -95,12 +97,16 @@
         /// </summary>
         public void CreateTeam()
         {
+            this.CreateFactory();
+
             FormationType formation;
 
             this.Team =
                 CreateARandomFootballTeam(out formation);
 
             this.FormationType = formation;
+
+            this.ClearFactory();
         }
 
         public IEnumerator<IFootballPlayer> GetEnumerator()
@@ -114,6 +120,16 @@
         IEnumerator IEnumerable.GetEnumerator()
         {
             return this.GetEnumerator();
+        }
+
+        private void CreateFactory()
+        {
+            this.factory = new FootballPlayerFactory();
+        }
+
+        private void ClearFactory()
+        {
+            this.factory = null;
         }
     }
 }

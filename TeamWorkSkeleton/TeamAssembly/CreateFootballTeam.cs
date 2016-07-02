@@ -2,7 +2,9 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Collections.ObjectModel;
     using System.Linq;
+
     using Global.Contracts;
     using Global.Enumerations.Factory;
     using Global.Enumerations.Team;
@@ -11,15 +13,13 @@
 
     public partial class FootballTeam
     {
-
-
         /// <summary>
         /// Randomly pick a formation out of the formations
         /// available through the FormationType enum.
         /// Then pass the picked formation to a method to generate a team.
         /// </summary>
         /// <returns> List of FootballPlayer objecs </returns>
-        internal List<IFootballPlayer> CreateARandomFootballTeam(out FormationType returnFormation)
+        internal IList<IFootballPlayer> CreateARandomFootballTeam(out FormationType returnFormation)
         {
             // Get the number of possible FormationType values.
             var formationSize = Enum
@@ -28,11 +28,11 @@
                 .Count();
 
             // Generate a random number within that range.
-            var typeIndex 
+            var typeIndex
                 = GenericRandomization.Random.Next(0, formationSize);
 
             // Get the formation associated with that int.
-            var formation = (FormationType) typeIndex;
+            var formation = (FormationType)typeIndex;
 
             // Generate a new team based on that formation.
             var output = CreateAFootballTeamByFormation(formation);
@@ -40,7 +40,7 @@
             returnFormation = formation;
             return output;
         }
-        
+
         /// <summary>
         /// Generate players to fit in the formation provided as 
         /// input to this method. 
@@ -48,9 +48,9 @@
         /// </summary>
         /// <param name="formation"></param>
         /// <returns> List of FootballPlayer objects </returns>
-        internal List<IFootballPlayer> CreateAFootballTeamByFormation(FormationType formation)
+        internal IList<IFootballPlayer> CreateAFootballTeamByFormation(FormationType formation)
         {
-            var output = new List<IFootballPlayer>();
+            var output = new Collection<IFootballPlayer>();
 
             var numOfPlayersByPosition =
                 ParseFormationType.GetFormationValues(formation);

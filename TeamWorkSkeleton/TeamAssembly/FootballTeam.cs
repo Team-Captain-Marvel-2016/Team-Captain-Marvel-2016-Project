@@ -18,10 +18,10 @@
 
         public FootballTeam(string teamName)
         {
+            this.factory = new FootballPlayerFactory();
+
             this.TeamName = teamName;
             this.Team = new List<IFootballPlayer>();
-
-            this.factory = new FootballPlayerFactory();
         }
 
         public FootballTeam(string teamName, bool generateRandomTeam)

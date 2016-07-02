@@ -13,14 +13,14 @@
     /// <summary>
     /// Methods for generating a random player
     /// </summary>
-    public static partial class FootballPlayerFactory
+    public partial class FootballPlayerFactory : IFactory
     {
         /// <summary>
         /// Randomly pick a Position.
         /// Call the corresponding method.
         /// </summary>
         /// <returns>new FootballPlayer object</returns>
-        public static IFootballPlayer CreatePlayer()
+        public IFootballPlayer CreatePlayer()
         {
             // Randomly generate a position and pass it along.
             var enumSize = EnumerationSize.GetPositionTypeSize();
@@ -39,7 +39,7 @@
         /// </summary>
         /// <param name="position"></param>
         /// <returns>FootballPlayer object</returns>
-        public static IFootballPlayer CreatePlayerByPosition(PositionType position)
+        public IFootballPlayer CreatePlayerByPosition(PositionType position)
         {
             const string methodNameFormat = "Create{0}";
 
@@ -47,11 +47,11 @@
 
             var method = typeof(FootballPlayerFactory)
                 .GetMethod(methodName,
-                    BindingFlags.NonPublic | BindingFlags.Static);
+                    BindingFlags.NonPublic | BindingFlags.Instance);
 
             var newlyGeneratedPlayer =
                 (FootballPlayer)method
-                    .Invoke(null, new object[] { });
+                    .Invoke(this, new object[] { });
 
             return newlyGeneratedPlayer;
         }
@@ -62,7 +62,7 @@
         /// Pass the date to the corresponding contucting method.
         /// </summary>
         /// <returns></returns>
-        private static IFootballPlayer CreateAttacker()
+        private IFootballPlayer CreateAttacker()
         {
             // Generate base stats.
             var baseStatsGenericPlayer = CreateGeneric(new AttackerSettings());
@@ -73,15 +73,15 @@
             // Call the corresponing constructor intermediate method.
             var methodName = $"Create{species}Attacker";
             var creatingMethod = typeof(FootballPlayerFactory).GetMethod(methodName,
-                BindingFlags.NonPublic | BindingFlags.Static);
+                BindingFlags.NonPublic | BindingFlags.Instance);
 
             var newAttacker = (FootballPlayer)creatingMethod
-                .Invoke(null, new object[] { baseStatsGenericPlayer });
+                .Invoke(this, new object[] { baseStatsGenericPlayer });
 
             return newAttacker;
         }
 
-        private static IFootballPlayer CreateDefender()
+        private IFootballPlayer CreateDefender()
         {
             // Generate base stats.
             var baseStatsGeneric = CreateGeneric(new DefenderSettings());
@@ -92,15 +92,15 @@
             // Call the corresponing constructor intermediate method.
             var methodName = $"Create{species}Defender";
             var creatingMethod = typeof(FootballPlayerFactory).GetMethod(methodName,
-                BindingFlags.NonPublic | BindingFlags.Static);
+                BindingFlags.NonPublic | BindingFlags.Instance);
 
             var newDefender = (FootballPlayer)creatingMethod
-                .Invoke(null, new object[] { baseStatsGeneric });
+                .Invoke(this, new object[] { baseStatsGeneric });
 
             return newDefender;
         }
 
-        private static IFootballPlayer CreateMidfielder()
+        private IFootballPlayer CreateMidfielder()
         {
             // TODO:
             // Generate base stats.
@@ -112,15 +112,15 @@
             // Call the corresponing constructor intermediate method.
             var methodName = $"Create{species}Midfielder";
             var creatingMethod = typeof(FootballPlayerFactory).GetMethod(methodName,
-                BindingFlags.NonPublic | BindingFlags.Static);
+                BindingFlags.NonPublic | BindingFlags.Instance);
 
             var newMidfielder = (FootballPlayer)creatingMethod
-                .Invoke(null, new object[] { baseStatsGeneric });
+                .Invoke(this, new object[] { baseStatsGeneric });
 
             return newMidfielder;
         }
 
-        private static IFootballPlayer CreateGoalkeeper()
+        private IFootballPlayer CreateGoalkeeper()
         {
             // Generate base stats.
             var baseStatsGeneric = CreateGeneric(new GoalkeeperSettings());
@@ -131,15 +131,15 @@
             // Call the corresponing constructor intermediate method.
             var methodName = $"Create{species}Goalkeeper";
             var creatingMethod = typeof(FootballPlayerFactory).GetMethod(methodName,
-                BindingFlags.NonPublic | BindingFlags.Static);
+                BindingFlags.NonPublic | BindingFlags.Instance);
 
             var newGoalkeeper = (FootballPlayer)creatingMethod
-                .Invoke(null, new object[] { baseStatsGeneric });
+                .Invoke(this, new object[] { baseStatsGeneric });
 
             return newGoalkeeper;
         }
 
-        private static IFootballPlayer CreateGeneric(IFactorySettings settings)
+        private IFootballPlayer CreateGeneric(IFactorySettings settings)
         {
             const string Name = "placeholder";
 
@@ -181,7 +181,7 @@
             return genericFootballPlayer;
         }
 
-        private static string PickSpecies()
+        private string PickSpecies()
         {
             // Get size of enum 
             var enumSize = EnumerationSize.GetSpeciesTypeSize();

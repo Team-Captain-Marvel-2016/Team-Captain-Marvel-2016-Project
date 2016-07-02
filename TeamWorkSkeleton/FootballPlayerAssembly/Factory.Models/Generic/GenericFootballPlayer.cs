@@ -2,7 +2,7 @@
 {
     using Abstract;
 
-    public static partial class FootballPlayerFactory
+    public partial class FootballPlayerFactory
     {
         /// <summary>
         /// Generic FootballPlayer inheritor,

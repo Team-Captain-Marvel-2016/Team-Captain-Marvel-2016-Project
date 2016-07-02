@@ -4,7 +4,7 @@
     using Global.Contracts;
     using Species.NameGenerator;
 
-    public static partial class FootballPlayerFactory
+    public partial class FootballPlayerFactory
     {
         /// <summary>
         /// Creates a new Human player object 
@@ -16,7 +16,7 @@
         /// set of stats wrapped in a GenericFootballPlayer object 
         /// </param>
         /// <returns>new Human(Position) object</returns>
-        private static FootballPlayer CreateHumanAttacker
+        private FootballPlayer CreateHumanAttacker
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
@@ -25,7 +25,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateHumanDefender
+        private FootballPlayer CreateHumanDefender
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
@@ -34,7 +34,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateHumanMidfielder
+        private FootballPlayer CreateHumanMidfielder
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
@@ -43,7 +43,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateHumanGoalkeeper
+        private FootballPlayer CreateHumanGoalkeeper
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
@@ -52,7 +52,7 @@
             return newPlayer;
         }
 
-        private static string GetHumanName()
+        private string GetHumanName()
         {
             return HumanNameGenerator.GenerateName();
         }

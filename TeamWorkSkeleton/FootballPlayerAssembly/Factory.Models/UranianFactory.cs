@@ -4,7 +4,7 @@
     using Global.Contracts;
     using Species.NameGenerator;
 
-    public static partial class FootballPlayerFactory
+    public partial class FootballPlayerFactory
     {
         /// <summary>
         /// Creates a new Uranian player object 
@@ -16,7 +16,7 @@
         /// set of stats wrapped in a GenericFootballPlayer object 
         /// </param>
         /// <returns>new Uranian(Position) object</returns>
-        private static FootballPlayer CreateUranianAttacker
+        private FootballPlayer CreateUranianAttacker
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.UranianFootballPlayer.FootballPlayerFactory
@@ -25,7 +25,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateUranianDefender
+        private FootballPlayer CreateUranianDefender
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.UranianFootballPlayer.FootballPlayerFactory
@@ -34,7 +34,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateUranianMidfielder
+        private FootballPlayer CreateUranianMidfielder
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.UranianFootballPlayer.FootballPlayerFactory
@@ -43,7 +43,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateUranianGoalkeeper
+        private FootballPlayer CreateUranianGoalkeeper
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.UranianFootballPlayer.FootballPlayerFactory
@@ -52,7 +52,7 @@
             return newPlayer;
         }
 
-        private static string GetUranianName()
+        private string GetUranianName()
         {
             return UranianNameGenerator.GenerateName();
         }

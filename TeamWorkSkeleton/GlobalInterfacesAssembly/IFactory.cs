@@ -2,7 +2,7 @@
 {
     using Enumerations.Factory;
 
-    interface IFactory
+    public interface IFactory
     {
         IFootballPlayer CreatePlayerByPosition(PositionType position);
     }

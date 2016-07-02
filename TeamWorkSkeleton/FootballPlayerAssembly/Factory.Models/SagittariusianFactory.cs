@@ -4,7 +4,7 @@
     using Global.Contracts;
     using Species.NameGenerator;
 
-    public static partial class FootballPlayerFactory
+    public partial class FootballPlayerFactory
     {
         /// <summary>
         /// Creates a new Sagittariusian player object 
@@ -16,7 +16,7 @@
         /// set of stats wrapped in a GenericFootballPlayer object 
         /// </param>
         /// <returns>new Sagittariusian(Position) object</returns>
-        private static FootballPlayer CreateSagittariusianAttacker
+        private FootballPlayer CreateSagittariusianAttacker
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
@@ -25,7 +25,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateSagittariusianDefender
+        private FootballPlayer CreateSagittariusianDefender
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
@@ -34,7 +34,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateSagittariusianMidfielder
+        private FootballPlayer CreateSagittariusianMidfielder
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
@@ -43,7 +43,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateSagittariusianGoalkeeper
+        private FootballPlayer CreateSagittariusianGoalkeeper
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
@@ -52,7 +52,7 @@
             return newPlayer;
         }
 
-        private static string GetSagittariusianName()
+        private string GetSagittariusianName()
         {
             return SagittariusianNameGenerator.GenerateName();
         }

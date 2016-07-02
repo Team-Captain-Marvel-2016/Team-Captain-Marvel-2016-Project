@@ -4,7 +4,7 @@
     using Global.Contracts;
     using Species.NameGenerator;
 
-    public static partial class FootballPlayerFactory
+    public partial class FootballPlayerFactory
     {
         /// <summary>
         /// Creates a new Venusian player object 
@@ -16,7 +16,7 @@
         /// set of stats wrapped in a GenericFootballPlayer object 
         /// </param>
         /// <returns>new Venusian(Position) object</returns>
-        private static FootballPlayer CreateVenusianAttacker
+        private FootballPlayer CreateVenusianAttacker
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.VenusianFootballPlayer.FootballPlayerFactory
@@ -25,7 +25,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateVenusianDefender
+        private FootballPlayer CreateVenusianDefender
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.VenusianFootballPlayer.FootballPlayerFactory
@@ -34,7 +34,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateVenusianMidfielder
+        private FootballPlayer CreateVenusianMidfielder
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.VenusianFootballPlayer.FootballPlayerFactory
@@ -43,7 +43,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateVenusianGoalkeeper
+        private FootballPlayer CreateVenusianGoalkeeper
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.VenusianFootballPlayer.FootballPlayerFactory
@@ -52,7 +52,7 @@
             return newPlayer;
         }
 
-        private static string GetVenusianName()
+        private string GetVenusianName()
         {
             return VenusianNameGenerator.GenerateName();
         }

@@ -5,6 +5,7 @@
     using System;
     using System.Collections;
     using System.Collections.Generic;
+    using TeamWork.Models.Factory.Models;
 
     /// <summary>
     /// Team of IFootballPlayer
@@ -13,10 +14,14 @@
     {
         private string teamName;
 
+        private readonly IFactory factory;
+
         public FootballTeam(string teamName)
         {
             this.TeamName = teamName;
             this.Team = new List<IFootballPlayer>();
+
+            this.factory = new FootballPlayerFactory();
         }
 
         public FootballTeam(string teamName, bool generateRandomTeam)

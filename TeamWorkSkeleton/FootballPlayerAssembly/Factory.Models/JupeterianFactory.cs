@@ -4,7 +4,7 @@
     using Global.Contracts;
     using Species.NameGenerator;
 
-    public static partial class FootballPlayerFactory
+    public partial class FootballPlayerFactory
     {
         /// <summary>
         /// Creates a new Jupiterian player object 
@@ -16,7 +16,7 @@
         /// set of stats wrapped in a GenericFootballPlayer object 
         /// </param>
         /// <returns>new Jupiterian(Position) object</returns>
-        private static FootballPlayer CreateJupiterianAttacker
+        private FootballPlayer CreateJupiterianAttacker
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
@@ -25,7 +25,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateJupiterianDefender
+        private FootballPlayer CreateJupiterianDefender
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
@@ -34,7 +34,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateJupiterianMidfielder
+        private FootballPlayer CreateJupiterianMidfielder
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
@@ -43,7 +43,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateJupiterianGoalkeeper
+        private FootballPlayer CreateJupiterianGoalkeeper
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.JupiterianFootballPlayer.FootballPlayerFactory
@@ -52,7 +52,7 @@
             return newPlayer;
         }
 
-        private static string GetJupiterianName()
+        private string GetJupiterianName()
         {
             return JupiterianNameGenerator.GenerateName();
         }

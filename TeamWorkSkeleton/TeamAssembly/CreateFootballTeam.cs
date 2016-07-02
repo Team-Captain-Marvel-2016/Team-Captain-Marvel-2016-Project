@@ -8,17 +8,18 @@
     using Global.Enumerations.Team;
     using Global.Enumerations.Utils;
     using Global.Randomization;
-    using TeamWork.Models.Factory.Models;
 
     public partial class FootballTeam
     {
+
+
         /// <summary>
         /// Randomly pick a formation out of the formations
         /// available through the FormationType enum.
         /// Then pass the picked formation to a method to generate a team.
         /// </summary>
         /// <returns> List of FootballPlayer objecs </returns>
-        internal static List<IFootballPlayer> CreateARandomFootballTeam(out FormationType returnFormation)
+        internal List<IFootballPlayer> CreateARandomFootballTeam(out FormationType returnFormation)
         {
             // Get the number of possible FormationType values.
             var formationSize = Enum
@@ -47,7 +48,7 @@
         /// </summary>
         /// <param name="formation"></param>
         /// <returns> List of FootballPlayer objects </returns>
-        internal static List<IFootballPlayer> CreateAFootballTeamByFormation(FormationType formation)
+        internal List<IFootballPlayer> CreateAFootballTeamByFormation(FormationType formation)
         {
             var output = new List<IFootballPlayer>();
 
@@ -56,14 +57,13 @@
 
             // Generate Goalkeeper
             output
-                .Add(FootballPlayerFactory
-                    .CreatePlayerByPosition(PositionType.Goalkeeper));
+                .Add(this.factory.CreatePlayerByPosition(PositionType.Goalkeeper));
 
             // Generate numOfPlayersByPosition[0] Defenders.
             for (var i = 0; i < numOfPlayersByPosition[0]; i++)
             {
                 output
-                    .Add(FootballPlayerFactory
+                    .Add(this.factory
                         .CreatePlayerByPosition(PositionType.Defender));
             }
 
@@ -71,7 +71,7 @@
             for (var i = 0; i < numOfPlayersByPosition[1]; i++)
             {
                 output
-                    .Add(FootballPlayerFactory
+                    .Add(this.factory
                         .CreatePlayerByPosition(PositionType.Midfielder));
             }
 
@@ -79,7 +79,7 @@
             for (var i = 0; i < numOfPlayersByPosition[2]; i++)
             {
                 output
-                    .Add(FootballPlayerFactory
+                    .Add(this.factory
                         .CreatePlayerByPosition(PositionType.Attacker));
             }
 

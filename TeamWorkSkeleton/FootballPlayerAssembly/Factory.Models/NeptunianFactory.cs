@@ -4,7 +4,7 @@ namespace TeamWork.Models.Factory.Models
     using Global.Contracts;
     using Species.NameGenerator;
 
-    public static partial class FootballPlayerFactory
+    public partial class FootballPlayerFactory
     {
         /// <summary>
         /// Creates a new Neptunian player object 
@@ -16,7 +16,7 @@ namespace TeamWork.Models.Factory.Models
         /// set of stats wrapped in a GenericFootballPlayer object 
         /// </param>
         /// <returns>new Neptunian(Position) object</returns>
-        private static FootballPlayer CreateNeptunianAttacker
+        private FootballPlayer CreateNeptunianAttacker
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
@@ -25,7 +25,7 @@ namespace TeamWork.Models.Factory.Models
             return newPlayer;
         }
 
-        private static FootballPlayer CreateNeptunianDefender
+        private FootballPlayer CreateNeptunianDefender
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
@@ -34,7 +34,7 @@ namespace TeamWork.Models.Factory.Models
             return newPlayer;
         }
 
-        private static FootballPlayer CreateNeptunianMidfielder
+        private FootballPlayer CreateNeptunianMidfielder
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
@@ -43,7 +43,7 @@ namespace TeamWork.Models.Factory.Models
             return newPlayer;
         }
 
-        private static FootballPlayer CreateNeptunianGoalkeeper
+        private FootballPlayer CreateNeptunianGoalkeeper
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
@@ -52,7 +52,7 @@ namespace TeamWork.Models.Factory.Models
             return newPlayer;
         }
 
-        private static string GetNeptunianName()
+        private string GetNeptunianName()
         {
             return NeptunianNameGenerator.GenerateName();
         }

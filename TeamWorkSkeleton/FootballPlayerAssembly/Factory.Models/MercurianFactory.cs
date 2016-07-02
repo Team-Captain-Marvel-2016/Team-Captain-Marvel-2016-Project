@@ -4,7 +4,7 @@
     using Global.Contracts;
     using Species.NameGenerator;
 
-    public static partial class FootballPlayerFactory
+    public partial class FootballPlayerFactory
     {
         /// <summary>
         /// Creates a new Mercurian player object 
@@ -16,7 +16,7 @@
         /// set of stats wrapped in a GenericFootballPlayer object 
         /// </param>
         /// <returns>new Martian(Position) object</returns>
-        private static FootballPlayer CreateMercurianAttacker
+        private FootballPlayer CreateMercurianAttacker
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
@@ -25,7 +25,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateMercurianDefender
+        private FootballPlayer CreateMercurianDefender
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
@@ -34,7 +34,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateMercurianMidfielder
+        private FootballPlayer CreateMercurianMidfielder
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
@@ -43,7 +43,7 @@
             return newPlayer;
         }
 
-        private static FootballPlayer CreateMercurianGoalkeeper
+        private FootballPlayer CreateMercurianGoalkeeper
             (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
@@ -52,7 +52,7 @@
             return newPlayer;
         }
 
-        private static string GetMercurianName()
+        private string GetMercurianName()
         {
             return MercurianNameGenerator.GenerateName();
         }

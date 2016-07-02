@@ -1,5 +1,6 @@
 ﻿namespace TeamWork.Models.Roles.UranianFootballPlayer
 {
+    using Global.Contracts;
     using Species.Abstract;
 
     public static partial class FootballPlayerFactory
@@ -11,7 +12,7 @@
             {
             }
 
-            internal UranianDefender(Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) 
+            internal UranianDefender(IFootballPlayer player) 
                 : base(player)
             {
             }

@@ -1,7 +1,7 @@
 ﻿namespace TeamWork.Models.Species.Abstract
 {
-    using TeamWork.Models.Factory.Models.Generic;
-    using FootballPlayer = Models.Abstract.FootballPlayer;
+    using Global.Contracts;
+    using Models.Abstract;
 
     internal class Venusian : FootballPlayer
     {
@@ -15,7 +15,7 @@
         {
         }
 
-        internal Venusian(FootballPlayerFactory.GenericFootballPlayer player) 
+        internal Venusian(IFootballPlayer player) 
             : base(player)
         {
         }

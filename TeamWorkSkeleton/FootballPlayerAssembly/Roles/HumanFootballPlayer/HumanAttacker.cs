@@ -1,12 +1,13 @@
 ﻿namespace TeamWork.Models.Roles.HumanFootballPlayer
 {
+    using Global.Contracts;
     using Species.Abstract;
 
     public static partial class FootballPlayerFactory
     {
         internal class HumanAttacker : Human
         {
-            internal HumanAttacker(TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) 
+            internal HumanAttacker(IFootballPlayer player) 
                 : base(player)
             {
             }

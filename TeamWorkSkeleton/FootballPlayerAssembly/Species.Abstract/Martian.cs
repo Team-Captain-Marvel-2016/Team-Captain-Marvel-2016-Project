@@ -1,8 +1,8 @@
 ﻿namespace TeamWork.Models.Species.Abstract
 {
-    using Factory.Models.Generic;
+    using Global.Contracts;
     using Models.Abstract;
-    
+
     internal abstract class Martian : FootballPlayer
     {
         protected Martian(string name) 
@@ -15,7 +15,7 @@
         {
         }
 
-        internal Martian(FootballPlayerFactory.GenericFootballPlayer player) 
+        internal Martian(IFootballPlayer player) 
             : base(player)
         {
         }

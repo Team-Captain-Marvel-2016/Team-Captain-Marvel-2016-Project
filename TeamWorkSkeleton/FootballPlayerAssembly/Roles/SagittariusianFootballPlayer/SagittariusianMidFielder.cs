@@ -1,5 +1,6 @@
 ﻿namespace TeamWork.Models.Roles.SagittariusianFootballPlayer
 {
+    using Global.Contracts;
     using Species.Abstract;
 
     public static partial class FootballPlayerFactory
@@ -11,7 +12,7 @@
             {
             }
 
-            internal SagittariusianMidfielder(Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player)
+            internal SagittariusianMidfielder(IFootballPlayer player)
                 : base(player)
             {
             }

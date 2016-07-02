@@ -1,6 +1,6 @@
 ﻿namespace TeamWork.Models.Species.Abstract
 {
-    using Factory.Models.Generic;
+    using Global.Contracts;
     using Models.Abstract;
 
     internal abstract class Jupiterian : FootballPlayer
@@ -15,7 +15,7 @@
         {
         }
 
-        internal Jupiterian(FootballPlayerFactory.GenericFootballPlayer player) 
+        internal Jupiterian(IFootballPlayer player) 
             : base(player)
         {
         }

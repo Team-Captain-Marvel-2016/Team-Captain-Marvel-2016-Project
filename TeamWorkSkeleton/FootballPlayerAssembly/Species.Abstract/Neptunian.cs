@@ -1,6 +1,6 @@
 ﻿namespace TeamWork.Models.Species.Abstract
 {
-    using Factory.Models.Generic;
+    using Global.Contracts;
     using Models.Abstract;
 
     internal abstract class Neptunian : FootballPlayer
@@ -14,7 +14,7 @@
         {
         }
 
-        internal Neptunian(FootballPlayerFactory.GenericFootballPlayer player) 
+        internal Neptunian(IFootballPlayer player) 
             : base(player)
         {
         }

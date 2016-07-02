@@ -1,6 +1,7 @@
 ﻿namespace TeamWork.Models.Factory.Models
 {
     using Abstract;
+    using Global.Contracts;
     using Species.NameGenerator;
 
     public static partial class FootballPlayerFactory
@@ -16,7 +17,7 @@
         /// </param>
         /// <returns>new Sagittariusian(Position) object</returns>
         private static FootballPlayer CreateSagittariusianAttacker
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianAttacker(baseStats);
@@ -25,7 +26,7 @@
         }
 
         private static FootballPlayer CreateSagittariusianDefender
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianDefender(baseStats);
@@ -34,7 +35,7 @@
         }
 
         private static FootballPlayer CreateSagittariusianMidfielder
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianMidfielder(baseStats);
@@ -43,7 +44,7 @@
         }
 
         private static FootballPlayer CreateSagittariusianGoalkeeper
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.SagittariusianFootballPlayer.FootballPlayerFactory
                 .SagittariusianGoalkeeper(baseStats);

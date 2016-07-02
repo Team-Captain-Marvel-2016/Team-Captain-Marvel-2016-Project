@@ -1,12 +1,13 @@
 ﻿namespace TeamWork.Models.Roles.JupiterianFootballPlayer
 {
+    using Global.Contracts;
     using Species.Abstract;
 
     public static partial class FootballPlayerFactory
     {
         internal class JupiterianDefender : Jupiterian
         {
-            internal JupiterianDefender(Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player)
+            internal JupiterianDefender(IFootballPlayer player)
                 : base(player)
             {
             }

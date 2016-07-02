@@ -1,6 +1,6 @@
 ﻿namespace TeamWork.Models.Species.Abstract
 {
-    using Factory.Models.Generic;
+    using Global.Contracts;
     using Models.Abstract;
 
     internal class Uranian : FootballPlayer
@@ -10,7 +10,7 @@
         {
         }
 
-        public Uranian(FootballPlayerFactory.GenericFootballPlayer player) 
+        public Uranian(IFootballPlayer player) 
             : base(player)
         {
         }

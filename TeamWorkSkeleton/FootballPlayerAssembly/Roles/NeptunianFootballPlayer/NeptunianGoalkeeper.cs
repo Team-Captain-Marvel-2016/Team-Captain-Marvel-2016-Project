@@ -1,5 +1,6 @@
 ﻿namespace TeamWork.Models.Roles.NeptunianFootballPlayer
 {
+    using Global.Contracts;
     using Species.Abstract;
 
     public static partial class FootballPlayerFactory
@@ -11,7 +12,8 @@
             {
             }
 
-            internal NeptunianGoalkeeper(Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) : base(player)
+            internal NeptunianGoalkeeper(IFootballPlayer player) 
+                : base(player)
             {
             }
 

@@ -1,6 +1,7 @@
 ﻿namespace TeamWork.Models.Factory.Models
 {
     using Abstract;
+    using Global.Contracts;
     using Species.NameGenerator;
 
     public static partial class FootballPlayerFactory
@@ -16,7 +17,7 @@
         /// </param>
         /// <returns>new Martian(Position) object</returns>
         private static FootballPlayer CreateMercurianAttacker
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianAttacker(baseStats);
@@ -25,7 +26,7 @@
         }
 
         private static FootballPlayer CreateMercurianDefender
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianDefender(baseStats);
@@ -34,7 +35,7 @@
         }
 
         private static FootballPlayer CreateMercurianMidfielder
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianMidfielder(baseStats);
@@ -43,7 +44,7 @@
         }
 
         private static FootballPlayer CreateMercurianGoalkeeper
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.MercurianFootballPlayer.FootballPlayerFactory
                 .MercurianGoalkeeper(baseStats);

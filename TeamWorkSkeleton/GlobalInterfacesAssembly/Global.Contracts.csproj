@@ -52,6 +52,7 @@
     <Compile Include="Actions\IShoot.cs" />
     <Compile Include="Actions\ITackle.cs" />
     <Compile Include="IDiceRoll.cs" />
+    <Compile Include="IFactory.cs" />
     <Compile Include="IFootballPlayer.cs" />
     <Compile Include="Actions\IFootballPlayerActions.cs" />
     <Compile Include="ITeam.cs" />

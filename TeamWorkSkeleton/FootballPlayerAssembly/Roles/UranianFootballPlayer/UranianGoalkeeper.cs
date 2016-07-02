@@ -1,17 +1,18 @@
 ﻿namespace TeamWork.Models.Roles.UranianFootballPlayer
 {
+    using Global.Contracts;
     using Species.Abstract;
 
     public static partial class FootballPlayerFactory
     {
-        internal class UranianGoalkeeper : Venusian
+        internal class UranianGoalkeeper : Uranian
         {
             internal UranianGoalkeeper(string name)
                 : base(name)
             {
             }
 
-            internal UranianGoalkeeper(Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer player) 
+            internal UranianGoalkeeper(IFootballPlayer player) 
                 : base(player)
             {
             }

@@ -31,7 +31,7 @@
             this.InitVisualToken();
         }
 
-        internal FootballPlayer(FootballPlayerFactory.GenericFootballPlayer player)
+        internal FootballPlayer(IFootballPlayer player)
             : this(player.Name, player.StatPass, player.StatShoot, player.StatDribble,
                   player.StatSave, player.StatTackle, player.StatInterception, player.AwarenessRange, player.ActionPoints)
         {

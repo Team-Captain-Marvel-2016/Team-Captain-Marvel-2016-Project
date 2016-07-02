@@ -1,6 +1,6 @@
 ﻿namespace TeamWork.Models.Species.Abstract
 {
-    using Factory.Models.Generic;
+    using Global.Contracts;
     using Models.Abstract;
 
     internal abstract class Mercurian : FootballPlayer
@@ -16,7 +16,7 @@
         {
         }
 
-        internal Mercurian(FootballPlayerFactory.GenericFootballPlayer player)
+        internal Mercurian(IFootballPlayer player)
             : base(player)
         {
         }

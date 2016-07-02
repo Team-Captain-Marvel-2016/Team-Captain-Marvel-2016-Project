@@ -1,6 +1,6 @@
 ﻿namespace TeamWork.Models.Species.Abstract
 {
-    using Factory.Models.Generic;
+    using Global.Contracts;
     using Models.Abstract;
 
     internal abstract class Human : FootballPlayer
@@ -14,7 +14,7 @@
         {
         }
 
-        internal Human(FootballPlayerFactory.GenericFootballPlayer player) 
+        internal Human(IFootballPlayer player) 
             : base(player)
         {
         }

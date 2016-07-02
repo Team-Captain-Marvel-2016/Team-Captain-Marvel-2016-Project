@@ -1,6 +1,7 @@
 namespace TeamWork.Models.Factory.Models
 {
     using Abstract;
+    using Global.Contracts;
     using Species.NameGenerator;
 
     public static partial class FootballPlayerFactory
@@ -16,7 +17,7 @@ namespace TeamWork.Models.Factory.Models
         /// </param>
         /// <returns>new Neptunian(Position) object</returns>
         private static FootballPlayer CreateNeptunianAttacker
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianAttacker(baseStats);
@@ -25,7 +26,7 @@ namespace TeamWork.Models.Factory.Models
         }
 
         private static FootballPlayer CreateNeptunianDefender
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianDefender(baseStats);
@@ -34,7 +35,7 @@ namespace TeamWork.Models.Factory.Models
         }
 
         private static FootballPlayer CreateNeptunianMidfielder
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianMidfielder(baseStats);
@@ -43,7 +44,7 @@ namespace TeamWork.Models.Factory.Models
         }
 
         private static FootballPlayer CreateNeptunianGoalkeeper
-            (TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.NeptunianFootballPlayer.FootballPlayerFactory
                 .NeptunianGoalkeeper(baseStats);

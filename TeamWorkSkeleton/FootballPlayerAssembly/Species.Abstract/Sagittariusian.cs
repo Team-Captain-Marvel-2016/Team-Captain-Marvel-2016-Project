@@ -1,11 +1,12 @@
 ﻿namespace TeamWork.Models.Species.Abstract
 {
-    using Factory.Models.Generic;
+    using Global.Contracts;
     using Models.Abstract;
 
     internal abstract class Sagittariusian : FootballPlayer
     {
-        internal Sagittariusian(FootballPlayerFactory.GenericFootballPlayer player) : base(player)
+        internal Sagittariusian(IFootballPlayer player) 
+            : base(player)
         {
         }
 

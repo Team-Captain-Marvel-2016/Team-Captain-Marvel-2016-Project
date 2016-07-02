@@ -1,6 +1,7 @@
 ﻿namespace TeamWork.Models.Factory.Models
 {
     using Abstract;
+    using Global.Contracts;
     using Species.NameGenerator;
 
     public static partial class FootballPlayerFactory
@@ -16,7 +17,7 @@
         /// </param>
         /// <returns>new Human(Position) object</returns>
         private static FootballPlayer CreateHumanAttacker
-            (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanAttacker(baseStats);
@@ -25,7 +26,7 @@
         }
 
         private static FootballPlayer CreateHumanDefender
-            (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanDefender(baseStats);
@@ -34,7 +35,7 @@
         }
 
         private static FootballPlayer CreateHumanMidfielder
-            (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanMidfielder(baseStats);
@@ -43,7 +44,7 @@
         }
 
         private static FootballPlayer CreateHumanGoalkeeper
-            (Generic.FootballPlayerFactory.GenericFootballPlayer baseStats)
+            (IFootballPlayer baseStats)
         {
             var newPlayer = new Roles.HumanFootballPlayer.FootballPlayerFactory
                 .HumanGoalkeeper(baseStats);

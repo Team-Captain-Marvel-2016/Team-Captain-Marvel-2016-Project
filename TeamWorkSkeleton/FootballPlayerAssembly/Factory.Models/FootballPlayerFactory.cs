@@ -15,6 +15,19 @@
     /// </summary>
     public partial class FootballPlayerFactory : IFactory
     {
+        private readonly IFactorySettings AttackerSettings;
+        private readonly IFactorySettings DefenderSettings;
+        private readonly IFactorySettings MidfielderSettings;
+        private readonly IFactorySettings GoalkeeperSettings;
+
+        public FootballPlayerFactory()
+        {
+            this.AttackerSettings = new AttackerSettings();
+            this.DefenderSettings = new DefenderSettings();
+            this.MidfielderSettings = new MidfielderSettings();
+            this.GoalkeeperSettings = new GoalkeeperSettings();
+        }
+
         /// <summary>
         /// Randomly pick a Position.
         /// Call the corresponding method.
@@ -65,7 +78,7 @@
         private IFootballPlayer CreateAttacker()
         {
             // Generate base stats.
-            var baseStatsGenericPlayer = CreateGeneric(new AttackerSettings());
+            var baseStatsGenericPlayer = CreateGeneric(this.AttackerSettings);
 
             // Pick Species.
             var species = PickSpecies();
@@ -84,7 +97,7 @@
         private IFootballPlayer CreateDefender()
         {
             // Generate base stats.
-            var baseStatsGeneric = CreateGeneric(new DefenderSettings());
+            var baseStatsGeneric = CreateGeneric(this.DefenderSettings);
 
             // Pick Species.
             var species = PickSpecies();
@@ -104,7 +117,7 @@
         {
             // TODO:
             // Generate base stats.
-            var baseStatsGeneric = CreateGeneric(new MidfielderSettings());
+            var baseStatsGeneric = CreateGeneric(this.MidfielderSettings);
 
             // Pick Species.
             var species = PickSpecies();
@@ -123,7 +136,7 @@
         private IFootballPlayer CreateGoalkeeper()
         {
             // Generate base stats.
-            var baseStatsGeneric = CreateGeneric(new GoalkeeperSettings());
+            var baseStatsGeneric = CreateGeneric(this.GoalkeeperSettings);
 
             // Pick Species.
             var species = PickSpecies();

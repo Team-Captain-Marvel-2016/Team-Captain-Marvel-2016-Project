@@ -19,7 +19,7 @@
         /// <param name="cols"></param>
         /// <param name="field"></param>
         public void GetInitialFootballPlayerPositions
-            (int rows, int cols , StartingFieldType field)
+            (int rows, int cols, StartingFieldType field)
         {
             gridRows = rows;
             gridCols = cols;
@@ -78,6 +78,12 @@
             var rowIncrement = GetIncrement(numberOfPlayers);
 
             var row = rowIncrement;
+
+            if (numberOfPlayers % 2 == 0)
+            {
+                row--;
+                rowIncrement++;
+            }
 
             var len = playerCounter + numberOfPlayers;
             for (var i = playerCounter; i < len; i++)

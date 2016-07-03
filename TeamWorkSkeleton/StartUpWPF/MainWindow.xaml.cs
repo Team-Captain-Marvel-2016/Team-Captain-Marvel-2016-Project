@@ -18,6 +18,8 @@
 
         public MainWindow()
         {
+            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+
             this.InitializeComponent();
 
             this.ScrollViewerBot.Visibility = Visibility.Collapsed;

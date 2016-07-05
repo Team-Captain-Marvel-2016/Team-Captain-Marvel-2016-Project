@@ -2,7 +2,7 @@
 {
     using Global.DataStructures;
     using Global.IO.Models;
-
+    using System.Collections.Generic;
     using System.IO;
     using System.Linq;
 
@@ -32,9 +32,7 @@
 
         protected void InitializeValuesFromFile(FileInfo file)
         {
-            var myReader = new MyFileReader(file);
-
-            var inputSettingsStrings = myReader.Read();
+            var inputSettingsStrings = GetDataFromFile(file);
 
             var separator = GetSeparator(inputSettingsStrings.First());
 
@@ -50,6 +48,13 @@
                             int.Parse(settingAsArray[1]),
                             int.Parse(settingAsArray[2])));
             }
+        }
+
+        private IEnumerable<string> GetDataFromFile(FileInfo file)
+        {
+            var myReader = new MyFileReader(file);
+
+            return myReader.Read();
         }
 
         private char GetSeparator(string sample)

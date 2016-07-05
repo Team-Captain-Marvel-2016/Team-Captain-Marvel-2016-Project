@@ -5,7 +5,8 @@
     using System.IO;
     using Global.IO.Models;
     using Global.Randomization;
-
+    using System.Collections;
+    using System.Collections.Generic;
     internal static class NeptunianNameGenerator
     {
         private const string FileName = ".\\txt-assets\\neptunian-names.txt";
@@ -16,10 +17,7 @@
         {
             // http://wiki.postfurry.net/wiki/Neptunian_language
             // Get List of nouns from file
-            var file = new FileInfo(FileName);
-            var myReader = new MyFileReader(file);
-
-            var names = myReader.Read() as Collection<string>;
+            var names = GetDataFromFile();
 
             // Get bounds for random generator
             var bound = names.Count;
@@ -37,6 +35,14 @@
                 OutputFormat,
                 namesToAdd[0],
                 namesToAdd[1]);
+        }
+
+        private static IList<string> GetDataFromFile()
+        {
+            var file = new FileInfo(FileName);
+            var myReader = new MyFileReader(file);
+
+            return myReader.Read();
         }
     }
 }

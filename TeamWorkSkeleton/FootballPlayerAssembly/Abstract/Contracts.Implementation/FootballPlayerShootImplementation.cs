@@ -12,11 +12,12 @@
 
             var thisScore = this.StatShoot
                             + DiceOne.Roll()
-                            + DiceTwo.Roll();
+                            + DiceTwo.Roll()
+                            + DiceOne.Roll();
 
             var enemyScore = enemy.StatSave
-                             + DiceOne.Roll()
-                             + DiceTwo.Roll();
+                             +DiceTwo.Roll()
+                             + DiceOne.Roll();
 
             bool isGoal = thisScore > enemyScore;
             

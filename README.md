@@ -6,7 +6,7 @@
 | Иван Китанов | optional303 | [optional303](https://github.com/optional303) |
 | Илиян Гогов | Iliangogov | [iliangogov](https://github.com/iliangogov) |
 | Михаил Маламов | mmalamov |  |
-| Пламен Иванов | pivanov | |
+| Пламен Иванов | pivanov | [plamenivanov91](https://github.com/plamenivanov91) | 
 | Спас Стоимиров | sstoimirov | [sstoimirov](https://github.com/sstoimirov) |
 | Христо Тодоров | todorovh | [shakuu](https://github.com/shakuu) |
 

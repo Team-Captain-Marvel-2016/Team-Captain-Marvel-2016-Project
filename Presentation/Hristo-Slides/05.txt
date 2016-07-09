@@ -1,0 +1,4 @@
+class ElementManager   
+- Methods for subscribing and unsubscribing to events: Show, Hide, Enable, Disable
+
+Raise events depending on current game state.

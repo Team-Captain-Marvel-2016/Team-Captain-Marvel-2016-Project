@@ -1,0 +1,7 @@
+ButtonGroup
+  - Implements IElementGroup
+  - Manages individual Button controls
+
+ElementManager
+  - Manages IElementGroups
+  - Access individual groups through IElementGroup.Name property

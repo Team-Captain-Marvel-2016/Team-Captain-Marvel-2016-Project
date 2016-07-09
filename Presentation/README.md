@@ -1,3 +1,5 @@
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/Team-Captain-Marvel-2016/TeamWorkSkeletonSample/master/Presentation/index.html)
+
 <!-- section start -->
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
 # Team Captain Marvel

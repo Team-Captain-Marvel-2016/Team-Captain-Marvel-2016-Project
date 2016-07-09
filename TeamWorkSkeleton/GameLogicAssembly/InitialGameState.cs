@@ -17,8 +17,8 @@
         /// </summary>
         public static void InitializePlayers()
         {
-            PlayerOne.Initialize(new HumanPlayer("PlayerOne"));
-            PlayerTwo.Initialize(new HumanPlayer("PlayerTwo"));
+            PlayerOne.Initialize(new HumanPlayer("BotViktor"));
+            PlayerTwo.Initialize(new HumanPlayer("BotDoncho"));
         }
 
         /// <summary>

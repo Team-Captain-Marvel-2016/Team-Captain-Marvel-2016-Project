@@ -15,7 +15,7 @@
         int Width { get; }
         int Height { get; }
 
-        List<IDrawOnCanvas> Children { get; }
+        ICollection<IDrawOnCanvas> Children { get; }
 
         Canvas GameCanvas { get; }
 

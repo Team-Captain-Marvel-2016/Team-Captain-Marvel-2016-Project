@@ -23,7 +23,7 @@
             this.Children = new List<IDrawOnCanvas>();
         }
 
-        public List<IDrawOnCanvas> Children { get; private set; }
+        public ICollection<IDrawOnCanvas> Children { get; private set; }
 
         public int Width { get; private set; }
 

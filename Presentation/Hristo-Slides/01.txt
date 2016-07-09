@@ -1,0 +1,10 @@
+IDrawOnCanvas - drawing on Canvas
+4 properties:
+  - FieldPosition: Position within the Canvas in pixels
+  - GridPosition: Position on the PlayingField Grid ( matrix cell )
+  - VisualToken: Shape to draw
+  - CanvasChildIndex: the index in Canvas.Children[], for ease of identifying event senders.
+
+2 Methods:
+  - SetVisualTokenColor(SolidColorBrush): Each player object is responsible for setting the color of the playersin their team.
+  - SetVisualTokenSize: Mark their active player.

@@ -1,38 +1,38 @@
-#Team Captain Marvel 2016
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/Team-Captain-Marvel-2016/TeamWorkSkeletonSample/master/Presentation/index.html)
 
-| name | TALS | github 
-| :------------------ | :-------------------: | :--------------------|
-| Златин Костов | owolp | [owolp](https://github.com/owolp) |
-| Иван Китанов | optional303 | [optional303](https://github.com/optional303) |
-| Илиян Гогов | Iliangogov | [iliangogov](https://github.com/iliangogov) |
-| Михаил Маламов | mmalamov |  |
-| Пламен Иванов | pivanov | [plamenivanov91](https://github.com/plamenivanov91) | 
-| Спас Стоимиров | sstoimirov | [sstoimirov](https://github.com/sstoimirov) |
-| Христо Тодоров | todorovh | [shakuu](https://github.com/shakuu) |
+<!-- section start -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
+# Team Captain Marvel
 
-------------------
-##[Team Captain Marvel on GitHub](https://github.com/Team-Captain-Marvel-2016)
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/captainmarvel.jpg" style="top:30%; left:49%; width:30.36%; z-index:-1" /> -->
 
-------------------
-##Project Description
+<div class="signature">
+	<p class="signature-course">C# OOP TeamWork</p>
+	<p class="signature-initiative">Telerik Academy by Progress</p>
+	<a href="https://github.com/Team-Captain-Marvel-2016" class="signature-link">Link to the GitHub repository</a>
+</div>
 
-SoccerRPG is a turn-based, stat-based football game. Players on each team take turns controlling one of their football players each turn.
-Possible player actions - movement, pass, call for pass, shoot, tackle, depending on the current ball posseission.
 
-Each team is manufactured out of a factory. We store options in enums, then generate random values within that range. First we pick a formation for the football team, based on that we generate the appropriate number of players for each position.
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
 
-We store limitations for each position in a separate static class. The factory wraps those base stats in a GenericFootballPlayer objects, then picks a random species out of the enum SpeciesType and passes the generated stats to the appropriate constructing method.
+# Captain Marvel Members
 
-We use IDrawOnCanvas to draw. Each FootballPlayer objects implements it, our Graphics class draws IDrawOnCanvas objects on its encapsulated Canvas. The interface requires each object implementing it have a visual token ( an Ellipse in this case ), have methods to manipulate it's size and color and store it's position.
+| Name | TALS | GitHub |
+| :------------- | :------------------- | :------------------------------------------|
+| Златин Костов  | owolp       | [owolp](https://github.com/owolp)                   |
+| Иван Китанов   | optional303 | [optional303](https://github.com/optional303)       |
+| Илиян Гогов    | Iliangogov  | [iliangogov](https://github.com/iliangogov)         |
+| Спас Стоимиров | sstoimirov  | [sstoimirov](https://github.com/sstoimirov)         |
+| Христо Тодоров | todorovh    | [shakuu](https://github.com/shakuu)                 |
+| ~~Михаил Маламов~~ | mmalamov    | [malamov](https://github.com/malamov)               |
+| ~~Пламен Иванов~~  | pivanov     | [plamenivanov91](https://github.com/plamenivanov91) |
 
-We have an ElementManager class which manages IUIElementGroups, each group has methods for subscribing and unsubscring from events. We use these to display and hide appropriate control Button-s.
+<!-- section start -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
 
-We also use MouseDown events on each appropriate Canvas.Children object to select a target for passing, indetifying the sender object to a FootballPlayer object through it's Canvas.Children index.
+# GitHub graphics
 
-Our structs store positions on the canvas and on our PlayingField, also we have a struct MinMaxRange, which is used for storing the constaints for generating FootballPlayer objects.
+![](./imgs/githubgraphics.png)
 
-------------------
-## Class Diagrams
-  - [Football Players](https://github.com/Team-Captain-Marvel-2016/TeamWorkSkeletonSample/blob/master/TeamWorkSkeleton/FootballPlayerAssembly/FootballPlayerDiagram.cd0)
-
-  
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/githubgraphics.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->

@@ -72,7 +72,6 @@
             // Update Top TextBlock
             this.UpdateInfoText();
             this.UpdatePlayerText();
-
         }
 
         /// <summary>
@@ -113,7 +112,7 @@
             ResetGameMethods.ResetGame();
 
             this.GameGraphics.Reset();
-            
+
             this.StartBtn.Visibility = Visibility.Visible;
             this.Buttons.Hide();
 

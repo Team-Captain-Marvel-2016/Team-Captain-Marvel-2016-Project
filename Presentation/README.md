@@ -31,4 +31,6 @@
 
 # GitHub graphics
 
+![](./imgs/githubgraphics.png)
+
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/githubgraphics.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->

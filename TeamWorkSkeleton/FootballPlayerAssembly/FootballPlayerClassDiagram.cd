@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TeamWork.Models.Abstract.FootballPlayer" Collapsed="true">
+    <Position X="9" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAUBgAAQAIQENgGwEECAAAQIAAAACIAIcAIYAAQAVCA=</HashCode>
+      <FileName>Abstract\Contracts.Implementation\FootballPlayer.IDrawOnCanvas.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.1" />
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Models.FootballPlayerFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAbCKsFIIMpJBCAgEEAAgAQQQBGABQwAYACAgAC0ABA=</HashCode>
+      <FileName>Factory.Models\FootballPlayerFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Models.Generic.FootballPlayerFactory" Collapsed="true">
+    <Position X="14.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory.Models\Generic\GenericFootballPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Settings.Abstract.FactorySettings" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgpAAAAQEBAIAAAAAAAAAAAAAAAAAAAAAAgAhCAA=</HashCode>
+      <FileName>Factory.Settings\Abstract\FactorySettings.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.1" />
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Settings.AttackerSettings" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAA=</HashCode>
+      <FileName>Factory.Settings\AttackerSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Settings.DefenderSettings" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAA=</HashCode>
+      <FileName>Factory.Settings\DefenderSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Settings.GoalkeeperSettings" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAA=</HashCode>
+      <FileName>Factory.Settings\GoalkeeperSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Factory.Settings.MidfielderSettings" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAA=</HashCode>
+      <FileName>Factory.Settings\MidfielderSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.HumanFootballPlayer.FootballPlayerFactory" Collapsed="true">
+    <Position X="13" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\HumanFootballPlayer\HumanAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.JupiterianFootballPlayer.FootballPlayerFactory" Collapsed="true">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\JupiterianFootballPlayer\JupiterianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.MartianFootballPlayer.FootballPlayerFactory" Collapsed="true">
+    <Position X="16.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\MartianFootballPlayer\MartianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.MercurianFootballPlayer.FootballPlayerFactory" Collapsed="true">
+    <Position X="16.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\MercurianFootballPlayer\MercurianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.NeptunianFootballPlayer.FootballPlayerFactory" Collapsed="true">
+    <Position X="14.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\NeptunianFootballPlayer\NeptunianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.SagittariusianFootballPlayer.FootballPlayerFactory" Collapsed="true">
+    <Position X="13" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\SagittariusianFootballPlayer\SagittariusianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.UranianFootballPlayer.FootballPlayerFactory" Collapsed="true">
+    <Position X="9.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\UranianFootballPlayer\UranianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Roles.VenusianFootballPlayer.FootballPlayerFactory" Collapsed="true">
+    <Position X="11.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roles\VenusianFootballPlayer\VenusianAttacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Human" Collapsed="true">
+    <Position X="14.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Human.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Jupiterian" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Jupiterian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Martian" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Martian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Mercurian" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Mercurian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Neptunian" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Neptunian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Sagittariusian" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Sagittariusian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Uranian" Collapsed="true">
+    <Position X="16.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Uranian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.Abstract.Venusian" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Species.Abstract\Venusian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.NameGenerator.HumanNameGenerator" Collapsed="true">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Species.NameGenerator\HumanNameGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.NameGenerator.JupiterianNameGenerator" Collapsed="true">
+    <Position X="11.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Species.NameGenerator\JupiterianNameGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.NameGenerator.MartianNameGenerator" Collapsed="true">
+    <Position X="13" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Species.NameGenerator\MartianNameGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.NameGenerator.MercurianNameGenerator" Collapsed="true">
+    <Position X="14.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Species.NameGenerator\MercurianNameGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.NameGenerator.NeptunianNameGenerator" Collapsed="true">
+    <Position X="16.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQgAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAABAAAE=</HashCode>
+      <FileName>Species.NameGenerator\NeptunianNameGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.NameGenerator.SagittariusianNameGenerator" Collapsed="true">
+    <Position X="9.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Species.NameGenerator\SagittariusianNameGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.NameGenerator.UranianNameGenerator" Collapsed="true">
+    <Position X="11.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Species.NameGenerator\UranianNameGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamWork.Models.Species.NameGenerator.VenusianNameGenerator" Collapsed="true">
+    <Position X="13" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAgAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Species.NameGenerator\VenusianNameGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TeamWork.Models.Factory.Settings.Abstract.IFactorySettings" Collapsed="true">
+    <Position X="9.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAoAAAAQEBAIAAAAAAAAAAAAAAAAAAAAAAgAgAAA=</HashCode>
+      <FileName>Factory.Settings\Abstract\IFactorySettings.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

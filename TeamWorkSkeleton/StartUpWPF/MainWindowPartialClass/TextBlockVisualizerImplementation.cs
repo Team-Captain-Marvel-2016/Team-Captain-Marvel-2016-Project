@@ -25,7 +25,7 @@
         {
             this.TextBlockTop.Display(
                 string.Format(
-                    "BotViktor {0, 2} - {1, -2} BotDoncho\t\t\tPlayer: {3} Turn: {2}",
+                    "PlayerOne {0, 2} - {1, -2} PlayerTwo\t\t\tPlayer: {3} Turn: {2}",
                     GameStateTracker.PlayerOneScore,
                     GameStateTracker.PlayerTwoScore,
                     GameStateTracker.TurnNumber,

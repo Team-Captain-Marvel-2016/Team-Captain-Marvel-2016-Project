@@ -16,12 +16,12 @@
                             + DiceOne.Roll();
 
             var enemyScore = enemy.StatSave
-                             +DiceTwo.Roll()
+                             + DiceTwo.Roll()
                              + DiceOne.Roll();
 
             bool isGoal = thisScore > enemyScore;
-            
-            if(isGoal)
+
+            if (isGoal)
             {
                 return true;
             }
@@ -29,7 +29,7 @@
             {
                 return false;
             }
-           
+
         }
     }
 }

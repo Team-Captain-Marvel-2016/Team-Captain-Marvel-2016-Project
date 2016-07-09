@@ -46,8 +46,8 @@
                 GameStateTracker.FootballPlayerWithBall,
                 FootballPlayerSettings.BallColor);
 
-            GameStateTracker.PlayerOnTurn.PlayerCharacter.Team.HasBallPossession = false;
-            GameStateTracker.GetOpponent().PlayerCharacter.Team.HasBallPossession = true;
+            GameStateTracker.PlayerOnTurn.PlayerCharacter.Team.HasBallPossession = true;
+            GameStateTracker.GetOpponent().PlayerCharacter.Team.HasBallPossession = false;
             GameStateTracker.PlayerWihBall = GameStateTracker.GetOpponent();
 
             this.DisplayUIZeroAP?.Invoke(this, null);

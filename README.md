@@ -1,7 +1,7 @@
 #Team Captain Marvel 2016
 
 | name | TALS | github 
-| :------------------ | :-------------------: | :--------------------: |
+| :------------------ | :-------------------: | :--------------------|
 | Златин Костов | owolp | [owolp](https://github.com/owolp) |
 | Иван Китанов | optional303 | [optional303](https://github.com/optional303) |
 | Илиян Гогов | Iliangogov | [iliangogov](https://github.com/iliangogov) |

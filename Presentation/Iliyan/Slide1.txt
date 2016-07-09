@@ -1,0 +1,4 @@
+Shoot implementation
+*When shoot button "S" is clicked: there are several checks,based on attack stats of shooter and save stats of the enemy goalkeeper plus a coeficient of a chance token from random generator called "Dice"
+If shooter's stats is dominating we count it as a goal and set the players in initial positions on the field.
+If goalkeeper stats is dominatng we count it as a save.And player wth the ball now is enemy goalkeeper.

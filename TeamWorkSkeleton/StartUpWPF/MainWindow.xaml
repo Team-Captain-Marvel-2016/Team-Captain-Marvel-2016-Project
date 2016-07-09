@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StartUpWPF"
         mc:Ignorable="d"
-        Title="SoccerRPG" Height="540" Width="960">
+        Title="SoccerRPG" Height="570" Width="960">
     <Window.Background>
         <ImageBrush ImageSource="imgs/bg-img.png"></ImageBrush>
     </Window.Background>

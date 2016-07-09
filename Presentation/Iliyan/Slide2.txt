@@ -1,0 +1,4 @@
+Pass implementation
+*When pass button "P" is clicked: there are several checks,based on pass stats of player with the ball and interception stats of the enemy player on the way of a pass.
+If passing player stats is dominating we count it as a successfull pass and the ball is still in the same team posession.
+If interceppiant player stats is dominatng we count it as a interception.And player wth the ball now is enemy player.

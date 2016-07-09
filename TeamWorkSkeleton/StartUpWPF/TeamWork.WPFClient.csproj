@@ -151,10 +151,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\00-TestingClassesAssembly\00-TestingClassesAssembly.csproj">
-      <Project>{b16c83d1-7581-4624-8354-c15cc107bf01}</Project>
-      <Name>00-TestingClassesAssembly</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FootballPlayerAssembly\TeamWork.Models.csproj">
       <Project>{d46f609d-bba1-47df-aea0-da4479fcb741}</Project>
       <Name>TeamWork.Models</Name>

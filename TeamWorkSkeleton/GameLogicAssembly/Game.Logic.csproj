@@ -71,10 +71,6 @@
       <Project>{e5abb4b1-abcf-443e-80e9-8f79c3a00e0d}</Project>
       <Name>Global.DataStructures</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GlobalExceptionAssembly\Global.CustomExceptions.csproj">
-      <Project>{a0403c5c-4b70-4cb0-88c8-5cd7396a7f86}</Project>
-      <Name>Global.CustomExceptions</Name>
-    </ProjectReference>
     <ProjectReference Include="..\GlobalInterfacesAssembly\Global.Contracts.csproj">
       <Project>{57d31868-525c-4eff-9e3a-cea971529a77}</Project>
       <Name>Global.Contracts</Name>

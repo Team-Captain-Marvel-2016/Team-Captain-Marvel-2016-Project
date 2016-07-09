@@ -31,6 +31,7 @@
                 //Update ball possession and visuals
                 this.UpdateScore();
 
+                // TODO: Create a method.
                 PlayingFieldMethods.UpdateAllPlayers(PlayerOne.Instance.PlayerCharacter.Team.Team);
                 PlayingFieldMethods.UpdateAllPlayers(PlayerTwo.Instance.PlayerCharacter.Team.Team);
 

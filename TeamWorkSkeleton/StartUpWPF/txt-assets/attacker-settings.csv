@@ -2,7 +2,7 @@ Pass,50,90
 Shoot,70,100
 Dribble,60,90
 Save,0,10
-Tackle,0,50
+Tackle,20,50
 Intercept,20,60
 Awareness,2,4
 Ap,4,6

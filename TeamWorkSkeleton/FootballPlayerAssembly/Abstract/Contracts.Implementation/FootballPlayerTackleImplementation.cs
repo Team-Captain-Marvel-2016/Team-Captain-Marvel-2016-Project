@@ -1,14 +1,21 @@
 ﻿namespace TeamWork.Models.Abstract
 {
-    using System;
-    using Global.Contracts.Actions;
     using Global.Contracts.Statistics;
 
     public abstract partial class FootballPlayer
     {
         public bool Tackle(IOffenseStats enemy)
         {
-            throw new NotImplementedException();
+            var thisTackleRoll = DiceOne.Roll() + DiceTwo.Roll() + this.StatTackle;
+            var enemyDribbleRoll = DiceOne.Roll() + DiceTwo.Roll() + enemy.StatDribble;
+
+            while (thisTackleRoll == enemyDribbleRoll)
+            {
+                thisTackleRoll += DiceOne.Roll();
+                enemyDribbleRoll += DiceTwo.Roll();
+            }
+
+            return thisTackleRoll > enemyDribbleRoll;
         }
     }
 }

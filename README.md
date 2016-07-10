@@ -169,17 +169,19 @@ Class ElementManager
 
 How To Play
 
-- Arrow Buttons ( Left side )
-  - Move selected player
-- [P]ass button
-  - Click on a friendly player to pass to, active when current FootballPlayer has the ball
+- Movement Buttons:
+  - [U]p, [D]own, [L]eft, [R]ight
+  - Move selected FootballPlayer object.
+- [P]ass button:
+  - Click on a friendly player to pass to, active when current FootballPlayer has the ball.
 - [S]hoot button:
-  - Shoot at the enemy goal, active when current FootballPlayer has the ball
-- [C]all for pass
+  - Shoot at the enemy goal, active when current FootballPlayer has the ball.
+- [C]all for pass:
   - Ask for the ball, active when current team has ball possession.
-- [T]ackle: attempt to take the ball off the enemy player, active when next to a FootballPlayer with the ball
-- End Turn button: end current turn
-- Rest button: start over
+- [T]ackle: 
+  - Attempt to take the ball off the enemy player, active when next to a FootballPlayer with the ball.
+- End Turn button: End current turn.
+- Reset button: Start a new match.
 
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->

@@ -7,7 +7,7 @@
 <div class="signature">
 	<p class="signature-course">C# OOP TeamWork</p>
 	<p class="signature-initiative">Telerik Academy by Progress</p>
-	<a href="https://github.com/Team-Captain-Marvel-2016" class="signature-link">Link to the GitHub repository</a>
+	<a href="https://github.com/Team-Captain-Marvel-2016/Team-Captain-Marvel-2016-Project" class="signature-link">Link to the GitHub repository</a>
 </div>
 
 <!-- section start -->

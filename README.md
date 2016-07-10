@@ -41,7 +41,22 @@
 <!-- <img showInPresentation="true" class="slide-image" src="imgs/githubgraphics.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
 
 <!-- section start -->
-<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
+
+# Football Player Class Diagram
+
+![](./Presentation/imgs/ClassDiagramFootballPlayer.png)
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/ClassDiagramFootballPlayer.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
+
+<!-- section start -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
+
+# Player Class Diagram
+
+![](./Presentation/imgs/ClassDiagramPlayerDiagram.png)
+
+<!-- <img showInPresentation="true" class="slide-image" src="imgs/ClassDiagramPlayerDiagram.png" style="top:25%; left:10%; width:80%; z-index:-1" /> -->
 
 # Shoot implementation
 

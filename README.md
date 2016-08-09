@@ -195,7 +195,7 @@ How To Play
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em', hasScriptWrapper:true } -->
 
-# Let's Play
+# Let's Play :)
 
 ![](./Presentation/imgs/LetsPlay.png)
 
